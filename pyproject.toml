@@ -1,0 +1,19 @@
+[project]
+name = "agent-memory"
+version = "0.1.0"
+description = "Neo4j agent memory"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "neo4j-agent-memory[openai,gliner2]>=0.5.0",
+    "langchain>=1.0.0",
+    "langchain-openai>=1.2.0",
+    "langchain-core>=0.3.0",
+    "python-dotenv>=1.0.0",
+    "tavily-python>=0.5.0",
+    "httpx>=0.27.0",
+    "markdownify>=0.13.0",
+    "ipykernel>=7.4.0",
+    "ipywidgets",
+    "neo4j-viz[neo4j]>=1.12.0",
+]
