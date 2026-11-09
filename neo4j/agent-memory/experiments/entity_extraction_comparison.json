@@ -1,0 +1,3895 @@
+{
+  "started_at": "2026-11-09T08:28:07.321003+00:00",
+  "library_version": "0.8.0",
+  "notebook": "notebooks/01_short_term_memory.ipynb",
+  "llm_model": "gpt-5.4-mini",
+  "repeats": 3,
+  "database_connected": false,
+  "configs": {
+    "hybrid": {
+      "extractor_type": "pipeline",
+      "enable_spacy": false,
+      "enable_gliner": true,
+      "enable_llm_fallback": true,
+      "merge_strategy": "confidence",
+      "fallback_on_empty": true,
+      "spacy_model": "en_core_web_sm",
+      "spacy_confidence": 0.85,
+      "gliner_model": "fastino/gliner2.5-base-v1",
+      "gliner_threshold": 0.2,
+      "gliner_relation_threshold": null,
+      "gliner_device": "cpu",
+      "gliner_schema": null,
+      "gliner_max_words": 384,
+      "gliner_chunk_overlap": 64,
+      "gliner_overlap_policy": null,
+      "gliner_extract_attributes": false,
+      "gliner_quantize": false,
+      "gliner_compile": false,
+      "llm_model": "gpt-5.4-mini",
+      "entity_types": [
+        "PERSON",
+        "LOCATION",
+        "ORGANIZATION",
+        "EVENT",
+        "OBJECT"
+      ],
+      "extract_relations": true,
+      "extract_preferences": true,
+      "confidence_threshold": 0.0
+    },
+    "llm_only": {
+      "extractor_type": "llm",
+      "enable_spacy": false,
+      "enable_gliner": true,
+      "enable_llm_fallback": true,
+      "merge_strategy": "confidence",
+      "fallback_on_empty": true,
+      "spacy_model": "en_core_web_sm",
+      "spacy_confidence": 0.85,
+      "gliner_model": "fastino/gliner2.5-base-v1",
+      "gliner_threshold": 0.2,
+      "gliner_relation_threshold": null,
+      "gliner_device": "cpu",
+      "gliner_schema": null,
+      "gliner_max_words": 384,
+      "gliner_chunk_overlap": 64,
+      "gliner_overlap_policy": null,
+      "gliner_extract_attributes": false,
+      "gliner_quantize": false,
+      "gliner_compile": false,
+      "llm_model": "gpt-5.4-mini",
+      "entity_types": [
+        "PERSON",
+        "LOCATION",
+        "ORGANIZATION",
+        "EVENT",
+        "OBJECT"
+      ],
+      "extract_relations": true,
+      "extract_preferences": true,
+      "confidence_threshold": 0.0
+    }
+  },
+  "resolution_config": {
+    "strategy": "composite",
+    "exact_threshold": 1.0,
+    "fuzzy_threshold": 0.85,
+    "semantic_threshold": 0.8,
+    "fuzzy_scorer": "token_sort_ratio",
+    "resolve_on_ingest": true,
+    "auto_merge_threshold": 0.9,
+    "review_threshold": 0.85,
+    "candidate_limit": 12,
+    "use_alias_gazetteer": true,
+    "use_embedding_blocking": true,
+    "context_window_chars": 90,
+    "scope": "global"
+  },
+  "messages": [
+    "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+    "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요.",
+    "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다.",
+    "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+  ],
+  "runs": [
+    {
+      "repeat": 1,
+      "message_index": 1,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 5169.561862945557,
+          "result": {
+            "entities": [
+              {
+                "name": "GCP에서",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": 3,
+                "end_pos": 8,
+                "confidence": 0.8746055030186273,
+                "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+                "attributes": {
+                  "gliner2_label": "Organization",
+                  "gliner2_score": 0.8746055030186273,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "GCP에서",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": 3,
+                "end_pos": 8,
+                "confidence": 0.8746055030186273,
+                "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+                "attributes": {
+                  "gliner2_label": "Organization",
+                  "gliner2_score": 0.8746055030186273,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 3286.8683338165283,
+          "result": {
+            "entities": [
+              {
+                "name": "GCP",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "Cloud DNS",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "GCP",
+                "target": "Cloud DNS",
+                "relation_type": "RELATED_TO",
+                "confidence": 0.72,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "GCP",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "Cloud DNS",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "GCP",
+                "target": "Cloud DNS",
+                "relation_type": "RELATED_TO",
+                "confidence": 0.72,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": 3,
+            "end_pos": 8,
+            "confidence": 0.8746055030186273,
+            "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+            "attributes": {
+              "gliner2_label": "Organization",
+              "gliner2_score": 0.8746055030186273,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.72,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": 3,
+            "end_pos": 8,
+            "confidence": 0.8746055030186273,
+            "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+            "attributes": {
+              "gliner2_label": "Organization",
+              "gliner2_score": 0.8746055030186273,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.72,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "elapsed_seconds": 8.458,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "GCP에서",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP에서",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "GCP",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "Cloud DNS",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "Cloud DNS",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "RELATED_TO",
+          "source": {
+            "name": "GCP",
+            "type": "ORGANIZATION"
+          },
+          "target": {
+            "name": "Cloud DNS",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "message_index": 1,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.98,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.92,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.66,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.98,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.92,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.66,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "elapsed_seconds": 1.361,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "GCP",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "Cloud DNS",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "Cloud DNS",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "RELATED_TO",
+          "source": {
+            "name": "GCP",
+            "type": "ORGANIZATION"
+          },
+          "target": {
+            "name": "Cloud DNS",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "message_index": 2,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 151.4270305633545,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 2455.904006958008,
+          "result": {
+            "entities": [
+              {
+                "name": "공지 저장",
+                "type": "EVENT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.78,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "작업실 정보",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.72,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "공지 저장",
+                "type": "EVENT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.78,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "작업실 정보",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.72,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "elapsed_seconds": 2.608,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "공지 저장",
+          "type": "EVENT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "공지 저장",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "작업실 정보",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "작업실 정보",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 1,
+      "message_index": 2,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "서버 쪽 작업",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.86,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.74,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "서버 쪽 작업",
+            "target": "공지 저장",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.7,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          },
+          {
+            "source": "서버 쪽 작업",
+            "target": "작업실 정보",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.7,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "서버 쪽 작업",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.86,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.74,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "서버 쪽 작업",
+            "target": "공지 저장",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.7,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          },
+          {
+            "source": "서버 쪽 작업",
+            "target": "작업실 정보",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.7,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "elapsed_seconds": 2.276,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "서버 쪽 작업",
+          "type": "EVENT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "서버 쪽 작업",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "공지 저장",
+          "type": "EVENT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "공지 저장",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "작업실 정보",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "작업실 정보",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "RELATED_TO",
+          "source": {
+            "name": "서버 쪽 작업",
+            "type": "EVENT"
+          },
+          "target": {
+            "name": "공지 저장",
+            "type": "EVENT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        },
+        {
+          "relation_type": "RELATED_TO",
+          "source": {
+            "name": "서버 쪽 작업",
+            "type": "EVENT"
+          },
+          "target": {
+            "name": "작업실 정보",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 1,
+      "message_index": 3,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 139.53495025634766,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1287.917137145996,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "prepared_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "elapsed_seconds": 1.428,
+      "empty_graph_per_message_resolution": [],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 1,
+      "message_index": 3,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "prepared_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "elapsed_seconds": 0.999,
+      "empty_graph_per_message_resolution": [],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 1,
+      "message_index": 4,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 155.1189422607422,
+          "result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "PERSON",
+                "subtype": null,
+                "start_pos": 0,
+                "end_pos": 3,
+                "confidence": 0.8600585787721086,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+                "attributes": {
+                  "gliner2_label": "Person",
+                  "gliner2_score": 0.8600585787721086,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              },
+              {
+                "name": "IP 기능을",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": 14,
+                "end_pos": 20,
+                "confidence": 0.5017973405192355,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+                "attributes": {
+                  "gliner2_label": "Object",
+                  "gliner2_score": 0.5017973405192355,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e2"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "PERSON",
+                "subtype": null,
+                "start_pos": 0,
+                "end_pos": 3,
+                "confidence": 0.8600585787721086,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+                "attributes": {
+                  "gliner2_label": "Person",
+                  "gliner2_score": 0.8600585787721086,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              },
+              {
+                "name": "IP 기능을",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": 14,
+                "end_pos": 20,
+                "confidence": 0.5017973405192355,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+                "attributes": {
+                  "gliner2_label": "Object",
+                  "gliner2_score": 0.5017973405192355,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e2"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1303.8737773895264,
+          "result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "subtype": null,
+            "start_pos": 0,
+            "end_pos": 3,
+            "confidence": 0.8600585787721086,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+            "attributes": {
+              "gliner2_label": "Person",
+              "gliner2_score": 0.8600585787721086,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "IP 기능을",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": 14,
+            "end_pos": 20,
+            "confidence": 0.5017973405192355,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+            "attributes": {
+              "gliner2_label": "Object",
+              "gliner2_score": 0.5017973405192355,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e2"
+          },
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "subtype": null,
+            "start_pos": 0,
+            "end_pos": 3,
+            "confidence": 0.8600585787721086,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+            "attributes": {
+              "gliner2_label": "Person",
+              "gliner2_score": 0.8600585787721086,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "IP 기능을",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": 14,
+            "end_pos": 20,
+            "confidence": 0.5017973405192355,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+            "attributes": {
+              "gliner2_label": "Object",
+              "gliner2_score": 0.5017973405192355,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e2"
+          },
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "elapsed_seconds": 1.46,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "오라클",
+          "type": "PERSON",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "IP 기능을",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "IP 기능을",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "오라클",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 1,
+      "message_index": 4,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "elapsed_seconds": 1.298,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "오라클",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 2,
+      "message_index": 1,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.72,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.72,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "elapsed_seconds": 1.818,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "GCP",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "Cloud DNS",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "Cloud DNS",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "OWNS",
+          "source": {
+            "name": "GCP",
+            "type": "ORGANIZATION"
+          },
+          "target": {
+            "name": "Cloud DNS",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "message_index": 1,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 162.6269817352295,
+          "result": {
+            "entities": [
+              {
+                "name": "GCP에서",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": 3,
+                "end_pos": 8,
+                "confidence": 0.8746055030186273,
+                "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+                "attributes": {
+                  "gliner2_label": "Organization",
+                  "gliner2_score": 0.8746055030186273,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "GCP에서",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": 3,
+                "end_pos": 8,
+                "confidence": 0.8746055030186273,
+                "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+                "attributes": {
+                  "gliner2_label": "Organization",
+                  "gliner2_score": 0.8746055030186273,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1278.6529064178467,
+          "result": {
+            "entities": [
+              {
+                "name": "GCP",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "Cloud DNS",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "GCP",
+                "target": "Cloud DNS",
+                "relation_type": "OWNS",
+                "confidence": 0.62,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "GCP",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "Cloud DNS",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "GCP",
+                "target": "Cloud DNS",
+                "relation_type": "OWNS",
+                "confidence": 0.62,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": 3,
+            "end_pos": 8,
+            "confidence": 0.8746055030186273,
+            "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+            "attributes": {
+              "gliner2_label": "Organization",
+              "gliner2_score": 0.8746055030186273,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.62,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": 3,
+            "end_pos": 8,
+            "confidence": 0.8746055030186273,
+            "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+            "attributes": {
+              "gliner2_label": "Organization",
+              "gliner2_score": 0.8746055030186273,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.62,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "elapsed_seconds": 1.442,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "GCP에서",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP에서",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "GCP",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "Cloud DNS",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "Cloud DNS",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "OWNS",
+          "source": {
+            "name": "GCP",
+            "type": "ORGANIZATION"
+          },
+          "target": {
+            "name": "Cloud DNS",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 2,
+      "message_index": 2,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.86,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.86,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "elapsed_seconds": 1.27,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "공지 저장",
+          "type": "EVENT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "공지 저장",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "작업실 정보",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "작업실 정보",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 2,
+      "message_index": 2,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 143.38994026184082,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1261.599063873291,
+          "result": {
+            "entities": [
+              {
+                "name": "공지 저장",
+                "type": "EVENT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.86,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "작업실 정보",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.78,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "공지 저장",
+                "type": "EVENT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.86,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "작업실 정보",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.78,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.86,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.86,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "elapsed_seconds": 1.405,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "공지 저장",
+          "type": "EVENT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "공지 저장",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "작업실 정보",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "작업실 정보",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 2,
+      "message_index": 3,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "prepared_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "elapsed_seconds": 1.139,
+      "empty_graph_per_message_resolution": [],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 2,
+      "message_index": 3,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 148.09608459472656,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1035.3927612304688,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "prepared_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "elapsed_seconds": 1.184,
+      "empty_graph_per_message_resolution": [],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 2,
+      "message_index": 4,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "elapsed_seconds": 1.221,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "오라클",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 2,
+      "message_index": 4,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 156.08811378479004,
+          "result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "PERSON",
+                "subtype": null,
+                "start_pos": 0,
+                "end_pos": 3,
+                "confidence": 0.8600585787721086,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+                "attributes": {
+                  "gliner2_label": "Person",
+                  "gliner2_score": 0.8600585787721086,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              },
+              {
+                "name": "IP 기능을",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": 14,
+                "end_pos": 20,
+                "confidence": 0.5017973405192355,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+                "attributes": {
+                  "gliner2_label": "Object",
+                  "gliner2_score": 0.5017973405192355,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e2"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "PERSON",
+                "subtype": null,
+                "start_pos": 0,
+                "end_pos": 3,
+                "confidence": 0.8600585787721086,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+                "attributes": {
+                  "gliner2_label": "Person",
+                  "gliner2_score": 0.8600585787721086,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              },
+              {
+                "name": "IP 기능을",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": 14,
+                "end_pos": 20,
+                "confidence": 0.5017973405192355,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+                "attributes": {
+                  "gliner2_label": "Object",
+                  "gliner2_score": 0.5017973405192355,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e2"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1607.1767807006836,
+          "result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "고정 IP 기능",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "오라클",
+                "target": "고정 IP 기능",
+                "relation_type": "RELATED_TO",
+                "confidence": 0.78,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "고정 IP 기능",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "오라클",
+                "target": "고정 IP 기능",
+                "relation_type": "RELATED_TO",
+                "confidence": 0.78,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "subtype": null,
+            "start_pos": 0,
+            "end_pos": 3,
+            "confidence": 0.8600585787721086,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+            "attributes": {
+              "gliner2_label": "Person",
+              "gliner2_score": 0.8600585787721086,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "IP 기능을",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": 14,
+            "end_pos": 20,
+            "confidence": 0.5017973405192355,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+            "attributes": {
+              "gliner2_label": "Object",
+              "gliner2_score": 0.5017973405192355,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e2"
+          },
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "고정 IP 기능",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "오라클",
+            "target": "고정 IP 기능",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.78,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "subtype": null,
+            "start_pos": 0,
+            "end_pos": 3,
+            "confidence": 0.8600585787721086,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+            "attributes": {
+              "gliner2_label": "Person",
+              "gliner2_score": 0.8600585787721086,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "IP 기능을",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": 14,
+            "end_pos": 20,
+            "confidence": 0.5017973405192355,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+            "attributes": {
+              "gliner2_label": "Object",
+              "gliner2_score": 0.5017973405192355,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e2"
+          },
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "고정 IP 기능",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "오라클",
+            "target": "고정 IP 기능",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.78,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "elapsed_seconds": 1.766,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "오라클",
+          "type": "PERSON",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "IP 기능을",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "IP 기능을",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "오라클",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "고정 IP 기능",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "고정 IP 기능",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "RELATED_TO",
+          "source": {
+            "name": "오라클",
+            "type": "PERSON"
+          },
+          "target": {
+            "name": "고정 IP 기능",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 3,
+      "message_index": 1,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 197.2649097442627,
+          "result": {
+            "entities": [
+              {
+                "name": "GCP에서",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": 3,
+                "end_pos": 8,
+                "confidence": 0.8746055030186273,
+                "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+                "attributes": {
+                  "gliner2_label": "Organization",
+                  "gliner2_score": 0.8746055030186273,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "GCP에서",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": 3,
+                "end_pos": 8,
+                "confidence": 0.8746055030186273,
+                "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+                "attributes": {
+                  "gliner2_label": "Organization",
+                  "gliner2_score": 0.8746055030186273,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1145.582914352417,
+          "result": {
+            "entities": [
+              {
+                "name": "GCP",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.98,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "Cloud DNS",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "GCP",
+                "target": "Cloud DNS",
+                "relation_type": "OWNS",
+                "confidence": 0.72,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "GCP",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.98,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "Cloud DNS",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.95,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "GCP",
+                "target": "Cloud DNS",
+                "relation_type": "OWNS",
+                "confidence": 0.72,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": 3,
+            "end_pos": 8,
+            "confidence": 0.8746055030186273,
+            "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+            "attributes": {
+              "gliner2_label": "Organization",
+              "gliner2_score": 0.8746055030186273,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.98,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.72,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": 3,
+            "end_pos": 8,
+            "confidence": 0.8746055030186273,
+            "context": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+            "attributes": {
+              "gliner2_label": "Organization",
+              "gliner2_score": 0.8746055030186273,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.98,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.72,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "elapsed_seconds": 1.344,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "GCP에서",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP에서",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "GCP",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "Cloud DNS",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "Cloud DNS",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "OWNS",
+          "source": {
+            "name": "GCP",
+            "type": "ORGANIZATION"
+          },
+          "target": {
+            "name": "Cloud DNS",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 3,
+      "message_index": 1,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.98,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.92,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.62,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.98,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.92,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "target": "Cloud DNS",
+            "relation_type": "OWNS",
+            "confidence": 0.62,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다."
+      },
+      "elapsed_seconds": 1.265,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "GCP",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "GCP",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "Cloud DNS",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "Cloud DNS",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "OWNS",
+          "source": {
+            "name": "GCP",
+            "type": "ORGANIZATION"
+          },
+          "target": {
+            "name": "Cloud DNS",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    },
+    {
+      "repeat": 3,
+      "message_index": 2,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 166.1510467529297,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1510.2331638336182,
+          "result": {
+            "entities": [
+              {
+                "name": "서버 쪽 작업",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.78,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "공지 저장",
+                "type": "EVENT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.74,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "작업실 정보",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.72,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [
+              {
+                "source": "서버 쪽 작업",
+                "target": "공지 저장",
+                "relation_type": "INVOLVED",
+                "confidence": 0.66,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              },
+              {
+                "source": "서버 쪽 작업",
+                "target": "작업실 정보",
+                "relation_type": "INVOLVED",
+                "confidence": 0.66,
+                "source_id": null,
+                "target_id": null,
+                "derived": false
+              }
+            ],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "서버 쪽 작업",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.78,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "공지 저장",
+                "type": "EVENT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.74,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              },
+              {
+                "name": "작업실 정보",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.72,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "서버 쪽 작업",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.74,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "서버 쪽 작업",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.74,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "elapsed_seconds": 1.677,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "서버 쪽 작업",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "서버 쪽 작업",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "공지 저장",
+          "type": "EVENT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "공지 저장",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "작업실 정보",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "작업실 정보",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 3,
+      "message_index": 2,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.78,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.72,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요."
+      },
+      "elapsed_seconds": 1.388,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "공지 저장",
+          "type": "EVENT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "공지 저장",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "작업실 정보",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "작업실 정보",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 3,
+      "message_index": 3,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 151.63803100585938,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 987.7517223358154,
+          "result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          },
+          "prepared_result": {
+            "entities": [],
+            "relations": [],
+            "preferences": [],
+            "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "prepared_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "elapsed_seconds": 1.14,
+      "empty_graph_per_message_resolution": [],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 3,
+      "message_index": 3,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "prepared_result": {
+        "entities": [],
+        "relations": [],
+        "preferences": [],
+        "source_text": "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다."
+      },
+      "elapsed_seconds": 0.962,
+      "empty_graph_per_message_resolution": [],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 3,
+      "message_index": 4,
+      "mode": "hybrid",
+      "stages": [
+        {
+          "name": "gliner2",
+          "success": true,
+          "error": null,
+          "duration_ms": 164.59298133850098,
+          "result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "PERSON",
+                "subtype": null,
+                "start_pos": 0,
+                "end_pos": 3,
+                "confidence": 0.8600585787721086,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+                "attributes": {
+                  "gliner2_label": "Person",
+                  "gliner2_score": 0.8600585787721086,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              },
+              {
+                "name": "IP 기능을",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": 14,
+                "end_pos": 20,
+                "confidence": 0.5017973405192355,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+                "attributes": {
+                  "gliner2_label": "Object",
+                  "gliner2_score": 0.5017973405192355,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e2"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "PERSON",
+                "subtype": null,
+                "start_pos": 0,
+                "end_pos": 3,
+                "confidence": 0.8600585787721086,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+                "attributes": {
+                  "gliner2_label": "Person",
+                  "gliner2_score": 0.8600585787721086,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e1"
+              },
+              {
+                "name": "IP 기능을",
+                "type": "OBJECT",
+                "subtype": null,
+                "start_pos": 14,
+                "end_pos": 20,
+                "confidence": 0.5017973405192355,
+                "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+                "attributes": {
+                  "gliner2_label": "Object",
+                  "gliner2_score": 0.5017973405192355,
+                  "rescued": false,
+                  "sentence_id": null
+                },
+                "extractor": "gliner2",
+                "id": "e2"
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          }
+        },
+        {
+          "name": "LLMEntityExtractor",
+          "success": true,
+          "error": null,
+          "duration_ms": 1351.5839576721191,
+          "result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          },
+          "prepared_result": {
+            "entities": [
+              {
+                "name": "오라클",
+                "type": "ORGANIZATION",
+                "subtype": null,
+                "start_pos": null,
+                "end_pos": null,
+                "confidence": 0.99,
+                "context": null,
+                "attributes": {},
+                "extractor": "llm",
+                "id": null
+              }
+            ],
+            "relations": [],
+            "preferences": [],
+            "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+          }
+        }
+      ],
+      "raw_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "subtype": null,
+            "start_pos": 0,
+            "end_pos": 3,
+            "confidence": 0.8600585787721086,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+            "attributes": {
+              "gliner2_label": "Person",
+              "gliner2_score": 0.8600585787721086,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "IP 기능을",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": 14,
+            "end_pos": 20,
+            "confidence": 0.5017973405192355,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+            "attributes": {
+              "gliner2_label": "Object",
+              "gliner2_score": 0.5017973405192355,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e2"
+          },
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "subtype": null,
+            "start_pos": 0,
+            "end_pos": 3,
+            "confidence": 0.8600585787721086,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to ",
+            "attributes": {
+              "gliner2_label": "Person",
+              "gliner2_score": 0.8600585787721086,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e1"
+          },
+          {
+            "name": "IP 기능을",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": 14,
+            "end_pos": 20,
+            "confidence": 0.5017973405192355,
+            "context": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'",
+            "attributes": {
+              "gliner2_label": "Object",
+              "gliner2_score": 0.5017973405192355,
+              "rescued": false,
+              "sentence_id": null
+            },
+            "extractor": "gliner2",
+            "id": "e2"
+          },
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "elapsed_seconds": 1.517,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "오라클",
+          "type": "PERSON",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "IP 기능을",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "IP 기능을",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "오라클",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": []
+    },
+    {
+      "repeat": 3,
+      "message_index": 4,
+      "mode": "llm_only",
+      "raw_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "고정 IP 기능",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "오라클",
+            "target": "고정 IP 기능",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.78,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "prepared_result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.99,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          },
+          {
+            "name": "고정 IP 기능",
+            "type": "OBJECT",
+            "subtype": null,
+            "start_pos": null,
+            "end_pos": null,
+            "confidence": 0.95,
+            "context": null,
+            "attributes": {},
+            "extractor": "llm",
+            "id": null
+          }
+        ],
+        "relations": [
+          {
+            "source": "오라클",
+            "target": "고정 IP 기능",
+            "relation_type": "RELATED_TO",
+            "confidence": 0.78,
+            "source_id": null,
+            "target_id": null,
+            "derived": false
+          }
+        ],
+        "preferences": [],
+        "source_text": "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다."
+      },
+      "elapsed_seconds": 1.501,
+      "empty_graph_per_message_resolution": [
+        {
+          "name": "오라클",
+          "type": "ORGANIZATION",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "오라클",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        },
+        {
+          "name": "고정 IP 기능",
+          "type": "OBJECT",
+          "action": "created",
+          "entity_id": null,
+          "canonical_name": "고정 IP 기능",
+          "score": 0.0,
+          "match_type": null,
+          "matched_entity_id": null,
+          "matched_entity_name": null
+        }
+      ],
+      "local_relation_endpoints": [
+        {
+          "relation_type": "RELATED_TO",
+          "source": {
+            "name": "오라클",
+            "type": "ORGANIZATION"
+          },
+          "target": {
+            "name": "고정 IP 기능",
+            "type": "OBJECT"
+          },
+          "note": "Local endpoint selection before persistence; no graph writes"
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "completed_at": "2026-11-09T08:28:51.177597+00:00",
+  "notes": [
+    "Both modes use the same model, ontology, prompt and storage filters; LLM calls are independent.",
+    "Hybrid stages also provide a paired comparison using exactly the same LLM response.",
+    "Resolution has no stored candidates and runs independently per message; this is not an end-to-end DB test.",
+    "The first hybrid duration includes lazy GLiNER model loading; timings are not a latency benchmark.",
+    "Local relation endpoint tracing precedes persistence and does not emulate ID remapping after a merge."
+  ],
+  "summary": {
+    "hybrid": {
+      "runs_per_message": 3,
+      "gcp_with_particle": 3,
+      "gcp_organization": 3,
+      "cloud_dns_object": 3,
+      "oracle_person": 3,
+      "oracle_organization": 3,
+      "ip_feature_with_particle": 3,
+      "fixed_ip_feature": 1,
+      "oracle_person_local_endpoint": 1
+    },
+    "llm_only": {
+      "runs_per_message": 3,
+      "gcp_with_particle": 0,
+      "gcp_organization": 3,
+      "cloud_dns_object": 3,
+      "oracle_person": 0,
+      "oracle_organization": 3,
+      "ip_feature_with_particle": 0,
+      "fixed_ip_feature": 1,
+      "oracle_person_local_endpoint": 0
+    },
+    "paired_llm_stage": {
+      "runs_per_message": 3,
+      "gcp_with_particle": 0,
+      "gcp_organization": 3,
+      "cloud_dns_object": 3,
+      "oracle_person": 0,
+      "oracle_organization": 3,
+      "ip_feature_with_particle": 0,
+      "fixed_ip_feature": 1
+    }
+  }
+}

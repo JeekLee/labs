@@ -10,6 +10,8 @@
 | [단기 기억 실험](notebooks/01_short_term_memory.ipynb) | 대화 저장, 그래프 시각화, 이력 조회, 컨텍스트 검색과 세션 정리를 실험한다. |
 | [장기 기억: 엔티티와 관계](notebooks/02_long_term_memory_entity.ipynb) | 엔티티·관계 저장, 그래프 시각화와 데이터 정리를 실험한다. |
 | [장기 기억: Fact](notebooks/03_long_term_memory_fact.ipynb) | 일반·유효기간 Fact 저장, 시각화와 데이터 정리를 실험한다. |
+| [실험: Hybrid와 LLM-only 추출](experiments/01_entity_extraction_hybrid_vs_llm.ipynb) | 노트북 01 메시지에서 GLiNER+LLM과 LLM 단독 추출의 결과·해소·관계 연결을 비교한다. |
+| [실험: 언어와 GLiNER 체크포인트](experiments/02_entity_extraction_by_language.ipynb) | 한국어·영어 문장 쌍으로 GLiNER base/multi와 LLM 추출을 비교한다. |
 | [메모리 설정](config/memory_client.py) | 환경변수와 추출·모델 설정으로 `MemorySettings`를 구성한다. |
 | [공유 유틸리티](../neo4j-utils/) | 여러 Neo4j 실험에서 사용하는 그래프 시각화 함수를 제공한다. |
 
