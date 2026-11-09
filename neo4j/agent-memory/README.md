@@ -8,7 +8,10 @@
 |---|---|
 | [개념과 동작 구조](notebooks/00_agent_memory_overview.ipynb) | 기억 계층, 지식 추출, 검색 범위와 클라이언트 생명주기를 설명한다. |
 | [단기 기억 실험](notebooks/01_short_term_memory.ipynb) | 대화 저장, 그래프 시각화, 이력 조회, 컨텍스트 검색과 세션 정리를 실험한다. |
+| [장기 기억: 엔티티와 관계](notebooks/02_long_term_memory_entity.ipynb) | 엔티티·관계 저장, 그래프 시각화와 데이터 정리를 실험한다. |
+| [장기 기억: Fact](notebooks/03_long_term_memory_fact.ipynb) | 일반·유효기간 Fact 저장, 시각화와 데이터 정리를 실험한다. |
 | [메모리 설정](config/memory_client.py) | 환경변수와 추출·모델 설정으로 `MemorySettings`를 구성한다. |
+| [공유 유틸리티](../neo4j-utils/) | 여러 Neo4j 실험에서 사용하는 그래프 시각화 함수를 제공한다. |
 
 ## 실행 환경
 
@@ -26,9 +29,11 @@ uv sync --locked
 cp .env.example .env
 ```
 
+공유 패키지 `neo4j-utils`는 `../neo4j-utils`의 소스를 editable 의존성으로 사용한다. `labs` 저장소를 함께 체크아웃한 구조에서 실행한다.
+
 `.env`에 Neo4j 접속 정보와 OpenAI API 키를 입력한다. 실제 값은 로컬 `.env`에서만 관리하며, 저장소에는 자리표시자를 포함한 `.env.example`만 게시한다.
 
-편집기에서 프로젝트 루트를 열고 `.venv`의 Python을 노트북 커널로 선택한다. `00` 노트북으로 개념을 확인한 뒤 `01` 노트북의 셀을 순서대로 실행한다. 프로젝트 루트가 Python 모듈 검색 경로에 포함되어야 `config.memory_client`를 가져올 수 있다.
+편집기에서 프로젝트 루트를 열고 `.venv`의 Python을 노트북 커널로 선택한다. `00` 노트북으로 개념을 확인한 뒤 `01`~`03`에서 실험 주제를 선택하고 해당 노트북의 셀을 순서대로 실행한다. 각 실험 노트북은 자체 클라이언트 연결·종료 단계를 포함하므로 별도의 커널에서 독립적으로 실행할 수 있다. 프로젝트 루트가 Python 모듈 검색 경로에 포함되어야 `config.memory_client`를 가져올 수 있다.
 
 현재 설정은 GLiNER와 LLM을 이용한 엔티티·관계 추출 및 OpenAI 임베딩을 사용한다. 모델 설정은 `config/memory_client.py`에서 변경한다.
 

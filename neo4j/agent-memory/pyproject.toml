@@ -15,5 +15,8 @@ dependencies = [
     "markdownify>=0.13.0",
     "ipykernel>=7.4.0",
     "ipywidgets",
-    "neo4j-viz[neo4j]>=1.12.0",
+    "neo4j-utils",
 ]
+
+[tool.uv.sources]
+neo4j-utils = { path = "../neo4j-utils", editable = true }

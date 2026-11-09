@@ -1,0 +1,19 @@
+[project]
+name = "neo4j-utils"
+version = "0.1.0"
+description = "Shared Neo4j utilities for lab notebooks"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipython>=8",
+    "neo4j>=5",
+    "neo4j-viz>=1.12.0",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["graph_visualizer"]
