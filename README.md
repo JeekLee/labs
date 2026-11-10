@@ -8,6 +8,7 @@
 |---|---|
 | [neo4j/agent-memory](neo4j/agent-memory/) | Neo4j 기반 에이전트 메모리의 대화 저장, 지식 추출, 컨텍스트 검색과 그래프 시각화를 실험한다. |
 | [neo4j/neo4j-utils](neo4j/neo4j-utils/) | 여러 Neo4j 실험에서 재사용하는 Python 유틸리티 패키지이다. |
+| [ner/ner-gliner2](ner/ner-gliner2/) | GLiNER2로 한국어 엔티티·관계 추출을 실험하고 LLM 추출과 비교한다. |
 
 ## 실행
 

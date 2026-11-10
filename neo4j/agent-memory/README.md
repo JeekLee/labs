@@ -11,7 +11,6 @@
 | [장기 기억: 엔티티와 관계](notebooks/02_long_term_memory_entity.ipynb) | 엔티티·관계 저장, 그래프 시각화와 데이터 정리를 실험한다. |
 | [장기 기억: Fact](notebooks/03_long_term_memory_fact.ipynb) | 일반·유효기간 Fact 저장, 시각화와 데이터 정리를 실험한다. |
 | [실험: Hybrid와 LLM-only 추출](experiments/01_entity_extraction_hybrid_vs_llm.ipynb) | 노트북 01 메시지에서 GLiNER+LLM과 LLM 단독 추출의 결과·해소·관계 연결을 비교한다. |
-| [실험: 언어와 GLiNER 체크포인트](experiments/02_entity_extraction_by_language.ipynb) | 한국어·영어 문장 쌍으로 GLiNER base/multi와 LLM 추출을 비교한다. |
 | [메모리 설정](config/memory_client.py) | 환경변수와 추출·모델 설정으로 `MemorySettings`를 구성한다. |
 | [공유 유틸리티](../neo4j-utils/) | 여러 Neo4j 실험에서 사용하는 그래프 시각화 함수를 제공한다. |
 
@@ -37,7 +36,7 @@ cp .env.example .env
 
 편집기에서 프로젝트 루트를 열고 `.venv`의 Python을 노트북 커널로 선택한다. `00` 노트북으로 개념을 확인한 뒤 `01`~`03`에서 실험 주제를 선택하고 해당 노트북의 셀을 순서대로 실행한다. 각 실험 노트북은 자체 클라이언트 연결·종료 단계를 포함하므로 별도의 커널에서 독립적으로 실행할 수 있다. 프로젝트 루트가 Python 모듈 검색 경로에 포함되어야 `config.memory_client`를 가져올 수 있다.
 
-현재 설정은 GLiNER와 LLM을 이용한 엔티티·관계 추출 및 OpenAI 임베딩을 사용한다. 모델 설정은 `config/memory_client.py`에서 변경한다.
+현재 설정은 GLiNER와 LLM을 이용한 엔티티·관계 추출 및 OpenAI 임베딩을 사용한다. 모델 설정은 `config/memory_client.py`에서 변경한다. 한국어 대화에서 GLiNER 추출의 한계와 원인 분석은 [GLiNER2 Lab](../../ner/ner-gliner2/)에 정리한다.
 
 메시지 저장 셀을 반복 실행하면 메시지가 추가된다. 세션 삭제는 해당 대화와 메시지를 삭제하며, 추출된 엔티티 등 장기 기억은 남을 수 있다. 실험 종료 시 클라이언트 종료 셀을 실행한다.
 

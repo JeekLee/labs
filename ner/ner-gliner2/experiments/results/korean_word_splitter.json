@@ -1,0 +1,5196 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-10T02:13:13.411273+00:00",
+  "repeats": 3,
+  "llm_model": "gpt-5.4-mini",
+  "checkpoints": {
+    "base": "fastino/gliner2.5-base-v1",
+    "multi": "fastino/gliner2.5-multi-v1"
+  },
+  "versions": {
+    "gliner2": "2.1.0",
+    "kiwipiepy": "0.24.1",
+    "openai": "3.46.0"
+  },
+  "texts": [
+    "이제 GCP에서 매달 나가는 비용은 Cloud DNS 영역 3개, 월 약 $0.6뿐입니다.",
+    "화면과 상관없는 서버 쪽 작업(공지 저장, 작업실 정보)은 이미 같이 진행하고 있어요.",
+    "11월 사용량을 서비스별로 조회해 보니 금액이 붙은 항목이 하나도 없습니다.",
+    "오라클 공식 입장: 고정 IP 기능을 처음 발표할 때 'There is no charge to use this feature'라고 밝혔습니다.",
+    "삼성전자는 어제 이재용 회장이 서울 서초구 사옥에서 엔비디아와 협력을 발표했다고 밝혔다.",
+    "김민수 팀장은 다음 주 부산에서 열리는 AWS 서밋에 카카오 개발자들과 함께 참석한다.",
+    "네이버클라우드와 KT가 공동으로 판교에 데이터센터를 짓기로 했습니다.",
+    "박지훈은 2023년부터 토스에서 백엔드 개발자로 일하고 있고, 지금은 성수동에 산다.",
+    "쿠팡은 대만 법인을 자회사로 두고 있으며, 본사는 서울 송파구에 있다."
+  ],
+  "runs": [
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 1,
+      "elapsed_ms": 119.7,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.8695918258131113
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 2,
+      "elapsed_ms": 118.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 3,
+      "elapsed_ms": 112.0,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 4,
+      "elapsed_ms": 120.4,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "confidence": 0.910212607356133
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 5,
+      "elapsed_ms": 122.0,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자는",
+            "type": "ORGANIZATION",
+            "confidence": 0.955317308049141
+          },
+          {
+            "name": "어제 이재용 회장이",
+            "type": "PERSON",
+            "confidence": 0.6225937919790304
+          },
+          {
+            "name": "서울 서초구 사옥에서",
+            "type": "LOCATION",
+            "confidence": 0.9116897888580371
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 6,
+      "elapsed_ms": 118.6,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.8405327828219132
+          },
+          {
+            "name": "주 부산에서",
+            "type": "LOCATION",
+            "confidence": 0.9844098190140318
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 7,
+      "elapsed_ms": 108.1,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드와",
+            "type": "PERSON",
+            "confidence": 0.6367238976359995
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 8,
+      "elapsed_ms": 124.2,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈은",
+            "type": "PERSON",
+            "confidence": 0.9898723899829129
+          },
+          {
+            "name": "토스에서",
+            "type": "LOCATION",
+            "confidence": 0.8640984663349285
+          },
+          {
+            "name": "백엔드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9556060874787529
+          },
+          {
+            "name": "성수동에",
+            "type": "LOCATION",
+            "confidence": 0.9815495044996445
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈은",
+            "type": "EMPLOYED_BY",
+            "target": "백엔드",
+            "confidence": 0.8784188730029686
+          },
+          {
+            "source": "박지훈은",
+            "type": "LOCATED_AT",
+            "target": "성수동에",
+            "confidence": 0.5119368546776978
+          },
+          {
+            "source": "박지훈은",
+            "type": "MEMBER_OF",
+            "target": "백엔드",
+            "confidence": 0.7391959311996301
+          },
+          {
+            "source": "박지훈은",
+            "type": "RESIDES_AT",
+            "target": "성수동에",
+            "confidence": 0.811840165466186
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 1,
+      "message_index": 9,
+      "elapsed_ms": 117.7,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡은",
+            "type": "ORGANIZATION",
+            "confidence": 0.3216170742259995
+          },
+          {
+            "name": "서울 송파구에",
+            "type": "LOCATION",
+            "confidence": 0.9816284701426475
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡은",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구에",
+            "confidence": 0.7160540398184289
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 1,
+      "elapsed_ms": 115.1,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.8695918258131113
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 2,
+      "elapsed_ms": 116.3,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 3,
+      "elapsed_ms": 110.7,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 4,
+      "elapsed_ms": 119.7,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "confidence": 0.910212607356133
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 5,
+      "elapsed_ms": 117.1,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자는",
+            "type": "ORGANIZATION",
+            "confidence": 0.955317308049141
+          },
+          {
+            "name": "어제 이재용 회장이",
+            "type": "PERSON",
+            "confidence": 0.6225937919790304
+          },
+          {
+            "name": "서울 서초구 사옥에서",
+            "type": "LOCATION",
+            "confidence": 0.9116897888580371
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 6,
+      "elapsed_ms": 119.2,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.8405327828219132
+          },
+          {
+            "name": "주 부산에서",
+            "type": "LOCATION",
+            "confidence": 0.9844098190140318
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 7,
+      "elapsed_ms": 110.8,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드와",
+            "type": "PERSON",
+            "confidence": 0.6367238976359995
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 8,
+      "elapsed_ms": 124.1,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈은",
+            "type": "PERSON",
+            "confidence": 0.9898723899829129
+          },
+          {
+            "name": "토스에서",
+            "type": "LOCATION",
+            "confidence": 0.8640984663349285
+          },
+          {
+            "name": "백엔드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9556060874787529
+          },
+          {
+            "name": "성수동에",
+            "type": "LOCATION",
+            "confidence": 0.9815495044996445
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈은",
+            "type": "EMPLOYED_BY",
+            "target": "백엔드",
+            "confidence": 0.8784188730029686
+          },
+          {
+            "source": "박지훈은",
+            "type": "LOCATED_AT",
+            "target": "성수동에",
+            "confidence": 0.5119368546776978
+          },
+          {
+            "source": "박지훈은",
+            "type": "MEMBER_OF",
+            "target": "백엔드",
+            "confidence": 0.7391959311996301
+          },
+          {
+            "source": "박지훈은",
+            "type": "RESIDES_AT",
+            "target": "성수동에",
+            "confidence": 0.811840165466186
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 2,
+      "message_index": 9,
+      "elapsed_ms": 115.7,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡은",
+            "type": "ORGANIZATION",
+            "confidence": 0.3216170742259995
+          },
+          {
+            "name": "서울 송파구에",
+            "type": "LOCATION",
+            "confidence": 0.9816284701426475
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡은",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구에",
+            "confidence": 0.7160540398184289
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 1,
+      "elapsed_ms": 116.7,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.8695918258131113
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 2,
+      "elapsed_ms": 121.0,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 3,
+      "elapsed_ms": 114.4,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 4,
+      "elapsed_ms": 124.4,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "confidence": 0.910212607356133
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 5,
+      "elapsed_ms": 138.6,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자는",
+            "type": "ORGANIZATION",
+            "confidence": 0.955317308049141
+          },
+          {
+            "name": "어제 이재용 회장이",
+            "type": "PERSON",
+            "confidence": 0.6225937919790304
+          },
+          {
+            "name": "서울 서초구 사옥에서",
+            "type": "LOCATION",
+            "confidence": 0.9116897888580371
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 6,
+      "elapsed_ms": 125.9,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.8405327828219132
+          },
+          {
+            "name": "주 부산에서",
+            "type": "LOCATION",
+            "confidence": 0.9844098190140318
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 7,
+      "elapsed_ms": 121.5,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드와",
+            "type": "PERSON",
+            "confidence": 0.6367238976359995
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 8,
+      "elapsed_ms": 130.0,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈은",
+            "type": "PERSON",
+            "confidence": 0.9898723899829129
+          },
+          {
+            "name": "토스에서",
+            "type": "LOCATION",
+            "confidence": 0.8640984663349285
+          },
+          {
+            "name": "백엔드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9556060874787529
+          },
+          {
+            "name": "성수동에",
+            "type": "LOCATION",
+            "confidence": 0.9815495044996445
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈은",
+            "type": "EMPLOYED_BY",
+            "target": "백엔드",
+            "confidence": 0.8784188730029686
+          },
+          {
+            "source": "박지훈은",
+            "type": "LOCATED_AT",
+            "target": "성수동에",
+            "confidence": 0.5119368546776978
+          },
+          {
+            "source": "박지훈은",
+            "type": "MEMBER_OF",
+            "target": "백엔드",
+            "confidence": 0.7391959311996301
+          },
+          {
+            "source": "박지훈은",
+            "type": "RESIDES_AT",
+            "target": "성수동에",
+            "confidence": 0.811840165466186
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_whitespace",
+      "repeat": 3,
+      "message_index": 9,
+      "elapsed_ms": 120.9,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡은",
+            "type": "ORGANIZATION",
+            "confidence": 0.3216170742259995
+          },
+          {
+            "name": "서울 송파구에",
+            "type": "LOCATION",
+            "confidence": 0.9816284701426475
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡은",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구에",
+            "confidence": 0.7160540398184289
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 1,
+      "elapsed_ms": 123.0,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9355325423986616
+          },
+          {
+            "name": "3개, 월",
+            "type": "LOCATION",
+            "confidence": 0.7092342368348068
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 2,
+      "elapsed_ms": 127.0,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 3,
+      "elapsed_ms": 122.0,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 4,
+      "elapsed_ms": 125.0,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 5,
+      "elapsed_ms": 128.1,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 6,
+      "elapsed_ms": 128.5,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9788427624492897
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 7,
+      "elapsed_ms": 121.1,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 8,
+      "elapsed_ms": 124.5,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9963711131516225
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 1,
+      "message_index": 9,
+      "elapsed_ms": 123.3,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "PERSON",
+            "confidence": 0.9977912076920675
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.9292466508401007
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 1,
+      "elapsed_ms": 123.4,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9355325423986616
+          },
+          {
+            "name": "3개, 월",
+            "type": "LOCATION",
+            "confidence": 0.7092342368348068
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 2,
+      "elapsed_ms": 119.4,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 3,
+      "elapsed_ms": 127.7,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 4,
+      "elapsed_ms": 122.5,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 5,
+      "elapsed_ms": 115.1,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 6,
+      "elapsed_ms": 124.8,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9788427624492897
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 7,
+      "elapsed_ms": 113.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 8,
+      "elapsed_ms": 110.8,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9963711131516225
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 2,
+      "message_index": 9,
+      "elapsed_ms": 114.4,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "PERSON",
+            "confidence": 0.9977912076920675
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.9292466508401007
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 1,
+      "elapsed_ms": 114.1,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9355325423986616
+          },
+          {
+            "name": "3개, 월",
+            "type": "LOCATION",
+            "confidence": 0.7092342368348068
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 2,
+      "elapsed_ms": 111.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 3,
+      "elapsed_ms": 114.0,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 4,
+      "elapsed_ms": 117.7,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 5,
+      "elapsed_ms": 116.1,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 6,
+      "elapsed_ms": 118.1,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9788427624492897
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 7,
+      "elapsed_ms": 109.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 8,
+      "elapsed_ms": 111.3,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9963711131516225
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_char",
+      "repeat": 3,
+      "message_index": 9,
+      "elapsed_ms": 114.0,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "PERSON",
+            "confidence": 0.9977912076920675
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.9292466508401007
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 1,
+      "elapsed_ms": 117.8,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9755139455485731
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 2,
+      "elapsed_ms": 112.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 3,
+      "elapsed_ms": 112.1,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 4,
+      "elapsed_ms": 115.3,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "confidence": 0.8456381249270195
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 5,
+      "elapsed_ms": 122.4,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.9462748639240611
+          },
+          {
+            "name": "어제 이재용 회장",
+            "type": "PERSON",
+            "confidence": 0.9204573219506965
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.9819139640656379
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.5666289216098698
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 6,
+      "elapsed_ms": 117.6,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수 팀장",
+            "type": "PERSON",
+            "confidence": 0.8670329562024403
+          },
+          {
+            "name": "주 부산",
+            "type": "LOCATION",
+            "confidence": 0.9856908936873157
+          },
+          {
+            "name": "AWS",
+            "type": "ORGANIZATION",
+            "confidence": 0.8887888673409244
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 7,
+      "elapsed_ms": 109.8,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "PERSON",
+            "confidence": 0.8398912096261478
+          },
+          {
+            "name": "KT",
+            "type": "PERSON",
+            "confidence": 0.5600036140976508
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 8,
+      "elapsed_ms": 132.1,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9991707719922749
+          },
+          {
+            "name": "토스",
+            "type": "LOCATION",
+            "confidence": 0.7170323687257876
+          },
+          {
+            "name": "백엔드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9560164418832564
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.6649571976267643
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "백엔드",
+            "confidence": 0.8041585555459433
+          },
+          {
+            "source": "박지훈",
+            "type": "LOCATED_AT",
+            "target": "성수동",
+            "confidence": 0.5222302724969782
+          },
+          {
+            "source": "박지훈",
+            "type": "MEMBER_OF",
+            "target": "백엔드",
+            "confidence": 0.6763323120166888
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.862359183479411
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 1,
+      "message_index": 9,
+      "elapsed_ms": 115.6,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.9875607715587081
+          },
+          {
+            "name": "대만",
+            "type": "LOCATION",
+            "confidence": 0.9697111256398588
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.9960064246895789
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.5012283225979228
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 1,
+      "elapsed_ms": 125.6,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9755139455485731
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 2,
+      "elapsed_ms": 114.9,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 3,
+      "elapsed_ms": 108.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 4,
+      "elapsed_ms": 109.7,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "confidence": 0.8456381249270195
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 5,
+      "elapsed_ms": 117.7,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.9462748639240611
+          },
+          {
+            "name": "어제 이재용 회장",
+            "type": "PERSON",
+            "confidence": 0.9204573219506965
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.9819139640656379
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.5666289216098698
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 6,
+      "elapsed_ms": 119.2,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수 팀장",
+            "type": "PERSON",
+            "confidence": 0.8670329562024403
+          },
+          {
+            "name": "주 부산",
+            "type": "LOCATION",
+            "confidence": 0.9856908936873157
+          },
+          {
+            "name": "AWS",
+            "type": "ORGANIZATION",
+            "confidence": 0.8887888673409244
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 7,
+      "elapsed_ms": 109.6,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "PERSON",
+            "confidence": 0.8398912096261478
+          },
+          {
+            "name": "KT",
+            "type": "PERSON",
+            "confidence": 0.5600036140976508
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 8,
+      "elapsed_ms": 123.5,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9991707719922749
+          },
+          {
+            "name": "토스",
+            "type": "LOCATION",
+            "confidence": 0.7170323687257876
+          },
+          {
+            "name": "백엔드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9560164418832564
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.6649571976267643
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "백엔드",
+            "confidence": 0.8041585555459433
+          },
+          {
+            "source": "박지훈",
+            "type": "LOCATED_AT",
+            "target": "성수동",
+            "confidence": 0.5222302724969782
+          },
+          {
+            "source": "박지훈",
+            "type": "MEMBER_OF",
+            "target": "백엔드",
+            "confidence": 0.6763323120166888
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.862359183479411
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 2,
+      "message_index": 9,
+      "elapsed_ms": 114.3,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.9875607715587081
+          },
+          {
+            "name": "대만",
+            "type": "LOCATION",
+            "confidence": 0.9697111256398588
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.9960064246895789
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.5012283225979228
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 1,
+      "elapsed_ms": 112.3,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9755139455485731
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 2,
+      "elapsed_ms": 112.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 3,
+      "elapsed_ms": 111.8,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 4,
+      "elapsed_ms": 112.5,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "PERSON",
+            "confidence": 0.8456381249270195
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 5,
+      "elapsed_ms": 121.5,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.9462748639240611
+          },
+          {
+            "name": "어제 이재용 회장",
+            "type": "PERSON",
+            "confidence": 0.9204573219506965
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.9819139640656379
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.5666289216098698
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 6,
+      "elapsed_ms": 119.9,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수 팀장",
+            "type": "PERSON",
+            "confidence": 0.8670329562024403
+          },
+          {
+            "name": "주 부산",
+            "type": "LOCATION",
+            "confidence": 0.9856908936873157
+          },
+          {
+            "name": "AWS",
+            "type": "ORGANIZATION",
+            "confidence": 0.8887888673409244
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 7,
+      "elapsed_ms": 110.8,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "PERSON",
+            "confidence": 0.8398912096261478
+          },
+          {
+            "name": "KT",
+            "type": "PERSON",
+            "confidence": 0.5600036140976508
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 8,
+      "elapsed_ms": 126.0,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9991707719922749
+          },
+          {
+            "name": "토스",
+            "type": "LOCATION",
+            "confidence": 0.7170323687257876
+          },
+          {
+            "name": "백엔드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9560164418832564
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.6649571976267643
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "백엔드",
+            "confidence": 0.8041585555459433
+          },
+          {
+            "source": "박지훈",
+            "type": "LOCATED_AT",
+            "target": "성수동",
+            "confidence": 0.5222302724969782
+          },
+          {
+            "source": "박지훈",
+            "type": "MEMBER_OF",
+            "target": "백엔드",
+            "confidence": 0.6763323120166888
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.862359183479411
+          }
+        ]
+      }
+    },
+    {
+      "mode": "base_kiwi",
+      "repeat": 3,
+      "message_index": 9,
+      "elapsed_ms": 115.2,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.9875607715587081
+          },
+          {
+            "name": "대만",
+            "type": "LOCATION",
+            "confidence": 0.9697111256398588
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.9960064246895789
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.5012283225979228
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 1,
+      "elapsed_ms": 142.9,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.988417970985456
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 2,
+      "elapsed_ms": 132.3,
+      "result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "confidence": 0.8158486001769905
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 3,
+      "elapsed_ms": 137.0,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.5199462956833031
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 4,
+      "elapsed_ms": 162.5,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.9875182433051207
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 5,
+      "elapsed_ms": 200.3,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자는",
+            "type": "ORGANIZATION",
+            "confidence": 0.9900957846610356
+          },
+          {
+            "name": "이재용",
+            "type": "PERSON",
+            "confidence": 0.9098179600334988
+          },
+          {
+            "name": "서울 서초구",
+            "type": "LOCATION",
+            "confidence": 0.8445529167651774
+          },
+          {
+            "name": "엔비디아와",
+            "type": "ORGANIZATION",
+            "confidence": 0.9873411247581609
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용",
+            "type": "EMPLOYED_BY",
+            "target": "삼성전자는",
+            "confidence": 0.9674505736633865
+          },
+          {
+            "source": "삼성전자는",
+            "type": "LOCATED_AT",
+            "target": "서울 서초구",
+            "confidence": 0.7792536024652101
+          },
+          {
+            "source": "삼성전자는",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아와",
+            "confidence": 0.9182932158527394
+          },
+          {
+            "source": "이재용",
+            "type": "RELATED_TO",
+            "target": "엔비디아와",
+            "confidence": 0.6359942818287533
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 6,
+      "elapsed_ms": 153.7,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9404319338645121
+          },
+          {
+            "name": "부산에서",
+            "type": "LOCATION",
+            "confidence": 0.9998981245837605
+          },
+          {
+            "name": "AWS 서밋에",
+            "type": "EVENT",
+            "confidence": 0.971924996799012
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.9450295378389236
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "카카오",
+            "confidence": 0.8663905511662461
+          },
+          {
+            "source": "AWS 서밋에",
+            "type": "LOCATED_AT",
+            "target": "부산에서",
+            "confidence": 0.9291317268652189
+          },
+          {
+            "source": "AWS 서밋에",
+            "type": "OCCURRED_AT",
+            "target": "부산에서",
+            "confidence": 0.8911725185850754
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋에",
+            "confidence": 0.8302705274133241
+          },
+          {
+            "source": "김민수",
+            "type": "RESIDES_AT",
+            "target": "부산에서",
+            "confidence": 0.8014481883998833
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 7,
+      "elapsed_ms": 138.4,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드와",
+            "type": "ORGANIZATION",
+            "confidence": 0.6167476231342814
+          },
+          {
+            "name": "KT가",
+            "type": "ORGANIZATION",
+            "confidence": 0.9682701406056082
+          },
+          {
+            "name": "판교에",
+            "type": "LOCATION",
+            "confidence": 0.9985040861670816
+          },
+          {
+            "name": "데이터센터를",
+            "type": "OBJECT",
+            "confidence": 0.04859357062046962
+          }
+        ],
+        "relations": [
+          {
+            "source": "데이터센터를",
+            "type": "LOCATED_AT",
+            "target": "판교에",
+            "confidence": 0.9730434050869058
+          },
+          {
+            "source": "네이버클라우드와",
+            "type": "OWNS",
+            "target": "데이터센터를",
+            "confidence": 0.617396624193715
+          },
+          {
+            "source": "네이버클라우드와",
+            "type": "PARTNER_WITH",
+            "target": "KT가",
+            "confidence": 0.9342166602216273
+          },
+          {
+            "source": "KT가",
+            "type": "SUBSIDIARY_OF",
+            "target": "네이버클라우드와",
+            "confidence": 0.6095430512892112
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 8,
+      "elapsed_ms": 138.0,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈은",
+            "type": "PERSON",
+            "confidence": 0.9949674333327797
+          },
+          {
+            "name": "토스에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.5359480144343873
+          },
+          {
+            "name": "성수동에",
+            "type": "LOCATION",
+            "confidence": 0.999630484006109
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈은",
+            "type": "EMPLOYED_BY",
+            "target": "토스에서",
+            "confidence": 0.5765918722789668
+          },
+          {
+            "source": "박지훈은",
+            "type": "LOCATED_AT",
+            "target": "성수동에",
+            "confidence": 0.9887970489339799
+          },
+          {
+            "source": "박지훈은",
+            "type": "RESIDES_AT",
+            "target": "성수동에",
+            "confidence": 0.994243761077575
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 1,
+      "message_index": 9,
+      "elapsed_ms": 135.5,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡은",
+            "type": "ORGANIZATION",
+            "confidence": 0.9666970879967727
+          },
+          {
+            "name": "서울 송파구에",
+            "type": "LOCATION",
+            "confidence": 0.9957204810528502
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡은",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구에",
+            "confidence": 0.9254915539683376
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 1,
+      "elapsed_ms": 132.6,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.988417970985456
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 2,
+      "elapsed_ms": 130.2,
+      "result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "confidence": 0.8158486001769905
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 3,
+      "elapsed_ms": 132.6,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.5199462956833031
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 4,
+      "elapsed_ms": 136.4,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.9875182433051207
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 5,
+      "elapsed_ms": 164.2,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자는",
+            "type": "ORGANIZATION",
+            "confidence": 0.9900957846610356
+          },
+          {
+            "name": "이재용",
+            "type": "PERSON",
+            "confidence": 0.9098179600334988
+          },
+          {
+            "name": "서울 서초구",
+            "type": "LOCATION",
+            "confidence": 0.8445529167651774
+          },
+          {
+            "name": "엔비디아와",
+            "type": "ORGANIZATION",
+            "confidence": 0.9873411247581609
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용",
+            "type": "EMPLOYED_BY",
+            "target": "삼성전자는",
+            "confidence": 0.9674505736633865
+          },
+          {
+            "source": "삼성전자는",
+            "type": "LOCATED_AT",
+            "target": "서울 서초구",
+            "confidence": 0.7792536024652101
+          },
+          {
+            "source": "삼성전자는",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아와",
+            "confidence": 0.9182932158527394
+          },
+          {
+            "source": "이재용",
+            "type": "RELATED_TO",
+            "target": "엔비디아와",
+            "confidence": 0.6359942818287533
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 6,
+      "elapsed_ms": 152.5,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9404319338645121
+          },
+          {
+            "name": "부산에서",
+            "type": "LOCATION",
+            "confidence": 0.9998981245837605
+          },
+          {
+            "name": "AWS 서밋에",
+            "type": "EVENT",
+            "confidence": 0.971924996799012
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.9450295378389236
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "카카오",
+            "confidence": 0.8663905511662461
+          },
+          {
+            "source": "AWS 서밋에",
+            "type": "LOCATED_AT",
+            "target": "부산에서",
+            "confidence": 0.9291317268652189
+          },
+          {
+            "source": "AWS 서밋에",
+            "type": "OCCURRED_AT",
+            "target": "부산에서",
+            "confidence": 0.8911725185850754
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋에",
+            "confidence": 0.8302705274133241
+          },
+          {
+            "source": "김민수",
+            "type": "RESIDES_AT",
+            "target": "부산에서",
+            "confidence": 0.8014481883998833
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 7,
+      "elapsed_ms": 145.2,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드와",
+            "type": "ORGANIZATION",
+            "confidence": 0.6167476231342814
+          },
+          {
+            "name": "KT가",
+            "type": "ORGANIZATION",
+            "confidence": 0.9682701406056082
+          },
+          {
+            "name": "판교에",
+            "type": "LOCATION",
+            "confidence": 0.9985040861670816
+          },
+          {
+            "name": "데이터센터를",
+            "type": "OBJECT",
+            "confidence": 0.04859357062046962
+          }
+        ],
+        "relations": [
+          {
+            "source": "데이터센터를",
+            "type": "LOCATED_AT",
+            "target": "판교에",
+            "confidence": 0.9730434050869058
+          },
+          {
+            "source": "네이버클라우드와",
+            "type": "OWNS",
+            "target": "데이터센터를",
+            "confidence": 0.617396624193715
+          },
+          {
+            "source": "네이버클라우드와",
+            "type": "PARTNER_WITH",
+            "target": "KT가",
+            "confidence": 0.9342166602216273
+          },
+          {
+            "source": "KT가",
+            "type": "SUBSIDIARY_OF",
+            "target": "네이버클라우드와",
+            "confidence": 0.6095430512892112
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 8,
+      "elapsed_ms": 139.5,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈은",
+            "type": "PERSON",
+            "confidence": 0.9949674333327797
+          },
+          {
+            "name": "토스에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.5359480144343873
+          },
+          {
+            "name": "성수동에",
+            "type": "LOCATION",
+            "confidence": 0.999630484006109
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈은",
+            "type": "EMPLOYED_BY",
+            "target": "토스에서",
+            "confidence": 0.5765918722789668
+          },
+          {
+            "source": "박지훈은",
+            "type": "LOCATED_AT",
+            "target": "성수동에",
+            "confidence": 0.9887970489339799
+          },
+          {
+            "source": "박지훈은",
+            "type": "RESIDES_AT",
+            "target": "성수동에",
+            "confidence": 0.994243761077575
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 2,
+      "message_index": 9,
+      "elapsed_ms": 137.6,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡은",
+            "type": "ORGANIZATION",
+            "confidence": 0.9666970879967727
+          },
+          {
+            "name": "서울 송파구에",
+            "type": "LOCATION",
+            "confidence": 0.9957204810528502
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡은",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구에",
+            "confidence": 0.9254915539683376
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 1,
+      "elapsed_ms": 133.9,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.988417970985456
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 2,
+      "elapsed_ms": 131.4,
+      "result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "confidence": 0.8158486001769905
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 3,
+      "elapsed_ms": 123.9,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.5199462956833031
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 4,
+      "elapsed_ms": 134.2,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.9875182433051207
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 5,
+      "elapsed_ms": 166.3,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자는",
+            "type": "ORGANIZATION",
+            "confidence": 0.9900957846610356
+          },
+          {
+            "name": "이재용",
+            "type": "PERSON",
+            "confidence": 0.9098179600334988
+          },
+          {
+            "name": "서울 서초구",
+            "type": "LOCATION",
+            "confidence": 0.8445529167651774
+          },
+          {
+            "name": "엔비디아와",
+            "type": "ORGANIZATION",
+            "confidence": 0.9873411247581609
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용",
+            "type": "EMPLOYED_BY",
+            "target": "삼성전자는",
+            "confidence": 0.9674505736633865
+          },
+          {
+            "source": "삼성전자는",
+            "type": "LOCATED_AT",
+            "target": "서울 서초구",
+            "confidence": 0.7792536024652101
+          },
+          {
+            "source": "삼성전자는",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아와",
+            "confidence": 0.9182932158527394
+          },
+          {
+            "source": "이재용",
+            "type": "RELATED_TO",
+            "target": "엔비디아와",
+            "confidence": 0.6359942818287533
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 6,
+      "elapsed_ms": 150.1,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9404319338645121
+          },
+          {
+            "name": "부산에서",
+            "type": "LOCATION",
+            "confidence": 0.9998981245837605
+          },
+          {
+            "name": "AWS 서밋에",
+            "type": "EVENT",
+            "confidence": 0.971924996799012
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.9450295378389236
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "카카오",
+            "confidence": 0.8663905511662461
+          },
+          {
+            "source": "AWS 서밋에",
+            "type": "LOCATED_AT",
+            "target": "부산에서",
+            "confidence": 0.9291317268652189
+          },
+          {
+            "source": "AWS 서밋에",
+            "type": "OCCURRED_AT",
+            "target": "부산에서",
+            "confidence": 0.8911725185850754
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋에",
+            "confidence": 0.8302705274133241
+          },
+          {
+            "source": "김민수",
+            "type": "RESIDES_AT",
+            "target": "부산에서",
+            "confidence": 0.8014481883998833
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 7,
+      "elapsed_ms": 138.3,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드와",
+            "type": "ORGANIZATION",
+            "confidence": 0.6167476231342814
+          },
+          {
+            "name": "KT가",
+            "type": "ORGANIZATION",
+            "confidence": 0.9682701406056082
+          },
+          {
+            "name": "판교에",
+            "type": "LOCATION",
+            "confidence": 0.9985040861670816
+          },
+          {
+            "name": "데이터센터를",
+            "type": "OBJECT",
+            "confidence": 0.04859357062046962
+          }
+        ],
+        "relations": [
+          {
+            "source": "데이터센터를",
+            "type": "LOCATED_AT",
+            "target": "판교에",
+            "confidence": 0.9730434050869058
+          },
+          {
+            "source": "네이버클라우드와",
+            "type": "OWNS",
+            "target": "데이터센터를",
+            "confidence": 0.617396624193715
+          },
+          {
+            "source": "네이버클라우드와",
+            "type": "PARTNER_WITH",
+            "target": "KT가",
+            "confidence": 0.9342166602216273
+          },
+          {
+            "source": "KT가",
+            "type": "SUBSIDIARY_OF",
+            "target": "네이버클라우드와",
+            "confidence": 0.6095430512892112
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 8,
+      "elapsed_ms": 137.2,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈은",
+            "type": "PERSON",
+            "confidence": 0.9949674333327797
+          },
+          {
+            "name": "토스에서",
+            "type": "ORGANIZATION",
+            "confidence": 0.5359480144343873
+          },
+          {
+            "name": "성수동에",
+            "type": "LOCATION",
+            "confidence": 0.999630484006109
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈은",
+            "type": "EMPLOYED_BY",
+            "target": "토스에서",
+            "confidence": 0.5765918722789668
+          },
+          {
+            "source": "박지훈은",
+            "type": "LOCATED_AT",
+            "target": "성수동에",
+            "confidence": 0.9887970489339799
+          },
+          {
+            "source": "박지훈은",
+            "type": "RESIDES_AT",
+            "target": "성수동에",
+            "confidence": 0.994243761077575
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_whitespace",
+      "repeat": 3,
+      "message_index": 9,
+      "elapsed_ms": 128.0,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡은",
+            "type": "ORGANIZATION",
+            "confidence": 0.9666970879967727
+          },
+          {
+            "name": "서울 송파구에",
+            "type": "LOCATION",
+            "confidence": 0.9957204810528502
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡은",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구에",
+            "confidence": 0.9254915539683376
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 1,
+      "elapsed_ms": 137.7,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "PERSON",
+            "confidence": 0.6905768666333199
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "ORGANIZATION",
+            "confidence": 0.9756258014419037
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 2,
+      "elapsed_ms": 154.6,
+      "result": {
+        "entities": [
+          {
+            "name": "화면",
+            "type": "ORGANIZATION",
+            "confidence": 0.6723795073972868
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 3,
+      "elapsed_ms": 136.6,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.8595485283538875
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 4,
+      "elapsed_ms": 141.4,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 5,
+      "elapsed_ms": 137.3,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "PERSON",
+            "confidence": 0.9874162122085729
+          },
+          {
+            "name": "어제 이재용 회장",
+            "type": "ORGANIZATION",
+            "confidence": 0.6376325194382508
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 6,
+      "elapsed_ms": 140.6,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9975760244889847
+          },
+          {
+            "name": "AWS",
+            "type": "ORGANIZATION",
+            "confidence": 0.9724768770578078
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "AWS",
+            "confidence": 0.8885174977795246
+          },
+          {
+            "source": "김민수",
+            "type": "MEMBER_OF",
+            "target": "AWS",
+            "confidence": 0.85654392112968
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 7,
+      "elapsed_ms": 131.3,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 8,
+      "elapsed_ms": 140.7,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.999779562066166
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.9988668574476938
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.9213052933670567
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 1,
+      "message_index": 9,
+      "elapsed_ms": 177.9,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "PERSON",
+            "confidence": 0.9990617682094363
+          },
+          {
+            "name": "대만 법인",
+            "type": "ORGANIZATION",
+            "confidence": 0.7841151998096695
+          },
+          {
+            "name": "본사",
+            "type": "ORGANIZATION",
+            "confidence": 0.8597654410442392
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.997597418948673
+          }
+        ],
+        "relations": [
+          {
+            "source": "본사",
+            "type": "LOCATED_AT",
+            "target": "서울 송파구",
+            "confidence": 0.5584076832477481
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 1,
+      "elapsed_ms": 139.5,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "PERSON",
+            "confidence": 0.6905768666333199
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "ORGANIZATION",
+            "confidence": 0.9756258014419037
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 2,
+      "elapsed_ms": 145.3,
+      "result": {
+        "entities": [
+          {
+            "name": "화면",
+            "type": "ORGANIZATION",
+            "confidence": 0.6723795073972868
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 3,
+      "elapsed_ms": 136.9,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.8595485283538875
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 4,
+      "elapsed_ms": 139.4,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 5,
+      "elapsed_ms": 144.3,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "PERSON",
+            "confidence": 0.9874162122085729
+          },
+          {
+            "name": "어제 이재용 회장",
+            "type": "ORGANIZATION",
+            "confidence": 0.6376325194382508
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 6,
+      "elapsed_ms": 143.2,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9975760244889847
+          },
+          {
+            "name": "AWS",
+            "type": "ORGANIZATION",
+            "confidence": 0.9724768770578078
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "AWS",
+            "confidence": 0.8885174977795246
+          },
+          {
+            "source": "김민수",
+            "type": "MEMBER_OF",
+            "target": "AWS",
+            "confidence": 0.85654392112968
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 7,
+      "elapsed_ms": 134.0,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 8,
+      "elapsed_ms": 146.1,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.999779562066166
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.9988668574476938
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.9213052933670567
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 2,
+      "message_index": 9,
+      "elapsed_ms": 179.7,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "PERSON",
+            "confidence": 0.9990617682094363
+          },
+          {
+            "name": "대만 법인",
+            "type": "ORGANIZATION",
+            "confidence": 0.7841151998096695
+          },
+          {
+            "name": "본사",
+            "type": "ORGANIZATION",
+            "confidence": 0.8597654410442392
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.997597418948673
+          }
+        ],
+        "relations": [
+          {
+            "source": "본사",
+            "type": "LOCATED_AT",
+            "target": "서울 송파구",
+            "confidence": 0.5584076832477481
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 1,
+      "elapsed_ms": 145.8,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "PERSON",
+            "confidence": 0.6905768666333199
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "ORGANIZATION",
+            "confidence": 0.9756258014419037
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 2,
+      "elapsed_ms": 152.6,
+      "result": {
+        "entities": [
+          {
+            "name": "화면",
+            "type": "ORGANIZATION",
+            "confidence": 0.6723795073972868
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 3,
+      "elapsed_ms": 138.6,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.8595485283538875
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 4,
+      "elapsed_ms": 133.4,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 5,
+      "elapsed_ms": 137.7,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "PERSON",
+            "confidence": 0.9874162122085729
+          },
+          {
+            "name": "어제 이재용 회장",
+            "type": "ORGANIZATION",
+            "confidence": 0.6376325194382508
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 6,
+      "elapsed_ms": 143.0,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9975760244889847
+          },
+          {
+            "name": "AWS",
+            "type": "ORGANIZATION",
+            "confidence": 0.9724768770578078
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "AWS",
+            "confidence": 0.8885174977795246
+          },
+          {
+            "source": "김민수",
+            "type": "MEMBER_OF",
+            "target": "AWS",
+            "confidence": 0.85654392112968
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 7,
+      "elapsed_ms": 132.6,
+      "result": {
+        "entities": [],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 8,
+      "elapsed_ms": 140.3,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.999779562066166
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.9988668574476938
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.9213052933670567
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_char",
+      "repeat": 3,
+      "message_index": 9,
+      "elapsed_ms": 180.4,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "PERSON",
+            "confidence": 0.9990617682094363
+          },
+          {
+            "name": "대만 법인",
+            "type": "ORGANIZATION",
+            "confidence": 0.7841151998096695
+          },
+          {
+            "name": "본사",
+            "type": "ORGANIZATION",
+            "confidence": 0.8597654410442392
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.997597418948673
+          }
+        ],
+        "relations": [
+          {
+            "source": "본사",
+            "type": "LOCATED_AT",
+            "target": "서울 송파구",
+            "confidence": 0.5584076832477481
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 1,
+      "elapsed_ms": 137.4,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9983162769505839
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 2,
+      "elapsed_ms": 134.8,
+      "result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "confidence": 0.5882640442226396
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 3,
+      "elapsed_ms": 133.8,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.5559147796999383
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 4,
+      "elapsed_ms": 141.7,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.9881651341897317
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 5,
+      "elapsed_ms": 156.0,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.9988968556663285
+          },
+          {
+            "name": "이재용 회장",
+            "type": "PERSON",
+            "confidence": 0.9493602383943747
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.8785500096335879
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.9957918117650708
+          },
+          {
+            "name": "협력",
+            "type": "EVENT",
+            "confidence": 0.9243846682258864
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용 회장",
+            "type": "EMPLOYED_BY",
+            "target": "삼성전자",
+            "confidence": 0.8949646749875269
+          },
+          {
+            "source": "삼성전자",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아",
+            "confidence": 0.9104442663462425
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 6,
+      "elapsed_ms": 167.7,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9600671648984433
+          },
+          {
+            "name": "부산",
+            "type": "LOCATION",
+            "confidence": 0.9999519005215814
+          },
+          {
+            "name": "AWS 서밋",
+            "type": "EVENT",
+            "confidence": 0.9981235653402938
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.9633270302705514
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "카카오",
+            "confidence": 0.751280664041856
+          },
+          {
+            "source": "AWS 서밋",
+            "type": "LOCATED_AT",
+            "target": "부산",
+            "confidence": 0.93283967787978
+          },
+          {
+            "source": "AWS 서밋",
+            "type": "OCCURRED_AT",
+            "target": "부산",
+            "confidence": 0.8900628946452503
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.8428837022681871
+          },
+          {
+            "source": "김민수",
+            "type": "RESIDES_AT",
+            "target": "부산",
+            "confidence": 0.778143790171352
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 7,
+      "elapsed_ms": 143.2,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9965756040843317
+          },
+          {
+            "name": "KT",
+            "type": "ORGANIZATION",
+            "confidence": 0.9980091613584637
+          },
+          {
+            "name": "판교",
+            "type": "LOCATION",
+            "confidence": 0.9996991760683308
+          },
+          {
+            "name": "데이터센터",
+            "type": "OBJECT",
+            "confidence": 0.04924419922370013
+          }
+        ],
+        "relations": [
+          {
+            "source": "데이터센터",
+            "type": "LOCATED_AT",
+            "target": "판교",
+            "confidence": 0.9809611177901637
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "OWNS",
+            "target": "데이터센터",
+            "confidence": 0.7718079129385043
+          },
+          {
+            "source": "KT",
+            "type": "OWNS",
+            "target": "데이터센터",
+            "confidence": 0.6706602976506624
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "PARTNER_WITH",
+            "target": "KT",
+            "confidence": 0.9186253296906626
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 8,
+      "elapsed_ms": 167.5,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9992265601623618
+          },
+          {
+            "name": "토스",
+            "type": "ORGANIZATION",
+            "confidence": 0.8046002678360654
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.9979741076161432
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "토스",
+            "confidence": 0.728768533140815
+          },
+          {
+            "source": "박지훈",
+            "type": "LOCATED_AT",
+            "target": "성수동",
+            "confidence": 0.6410279159730986
+          },
+          {
+            "source": "박지훈",
+            "type": "MEMBER_OF",
+            "target": "토스",
+            "confidence": 0.6808688892343269
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.8649918339981313
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 1,
+      "message_index": 9,
+      "elapsed_ms": 139.3,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.9965742775889732
+          },
+          {
+            "name": "대만",
+            "type": "LOCATION",
+            "confidence": 0.5504421914270959
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.998571449553851
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.6861523588025316
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 1,
+      "elapsed_ms": 131.2,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9983162769505839
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 2,
+      "elapsed_ms": 132.2,
+      "result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "confidence": 0.5882640442226396
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 3,
+      "elapsed_ms": 127.7,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.5559147796999383
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 4,
+      "elapsed_ms": 137.1,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.9881651341897317
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 5,
+      "elapsed_ms": 150.7,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.9988968556663285
+          },
+          {
+            "name": "이재용 회장",
+            "type": "PERSON",
+            "confidence": 0.9493602383943747
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.8785500096335879
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.9957918117650708
+          },
+          {
+            "name": "협력",
+            "type": "EVENT",
+            "confidence": 0.9243846682258864
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용 회장",
+            "type": "EMPLOYED_BY",
+            "target": "삼성전자",
+            "confidence": 0.8949646749875269
+          },
+          {
+            "source": "삼성전자",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아",
+            "confidence": 0.9104442663462425
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 6,
+      "elapsed_ms": 166.9,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9600671648984433
+          },
+          {
+            "name": "부산",
+            "type": "LOCATION",
+            "confidence": 0.9999519005215814
+          },
+          {
+            "name": "AWS 서밋",
+            "type": "EVENT",
+            "confidence": 0.9981235653402938
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.9633270302705514
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "카카오",
+            "confidence": 0.751280664041856
+          },
+          {
+            "source": "AWS 서밋",
+            "type": "LOCATED_AT",
+            "target": "부산",
+            "confidence": 0.93283967787978
+          },
+          {
+            "source": "AWS 서밋",
+            "type": "OCCURRED_AT",
+            "target": "부산",
+            "confidence": 0.8900628946452503
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.8428837022681871
+          },
+          {
+            "source": "김민수",
+            "type": "RESIDES_AT",
+            "target": "부산",
+            "confidence": 0.778143790171352
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 7,
+      "elapsed_ms": 140.6,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9965756040843317
+          },
+          {
+            "name": "KT",
+            "type": "ORGANIZATION",
+            "confidence": 0.9980091613584637
+          },
+          {
+            "name": "판교",
+            "type": "LOCATION",
+            "confidence": 0.9996991760683308
+          },
+          {
+            "name": "데이터센터",
+            "type": "OBJECT",
+            "confidence": 0.04924419922370013
+          }
+        ],
+        "relations": [
+          {
+            "source": "데이터센터",
+            "type": "LOCATED_AT",
+            "target": "판교",
+            "confidence": 0.9809611177901637
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "OWNS",
+            "target": "데이터센터",
+            "confidence": 0.7718079129385043
+          },
+          {
+            "source": "KT",
+            "type": "OWNS",
+            "target": "데이터센터",
+            "confidence": 0.6706602976506624
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "PARTNER_WITH",
+            "target": "KT",
+            "confidence": 0.9186253296906626
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 8,
+      "elapsed_ms": 168.6,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9992265601623618
+          },
+          {
+            "name": "토스",
+            "type": "ORGANIZATION",
+            "confidence": 0.8046002678360654
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.9979741076161432
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "토스",
+            "confidence": 0.728768533140815
+          },
+          {
+            "source": "박지훈",
+            "type": "LOCATED_AT",
+            "target": "성수동",
+            "confidence": 0.6410279159730986
+          },
+          {
+            "source": "박지훈",
+            "type": "MEMBER_OF",
+            "target": "토스",
+            "confidence": 0.6808688892343269
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.8649918339981313
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 2,
+      "message_index": 9,
+      "elapsed_ms": 136.4,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.9965742775889732
+          },
+          {
+            "name": "대만",
+            "type": "LOCATION",
+            "confidence": 0.5504421914270959
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.998571449553851
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.6861523588025316
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 1,
+      "elapsed_ms": 129.5,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.9983162769505839
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 2,
+      "elapsed_ms": 130.5,
+      "result": {
+        "entities": [
+          {
+            "name": "공지 저장",
+            "type": "EVENT",
+            "confidence": 0.5882640442226396
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 3,
+      "elapsed_ms": 131.1,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.5559147796999383
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 4,
+      "elapsed_ms": 134.9,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.9881651341897317
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 5,
+      "elapsed_ms": 149.3,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.9988968556663285
+          },
+          {
+            "name": "이재용 회장",
+            "type": "PERSON",
+            "confidence": 0.9493602383943747
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.8785500096335879
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.9957918117650708
+          },
+          {
+            "name": "협력",
+            "type": "EVENT",
+            "confidence": 0.9243846682258864
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용 회장",
+            "type": "EMPLOYED_BY",
+            "target": "삼성전자",
+            "confidence": 0.8949646749875269
+          },
+          {
+            "source": "삼성전자",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아",
+            "confidence": 0.9104442663462425
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 6,
+      "elapsed_ms": 160.5,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.9600671648984433
+          },
+          {
+            "name": "부산",
+            "type": "LOCATION",
+            "confidence": 0.9999519005215814
+          },
+          {
+            "name": "AWS 서밋",
+            "type": "EVENT",
+            "confidence": 0.9981235653402938
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.9633270302705514
+          }
+        ],
+        "relations": [
+          {
+            "source": "김민수",
+            "type": "EMPLOYED_BY",
+            "target": "카카오",
+            "confidence": 0.751280664041856
+          },
+          {
+            "source": "AWS 서밋",
+            "type": "LOCATED_AT",
+            "target": "부산",
+            "confidence": 0.93283967787978
+          },
+          {
+            "source": "AWS 서밋",
+            "type": "OCCURRED_AT",
+            "target": "부산",
+            "confidence": 0.8900628946452503
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.8428837022681871
+          },
+          {
+            "source": "김민수",
+            "type": "RESIDES_AT",
+            "target": "부산",
+            "confidence": 0.778143790171352
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 7,
+      "elapsed_ms": 138.7,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "ORGANIZATION",
+            "confidence": 0.9965756040843317
+          },
+          {
+            "name": "KT",
+            "type": "ORGANIZATION",
+            "confidence": 0.9980091613584637
+          },
+          {
+            "name": "판교",
+            "type": "LOCATION",
+            "confidence": 0.9996991760683308
+          },
+          {
+            "name": "데이터센터",
+            "type": "OBJECT",
+            "confidence": 0.04924419922370013
+          }
+        ],
+        "relations": [
+          {
+            "source": "데이터센터",
+            "type": "LOCATED_AT",
+            "target": "판교",
+            "confidence": 0.9809611177901637
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "OWNS",
+            "target": "데이터센터",
+            "confidence": 0.7718079129385043
+          },
+          {
+            "source": "KT",
+            "type": "OWNS",
+            "target": "데이터센터",
+            "confidence": 0.6706602976506624
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "PARTNER_WITH",
+            "target": "KT",
+            "confidence": 0.9186253296906626
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 8,
+      "elapsed_ms": 163.3,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.9992265601623618
+          },
+          {
+            "name": "토스",
+            "type": "ORGANIZATION",
+            "confidence": 0.8046002678360654
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.9979741076161432
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "토스",
+            "confidence": 0.728768533140815
+          },
+          {
+            "source": "박지훈",
+            "type": "LOCATED_AT",
+            "target": "성수동",
+            "confidence": 0.6410279159730986
+          },
+          {
+            "source": "박지훈",
+            "type": "MEMBER_OF",
+            "target": "토스",
+            "confidence": 0.6808688892343269
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.8649918339981313
+          }
+        ]
+      }
+    },
+    {
+      "mode": "multi_kiwi",
+      "repeat": 3,
+      "message_index": 9,
+      "elapsed_ms": 135.6,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.9965742775889732
+          },
+          {
+            "name": "대만",
+            "type": "LOCATION",
+            "confidence": 0.5504421914270959
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.998571449553851
+          }
+        ],
+        "relations": [
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.6861523588025316
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 1,
+      "elapsed_ms": 2204.0,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "confidence": 0.95
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "type": "RELATED_TO",
+            "target": "Cloud DNS",
+            "confidence": 0.74
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 2,
+      "elapsed_ms": 1776.4,
+      "result": {
+        "entities": [
+          {
+            "name": "서버 쪽 작업",
+            "type": "OBJECT",
+            "confidence": 0.77
+          },
+          {
+            "name": "공지 저장",
+            "type": "OBJECT",
+            "confidence": 0.9
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "confidence": 0.86
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 3,
+      "elapsed_ms": 1584.0,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "OBJECT",
+            "confidence": 0.64
+          },
+          {
+            "name": "서비스별",
+            "type": "OBJECT",
+            "confidence": 0.58
+          },
+          {
+            "name": "금액",
+            "type": "OBJECT",
+            "confidence": 0.73
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 4,
+      "elapsed_ms": 1830.3,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "고정 IP 기능",
+            "type": "OBJECT",
+            "confidence": 0.93
+          },
+          {
+            "name": "There is no charge to use this feature",
+            "type": "OBJECT",
+            "confidence": 0.86
+          }
+        ],
+        "relations": [
+          {
+            "source": "오라클",
+            "type": "RELATED_TO",
+            "target": "고정 IP 기능",
+            "confidence": 0.86
+          },
+          {
+            "source": "오라클",
+            "type": "RELATED_TO",
+            "target": "There is no charge to use this feature",
+            "confidence": 0.74
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 5,
+      "elapsed_ms": 1823.0,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "이재용",
+            "type": "PERSON",
+            "confidence": 0.98
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.9
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용",
+            "type": "RELATED_TO",
+            "target": "삼성전자",
+            "confidence": 0.9
+          },
+          {
+            "source": "이재용",
+            "type": "LOCATED_AT",
+            "target": "서울 서초구 사옥",
+            "confidence": 0.86
+          },
+          {
+            "source": "삼성전자",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아",
+            "confidence": 0.88
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 6,
+      "elapsed_ms": 2338.1,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.98
+          },
+          {
+            "name": "부산",
+            "type": "LOCATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "AWS 서밋",
+            "type": "EVENT",
+            "confidence": 0.97
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.94
+          },
+          {
+            "name": "카카오 개발자들",
+            "type": "PERSON",
+            "confidence": 0.86
+          }
+        ],
+        "relations": [
+          {
+            "source": "AWS 서밋",
+            "type": "OCCURRED_AT",
+            "target": "부산",
+            "confidence": 0.95
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.93
+          },
+          {
+            "source": "카카오 개발자들",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.9
+          },
+          {
+            "source": "카카오 개발자들",
+            "type": "MEMBER_OF",
+            "target": "카카오",
+            "confidence": 0.82
+          },
+          {
+            "source": "김민수",
+            "type": "RELATED_TO",
+            "target": "카카오 개발자들",
+            "confidence": 0.55
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 7,
+      "elapsed_ms": 1881.6,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "KT",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "판교",
+            "type": "LOCATION",
+            "confidence": 0.95
+          },
+          {
+            "name": "데이터센터",
+            "type": "OBJECT",
+            "confidence": 0.86
+          }
+        ],
+        "relations": [
+          {
+            "source": "네이버클라우드",
+            "type": "PARTNER_WITH",
+            "target": "KT",
+            "confidence": 0.98
+          },
+          {
+            "source": "데이터센터",
+            "type": "LOCATED_AT",
+            "target": "판교",
+            "confidence": 0.91
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "RELATED_TO",
+            "target": "데이터센터",
+            "confidence": 0.72
+          },
+          {
+            "source": "KT",
+            "type": "RELATED_TO",
+            "target": "데이터센터",
+            "confidence": 0.72
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 8,
+      "elapsed_ms": 1697.6,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.99
+          },
+          {
+            "name": "토스",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.96
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "토스",
+            "confidence": 0.98
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.97
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 1,
+      "message_index": 9,
+      "elapsed_ms": 2332.7,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "대만 법인",
+            "type": "ORGANIZATION",
+            "confidence": 0.92
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.95
+          }
+        ],
+        "relations": [
+          {
+            "source": "대만 법인",
+            "type": "SUBSIDIARY_OF",
+            "target": "쿠팡",
+            "confidence": 0.98
+          },
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.97
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 1,
+      "elapsed_ms": 1835.5,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "confidence": 0.96
+          },
+          {
+            "name": "3개",
+            "type": "OBJECT",
+            "confidence": 0.54
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 2,
+      "elapsed_ms": 1884.1,
+      "result": {
+        "entities": [
+          {
+            "name": "서버 쪽 작업",
+            "type": "OBJECT",
+            "confidence": 0.74
+          },
+          {
+            "name": "공지 저장",
+            "type": "OBJECT",
+            "confidence": 0.83
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "confidence": 0.91
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 3,
+      "elapsed_ms": 1822.0,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "EVENT",
+            "confidence": 0.82
+          },
+          {
+            "name": "서비스별",
+            "type": "OBJECT",
+            "confidence": 0.55
+          }
+        ],
+        "relations": [
+          {
+            "source": "11월",
+            "type": "RELATED_TO",
+            "target": "서비스별",
+            "confidence": 0.45
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 4,
+      "elapsed_ms": 2241.4,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "고정 IP 기능",
+            "type": "OBJECT",
+            "confidence": 0.84
+          }
+        ],
+        "relations": [
+          {
+            "source": "오라클",
+            "type": "RELATED_TO",
+            "target": "고정 IP 기능",
+            "confidence": 0.74
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 5,
+      "elapsed_ms": 1767.9,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "이재용",
+            "type": "PERSON",
+            "confidence": 0.98
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.86
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          }
+        ],
+        "relations": [
+          {
+            "source": "삼성전자",
+            "type": "RELATED_TO",
+            "target": "이재용",
+            "confidence": 0.64
+          },
+          {
+            "source": "이재용",
+            "type": "LOCATED_AT",
+            "target": "서울 서초구 사옥",
+            "confidence": 0.85
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 6,
+      "elapsed_ms": 2125.1,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.98
+          },
+          {
+            "name": "부산",
+            "type": "LOCATION",
+            "confidence": 0.97
+          },
+          {
+            "name": "AWS 서밋",
+            "type": "EVENT",
+            "confidence": 0.99
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.95
+          },
+          {
+            "name": "개발자들",
+            "type": "PERSON",
+            "confidence": 0.72
+          }
+        ],
+        "relations": [
+          {
+            "source": "AWS 서밋",
+            "type": "OCCURRED_AT",
+            "target": "부산",
+            "confidence": 0.96
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.91
+          },
+          {
+            "source": "카카오",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.84
+          },
+          {
+            "source": "개발자들",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.73
+          },
+          {
+            "source": "김민수",
+            "type": "RELATED_TO",
+            "target": "개발자들",
+            "confidence": 0.67
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 7,
+      "elapsed_ms": 2592.8,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "KT",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "판교",
+            "type": "LOCATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "데이터센터",
+            "type": "OBJECT",
+            "confidence": 0.9
+          }
+        ],
+        "relations": [
+          {
+            "source": "네이버클라우드",
+            "type": "PARTNER_WITH",
+            "target": "KT",
+            "confidence": 0.97
+          },
+          {
+            "source": "데이터센터",
+            "type": "LOCATED_AT",
+            "target": "판교",
+            "confidence": 0.88
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "RELATED_TO",
+            "target": "데이터센터",
+            "confidence": 0.85
+          },
+          {
+            "source": "KT",
+            "type": "RELATED_TO",
+            "target": "데이터센터",
+            "confidence": 0.85
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 8,
+      "elapsed_ms": 1728.9,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.99
+          },
+          {
+            "name": "토스",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.96
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "토스",
+            "confidence": 0.98
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.97
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 2,
+      "message_index": 9,
+      "elapsed_ms": 1656.5,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "대만 법인",
+            "type": "ORGANIZATION",
+            "confidence": 0.93
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.98
+          }
+        ],
+        "relations": [
+          {
+            "source": "대만 법인",
+            "type": "SUBSIDIARY_OF",
+            "target": "쿠팡",
+            "confidence": 0.98
+          },
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.99
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 1,
+      "elapsed_ms": 1597.7,
+      "result": {
+        "entities": [
+          {
+            "name": "GCP",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "Cloud DNS",
+            "type": "OBJECT",
+            "confidence": 0.91
+          }
+        ],
+        "relations": [
+          {
+            "source": "GCP",
+            "type": "RELATED_TO",
+            "target": "Cloud DNS",
+            "confidence": 0.74
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 2,
+      "elapsed_ms": 2048.4,
+      "result": {
+        "entities": [
+          {
+            "name": "서버 쪽 작업",
+            "type": "OBJECT",
+            "confidence": 0.78
+          },
+          {
+            "name": "공지 저장",
+            "type": "OBJECT",
+            "confidence": 0.91
+          },
+          {
+            "name": "작업실 정보",
+            "type": "OBJECT",
+            "confidence": 0.88
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 3,
+      "elapsed_ms": 1792.2,
+      "result": {
+        "entities": [
+          {
+            "name": "11월",
+            "type": "OBJECT",
+            "confidence": 0.61
+          },
+          {
+            "name": "서비스별",
+            "type": "OBJECT",
+            "confidence": 0.6
+          },
+          {
+            "name": "금액",
+            "type": "OBJECT",
+            "confidence": 0.78
+          },
+          {
+            "name": "항목",
+            "type": "OBJECT",
+            "confidence": 0.74
+          }
+        ],
+        "relations": []
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 4,
+      "elapsed_ms": 1896.8,
+      "result": {
+        "entities": [
+          {
+            "name": "오라클",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "고정 IP 기능",
+            "type": "OBJECT",
+            "confidence": 0.92
+          }
+        ],
+        "relations": [
+          {
+            "source": "오라클",
+            "type": "RELATED_TO",
+            "target": "고정 IP 기능",
+            "confidence": 0.86
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 5,
+      "elapsed_ms": 2173.6,
+      "result": {
+        "entities": [
+          {
+            "name": "삼성전자",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "이재용 회장",
+            "type": "PERSON",
+            "confidence": 0.98
+          },
+          {
+            "name": "서울 서초구 사옥",
+            "type": "LOCATION",
+            "confidence": 0.94
+          },
+          {
+            "name": "엔비디아",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "협력 발표",
+            "type": "EVENT",
+            "confidence": 0.89
+          }
+        ],
+        "relations": [
+          {
+            "source": "이재용 회장",
+            "type": "EMPLOYED_BY",
+            "target": "삼성전자",
+            "confidence": 0.74
+          },
+          {
+            "source": "협력 발표",
+            "type": "OCCURRED_AT",
+            "target": "서울 서초구 사옥",
+            "confidence": 0.92
+          },
+          {
+            "source": "삼성전자",
+            "type": "PARTNER_WITH",
+            "target": "엔비디아",
+            "confidence": 0.96
+          },
+          {
+            "source": "이재용 회장",
+            "type": "PARTICIPATED_IN",
+            "target": "협력 발표",
+            "confidence": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 6,
+      "elapsed_ms": 1768.4,
+      "result": {
+        "entities": [
+          {
+            "name": "김민수",
+            "type": "PERSON",
+            "confidence": 0.98
+          },
+          {
+            "name": "부산",
+            "type": "LOCATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "AWS 서밋",
+            "type": "EVENT",
+            "confidence": 0.97
+          },
+          {
+            "name": "카카오",
+            "type": "ORGANIZATION",
+            "confidence": 0.96
+          }
+        ],
+        "relations": [
+          {
+            "source": "AWS 서밋",
+            "type": "OCCURRED_AT",
+            "target": "부산",
+            "confidence": 0.98
+          },
+          {
+            "source": "김민수",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.96
+          },
+          {
+            "source": "카카오",
+            "type": "PARTICIPATED_IN",
+            "target": "AWS 서밋",
+            "confidence": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 7,
+      "elapsed_ms": 1969.3,
+      "result": {
+        "entities": [
+          {
+            "name": "네이버클라우드",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "KT",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "판교",
+            "type": "LOCATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "데이터센터",
+            "type": "OBJECT",
+            "confidence": 0.88
+          }
+        ],
+        "relations": [
+          {
+            "source": "네이버클라우드",
+            "type": "PARTNER_WITH",
+            "target": "KT",
+            "confidence": 0.98
+          },
+          {
+            "source": "데이터센터",
+            "type": "LOCATED_AT",
+            "target": "판교",
+            "confidence": 0.92
+          },
+          {
+            "source": "네이버클라우드",
+            "type": "RELATED_TO",
+            "target": "데이터센터",
+            "confidence": 0.86
+          },
+          {
+            "source": "KT",
+            "type": "RELATED_TO",
+            "target": "데이터센터",
+            "confidence": 0.86
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 8,
+      "elapsed_ms": 1706.9,
+      "result": {
+        "entities": [
+          {
+            "name": "박지훈",
+            "type": "PERSON",
+            "confidence": 0.99
+          },
+          {
+            "name": "토스",
+            "type": "ORGANIZATION",
+            "confidence": 0.98
+          },
+          {
+            "name": "성수동",
+            "type": "LOCATION",
+            "confidence": 0.96
+          }
+        ],
+        "relations": [
+          {
+            "source": "박지훈",
+            "type": "EMPLOYED_BY",
+            "target": "토스",
+            "confidence": 0.97
+          },
+          {
+            "source": "박지훈",
+            "type": "RESIDES_AT",
+            "target": "성수동",
+            "confidence": 0.96
+          }
+        ]
+      }
+    },
+    {
+      "mode": "llm_only",
+      "repeat": 3,
+      "message_index": 9,
+      "elapsed_ms": 2072.1,
+      "result": {
+        "entities": [
+          {
+            "name": "쿠팡",
+            "type": "ORGANIZATION",
+            "confidence": 0.99
+          },
+          {
+            "name": "대만 법인",
+            "type": "ORGANIZATION",
+            "confidence": 0.93
+          },
+          {
+            "name": "서울 송파구",
+            "type": "LOCATION",
+            "confidence": 0.96
+          }
+        ],
+        "relations": [
+          {
+            "source": "대만 법인",
+            "type": "SUBSIDIARY_OF",
+            "target": "쿠팡",
+            "confidence": 0.98
+          },
+          {
+            "source": "쿠팡",
+            "type": "HEADQUARTERS_AT",
+            "target": "서울 송파구",
+            "confidence": 0.98
+          }
+        ]
+      }
+    }
+  ],
+  "completed_at": "2026-11-10T02:14:40.601670+00:00"
+}
