@@ -1,0 +1,680 @@
+{
+ "run": {
+  "date": "2026-11-11",
+  "model": "gpt-5.4-mini",
+  "base_model": "fastino/gliner2.5-multi-v1",
+  "price": {
+   "input_per_mtok": 0.75,
+   "output_per_mtok": 4.5,
+   "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "device": "Darwin arm64 CPU",
+  "train_size": 2000,
+  "eval_size": 5000,
+  "eval_entities": 8249,
+  "labels": [
+   "person",
+   "organization",
+   "location"
+  ]
+ },
+ "teacher_vs_human_train": {
+  "person": {
+   "precision": 0.8146687697160884,
+   "recall": 0.765752409191994,
+   "f1": 0.7894535727932748
+  },
+  "organization": {
+   "precision": 0.536468330134357,
+   "recall": 0.689272503082614,
+   "f1": 0.6033459255261737
+  },
+  "location": {
+   "precision": 0.48623853211009177,
+   "recall": 0.680577849117175,
+   "f1": 0.5672240802675586
+  },
+  "overall": {
+   "precision": 0.633563796354494,
+   "recall": 0.724398131512756,
+   "f1": 0.6759430008382229
+  },
+  "particles": 22
+ },
+ "labeling": {
+  "sentences": 2000,
+  "failed": 0,
+  "dropped": 7,
+  "total_spans": 3182,
+  "aligned": 3134,
+  "input_tokens": 1377134,
+  "output_tokens": 57038,
+  "cost_usd": 1.2895215,
+  "cost_per_sentence_usd": 0.00064476075,
+  "api_attempts": 2000,
+  "wall_seconds": 225.69042374996934,
+  "throughput_seconds_per_sentence": 0.11284521187498467,
+  "mean_call_seconds": 1.7789673575909692
+ },
+ "training": {
+  "examples": 2000,
+  "seconds": 220.791090965271,
+  "samples_per_second": 18.116673016617206,
+  "total_steps": 500,
+  "trainable_params": 2715664,
+  "label_hash": "61d70f54e436c9455c744b5795a802e3f91be4bd"
+ },
+ "conditions": {
+  "base": {
+   "person": {
+    "precision": 0.5577653631284916,
+    "recall": 0.564961521050249,
+    "f1": 0.5613403800742157
+   },
+   "organization": {
+    "precision": 0.5340990667623834,
+    "recall": 0.6819431714023831,
+    "f1": 0.5990338164251209
+   },
+   "location": {
+    "precision": 0.5243513882567137,
+    "recall": 0.698605215281989,
+    "f1": 0.5990639625585022
+   },
+   "overall": {
+    "precision": 0.5430323535631212,
+    "recall": 0.6226209237483331,
+    "f1": 0.5801095611904896
+   },
+   "particles": 84,
+   "seconds": 184.484977916989,
+   "seconds_per_sentence": 0.036896995583397804
+  },
+  "klue_lora": {
+   "person": {
+    "precision": 0.8715188392230283,
+    "recall": 0.8429153463105478,
+    "f1": 0.8569784834886665
+   },
+   "organization": {
+    "precision": 0.7706465313827277,
+    "recall": 0.7483959670027498,
+    "f1": 0.7593582887700534
+   },
+   "location": {
+    "precision": 0.7459490740740741,
+    "recall": 0.7816858702243784,
+    "f1": 0.7633994669825289
+   },
+   "overall": {
+    "precision": 0.8184729064039409,
+    "recall": 0.805673414959389,
+    "f1": 0.8120227258842936
+   },
+   "particles": 105,
+   "seconds": 234.69610058300896,
+   "seconds_per_sentence": 0.046939220116601794
+  },
+  "distill_lora": {
+   "person": {
+    "precision": 0.8049132947976878,
+    "recall": 0.7564508827523766,
+    "f1": 0.7799299883313885
+   },
+   "organization": {
+    "precision": 0.5526315789473685,
+    "recall": 0.6736938588450962,
+    "f1": 0.607187112763321
+   },
+   "location": {
+    "precision": 0.4619520264681555,
+    "recall": 0.6773802304426926,
+    "f1": 0.549299237767396
+   },
+   "overall": {
+    "precision": 0.642361863488624,
+    "recall": 0.7187537883379803,
+    "f1": 0.6784140969162995
+   },
+   "particles": 99,
+   "seconds": 230.87353545898804,
+   "seconds_per_sentence": 0.04617470709179761
+  }
+ },
+ "errors": {
+  "klue_lora": {
+   "wider": 302,
+   "narrower": 232,
+   "type": 245,
+   "spurious": 695,
+   "missed": 824
+  },
+  "distill_lora": {
+   "wider": 566,
+   "narrower": 551,
+   "type": 364,
+   "spurious": 1820,
+   "missed": 839
+  },
+  "teacher_train": {
+   "wider": 167,
+   "narrower": 135,
+   "type": 82,
+   "spurious": 782,
+   "missed": 383
+  }
+ },
+ "teacher_disagreements": {
+  "fp_top": [
+   [
+    "location",
+    "서울",
+    21
+   ],
+   [
+    "location",
+    "미국",
+    18
+   ],
+   [
+    "person",
+    "A씨",
+    18
+   ],
+   [
+    "location",
+    "북한",
+    14
+   ],
+   [
+    "person",
+    "김씨",
+    14
+   ],
+   [
+    "location",
+    "세월호",
+    11
+   ],
+   [
+    "person",
+    "이씨",
+    9
+   ],
+   [
+    "location",
+    "러시아",
+    9
+   ],
+   [
+    "location",
+    "경기도",
+    7
+   ],
+   [
+    "organization",
+    "인스타그램",
+    7
+   ],
+   [
+    "organization",
+    "이영화",
+    6
+   ],
+   [
+    "location",
+    "뉴욕",
+    6
+   ],
+   [
+    "person",
+    "박씨",
+    6
+   ],
+   [
+    "location",
+    "중국",
+    5
+   ],
+   [
+    "location",
+    "영국",
+    5
+   ]
+  ],
+  "fn_top": [
+   [
+    "person",
+    "A",
+    44
+   ],
+   [
+    "person",
+    "이",
+    27
+   ],
+   [
+    "person",
+    "김",
+    27
+   ],
+   [
+    "location",
+    "한국",
+    25
+   ],
+   [
+    "organization",
+    "경찰",
+    22
+   ],
+   [
+    "location",
+    "일본",
+    16
+   ],
+   [
+    "person",
+    "B",
+    14
+   ],
+   [
+    "organization",
+    "북한",
+    12
+   ],
+   [
+    "person",
+    "박",
+    11
+   ],
+   [
+    "organization",
+    "러시아",
+    9
+   ],
+   [
+    "organization",
+    "정부",
+    8
+   ],
+   [
+    "person",
+    "정",
+    6
+   ],
+   [
+    "person",
+    "최",
+    6
+   ],
+   [
+    "organization",
+    "남",
+    6
+   ],
+   [
+    "person",
+    "강",
+    5
+   ]
+  ],
+  "fp": 1166,
+  "fn": 767
+ },
+ "inherited_errors": {
+  "klue_lora": {
+   "fp": 1474,
+   "fp_inherited": 0.16485753052917232,
+   "fn": 1603,
+   "fn_inherited": 0.14784778540237056
+  },
+  "distill_lora": {
+   "fp": 3301,
+   "fp_inherited": 0.27567403817025143,
+   "fn": 2320,
+   "fn_inherited": 0.2827586206896552
+  }
+ },
+ "examples": [
+  {
+   "text": "엠비씨에서 사극이 이렇게 망한다는 것을 깨달았다",
+   "gold": [
+    [
+     "엠비씨",
+     "organization"
+    ]
+   ],
+   "base": [
+    [
+     "엠비씨",
+     "organization"
+    ],
+    [
+     "사극",
+     "person"
+    ]
+   ],
+   "klue_lora": [],
+   "distill_lora": [
+    [
+     "엠비씨",
+     "organization"
+    ]
+   ]
+  },
+  {
+   "text": "춘천시와 원주시는 이달부터 시내버스 요금을 평균 8.3% 인상했고 태백시는 기본요금을 기준으로 9.1% 올렸다.",
+   "gold": [
+    [
+     "춘천시",
+     "location"
+    ],
+    [
+     "원주시",
+     "location"
+    ],
+    [
+     "태백시",
+     "location"
+    ]
+   ],
+   "base": [
+    [
+     "춘천시",
+     "location"
+    ],
+    [
+     "원주시",
+     "location"
+    ],
+    [
+     "태백시",
+     "location"
+    ]
+   ],
+   "klue_lora": [
+    [
+     "춘천시",
+     "organization"
+    ],
+    [
+     "원주시",
+     "organization"
+    ],
+    [
+     "태백시",
+     "organization"
+    ]
+   ],
+   "distill_lora": [
+    [
+     "춘천시",
+     "location"
+    ],
+    [
+     "원주시",
+     "location"
+    ],
+    [
+     "태백시",
+     "location"
+    ]
+   ]
+  },
+  {
+   "text": "이는 지난주 북한이 사거리 300㎞ 이상의 스커드-B 미사일 4발을 발사한 직후의 반응과는 분명히 달라진 것으로 평가된다.",
+   "gold": [
+    [
+     "북한",
+     "location"
+    ]
+   ],
+   "base": [
+    [
+     "북한",
+     "location"
+    ]
+   ],
+   "klue_lora": [
+    [
+     "북한",
+     "organization"
+    ]
+   ],
+   "distill_lora": [
+    [
+     "북한",
+     "location"
+    ]
+   ]
+  },
+  {
+   "text": "스노우가 공개한 사진은 댓글만 8만 8000개 이상이 달리며 폭발적인 관심을 받았다.",
+   "gold": [
+    [
+     "스노우",
+     "organization"
+    ]
+   ],
+   "base": [
+    [
+     "스노우",
+     "organization"
+    ]
+   ],
+   "klue_lora": [],
+   "distill_lora": [
+    [
+     "스노우",
+     "organization"
+    ]
+   ]
+  },
+  {
+   "text": "경찰은 또 성매매 알선 자금을 관리한 박씨의 딸(32)과 성매매 여성 김모(33)씨 등 16명을 같은 혐의로 불구속 입건했다.",
+   "gold": [
+    [
+     "경찰",
+     "organization"
+    ],
+    [
+     "박",
+     "person"
+    ],
+    [
+     "김",
+     "person"
+    ]
+   ],
+   "base": [
+    [
+     "경찰",
+     "organization"
+    ],
+    [
+     "박씨",
+     "person"
+    ],
+    [
+     "김모",
+     "person"
+    ]
+   ],
+   "klue_lora": [
+    [
+     "경찰",
+     "organization"
+    ],
+    [
+     "박",
+     "person"
+    ],
+    [
+     "김",
+     "person"
+    ]
+   ],
+   "distill_lora": [
+    [
+     "경찰",
+     "organization"
+    ],
+    [
+     "박씨",
+     "person"
+    ],
+    [
+     "김모",
+     "person"
+    ]
+   ]
+  },
+  {
+   "text": "B 씨는 사법시험 합격증이 위조된 것인지 알 수 없었고, 아들이 좋은 대학에 들어갈 수 있기만을 바라던터라 A 씨를 더 의심하지 않았다.",
+   "gold": [
+    [
+     "B",
+     "person"
+    ],
+    [
+     "A",
+     "person"
+    ]
+   ],
+   "base": [
+    [
+     "B 씨",
+     "person"
+    ],
+    [
+     "대학",
+     "organization"
+    ],
+    [
+     "A 씨",
+     "person"
+    ]
+   ],
+   "klue_lora": [
+    [
+     "B",
+     "person"
+    ],
+    [
+     "A",
+     "person"
+    ]
+   ],
+   "distill_lora": [
+    [
+     "B 씨",
+     "person"
+    ],
+    [
+     "A 씨",
+     "person"
+    ]
+   ]
+  },
+  {
+   "text": "18번 홀(파5)에서 열린 연장 첫 번째 홀에서 파를 지킨 최운정은 보기에 그친 장하나를 따돌리고 LPGA 투어 첫 우승의 감격을 누렸다.",
+   "gold": [
+    [
+     "최운정",
+     "person"
+    ],
+    [
+     "장하나",
+     "person"
+    ],
+    [
+     "LPGA",
+     "organization"
+    ]
+   ],
+   "base": [
+    [
+     "최운정",
+     "person"
+    ],
+    [
+     "보기",
+     "location"
+    ],
+    [
+     "장하나",
+     "person"
+    ],
+    [
+     "LPGA 투어",
+     "organization"
+    ]
+   ],
+   "klue_lora": [
+    [
+     "최운정",
+     "person"
+    ],
+    [
+     "장하나",
+     "person"
+    ],
+    [
+     "LPGA",
+     "organization"
+    ]
+   ],
+   "distill_lora": [
+    [
+     "최운정",
+     "person"
+    ],
+    [
+     "장하나",
+     "person"
+    ],
+    [
+     "LPGA 투어",
+     "organization"
+    ]
+   ]
+  },
+  {
+   "text": "전자제품 대기업에서 일하는 최모(32)씨는 10분가량 늦겠다고 팀장에게 전화했다가 자신의 귀를 의심해야 할 상황에 직면했다.",
+   "gold": [
+    [
+     "최",
+     "person"
+    ]
+   ],
+   "base": [
+    [
+     "전자제품 대기업",
+     "organization"
+    ],
+    [
+     "최모",
+     "person"
+    ]
+   ],
+   "klue_lora": [
+    [
+     "최",
+     "person"
+    ]
+   ],
+   "distill_lora": [
+    [
+     "전자제품 대기업",
+     "organization"
+    ],
+    [
+     "최모",
+     "person"
+    ]
+   ]
+  }
+ ],
+ "breakeven_sentences": 2000
+}

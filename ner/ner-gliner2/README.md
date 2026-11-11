@@ -11,8 +11,10 @@
 | [한국어 미세조정](notebooks/02_korean_fine_tuning.ipynb) | KLUE-NER로 LoRA 어댑터를 학습하고 학습 전후 성능을 비교한다. |
 | [언어와 체크포인트](experiments/01_language_and_checkpoint.ipynb) | 한국어·영어 문장 쌍으로 GLiNER base/multi 체크포인트와 LLM 추출을 비교하고, 조사·표기 프로브로 오류 원인을 분리한다. |
 | [단어 분할기](experiments/02_korean_word_splitter.ipynb) | GLiNER 단어 분할기(공백·문자·형태소)별 한국어 엔티티·관계 추출을 참고 정답과 LLM 기준으로 비교한다. |
+| [LLM 증류](experiments/03_llm_distillation.ipynb) | 같은 KLUE 문장에 `gpt-5.4-mini`가 단 정답으로 LoRA 어댑터를 학습하고, 사람 정답으로 학습한 어댑터와 성능·비용을 비교한다. |
 | [스키마](config/ontology.py) | 두 추출기가 공유하는 POLE+O 엔티티·관계 타입을 정의한다. |
 | [추출기](config/extractors.py) | GLiNER2 JointIE 추출기, OpenAI 구조화 출력 추출기, Kiwi 형태소 분할기를 제공한다. |
+| [KLUE 데이터](config/klue.py), [선생님 라벨러](config/teacher.py) | KLUE-NER 변환·정확 일치 채점·오류 분류와, 증류 실험의 `gpt-5.4-mini` 라벨러를 제공한다. |
 
 `notebooks/`는 개념과 사용법을 순서대로 따라가는 설명형 노트북이고, `experiments/`는 조건을 통제한 비교 실험이다. 실험 결과는 `experiments/results/`의 JSON 파일에 저장되며, 두 폴더 모두 마크다운 셀에 실행 결과의 수치와 해석을 함께 기록한다.
 
@@ -36,6 +38,15 @@ cp .env.example .env
 `notebooks/`는 `00` → `01` → `02` 순서로 읽는다. `01`과 `02`는 첫 실행 시 GLiNER 체크포인트를, `02`는 KLUE-NER 데이터를 Hugging Face에서 내려받는다. `02`는 학습과 평가를 포함해 CPU 기준 약 10분이 걸리며, 학습한 어댑터는 `outputs/`에 저장되고 저장소에는 포함하지 않는다.
 
 `experiments/`의 노트북은 기본적으로 저장된 결과 파일을 불러와 분석만 수행한다(`RUN_EXPERIMENT = False`). `True`로 바꾸면 GLiNER 체크포인트를 내려받고 LLM API를 호출하여 결과 파일을 덮어쓴다. 모든 GLiNER 연산은 CPU에서 실행한다.
+
+`03`의 실험은 노트북이 아니라 스크립트로 실행한다. `notebooks/02`에서 학습한 KLUE 어댑터(`outputs/klue_ner_lora/final`)가 먼저 있어야 하며, 라벨링 API 비용은 약 1.3달러, 전체 실행은 CPU 기준 약 20분이다. 단계별 결과는 `outputs/distill/`에 저장되어 중단 후 이어서 실행할 수 있다.
+
+```bash
+uv run python scripts/run_llm_distillation.py --price-input 0.75 --price-output 4.5 \
+    --price-source https://developers.openai.com/api/docs/pricing
+```
+
+순수 로직(KLUE 변환·채점, 선생님 라벨러)의 테스트는 `uv run --with pytest python -m pytest tests`로 실행한다.
 
 ## 배경
 
