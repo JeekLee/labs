@@ -10,3 +10,6 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .DS_Store
+
+# Fine-tuned adapters and checkpoints
+outputs/

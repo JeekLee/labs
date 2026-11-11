@@ -29,7 +29,7 @@ def kiwi_splitter(text, lower=True):
     last_end = 0
     for token in kiwi().tokenize(text):
         start, end = token.start, token.start + token.len
-        if start < last_end:  # contracted morphemes share a span
+        if start < last_end or end <= start:  # contracted or empty morphemes
             continue
         surface = text[start:end]
         last_end = end
