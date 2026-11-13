@@ -1,0 +1,526 @@
+{
+ "doc_id": "train-022-L3",
+ "scenario_id": "train-022",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_a",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 41,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 111,
+   "end": 125,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 128,
+   "end": 134,
+   "type": "Person",
+   "text": "석소율 일병"
+  },
+  {
+   "start": 146,
+   "end": 153,
+   "type": "InformationSystem",
+   "text": "행정서버-29"
+  },
+  {
+   "start": 156,
+   "end": 159,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 172,
+   "end": 186,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 189,
+   "end": 195,
+   "type": "Person",
+   "text": "병장 탁주원"
+  },
+  {
+   "start": 207,
+   "end": 214,
+   "type": "InformationSystem",
+   "text": "업무단말-25"
+  },
+  {
+   "start": 217,
+   "end": 223,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 236,
+   "end": 250,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 253,
+   "end": 259,
+   "type": "Person",
+   "text": "심준영 이병"
+  },
+  {
+   "start": 268,
+   "end": 275,
+   "type": "InformationSystem",
+   "text": "행정서버-29"
+  },
+  {
+   "start": 278,
+   "end": 283,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 291,
+   "end": 305,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 308,
+   "end": 314,
+   "type": "Person",
+   "text": "정하준 일병"
+  },
+  {
+   "start": 326,
+   "end": 333,
+   "type": "InformationSystem",
+   "text": "행정서버-29"
+  },
+  {
+   "start": 336,
+   "end": 344,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 352,
+   "end": 366,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 369,
+   "end": 375,
+   "type": "Person",
+   "text": "심준영 이병"
+  },
+  {
+   "start": 387,
+   "end": 394,
+   "type": "InformationSystem",
+   "text": "행정서버-29"
+  },
+  {
+   "start": 397,
+   "end": 400,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 413,
+   "end": 427,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 430,
+   "end": 436,
+   "type": "Person",
+   "text": "길연우 병장"
+  },
+  {
+   "start": 448,
+   "end": 455,
+   "type": "InformationSystem",
+   "text": "업무단말-31"
+  },
+  {
+   "start": 458,
+   "end": 463,
+   "type": "Facility",
+   "text": "지휘통제실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     109,
+     169
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     170,
+     233
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     234,
+     288
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     289,
+     349
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     350,
+     410
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     411,
+     468
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "석소율 일병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 0,
+   "head": "석소율 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-29"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-29",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 1,
+   "head": "병장 탁주원",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "병장 탁주원",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-25"
+  },
+  {
+   "unit": 1,
+   "head": "업무단말-25",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 2,
+   "head": "심준영 이병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "심준영 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-29"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-29",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 3,
+   "head": "정하준 일병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 3,
+   "head": "정하준 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-29"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-29",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 4,
+   "head": "심준영 이병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 4,
+   "head": "심준영 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-29"
+  },
+  {
+   "unit": 4,
+   "head": "행정서버-29",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 5,
+   "head": "길연우 병장",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 5,
+   "head": "길연우 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-31"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-31",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "석소율 일병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-29"
+    ],
+    "설치장소": [
+     "서버실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "병장 탁주원"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-25"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "심준영 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-29"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "정하준 일병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-29"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "심준영 이병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-29"
+    ],
+    "설치장소": [
+     "서버실"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "길연우 병장"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-31"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ]
+   }
+  }
+ ]
+}

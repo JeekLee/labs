@@ -1,0 +1,192 @@
+{
+ "doc_id": "train-014-N1",
+ "scenario_id": "train-014",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 33,
+   "end": 48,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 49,
+   "end": 55,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 63,
+   "end": 70,
+   "type": "ClassifiedDocument",
+   "text": "통신망 구성도"
+  },
+  {
+   "start": 125,
+   "end": 132,
+   "type": "ClassifiedDocument",
+   "text": "통신망 구성도"
+  },
+  {
+   "start": 148,
+   "end": 163,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 164,
+   "end": 170,
+   "type": "Person",
+   "text": "반승현 이병"
+  },
+  {
+   "start": 174,
+   "end": 181,
+   "type": "ClassifiedDocument",
+   "text": "통신망 구성도"
+  },
+  {
+   "start": 191,
+   "end": 198,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 199,
+   "end": 205,
+   "type": "Person",
+   "text": "소지훈 소령"
+  },
+  {
+   "start": 217,
+   "end": 223,
+   "type": "Person",
+   "text": "반승현 이병"
+  },
+  {
+   "start": 236,
+   "end": 243,
+   "type": "ClassifiedDocument",
+   "text": "통신망 구성도"
+  },
+  {
+   "start": 346,
+   "end": 356,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 375,
+   "end": 381,
+   "type": "Person",
+   "text": "소지훈 소령"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     115
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     117,
+     208
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     210,
+     310
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     312,
+     366
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     368,
+     429
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "제1통제구역",
+   "type": "LOCATED_AT",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "반승현 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "소지훈 소령",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 1,
+   "head": "소지훈 소령",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "통신망 구성도"
+  },
+  {
+   "unit": 2,
+   "head": "반승현 이병",
+   "type": "ACCESSED",
+   "tail": "통신망 구성도"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "반승현 이병"
+    ],
+    "대상 문서": [
+     "통신망 구성도"
+    ],
+    "장소": [
+     "제1통제구역"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ],
+    "일자": "2026-08-07"
+   }
+  }
+ ]
+}

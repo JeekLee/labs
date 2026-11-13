@@ -1,0 +1,180 @@
+{
+ "doc_id": "train-027-N1",
+ "scenario_id": "train-027",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 32,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 33,
+   "end": 38,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 93,
+   "end": 106,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 107,
+   "end": 113,
+   "type": "Person",
+   "text": "유다인 일병"
+  },
+  {
+   "start": 122,
+   "end": 128,
+   "type": "Person",
+   "text": "유다인 일병"
+  },
+  {
+   "start": 182,
+   "end": 187,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 193,
+   "end": 200,
+   "type": "StorageMedium",
+   "text": "HDD-187"
+  },
+  {
+   "start": 257,
+   "end": 270,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 308,
+   "end": 316,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 317,
+   "end": 327,
+   "type": "Person",
+   "text": "7급 군무원 천진혁"
+  },
+  {
+   "start": 343,
+   "end": 347,
+   "type": "Person",
+   "text": "유 일병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     83
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     85,
+     113
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     115,
+     245
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     247,
+     299
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     301,
+     368
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "작전회의실",
+   "type": "LOCATED_AT",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 1,
+   "head": "유다인 일병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 2,
+   "head": "HDD-187",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 2,
+   "head": "유다인 일병",
+   "type": "ACCESSED",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 4,
+   "head": "7급 군무원 천진혁",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "계정·권한 관리 위반",
+    "관련자": [
+     "유다인 일병"
+    ],
+    "매체": [
+     "HDD-187"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ],
+    "일자": "2026. 5. 6."
+   }
+  }
+ ]
+}

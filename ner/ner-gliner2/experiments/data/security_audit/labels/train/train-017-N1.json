@@ -1,0 +1,204 @@
+{
+ "doc_id": "train-017-N1",
+ "scenario_id": "train-017",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 45,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 46,
+   "end": 51,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 78,
+   "end": 87,
+   "type": "ClassifiedDocument",
+   "text": "지휘소 이동 계획"
+  },
+  {
+   "start": 113,
+   "end": 126,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 127,
+   "end": 133,
+   "type": "Person",
+   "text": "정동현 상병"
+  },
+  {
+   "start": 154,
+   "end": 159,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 160,
+   "end": 166,
+   "type": "Person",
+   "text": "상사 한주원"
+  },
+  {
+   "start": 178,
+   "end": 184,
+   "type": "Person",
+   "text": "정동현 상병"
+  },
+  {
+   "start": 189,
+   "end": 199,
+   "type": "Credential",
+   "text": "제2026-451호"
+  },
+  {
+   "start": 233,
+   "end": 237,
+   "type": "Person",
+   "text": "정 상병"
+  },
+  {
+   "start": 244,
+   "end": 249,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 252,
+   "end": 261,
+   "type": "ClassifiedDocument",
+   "text": "지휘소 이동 계획"
+  },
+  {
+   "start": 333,
+   "end": 345,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 364,
+   "end": 370,
+   "type": "Person",
+   "text": "상사 한주원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     103
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     105,
+     169
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     171,
+     297
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     299,
+     355
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     357,
+     418
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "통신기계실",
+   "type": "LOCATED_AT",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "정동현 상병",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "상사 한주원",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 2,
+   "head": "정동현 상병",
+   "type": "HOLDS",
+   "tail": "제2026-451호"
+  },
+  {
+   "unit": 2,
+   "head": "정 상병",
+   "type": "ACCESSED",
+   "tail": "지휘소 이동 계획"
+  },
+  {
+   "unit": 2,
+   "head": "정 상병",
+   "type": "ACCESSED",
+   "tail": "통신기계실"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "인가 만료자 접근",
+    "관련자": [
+     "정동현 상병"
+    ],
+    "대상 문서": [
+     "지휘소 이동 계획"
+    ],
+    "장소": [
+     "통신기계실"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ],
+    "일자": "2026년 6월 18일"
+   }
+  }
+ ]
+}

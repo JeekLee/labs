@@ -1,0 +1,190 @@
+{
+ "doc_id": "eval-048-N2",
+ "scenario_id": "eval-048",
+ "split": "eval",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 30,
+   "end": 47,
+   "type": "Inspection",
+   "text": "2026년 4분기 정기 보안점검"
+  },
+  {
+   "start": 57,
+   "end": 70,
+   "type": "Unit",
+   "text": "제6191방공대대 작전과"
+  },
+  {
+   "start": 77,
+   "end": 85,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 86,
+   "end": 92,
+   "type": "Person",
+   "text": "송현우 상사"
+  },
+  {
+   "start": 93,
+   "end": 106,
+   "type": "Unit",
+   "text": "제6191방공대대 작전과"
+  },
+  {
+   "start": 121,
+   "end": 127,
+   "type": "Person",
+   "text": "병장 서하율"
+  },
+  {
+   "start": 129,
+   "end": 134,
+   "type": "Facility",
+   "text": "탄약관리실"
+  },
+  {
+   "start": 138,
+   "end": 145,
+   "type": "StorageMedium",
+   "text": "USB-347"
+  },
+  {
+   "start": 153,
+   "end": 167,
+   "type": "Regulation",
+   "text": "휴대용 저장매체 운용 지침"
+  },
+  {
+   "start": 210,
+   "end": 216,
+   "type": "Person",
+   "text": "송현우 상사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     24
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     26,
+     70
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     72,
+     107
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     109,
+     171
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     173,
+     198
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     200,
+     234
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "2026년 4분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 2,
+   "head": "송현우 상사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 2,
+   "head": "송현우 상사",
+   "type": "BELONGS_TO",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 2,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 3,
+   "head": "병장 서하율",
+   "type": "CARRIED_OUT",
+   "tail": "USB-347"
+  },
+  {
+   "unit": 3,
+   "head": "USB-347",
+   "type": "LOCATED_AT",
+   "tail": "탄약관리실"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    3
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "병장 서하율"
+    ],
+    "위반 규정": [
+     "휴대용 저장매체 운용 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    5
+   ],
+   "fields": {
+    "조치 유형": "매체 회수",
+    "담당": [
+     "송현우 상사"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

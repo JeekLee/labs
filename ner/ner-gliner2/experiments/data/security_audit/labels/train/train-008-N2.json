@@ -1,0 +1,170 @@
+{
+ "doc_id": "train-008-N2",
+ "scenario_id": "train-008",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 2분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 60,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 104,
+   "end": 118,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 119,
+   "end": 126,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 127,
+   "end": 133,
+   "type": "Person",
+   "text": "모준서 중위"
+  },
+  {
+   "start": 148,
+   "end": 154,
+   "type": "Person",
+   "text": "백도현 일병"
+  },
+  {
+   "start": 156,
+   "end": 163,
+   "type": "ClassifiedDocument",
+   "text": "보급수송 계획"
+  },
+  {
+   "start": 189,
+   "end": 199,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 218,
+   "end": 224,
+   "type": "Person",
+   "text": "모준서 중위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     60
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     62,
+     97
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     99,
+     133
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     135,
+     199
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     201,
+     244
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 2분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "모준서 중위",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "모준서 중위",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 2,
+   "head": "비밀관리책임자",
+   "type": "POSITION_OF",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 3,
+   "head": "백도현 일병",
+   "type": "ACCESSED",
+   "tail": "보급수송 계획"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    3
+   ],
+   "fields": {
+    "영역": "문서보안",
+    "대상": [
+     "백도현 일병"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    4
+   ],
+   "fields": {
+    "조치 유형": "재교육",
+    "담당": [
+     "모준서 중위"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

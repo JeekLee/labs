@@ -1,0 +1,159 @@
+{
+ "doc_id": "eval-058-N1",
+ "scenario_id": "eval-058",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 34,
+   "end": 37,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 47,
+   "end": 53,
+   "type": "Person",
+   "text": "일병 손건우"
+  },
+  {
+   "start": 54,
+   "end": 68,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 76,
+   "end": 86,
+   "type": "Credential",
+   "text": "제2026-423호"
+  },
+  {
+   "start": 96,
+   "end": 100,
+   "type": "Person",
+   "text": "손 일병"
+  },
+  {
+   "start": 139,
+   "end": 142,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 163,
+   "end": 174,
+   "type": "Regulation",
+   "text": "보안 서약 관리 지침"
+  },
+  {
+   "start": 183,
+   "end": 188,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 189,
+   "end": 195,
+   "type": "Person",
+   "text": "하사 심주원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     37
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     39,
+     87
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     89,
+     151
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     153,
+     174
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     176,
+     232
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "일병 손건우",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "일병 손건우",
+   "type": "HOLDS",
+   "tail": "제2026-423호"
+  },
+  {
+   "unit": 2,
+   "head": "손 일병",
+   "type": "ACCESSED",
+   "tail": "상황실"
+  },
+  {
+   "unit": 4,
+   "head": "하사 심주원",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "일병 손건우"
+    ],
+    "장소": [
+     "상황실"
+    ],
+    "위반 규정": [
+     "보안 서약 관리 지침"
+    ],
+    "일자": "2026-11-19"
+   }
+  }
+ ]
+}

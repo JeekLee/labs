@@ -1,0 +1,170 @@
+{
+ "doc_id": "train-040-N2",
+ "scenario_id": "train-040",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 20,
+   "end": 37,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 58,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 65,
+   "end": 77,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 78,
+   "end": 83,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 84,
+   "end": 90,
+   "type": "Person",
+   "text": "중사 배윤호"
+  },
+  {
+   "start": 153,
+   "end": 159,
+   "type": "Person",
+   "text": "하예린 이병"
+  },
+  {
+   "start": 175,
+   "end": 180,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 193,
+   "end": 203,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 226,
+   "end": 232,
+   "type": "Person",
+   "text": "중사 배윤호"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     90
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     92,
+     142
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     144,
+     207
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     209,
+     251
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     253,
+     291
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 2,
+   "head": "하예린 이병",
+   "type": "ACCESSED",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 0,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "중사 배윤호",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "중사 배윤호",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 0,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 인사과"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "인원보안",
+    "대상": [
+     "하예린 이병"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "재교육",
+    "담당": [
+     "중사 배윤호"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

@@ -1,0 +1,696 @@
+{
+ "doc_id": "train-021-L1",
+ "scenario_id": "train-021",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_a",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 39,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 109,
+   "end": 121,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Person",
+   "text": "일병 최준혁"
+  },
+  {
+   "start": 142,
+   "end": 149,
+   "type": "InformationSystem",
+   "text": "업무단말-22"
+  },
+  {
+   "start": 152,
+   "end": 155,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 168,
+   "end": 180,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 183,
+   "end": 189,
+   "type": "Person",
+   "text": "백현수 이병"
+  },
+  {
+   "start": 201,
+   "end": 208,
+   "type": "InformationSystem",
+   "text": "업무단말-16"
+  },
+  {
+   "start": 211,
+   "end": 214,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 227,
+   "end": 239,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 242,
+   "end": 248,
+   "type": "Person",
+   "text": "옥보람 이병"
+  },
+  {
+   "start": 257,
+   "end": 264,
+   "type": "InformationSystem",
+   "text": "업무단말-22"
+  },
+  {
+   "start": 267,
+   "end": 272,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 285,
+   "end": 300,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 303,
+   "end": 309,
+   "type": "Person",
+   "text": "성채원 병장"
+  },
+  {
+   "start": 317,
+   "end": 324,
+   "type": "InformationSystem",
+   "text": "행정서버-44"
+  },
+  {
+   "start": 327,
+   "end": 330,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 343,
+   "end": 355,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 358,
+   "end": 364,
+   "type": "Person",
+   "text": "양민서 상병"
+  },
+  {
+   "start": 376,
+   "end": 383,
+   "type": "InformationSystem",
+   "text": "업무단말-43"
+  },
+  {
+   "start": 386,
+   "end": 392,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 405,
+   "end": 420,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 423,
+   "end": 429,
+   "type": "Person",
+   "text": "성채원 병장"
+  },
+  {
+   "start": 438,
+   "end": 445,
+   "type": "InformationSystem",
+   "text": "업무단말-22"
+  },
+  {
+   "start": 448,
+   "end": 453,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 461,
+   "end": 473,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 476,
+   "end": 482,
+   "type": "Person",
+   "text": "성채원 병장"
+  },
+  {
+   "start": 490,
+   "end": 497,
+   "type": "InformationSystem",
+   "text": "행정서버-44"
+  },
+  {
+   "start": 500,
+   "end": 503,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 516,
+   "end": 530,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 533,
+   "end": 539,
+   "type": "Person",
+   "text": "이병 기서연"
+  },
+  {
+   "start": 547,
+   "end": 554,
+   "type": "InformationSystem",
+   "text": "업무단말-22"
+  },
+  {
+   "start": 557,
+   "end": 560,
+   "type": "Facility",
+   "text": "전산실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     107,
+     165
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     166,
+     224
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     225,
+     282
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     283,
+     340
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     341,
+     402
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     403,
+     458
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     459,
+     513
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     514,
+     570
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "일병 최준혁",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 0,
+   "head": "일병 최준혁",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-22"
+  },
+  {
+   "unit": 0,
+   "head": "업무단말-22",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 1,
+   "head": "백현수 이병",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 1,
+   "head": "백현수 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-16"
+  },
+  {
+   "unit": 1,
+   "head": "업무단말-16",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "옥보람 이병",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 2,
+   "head": "옥보람 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-22"
+  },
+  {
+   "unit": 2,
+   "head": "업무단말-22",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 3,
+   "head": "성채원 병장",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 3,
+   "head": "성채원 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-44"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-44",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 4,
+   "head": "양민서 상병",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 4,
+   "head": "양민서 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-43"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-43",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 5,
+   "head": "성채원 병장",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 5,
+   "head": "성채원 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-22"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-22",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 6,
+   "head": "성채원 병장",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 6,
+   "head": "성채원 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-44"
+  },
+  {
+   "unit": 6,
+   "head": "행정서버-44",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 7,
+   "head": "이병 기서연",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 7,
+   "head": "이병 기서연",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-22"
+  },
+  {
+   "unit": 7,
+   "head": "업무단말-22",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "일병 최준혁"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-22"
+    ],
+    "설치장소": [
+     "전산실"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "백현수 이병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-16"
+    ],
+    "설치장소": [
+     "전산실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "옥보람 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-22"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "성채원 병장"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-44"
+    ],
+    "설치장소": [
+     "상황실"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "양민서 상병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-43"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "성채원 병장"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-22"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "성채원 병장"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-44"
+    ],
+    "설치장소": [
+     "상황실"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    7
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "이병 기서연"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-22"
+    ],
+    "설치장소": [
+     "전산실"
+    ],
+    "비고": "확인 필요"
+   }
+  }
+ ]
+}

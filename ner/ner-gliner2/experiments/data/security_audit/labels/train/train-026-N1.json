@@ -1,0 +1,180 @@
+{
+ "doc_id": "train-026-N1",
+ "scenario_id": "train-026",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 31,
+   "end": 45,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 46,
+   "end": 52,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 86,
+   "end": 100,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 101,
+   "end": 107,
+   "type": "Person",
+   "text": "염정우 이병"
+  },
+  {
+   "start": 116,
+   "end": 122,
+   "type": "Person",
+   "text": "염정우 이병"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 133,
+   "end": 140,
+   "type": "ClassifiedDocument",
+   "text": "정보수집 계획"
+  },
+  {
+   "start": 218,
+   "end": 228,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 262,
+   "end": 269,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 270,
+   "end": 276,
+   "type": "Person",
+   "text": "중위 배윤호"
+  },
+  {
+   "start": 278,
+   "end": 282,
+   "type": "Person",
+   "text": "염 이병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     76
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     78,
+     107
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     109,
+     206
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     208,
+     253
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     255,
+     308
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "제1통제구역",
+   "type": "LOCATED_AT",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "염정우 이병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "염정우 이병",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 2,
+   "head": "염정우 이병",
+   "type": "ACCESSED",
+   "tail": "정보수집 계획"
+  },
+  {
+   "unit": 4,
+   "head": "중위 배윤호",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "염정우 이병"
+    ],
+    "장소": [
+     "제1통제구역"
+    ],
+    "대상 문서": [
+     "정보수집 계획"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ],
+    "일자": "2026. 2. 6."
+   }
+  }
+ ]
+}

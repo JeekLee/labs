@@ -1,0 +1,182 @@
+{
+ "doc_id": "train-017-N2",
+ "scenario_id": "train-017",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 2분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 59,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 67,
+   "end": 80,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 81,
+   "end": 86,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 87,
+   "end": 93,
+   "type": "Person",
+   "text": "상사 한주원"
+  },
+  {
+   "start": 149,
+   "end": 155,
+   "type": "Person",
+   "text": "정동현 상병"
+  },
+  {
+   "start": 160,
+   "end": 170,
+   "type": "Credential",
+   "text": "제2026-451호"
+  },
+  {
+   "start": 177,
+   "end": 186,
+   "type": "ClassifiedDocument",
+   "text": "지휘소 이동 계획"
+  },
+  {
+   "start": 197,
+   "end": 209,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 238,
+   "end": 244,
+   "type": "Person",
+   "text": "상사 한주원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     93
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     95,
+     144
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     146,
+     210
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     212,
+     263
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     265,
+     323
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 2분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 0,
+   "head": "상사 한주원",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 0,
+   "head": "상사 한주원",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 0,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 2,
+   "head": "정동현 상병",
+   "type": "HOLDS",
+   "tail": "제2026-451호"
+  },
+  {
+   "unit": 2,
+   "head": "정동현 상병",
+   "type": "ACCESSED",
+   "tail": "지휘소 이동 계획"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "인원보안",
+    "대상": [
+     "정동현 상병"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "상사 한주원"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

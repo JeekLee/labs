@@ -1,0 +1,162 @@
+{
+ "doc_id": "train-037-N2",
+ "scenario_id": "train-037",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 45,
+   "end": 59,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 66,
+   "end": 80,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 81,
+   "end": 89,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 90,
+   "end": 96,
+   "type": "Person",
+   "text": "천선우 소위"
+  },
+  {
+   "start": 101,
+   "end": 107,
+   "type": "Person",
+   "text": "윤재현 일병"
+  },
+  {
+   "start": 118,
+   "end": 123,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 149,
+   "end": 157,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 181,
+   "end": 187,
+   "type": "Person",
+   "text": "천선우 소위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     96
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     98,
+     161
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     163,
+     207
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     209,
+     255
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "윤재현 일병",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 0,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 0,
+   "head": "천선우 소위",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 0,
+   "head": "천선우 소위",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 0,
+   "head": "출입통제 담당관",
+   "type": "POSITION_OF",
+   "tail": "제8015항공대대 정비중대"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    1
+   ],
+   "fields": {
+    "영역": "시설보안",
+    "대상": [
+     "윤재현 일병"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    2
+   ],
+   "fields": {
+    "조치 유형": "시설 보완",
+    "담당": [
+     "천선우 소위"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

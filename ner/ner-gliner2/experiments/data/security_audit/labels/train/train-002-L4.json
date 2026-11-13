@@ -1,0 +1,694 @@
+{
+ "doc_id": "train-002-L4",
+ "scenario_id": "train-002",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_c",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 39,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 109,
+   "end": 121,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Person",
+   "text": "심수호 일병"
+  },
+  {
+   "start": 142,
+   "end": 149,
+   "type": "InformationSystem",
+   "text": "행정서버-59"
+  },
+  {
+   "start": 152,
+   "end": 160,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 173,
+   "end": 185,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 188,
+   "end": 194,
+   "type": "Person",
+   "text": "염승우 상병"
+  },
+  {
+   "start": 202,
+   "end": 209,
+   "type": "InformationSystem",
+   "text": "행정서버-54"
+  },
+  {
+   "start": 212,
+   "end": 218,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 231,
+   "end": 243,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 246,
+   "end": 252,
+   "type": "Person",
+   "text": "나동현 이병"
+  },
+  {
+   "start": 260,
+   "end": 267,
+   "type": "InformationSystem",
+   "text": "업무단말-24"
+  },
+  {
+   "start": 270,
+   "end": 276,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 289,
+   "end": 301,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 304,
+   "end": 310,
+   "type": "Person",
+   "text": "옥민규 일병"
+  },
+  {
+   "start": 318,
+   "end": 325,
+   "type": "InformationSystem",
+   "text": "업무단말-58"
+  },
+  {
+   "start": 328,
+   "end": 331,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 339,
+   "end": 351,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 354,
+   "end": 360,
+   "type": "Person",
+   "text": "심수호 일병"
+  },
+  {
+   "start": 368,
+   "end": 375,
+   "type": "InformationSystem",
+   "text": "업무단말-24"
+  },
+  {
+   "start": 378,
+   "end": 384,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 392,
+   "end": 404,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 407,
+   "end": 413,
+   "type": "Person",
+   "text": "염승우 상병"
+  },
+  {
+   "start": 421,
+   "end": 428,
+   "type": "InformationSystem",
+   "text": "행정서버-59"
+  },
+  {
+   "start": 431,
+   "end": 437,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 450,
+   "end": 462,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 465,
+   "end": 471,
+   "type": "Person",
+   "text": "옥민규 일병"
+  },
+  {
+   "start": 479,
+   "end": 486,
+   "type": "InformationSystem",
+   "text": "업무단말-58"
+  },
+  {
+   "start": 489,
+   "end": 492,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 500,
+   "end": 515,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 518,
+   "end": 524,
+   "type": "Person",
+   "text": "염승우 상병"
+  },
+  {
+   "start": 533,
+   "end": 540,
+   "type": "InformationSystem",
+   "text": "행정서버-59"
+  },
+  {
+   "start": 543,
+   "end": 549,
+   "type": "Facility",
+   "text": "제1통제구역"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     107,
+     170
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     171,
+     228
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     229,
+     286
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     287,
+     336
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     337,
+     389
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     390,
+     447
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     448,
+     497
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     498,
+     559
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "심수호 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 0,
+   "head": "심수호 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-59"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-59",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 1,
+   "head": "염승우 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 1,
+   "head": "염승우 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-54"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-54",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 2,
+   "head": "나동현 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "나동현 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-24"
+  },
+  {
+   "unit": 2,
+   "head": "업무단말-24",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 3,
+   "head": "옥민규 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 3,
+   "head": "옥민규 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-58"
+  },
+  {
+   "unit": 3,
+   "head": "업무단말-58",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 4,
+   "head": "심수호 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 4,
+   "head": "심수호 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-24"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-24",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 5,
+   "head": "염승우 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 5,
+   "head": "염승우 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-59"
+  },
+  {
+   "unit": 5,
+   "head": "행정서버-59",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 6,
+   "head": "옥민규 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 6,
+   "head": "옥민규 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-58"
+  },
+  {
+   "unit": 6,
+   "head": "업무단말-58",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 7,
+   "head": "염승우 상병",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 7,
+   "head": "염승우 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-59"
+  },
+  {
+   "unit": 7,
+   "head": "행정서버-59",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "심수호 일병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-59"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "염승우 상병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-54"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "나동현 이병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-24"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "옥민규 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-58"
+    ],
+    "설치장소": [
+     "전산실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "심수호 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-24"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "염승우 상병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-59"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "옥민규 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-58"
+    ],
+    "설치장소": [
+     "전산실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    7
+   ],
+   "fields": {
+    "소속": [
+     "제3051포병대대 지휘통제반"
+    ],
+    "취급자": [
+     "염승우 상병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-59"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "서명 누락"
+   }
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "doc_id": "eval-055-N1",
+ "scenario_id": "eval-055",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 50,
+   "end": 55,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 64,
+   "end": 76,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 77,
+   "end": 83,
+   "type": "Person",
+   "text": "병장 편유찬"
+  },
+  {
+   "start": 108,
+   "end": 112,
+   "type": "Person",
+   "text": "편 병장"
+  },
+  {
+   "start": 121,
+   "end": 126,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 151,
+   "end": 159,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 160,
+   "end": 170,
+   "type": "Person",
+   "text": "7급 군무원 전서윤"
+  },
+  {
+   "start": 195,
+   "end": 205,
+   "type": "Regulation",
+   "text": "보호구역 관리 규정"
+  },
+  {
+   "start": 214,
+   "end": 219,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 235,
+   "end": 245,
+   "type": "Person",
+   "text": "7급 군무원 전서윤"
+  },
+  {
+   "start": 270,
+   "end": 282,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 283,
+   "end": 291,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 292,
+   "end": 302,
+   "type": "Person",
+   "text": "7급 군무원 전서윤"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     55
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     57,
+     100
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     102,
+     184
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     186,
+     206
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     208,
+     263
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     265,
+     302
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "병장 편유찬",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "편 병장",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 2,
+   "head": "7급 군무원 전서윤",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 5,
+   "head": "7급 군무원 전서윤",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 5,
+   "head": "7급 군무원 전서윤",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 5,
+   "head": "출입통제 담당관",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 정보과"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "병장 편유찬"
+    ],
+    "장소": [
+     "보안자재실"
+    ],
+    "위반 규정": [
+     "보호구역 관리 규정"
+    ],
+    "일자": "2026-08-09"
+   }
+  }
+ ]
+}

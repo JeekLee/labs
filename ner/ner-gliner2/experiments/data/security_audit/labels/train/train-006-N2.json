@@ -1,0 +1,162 @@
+{
+ "doc_id": "train-006-N2",
+ "scenario_id": "train-006",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 4분기 정기 보안점검"
+  },
+  {
+   "start": 45,
+   "end": 57,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 64,
+   "end": 76,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 77,
+   "end": 85,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 86,
+   "end": 92,
+   "type": "Person",
+   "text": "박지우 소령"
+  },
+  {
+   "start": 105,
+   "end": 111,
+   "type": "Person",
+   "text": "백도현 병장"
+  },
+  {
+   "start": 113,
+   "end": 120,
+   "type": "StorageMedium",
+   "text": "HDD-223"
+  },
+  {
+   "start": 127,
+   "end": 137,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 162,
+   "end": 168,
+   "type": "Person",
+   "text": "박지우 소령"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     57
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     59,
+     92
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     94,
+     141
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     143,
+     188
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 4분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "박지우 소령",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "박지우 소령",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 1,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "백도현 병장",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-223"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "백도현 병장"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "매체 회수",
+    "담당": [
+     "박지우 소령"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

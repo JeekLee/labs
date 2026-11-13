@@ -1,0 +1,182 @@
+{
+ "doc_id": "eval-050-N2",
+ "scenario_id": "eval-050",
+ "split": "eval",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 14,
+   "end": 31,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 41,
+   "end": 56,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 64,
+   "end": 79,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 80,
+   "end": 87,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 88,
+   "end": 98,
+   "type": "Person",
+   "text": "우지후 7급 군무원"
+  },
+  {
+   "start": 109,
+   "end": 115,
+   "type": "Person",
+   "text": "천유나 병장"
+  },
+  {
+   "start": 122,
+   "end": 129,
+   "type": "ClassifiedDocument",
+   "text": "정보수집 계획"
+  },
+  {
+   "start": 131,
+   "end": 137,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 144,
+   "end": 155,
+   "type": "Regulation",
+   "text": "비밀 대출 관리 지침"
+  },
+  {
+   "start": 235,
+   "end": 245,
+   "type": "Person",
+   "text": "우지후 7급 군무원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     98
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     100,
+     159
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     161,
+     199
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     201,
+     225
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     227,
+     263
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 0,
+   "head": "우지후 7급 군무원",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 0,
+   "head": "우지후 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 0,
+   "head": "비밀관리책임자",
+   "type": "POSITION_OF",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 1,
+   "head": "천유나 병장",
+   "type": "ACCESSED",
+   "tail": "정보수집 계획"
+  },
+  {
+   "unit": 1,
+   "head": "천유나 병장",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    1
+   ],
+   "fields": {
+    "영역": "문서보안",
+    "대상": [
+     "천유나 병장"
+    ],
+    "위반 규정": [
+     "비밀 대출 관리 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    4
+   ],
+   "fields": {
+    "조치 유형": "재교육",
+    "담당": [
+     "우지후 7급 군무원"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

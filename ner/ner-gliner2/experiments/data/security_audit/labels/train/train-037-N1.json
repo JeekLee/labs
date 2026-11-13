@@ -1,0 +1,219 @@
+{
+ "doc_id": "train-037-N1",
+ "scenario_id": "train-037",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 33,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 34,
+   "end": 40,
+   "type": "Person",
+   "text": "윤재현 일병"
+  },
+  {
+   "start": 70,
+   "end": 84,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 86,
+   "end": 91,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 117,
+   "end": 123,
+   "type": "Person",
+   "text": "윤재현 일병"
+  },
+  {
+   "start": 124,
+   "end": 138,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 149,
+   "end": 163,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 164,
+   "end": 172,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 173,
+   "end": 179,
+   "type": "Person",
+   "text": "천선우 소위"
+  },
+  {
+   "start": 200,
+   "end": 205,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 224,
+   "end": 228,
+   "type": "Person",
+   "text": "윤 일병"
+  },
+  {
+   "start": 328,
+   "end": 336,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 353,
+   "end": 361,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 362,
+   "end": 368,
+   "type": "Person",
+   "text": "천선우 소위"
+  },
+  {
+   "start": 370,
+   "end": 375,
+   "type": "Facility",
+   "text": "보안자재실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     107
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     109,
+     185
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     187,
+     293
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     295,
+     344
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     346,
+     415
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "윤재현 일병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 0,
+   "head": "윤재현 일병",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 0,
+   "head": "보안자재실",
+   "type": "LOCATED_AT",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "윤재현 일병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "윤 일병",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 1,
+   "head": "천선우 소위",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "천선우 소위",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 1,
+   "head": "출입통제 담당관",
+   "type": "POSITION_OF",
+   "tail": "제8015항공대대 정비중대"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "윤재현 일병"
+    ],
+    "장소": [
+     "보안자재실"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026. 7. 22."
+   }
+  }
+ ]
+}

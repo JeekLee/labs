@@ -1,0 +1,195 @@
+{
+ "doc_id": "train-016-N1",
+ "scenario_id": "train-016",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 47,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 48,
+   "end": 51,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 112,
+   "end": 127,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 128,
+   "end": 134,
+   "type": "Person",
+   "text": "신현우 일병"
+  },
+  {
+   "start": 140,
+   "end": 150,
+   "type": "Credential",
+   "text": "제2026-465호"
+  },
+  {
+   "start": 163,
+   "end": 168,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 169,
+   "end": 175,
+   "type": "Person",
+   "text": "소령 문태윤"
+  },
+  {
+   "start": 190,
+   "end": 196,
+   "type": "Person",
+   "text": "신현우 일병"
+  },
+  {
+   "start": 205,
+   "end": 215,
+   "type": "Credential",
+   "text": "제2026-465호"
+  },
+  {
+   "start": 223,
+   "end": 226,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 323,
+   "end": 333,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 350,
+   "end": 356,
+   "type": "Person",
+   "text": "소령 문태윤"
+  },
+  {
+   "start": 374,
+   "end": 378,
+   "type": "Person",
+   "text": "신 일병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     102
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     104,
+     181
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     183,
+     291
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     293,
+     341
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     343,
+     403
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "서버실",
+   "type": "LOCATED_AT",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 1,
+   "head": "신현우 일병",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 1,
+   "head": "신현우 일병",
+   "type": "HOLDS",
+   "tail": "제2026-465호"
+  },
+  {
+   "unit": 1,
+   "head": "소령 문태윤",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 2,
+   "head": "신현우 일병",
+   "type": "HOLDS",
+   "tail": "제2026-465호"
+  },
+  {
+   "unit": 2,
+   "head": "신현우 일병",
+   "type": "ACCESSED",
+   "tail": "서버실"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "신현우 일병"
+    ],
+    "장소": [
+     "서버실"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026. 8. 21."
+   }
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "doc_id": "train-012-N1",
+ "scenario_id": "train-012",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 36,
+   "end": 51,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 52,
+   "end": 57,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 65,
+   "end": 72,
+   "type": "StorageMedium",
+   "text": "HDD-259"
+  },
+  {
+   "start": 136,
+   "end": 151,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 155,
+   "end": 161,
+   "type": "Person",
+   "text": "위시현 이병"
+  },
+  {
+   "start": 176,
+   "end": 183,
+   "type": "StorageMedium",
+   "text": "HDD-259"
+  },
+  {
+   "start": 213,
+   "end": 221,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 222,
+   "end": 228,
+   "type": "Person",
+   "text": "강태민 하사"
+  },
+  {
+   "start": 243,
+   "end": 247,
+   "type": "Person",
+   "text": "위 이병"
+  },
+  {
+   "start": 267,
+   "end": 274,
+   "type": "StorageMedium",
+   "text": "HDD-259"
+  },
+  {
+   "start": 372,
+   "end": 382,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 426,
+   "end": 432,
+   "type": "Person",
+   "text": "강태민 하사"
+  },
+  {
+   "start": 434,
+   "end": 441,
+   "type": "StorageMedium",
+   "text": "HDD-259"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     126
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     128,
+     234
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     236,
+     354
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     356,
+     417
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     419,
+     514
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "HDD-259",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 0,
+   "head": "작전회의실",
+   "type": "LOCATED_AT",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "위시현 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "강태민 하사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 1,
+   "head": "강태민 하사",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "HDD-259"
+  },
+  {
+   "unit": 2,
+   "head": "위 이병",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-259"
+  },
+  {
+   "unit": 4,
+   "head": "강태민 하사",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "HDD-259"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "위시현 이병"
+    ],
+    "매체": [
+     "HDD-259"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026년 10월 13일"
+   }
+  }
+ ]
+}

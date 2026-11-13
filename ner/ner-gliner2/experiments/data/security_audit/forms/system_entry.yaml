@@ -1,0 +1,86 @@
+record: system_entry
+title: 정보시스템 관리대장
+source: 서울시교육청 정보보안 기본지침 서식3, 농림축산식품부·산업통상부 사이버보안지침 서식4
+meta_fields: []
+columns:
+- key: 소속
+  field: 소속
+  kind: unit
+- key: 취급자
+  field: 취급자
+  kind: person
+- key: 종류
+  field: 종류
+  kind: system_kind
+- key: 관리번호
+  field: 관리번호
+  kind: system
+- key: 설치장소
+  field: 설치장소
+  kind: facility
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: system_entry_a
+  eval_only: false
+  headers:
+    소속: 소속
+    취급자: 취급자 성명
+    종류: 종류
+    관리번호: 관리번호
+    설치장소: 설치장소
+    비고: 비고
+  order: &id001
+  - 소속
+  - 취급자
+  - 종류
+  - 관리번호
+  - 설치장소
+  - 비고
+  grouped: []
+  date_format: dot
+- id: system_entry_b
+  eval_only: false
+  headers:
+    소속: 소속
+    취급자: 사용자 직위·성명
+    종류: 종류
+    관리번호: 관리번호
+    설치장소: 부서명(설치장소)
+    비고: 비고
+  order: *id001
+  grouped:
+  - - 소속
+    - 취급자
+  date_format: dash
+- id: system_entry_c
+  eval_only: false
+  headers:
+    소속: 소속
+    취급자: 취급자
+    종류: 장비 종류
+    관리번호: 자산번호
+    설치장소: 설치장소
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: short
+- id: system_entry_eval
+  eval_only: true
+  headers:
+    소속: 운용 부서
+    취급자: 관리자
+    종류: 구분
+    관리번호: 장비명
+    설치장소: 위치
+    비고: 비고
+  order:
+  - 관리번호
+  - 종류
+  - 설치장소
+  - 소속
+  - 취급자
+  - 비고
+  grouped: []
+  date_format: korean

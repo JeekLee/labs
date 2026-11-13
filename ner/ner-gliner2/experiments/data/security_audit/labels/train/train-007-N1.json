@@ -1,0 +1,159 @@
+{
+ "doc_id": "train-007-N1",
+ "scenario_id": "train-007",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 31,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 57,
+   "end": 65,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 83,
+   "end": 89,
+   "type": "Person",
+   "text": "일병 선윤우"
+  },
+  {
+   "start": 94,
+   "end": 106,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 131,
+   "end": 137,
+   "type": "Person",
+   "text": "일병 선윤우"
+  },
+  {
+   "start": 153,
+   "end": 161,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 234,
+   "end": 242,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 251,
+   "end": 259,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 260,
+   "end": 266,
+   "type": "Person",
+   "text": "안하은 소위"
+  },
+  {
+   "start": 287,
+   "end": 291,
+   "type": "Person",
+   "text": "선 일병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     73
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     75,
+     106
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     108,
+     222
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     224,
+     242
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     244,
+     299
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "일병 선윤우",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 2,
+   "head": "일병 선윤우",
+   "type": "ACCESSED",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 4,
+   "head": "안하은 소위",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "일병 선윤우"
+    ],
+    "장소": [
+     "정문 출입통제소"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026년 1월 8일"
+   }
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+record: reading
+title: 비밀열람기록전
+source: 산업통상부 시행세칙 별지24, 통일부 시행세칙 별지11
+meta_fields:
+- 관리번호
+- 건명
+columns:
+- key: 일시
+  field: 일시
+  kind: datetime
+- key: 소속
+  field: null
+  kind: unit
+- key: 열람자
+  field: 열람자
+  kind: person
+- key: 인가등급
+  field: 인가등급
+  kind: grade
+- key: 열람목적
+  field: 열람목적
+  kind: text_purpose
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: reading_a
+  eval_only: false
+  headers:
+    일시: 일시
+    소속: 소속·직책
+    열람자: 열람자
+    인가등급: 인가등급
+    열람목적: 열람목적
+    비고: 비고
+  order: &id001
+  - 일시
+  - 소속
+  - 열람자
+  - 인가등급
+  - 열람목적
+  - 비고
+  grouped: []
+  date_format: dot
+- id: reading_b
+  eval_only: false
+  headers:
+    일시: 연월일
+    소속: 소속
+    열람자: 성명
+    인가등급: 인가등급
+    열람목적: 목적
+    비고: 비고
+  order: *id001
+  grouped:
+  - - 소속
+    - 열람자
+  date_format: dash
+- id: reading_c
+  eval_only: false
+  headers:
+    일시: 일시
+    소속: 소속
+    열람자: 열람인
+    인가등급: 인가
+    열람목적: 열람목적
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: short
+- id: reading_eval
+  eval_only: true
+  headers:
+    일시: 열람 일시
+    소속: 소속
+    열람자: 열람 인원
+    인가등급: 취급인가
+    열람목적: 사유
+    비고: 비고
+  order:
+  - 열람자
+  - 소속
+  - 일시
+  - 인가등급
+  - 열람목적
+  - 비고
+  grouped: []
+  date_format: korean

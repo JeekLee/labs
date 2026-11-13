@@ -1,0 +1,234 @@
+{
+ "doc_id": "train-041-N1",
+ "scenario_id": "train-041",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 34,
+   "end": 46,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 47,
+   "end": 53,
+   "type": "Person",
+   "text": "방수아 일병"
+  },
+  {
+   "start": 73,
+   "end": 76,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 79,
+   "end": 88,
+   "type": "ClassifiedDocument",
+   "text": "작전계획 부록 2"
+  },
+  {
+   "start": 106,
+   "end": 118,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 119,
+   "end": 125,
+   "type": "Person",
+   "text": "방수아 일병"
+  },
+  {
+   "start": 132,
+   "end": 144,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 145,
+   "end": 150,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 151,
+   "end": 157,
+   "type": "Person",
+   "text": "반도현 중위"
+  },
+  {
+   "start": 167,
+   "end": 171,
+   "type": "Person",
+   "text": "방 일병"
+  },
+  {
+   "start": 201,
+   "end": 204,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 231,
+   "end": 235,
+   "type": "Person",
+   "text": "방 일병"
+  },
+  {
+   "start": 253,
+   "end": 262,
+   "type": "ClassifiedDocument",
+   "text": "작전계획 부록 2"
+  },
+  {
+   "start": 330,
+   "end": 342,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 359,
+   "end": 364,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 365,
+   "end": 371,
+   "type": "Person",
+   "text": "반도현 중위"
+  },
+  {
+   "start": 373,
+   "end": 377,
+   "type": "Person",
+   "text": "방 일병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     96
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     98,
+     158
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     160,
+     293
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     295,
+     350
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     352,
+     429
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "방수아 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "방수아 일병",
+   "type": "ACCESSED",
+   "tail": "전산실"
+  },
+  {
+   "unit": 0,
+   "head": "방수아 일병",
+   "type": "ACCESSED",
+   "tail": "작전계획 부록 2"
+  },
+  {
+   "unit": 1,
+   "head": "방수아 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "방 일병",
+   "type": "ACCESSED",
+   "tail": "작전계획 부록 2"
+  },
+  {
+   "unit": 1,
+   "head": "반도현 중위",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "반도현 중위",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 1,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 인사과"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "인가 만료자 접근",
+    "관련자": [
+     "방수아 일병"
+    ],
+    "대상 문서": [
+     "작전계획 부록 2"
+    ],
+    "장소": [
+     "전산실"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ],
+    "일자": "2026. 5. 8."
+   }
+  }
+ ]
+}

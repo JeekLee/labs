@@ -1,0 +1,249 @@
+{
+ "doc_id": "eval-053-N1",
+ "scenario_id": "eval-053",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 31,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 32,
+   "end": 38,
+   "type": "Person",
+   "text": "명예준 상병"
+  },
+  {
+   "start": 54,
+   "end": 57,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 60,
+   "end": 67,
+   "type": "ClassifiedDocument",
+   "text": "부대배치 현황"
+  },
+  {
+   "start": 102,
+   "end": 108,
+   "type": "Person",
+   "text": "명예준 상병"
+  },
+  {
+   "start": 115,
+   "end": 125,
+   "type": "Credential",
+   "text": "제2026-284호"
+  },
+  {
+   "start": 168,
+   "end": 172,
+   "type": "Person",
+   "text": "명 상병"
+  },
+  {
+   "start": 174,
+   "end": 177,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 183,
+   "end": 190,
+   "type": "ClassifiedDocument",
+   "text": "부대배치 현황"
+  },
+  {
+   "start": 246,
+   "end": 258,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 293,
+   "end": 297,
+   "type": "Person",
+   "text": "명 상병"
+  },
+  {
+   "start": 318,
+   "end": 323,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 324,
+   "end": 330,
+   "type": "Person",
+   "text": "곽준우 소령"
+  },
+  {
+   "start": 354,
+   "end": 366,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 367,
+   "end": 372,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 373,
+   "end": 379,
+   "type": "Person",
+   "text": "곽준우 소령"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     92
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     94,
+     148
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     150,
+     234
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     236,
+     284
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     286,
+     348
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     350,
+     379
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "명예준 상병",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 0,
+   "head": "명예준 상병",
+   "type": "ACCESSED",
+   "tail": "서버실"
+  },
+  {
+   "unit": 0,
+   "head": "명예준 상병",
+   "type": "ACCESSED",
+   "tail": "부대배치 현황"
+  },
+  {
+   "unit": 1,
+   "head": "명예준 상병",
+   "type": "HOLDS",
+   "tail": "제2026-284호"
+  },
+  {
+   "unit": 2,
+   "head": "명 상병",
+   "type": "ACCESSED",
+   "tail": "서버실"
+  },
+  {
+   "unit": 2,
+   "head": "명 상병",
+   "type": "ACCESSED",
+   "tail": "부대배치 현황"
+  },
+  {
+   "unit": 4,
+   "head": "곽준우 소령",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 5,
+   "head": "곽준우 소령",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 5,
+   "head": "곽준우 소령",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 5,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제7022통신단 운영과"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "인가 만료자 접근",
+    "관련자": [
+     "명예준 상병"
+    ],
+    "장소": [
+     "서버실"
+    ],
+    "대상 문서": [
+     "부대배치 현황"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ],
+    "일자": "2026-02-06"
+   }
+  }
+ ]
+}

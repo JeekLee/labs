@@ -1,0 +1,525 @@
+{
+ "doc_id": "eval-057-L1",
+ "scenario_id": "eval-057",
+ "split": "eval",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_eval",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 41,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 108,
+   "end": 115,
+   "type": "InformationSystem",
+   "text": "행정서버-20"
+  },
+  {
+   "start": 123,
+   "end": 128,
+   "type": "Facility",
+   "text": "정보통신실"
+  },
+  {
+   "start": 131,
+   "end": 145,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 148,
+   "end": 154,
+   "type": "Person",
+   "text": "염정우 일병"
+  },
+  {
+   "start": 162,
+   "end": 170,
+   "type": "InformationSystem",
+   "text": "망연계서버-73"
+  },
+  {
+   "start": 178,
+   "end": 181,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 184,
+   "end": 198,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 201,
+   "end": 207,
+   "type": "Person",
+   "text": "일병 채하율"
+  },
+  {
+   "start": 215,
+   "end": 223,
+   "type": "InformationSystem",
+   "text": "망연계서버-96"
+  },
+  {
+   "start": 232,
+   "end": 235,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 238,
+   "end": 252,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 255,
+   "end": 261,
+   "type": "Person",
+   "text": "병장 홍지민"
+  },
+  {
+   "start": 274,
+   "end": 282,
+   "type": "InformationSystem",
+   "text": "망연계서버-76"
+  },
+  {
+   "start": 294,
+   "end": 299,
+   "type": "Facility",
+   "text": "정보통신실"
+  },
+  {
+   "start": 302,
+   "end": 316,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 319,
+   "end": 325,
+   "type": "Person",
+   "text": "염정우 일병"
+  },
+  {
+   "start": 338,
+   "end": 346,
+   "type": "InformationSystem",
+   "text": "망연계서버-96"
+  },
+  {
+   "start": 358,
+   "end": 366,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 369,
+   "end": 386,
+   "type": "Unit",
+   "text": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "start": 389,
+   "end": 395,
+   "type": "Person",
+   "text": "기진혁 병장"
+  },
+  {
+   "start": 403,
+   "end": 411,
+   "type": "InformationSystem",
+   "text": "망연계서버-76"
+  },
+  {
+   "start": 423,
+   "end": 426,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 429,
+   "end": 446,
+   "type": "Unit",
+   "text": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "start": 449,
+   "end": 455,
+   "type": "Person",
+   "text": "오진우 병장"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     79
+    ],
+    [
+     80,
+     105
+    ],
+    [
+     106,
+     159
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     79
+    ],
+    [
+     80,
+     105
+    ],
+    [
+     160,
+     212
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     79
+    ],
+    [
+     80,
+     105
+    ],
+    [
+     213,
+     271
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     79
+    ],
+    [
+     80,
+     105
+    ],
+    [
+     272,
+     335
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     79
+    ],
+    [
+     80,
+     105
+    ],
+    [
+     336,
+     400
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     79
+    ],
+    [
+     80,
+     105
+    ],
+    [
+     401,
+     460
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "염정우 일병",
+   "type": "BELONGS_TO",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 0,
+   "head": "염정우 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-20"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-20",
+   "type": "LOCATED_AT",
+   "tail": "정보통신실"
+  },
+  {
+   "unit": 1,
+   "head": "일병 채하율",
+   "type": "BELONGS_TO",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 1,
+   "head": "일병 채하율",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "망연계서버-73"
+  },
+  {
+   "unit": 1,
+   "head": "망연계서버-73",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "병장 홍지민",
+   "type": "BELONGS_TO",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 2,
+   "head": "병장 홍지민",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "망연계서버-96"
+  },
+  {
+   "unit": 2,
+   "head": "망연계서버-96",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 3,
+   "head": "염정우 일병",
+   "type": "BELONGS_TO",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 3,
+   "head": "염정우 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "망연계서버-76"
+  },
+  {
+   "unit": 3,
+   "head": "망연계서버-76",
+   "type": "LOCATED_AT",
+   "tail": "정보통신실"
+  },
+  {
+   "unit": 4,
+   "head": "기진혁 병장",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "unit": 4,
+   "head": "기진혁 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "망연계서버-96"
+  },
+  {
+   "unit": 4,
+   "head": "망연계서버-96",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 5,
+   "head": "오진우 병장",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "unit": 5,
+   "head": "오진우 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "망연계서버-76"
+  },
+  {
+   "unit": 5,
+   "head": "망연계서버-76",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제2068기갑여단 통신중대"
+    ],
+    "취급자": [
+     "염정우 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-20"
+    ],
+    "설치장소": [
+     "정보통신실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제2068기갑여단 통신중대"
+    ],
+    "취급자": [
+     "일병 채하율"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "망연계서버-73"
+    ],
+    "설치장소": [
+     "전산실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제2068기갑여단 통신중대"
+    ],
+    "취급자": [
+     "병장 홍지민"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "망연계서버-96"
+    ],
+    "설치장소": [
+     "서버실"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제2068기갑여단 통신중대"
+    ],
+    "취급자": [
+     "염정우 일병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "망연계서버-76"
+    ],
+    "설치장소": [
+     "정보통신실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 군수지원대대"
+    ],
+    "취급자": [
+     "기진혁 병장"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "망연계서버-96"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 군수지원대대"
+    ],
+    "취급자": [
+     "오진우 병장"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "망연계서버-76"
+    ],
+    "설치장소": [
+     "서버실"
+    ]
+   }
+  }
+ ]
+}

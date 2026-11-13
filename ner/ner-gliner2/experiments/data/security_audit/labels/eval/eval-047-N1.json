@@ -1,0 +1,231 @@
+{
+ "doc_id": "eval-047-N1",
+ "scenario_id": "eval-047",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 31,
+   "end": 44,
+   "type": "Unit",
+   "text": "제9147보병사단 정보처"
+  },
+  {
+   "start": 48,
+   "end": 54,
+   "type": "Person",
+   "text": "이병 최진우"
+  },
+  {
+   "start": 76,
+   "end": 81,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 87,
+   "end": 96,
+   "type": "ClassifiedDocument",
+   "text": "작전계획 부록 2"
+  },
+  {
+   "start": 112,
+   "end": 116,
+   "type": "Person",
+   "text": "최 이병"
+  },
+  {
+   "start": 175,
+   "end": 179,
+   "type": "Person",
+   "text": "최 이병"
+  },
+  {
+   "start": 188,
+   "end": 193,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 209,
+   "end": 218,
+   "type": "ClassifiedDocument",
+   "text": "작전계획 부록 2"
+  },
+  {
+   "start": 254,
+   "end": 258,
+   "type": "Person",
+   "text": "편 중사"
+  },
+  {
+   "start": 273,
+   "end": 285,
+   "type": "Regulation",
+   "text": "인가자 관리 운영 지침"
+  },
+  {
+   "start": 292,
+   "end": 296,
+   "type": "Person",
+   "text": "편 중사"
+  },
+  {
+   "start": 298,
+   "end": 302,
+   "type": "Person",
+   "text": "최 이병"
+  },
+  {
+   "start": 344,
+   "end": 357,
+   "type": "Unit",
+   "text": "제9147보병사단 정보처"
+  },
+  {
+   "start": 358,
+   "end": 363,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 364,
+   "end": 370,
+   "type": "Person",
+   "text": "편현수 중사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     102
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     104,
+     160
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     162,
+     264
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     266,
+     286
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     288,
+     337
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     339,
+     370
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "이병 최진우",
+   "type": "BELONGS_TO",
+   "tail": "제9147보병사단 정보처"
+  },
+  {
+   "unit": 0,
+   "head": "이병 최진우",
+   "type": "ACCESSED",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 0,
+   "head": "이병 최진우",
+   "type": "ACCESSED",
+   "tail": "작전계획 부록 2"
+  },
+  {
+   "unit": 2,
+   "head": "최 이병",
+   "type": "ACCESSED",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 2,
+   "head": "최 이병",
+   "type": "ACCESSED",
+   "tail": "작전계획 부록 2"
+  },
+  {
+   "unit": 5,
+   "head": "편현수 중사",
+   "type": "BELONGS_TO",
+   "tail": "제9147보병사단 정보처"
+  },
+  {
+   "unit": 5,
+   "head": "편현수 중사",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 5,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제9147보병사단 정보처"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "인가 만료자 접근",
+    "관련자": [
+     "이병 최진우"
+    ],
+    "대상 문서": [
+     "작전계획 부록 2"
+    ],
+    "장소": [
+     "통신기계실"
+    ],
+    "위반 규정": [
+     "인가자 관리 운영 지침"
+    ],
+    "일자": "2026. 2. 3."
+   }
+  }
+ ]
+}

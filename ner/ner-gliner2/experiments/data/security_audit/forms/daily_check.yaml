@@ -1,0 +1,84 @@
+record: daily_check
+title: 보안점검표
+source: 산업통상부 시행세칙 별지30
+meta_fields: []
+columns:
+- key: 점검일자
+  field: 점검일자
+  kind: date
+- key: 장소
+  field: 장소
+  kind: facility
+- key: 점검결과
+  field: 점검결과
+  kind: choice
+- key: 점검시각
+  field: 점검시각
+  kind: time
+- key: 점검자
+  field: 점검자
+  kind: person
+- key: 특이사항
+  field: 특이사항
+  kind: text_check
+variants:
+- id: daily_check_a
+  eval_only: false
+  headers:
+    점검일자: 점검일자
+    장소: 점검부서 및 장소
+    점검결과: 점검 상태
+    점검시각: 점검시각
+    점검자: 점검자
+    특이사항: 특이사항
+  order: &id001
+  - 점검일자
+  - 장소
+  - 점검결과
+  - 점검시각
+  - 점검자
+  - 특이사항
+  grouped: []
+  date_format: dot
+- id: daily_check_b
+  eval_only: false
+  headers:
+    점검일자: 점검일자
+    장소: 장소
+    점검결과: 점검결과
+    점검시각: 보안점검시각
+    점검자: 점검자(인)
+    특이사항: 특이사항
+  order: *id001
+  grouped: []
+  date_format: dash
+- id: daily_check_c
+  eval_only: false
+  headers:
+    점검일자: 점검일자
+    장소: 점검 장소
+    점검결과: 점검결과
+    점검시각: 점검시각
+    점검자: 점검자
+    특이사항: 비고
+  order: *id001
+  grouped: []
+  date_format: short
+- id: daily_check_eval
+  eval_only: true
+  headers:
+    점검일자: 일자
+    장소: 구역
+    점검결과: 결과
+    점검시각: 점검시각
+    점검자: 당직자
+    특이사항: 조치 내용
+  order:
+  - 장소
+  - 점검일자
+  - 점검시각
+  - 점검자
+  - 점검결과
+  - 특이사항
+  grouped: []
+  date_format: korean

@@ -1,0 +1,611 @@
+{
+ "doc_id": "train-024-L3",
+ "scenario_id": "train-024",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_c",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 42,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 112,
+   "end": 127,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 130,
+   "end": 136,
+   "type": "Person",
+   "text": "나동현 이병"
+  },
+  {
+   "start": 144,
+   "end": 151,
+   "type": "InformationSystem",
+   "text": "행정서버-39"
+  },
+  {
+   "start": 154,
+   "end": 157,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 170,
+   "end": 185,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 188,
+   "end": 194,
+   "type": "Person",
+   "text": "최준혁 이병"
+  },
+  {
+   "start": 206,
+   "end": 213,
+   "type": "InformationSystem",
+   "text": "행정서버-32"
+  },
+  {
+   "start": 216,
+   "end": 219,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 227,
+   "end": 242,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 245,
+   "end": 251,
+   "type": "Person",
+   "text": "최준혁 이병"
+  },
+  {
+   "start": 260,
+   "end": 267,
+   "type": "InformationSystem",
+   "text": "행정서버-32"
+  },
+  {
+   "start": 270,
+   "end": 275,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 288,
+   "end": 301,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 304,
+   "end": 310,
+   "type": "Person",
+   "text": "안윤호 병장"
+  },
+  {
+   "start": 322,
+   "end": 329,
+   "type": "InformationSystem",
+   "text": "행정서버-32"
+  },
+  {
+   "start": 332,
+   "end": 337,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 345,
+   "end": 360,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 363,
+   "end": 369,
+   "type": "Person",
+   "text": "최준혁 이병"
+  },
+  {
+   "start": 377,
+   "end": 384,
+   "type": "InformationSystem",
+   "text": "행정서버-32"
+  },
+  {
+   "start": 387,
+   "end": 392,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 405,
+   "end": 420,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 423,
+   "end": 429,
+   "type": "Person",
+   "text": "최준혁 이병"
+  },
+  {
+   "start": 441,
+   "end": 448,
+   "type": "InformationSystem",
+   "text": "업무단말-40"
+  },
+  {
+   "start": 451,
+   "end": 456,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 469,
+   "end": 484,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 487,
+   "end": 493,
+   "type": "Person",
+   "text": "방민우 병장"
+  },
+  {
+   "start": 505,
+   "end": 512,
+   "type": "InformationSystem",
+   "text": "업무단말-40"
+  },
+  {
+   "start": 515,
+   "end": 518,
+   "type": "Facility",
+   "text": "상황실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     42
+    ],
+    [
+     44,
+     83
+    ],
+    [
+     84,
+     109
+    ],
+    [
+     110,
+     167
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     42
+    ],
+    [
+     44,
+     83
+    ],
+    [
+     84,
+     109
+    ],
+    [
+     168,
+     224
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     42
+    ],
+    [
+     44,
+     83
+    ],
+    [
+     84,
+     109
+    ],
+    [
+     225,
+     285
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     42
+    ],
+    [
+     44,
+     83
+    ],
+    [
+     84,
+     109
+    ],
+    [
+     286,
+     342
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     42
+    ],
+    [
+     44,
+     83
+    ],
+    [
+     84,
+     109
+    ],
+    [
+     343,
+     402
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     42
+    ],
+    [
+     44,
+     83
+    ],
+    [
+     84,
+     109
+    ],
+    [
+     403,
+     466
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     42
+    ],
+    [
+     44,
+     83
+    ],
+    [
+     84,
+     109
+    ],
+    [
+     467,
+     528
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "나동현 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 0,
+   "head": "나동현 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-39"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-39",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 1,
+   "head": "최준혁 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "최준혁 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-32"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-32",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 2,
+   "head": "최준혁 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 2,
+   "head": "최준혁 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-32"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-32",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 3,
+   "head": "안윤호 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 3,
+   "head": "안윤호 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-32"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-32",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 4,
+   "head": "최준혁 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 4,
+   "head": "최준혁 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-32"
+  },
+  {
+   "unit": 4,
+   "head": "행정서버-32",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 5,
+   "head": "최준혁 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 5,
+   "head": "최준혁 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-40"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-40",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 6,
+   "head": "방민우 병장",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 6,
+   "head": "방민우 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-40"
+  },
+  {
+   "unit": 6,
+   "head": "업무단말-40",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "나동현 이병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-39"
+    ],
+    "설치장소": [
+     "상황실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "최준혁 이병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-32"
+    ],
+    "설치장소": [
+     "상황실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "최준혁 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-32"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "안윤호 병장"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-32"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "최준혁 이병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-32"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "최준혁 이병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-40"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "방민우 병장"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-40"
+    ],
+    "설치장소": [
+     "상황실"
+    ],
+    "비고": "대리 수령"
+   }
+  }
+ ]
+}

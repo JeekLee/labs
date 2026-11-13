@@ -1,0 +1,525 @@
+{
+ "doc_id": "train-015-L1",
+ "scenario_id": "train-015",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_a",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 41,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 111,
+   "end": 125,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 128,
+   "end": 134,
+   "type": "Person",
+   "text": "한하율 일병"
+  },
+  {
+   "start": 146,
+   "end": 153,
+   "type": "InformationSystem",
+   "text": "업무단말-42"
+  },
+  {
+   "start": 156,
+   "end": 159,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 167,
+   "end": 183,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 186,
+   "end": 192,
+   "type": "Person",
+   "text": "병장 문유찬"
+  },
+  {
+   "start": 201,
+   "end": 208,
+   "type": "InformationSystem",
+   "text": "행정서버-53"
+  },
+  {
+   "start": 211,
+   "end": 214,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 222,
+   "end": 236,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 239,
+   "end": 245,
+   "type": "Person",
+   "text": "병장 문유찬"
+  },
+  {
+   "start": 254,
+   "end": 261,
+   "type": "InformationSystem",
+   "text": "업무단말-42"
+  },
+  {
+   "start": 264,
+   "end": 267,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 275,
+   "end": 289,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 292,
+   "end": 298,
+   "type": "Person",
+   "text": "정재현 병장"
+  },
+  {
+   "start": 307,
+   "end": 314,
+   "type": "InformationSystem",
+   "text": "행정서버-43"
+  },
+  {
+   "start": 317,
+   "end": 320,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 333,
+   "end": 347,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 350,
+   "end": 356,
+   "type": "Person",
+   "text": "상병 위승현"
+  },
+  {
+   "start": 368,
+   "end": 375,
+   "type": "InformationSystem",
+   "text": "업무단말-42"
+  },
+  {
+   "start": 378,
+   "end": 383,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 396,
+   "end": 410,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 413,
+   "end": 419,
+   "type": "Person",
+   "text": "안하은 상병"
+  },
+  {
+   "start": 427,
+   "end": 434,
+   "type": "InformationSystem",
+   "text": "업무단말-40"
+  },
+  {
+   "start": 437,
+   "end": 440,
+   "type": "Facility",
+   "text": "서버실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     109,
+     164
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     165,
+     219
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     220,
+     272
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     273,
+     330
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     331,
+     393
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     41
+    ],
+    [
+     43,
+     82
+    ],
+    [
+     83,
+     108
+    ],
+    [
+     394,
+     445
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "한하율 일병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 0,
+   "head": "한하율 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-42"
+  },
+  {
+   "unit": 0,
+   "head": "업무단말-42",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 1,
+   "head": "병장 문유찬",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 1,
+   "head": "병장 문유찬",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-53"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-53",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 2,
+   "head": "병장 문유찬",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "병장 문유찬",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-42"
+  },
+  {
+   "unit": 2,
+   "head": "업무단말-42",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 3,
+   "head": "정재현 병장",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 3,
+   "head": "정재현 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-43"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-43",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 4,
+   "head": "상병 위승현",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 4,
+   "head": "상병 위승현",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-42"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-42",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 5,
+   "head": "안하은 상병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 5,
+   "head": "안하은 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-40"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-40",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "한하율 일병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-42"
+    ],
+    "설치장소": [
+     "전산실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "병장 문유찬"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-53"
+    ],
+    "설치장소": [
+     "서버실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "병장 문유찬"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-42"
+    ],
+    "설치장소": [
+     "서버실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "정재현 병장"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-43"
+    ],
+    "설치장소": [
+     "전산실"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "상병 위승현"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-42"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "안하은 상병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-40"
+    ],
+    "설치장소": [
+     "서버실"
+    ]
+   }
+  }
+ ]
+}

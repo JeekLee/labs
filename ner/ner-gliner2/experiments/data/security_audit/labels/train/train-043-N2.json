@@ -1,0 +1,170 @@
+{
+ "doc_id": "train-043-N2",
+ "scenario_id": "train-043",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 59,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 67,
+   "end": 80,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 81,
+   "end": 89,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 90,
+   "end": 96,
+   "type": "Person",
+   "text": "중사 석가은"
+  },
+  {
+   "start": 142,
+   "end": 148,
+   "type": "Person",
+   "text": "기채원 병장"
+  },
+  {
+   "start": 166,
+   "end": 172,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 179,
+   "end": 187,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 211,
+   "end": 217,
+   "type": "Person",
+   "text": "중사 석가은"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     96
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     98,
+     137
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     139,
+     191
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     193,
+     235
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     237,
+     274
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 2,
+   "head": "기채원 병장",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 0,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 0,
+   "head": "중사 석가은",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 0,
+   "head": "중사 석가은",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 0,
+   "head": "출입통제 담당관",
+   "type": "POSITION_OF",
+   "tail": "제9013보병사단 작전처"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "시설보안",
+    "대상": [
+     "기채원 병장"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "시설 보완",
+    "담당": [
+     "중사 석가은"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

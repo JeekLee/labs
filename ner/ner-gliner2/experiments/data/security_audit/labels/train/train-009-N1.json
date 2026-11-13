@@ -1,0 +1,162 @@
+{
+ "doc_id": "train-009-N1",
+ "scenario_id": "train-009",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 31,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 89,
+   "end": 101,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 102,
+   "end": 108,
+   "type": "Person",
+   "text": "공수호 이병"
+  },
+  {
+   "start": 117,
+   "end": 123,
+   "type": "Person",
+   "text": "공수호 이병"
+  },
+  {
+   "start": 136,
+   "end": 141,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 171,
+   "end": 178,
+   "type": "StorageMedium",
+   "text": "USB-124"
+  },
+  {
+   "start": 236,
+   "end": 249,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 283,
+   "end": 291,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 292,
+   "end": 298,
+   "type": "Person",
+   "text": "문유찬 상사"
+  },
+  {
+   "start": 307,
+   "end": 311,
+   "type": "Person",
+   "text": "공 이병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     79
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     81,
+     108
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     110,
+     224
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     226,
+     274
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     276,
+     326
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "공수호 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "공수호 이병",
+   "type": "ACCESSED",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 4,
+   "head": "문유찬 상사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "계정·권한 관리 위반",
+    "관련자": [
+     "공수호 이병"
+    ],
+    "매체": [
+     "USB-124"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ],
+    "일자": "2026-08-14"
+   }
+  }
+ ]
+}

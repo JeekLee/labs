@@ -1,0 +1,165 @@
+{
+ "doc_id": "train-031-N1",
+ "scenario_id": "train-031",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 48,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 49,
+   "end": 52,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 92,
+   "end": 108,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 112,
+   "end": 118,
+   "type": "Person",
+   "text": "이준영 병장"
+  },
+  {
+   "start": 127,
+   "end": 133,
+   "type": "Person",
+   "text": "이준영 병장"
+  },
+  {
+   "start": 155,
+   "end": 158,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 199,
+   "end": 203,
+   "type": "Person",
+   "text": "이 병장"
+  },
+  {
+   "start": 231,
+   "end": 239,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 248,
+   "end": 256,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 257,
+   "end": 267,
+   "type": "Person",
+   "text": "6급 군무원 천지원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     82
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     84,
+     118
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     120,
+     219
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     221,
+     239
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     241,
+     306
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "상황실",
+   "type": "LOCATED_AT",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 1,
+   "head": "이준영 병장",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 2,
+   "head": "이준영 병장",
+   "type": "ACCESSED",
+   "tail": "상황실"
+  },
+  {
+   "unit": 4,
+   "head": "6급 군무원 천지원",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "이준영 병장"
+    ],
+    "장소": [
+     "상황실"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026. 6. 23."
+   }
+  }
+ ]
+}

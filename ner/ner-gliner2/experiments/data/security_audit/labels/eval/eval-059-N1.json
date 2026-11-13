@@ -1,0 +1,204 @@
+{
+ "doc_id": "eval-059-N1",
+ "scenario_id": "eval-059",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 31,
+   "end": 37,
+   "type": "Person",
+   "text": "반유찬 상병"
+  },
+  {
+   "start": 50,
+   "end": 55,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 58,
+   "end": 65,
+   "type": "ClassifiedDocument",
+   "text": "장비전환 계획"
+  },
+  {
+   "start": 81,
+   "end": 93,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 101,
+   "end": 113,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 114,
+   "end": 118,
+   "type": "Person",
+   "text": "반 상병"
+  },
+  {
+   "start": 125,
+   "end": 135,
+   "type": "Credential",
+   "text": "제2026-184호"
+  },
+  {
+   "start": 154,
+   "end": 158,
+   "type": "Person",
+   "text": "반 상병"
+  },
+  {
+   "start": 160,
+   "end": 165,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 171,
+   "end": 178,
+   "type": "ClassifiedDocument",
+   "text": "장비전환 계획"
+  },
+  {
+   "start": 223,
+   "end": 227,
+   "type": "Person",
+   "text": "반 상병"
+  },
+  {
+   "start": 241,
+   "end": 246,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 247,
+   "end": 253,
+   "type": "Person",
+   "text": "소위 문동욱"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     71
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     73,
+     93
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     95,
+     136
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     138,
+     216
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     218,
+     271
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "반유찬 상병",
+   "type": "ACCESSED",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 0,
+   "head": "반유찬 상병",
+   "type": "ACCESSED",
+   "tail": "장비전환 계획"
+  },
+  {
+   "unit": 2,
+   "head": "반 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "반 상병",
+   "type": "HOLDS",
+   "tail": "제2026-184호"
+  },
+  {
+   "unit": 3,
+   "head": "반 상병",
+   "type": "ACCESSED",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 3,
+   "head": "반 상병",
+   "type": "ACCESSED",
+   "tail": "장비전환 계획"
+  },
+  {
+   "unit": 4,
+   "head": "소위 문동욱",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "인가 만료자 접근",
+    "관련자": [
+     "반유찬 상병"
+    ],
+    "장소": [
+     "지휘통제실"
+    ],
+    "대상 문서": [
+     "장비전환 계획"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ],
+    "일자": "2026-08-13"
+   }
+  }
+ ]
+}

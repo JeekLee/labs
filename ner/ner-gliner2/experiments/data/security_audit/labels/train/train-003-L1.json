@@ -1,0 +1,693 @@
+{
+ "doc_id": "train-003-L1",
+ "scenario_id": "train-003",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_b",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 39,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 111,
+   "end": 123,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Person",
+   "text": "임예은 상병"
+  },
+  {
+   "start": 142,
+   "end": 149,
+   "type": "InformationSystem",
+   "text": "업무단말-26"
+  },
+  {
+   "start": 152,
+   "end": 157,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 170,
+   "end": 184,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 185,
+   "end": 191,
+   "type": "Person",
+   "text": "민예은 병장"
+  },
+  {
+   "start": 200,
+   "end": 207,
+   "type": "InformationSystem",
+   "text": "업무단말-20"
+  },
+  {
+   "start": 210,
+   "end": 213,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 221,
+   "end": 233,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 234,
+   "end": 240,
+   "type": "Person",
+   "text": "이병 추현준"
+  },
+  {
+   "start": 249,
+   "end": 256,
+   "type": "InformationSystem",
+   "text": "업무단말-21"
+  },
+  {
+   "start": 259,
+   "end": 264,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 277,
+   "end": 293,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 294,
+   "end": 300,
+   "type": "Person",
+   "text": "민예은 병장"
+  },
+  {
+   "start": 309,
+   "end": 316,
+   "type": "InformationSystem",
+   "text": "업무단말-20"
+  },
+  {
+   "start": 319,
+   "end": 322,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 335,
+   "end": 347,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 348,
+   "end": 354,
+   "type": "Person",
+   "text": "이병 조수아"
+  },
+  {
+   "start": 366,
+   "end": 373,
+   "type": "InformationSystem",
+   "text": "업무단말-50"
+  },
+  {
+   "start": 376,
+   "end": 381,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 389,
+   "end": 401,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 402,
+   "end": 408,
+   "type": "Person",
+   "text": "상병 반도현"
+  },
+  {
+   "start": 416,
+   "end": 423,
+   "type": "InformationSystem",
+   "text": "업무단말-21"
+  },
+  {
+   "start": 426,
+   "end": 431,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 444,
+   "end": 456,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 457,
+   "end": 463,
+   "type": "Person",
+   "text": "상병 반도현"
+  },
+  {
+   "start": 475,
+   "end": 482,
+   "type": "InformationSystem",
+   "text": "업무단말-26"
+  },
+  {
+   "start": 485,
+   "end": 488,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 496,
+   "end": 511,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 512,
+   "end": 518,
+   "type": "Person",
+   "text": "임예은 상병"
+  },
+  {
+   "start": 526,
+   "end": 533,
+   "type": "InformationSystem",
+   "text": "업무단말-26"
+  },
+  {
+   "start": 536,
+   "end": 541,
+   "type": "Facility",
+   "text": "지휘통제실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     109,
+     167
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     168,
+     218
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     219,
+     274
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     275,
+     332
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     333,
+     386
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     387,
+     441
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     442,
+     493
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     494,
+     546
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "임예은 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 0,
+   "head": "임예은 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-26"
+  },
+  {
+   "unit": 0,
+   "head": "업무단말-26",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 1,
+   "head": "민예은 병장",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "민예은 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-20"
+  },
+  {
+   "unit": 1,
+   "head": "업무단말-20",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "이병 추현준",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "이병 추현준",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-21"
+  },
+  {
+   "unit": 2,
+   "head": "업무단말-21",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 3,
+   "head": "민예은 병장",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 3,
+   "head": "민예은 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-20"
+  },
+  {
+   "unit": 3,
+   "head": "업무단말-20",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 4,
+   "head": "이병 조수아",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 4,
+   "head": "이병 조수아",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-50"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-50",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 5,
+   "head": "상병 반도현",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 5,
+   "head": "상병 반도현",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-21"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-21",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 6,
+   "head": "상병 반도현",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 6,
+   "head": "상병 반도현",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-26"
+  },
+  {
+   "unit": 6,
+   "head": "업무단말-26",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 7,
+   "head": "임예은 상병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 7,
+   "head": "임예은 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-26"
+  },
+  {
+   "unit": 7,
+   "head": "업무단말-26",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "임예은 상병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-26"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제8015항공대대 정비중대"
+    ],
+    "취급자": [
+     "민예은 병장"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-20"
+    ],
+    "설치장소": [
+     "전산실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "이병 추현준"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-21"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "민예은 병장"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-20"
+    ],
+    "설치장소": [
+     "전산실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "이병 조수아"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-50"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "상병 반도현"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-21"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "상병 반도현"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-26"
+    ],
+    "설치장소": [
+     "전산실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    7
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "임예은 상병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-26"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ]
+   }
+  }
+ ]
+}

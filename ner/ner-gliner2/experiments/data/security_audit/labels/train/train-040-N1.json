@@ -1,0 +1,225 @@
+{
+ "doc_id": "train-040-N1",
+ "scenario_id": "train-040",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 22,
+   "end": 34,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 35,
+   "end": 41,
+   "type": "Person",
+   "text": "하예린 이병"
+  },
+  {
+   "start": 75,
+   "end": 80,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 124,
+   "end": 136,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 140,
+   "end": 146,
+   "type": "Person",
+   "text": "하예린 이병"
+  },
+  {
+   "start": 153,
+   "end": 165,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 166,
+   "end": 171,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 172,
+   "end": 178,
+   "type": "Person",
+   "text": "중사 배윤호"
+  },
+  {
+   "start": 190,
+   "end": 194,
+   "type": "Person",
+   "text": "하 이병"
+  },
+  {
+   "start": 255,
+   "end": 260,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 279,
+   "end": 283,
+   "type": "Person",
+   "text": "하 이병"
+  },
+  {
+   "start": 285,
+   "end": 290,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 334,
+   "end": 344,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 361,
+   "end": 366,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 367,
+   "end": 373,
+   "type": "Person",
+   "text": "중사 배윤호"
+  },
+  {
+   "start": 375,
+   "end": 379,
+   "type": "Person",
+   "text": "하 이병"
+  },
+  {
+   "start": 411,
+   "end": 415,
+   "type": "Person",
+   "text": "배 중사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     114
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     116,
+     181
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     183,
+     298
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     300,
+     352
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     354,
+     443
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "하예린 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "하예린 이병",
+   "type": "ACCESSED",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 1,
+   "head": "하예린 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "하 이병",
+   "type": "ACCESSED",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 1,
+   "head": "중사 배윤호",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "중사 배윤호",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 1,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 인사과"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "하예린 이병"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026-07-12"
+   }
+  }
+ ]
+}

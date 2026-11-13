@@ -12,7 +12,7 @@
 | [언어와 체크포인트](experiments/01_language_and_checkpoint.ipynb) | 한국어·영어 문장 쌍으로 GLiNER base/multi 체크포인트와 LLM 추출을 비교하고, 조사·표기 프로브로 오류 원인을 분리한다. |
 | [단어 분할기](experiments/02_korean_word_splitter.ipynb) | GLiNER 단어 분할기(공백·문자·형태소)별 한국어 엔티티·관계 추출을 참고 정답과 LLM 기준으로 비교한다. |
 | [LLM 증류](experiments/03_llm_distillation.ipynb) | 같은 KLUE 문장에 `gpt-5.4-mini`가 단 정답으로 LoRA 어댑터를 학습하고, 사람 정답으로 학습한 어댑터와 성능·비용을 비교한다. |
-| [도메인 온톨로지 SFT](experiments/04_security_audit_sft.ipynb) | 가상의 군부대 보안 감사 온톨로지(엔티티·관계·사건 레코드)로 GLiNER2를 SFT하고 정답지 대비 추출 성능을 측정한다(1단계 시험 규모). |
+| [도메인 온톨로지 SFT](experiments/04_security_audit_sft.ipynb) | 가상의 군부대 보안 감사 온톨로지(엔티티·관계·관리대장 기록·사건 레코드)로 GLiNER2를 SFT하고 정답지 대비 추출 성능을 측정한다. 노트북은 v2 실행 후 갱신 예정(현재 내용은 v1 시험 결과). |
 | [스키마](config/ontology.py) | 두 추출기가 공유하는 POLE+O 엔티티·관계 타입을 정의한다. |
 | [추출기](config/extractors.py) | GLiNER2 JointIE 추출기, OpenAI 구조화 출력 추출기, Kiwi 형태소 분할기를 제공한다. |
 | [KLUE 데이터](config/klue.py), [선생님 라벨러](config/teacher.py) | KLUE-NER 변환·정확 일치 채점·오류 분류와, 증류 실험의 `gpt-5.4-mini` 라벨러를 제공한다. |
@@ -47,12 +47,14 @@ uv run python scripts/run_llm_distillation.py --price-input 0.75 --price-output 
     --price-source https://developers.openai.com/api/docs/pricing
 ```
 
-`04`도 스크립트로 실행한다(CPU 약 15분, 외부 API 없음). 온톨로지는 `config/domains/military-security-audit.yaml`, 가상 데이터는 `experiments/data/security_audit/`(시나리오, 정답 표시 문서, 표시를 지운 원문 `plain/`)에 있다.
+`04`도 스크립트로 실행한다(외부 API 없음, CPU 기준 1~2시간). 온톨로지는 `config/domains/military-security-audit.yaml`, 관리대장 서식 정의는 `experiments/data/security_audit/forms/`에 있다. 가상 데이터는 `experiments/data/security_audit/`에 있으며, 문서는 Markdown(`documents/<split>/<doc_id>.md`), 정답은 JSON(`labels/<split>/<doc_id>.json`)으로 분리되어 있다. 1차 시험 실행(v1)의 데이터와 결과는 커밋 `9f18cde`에 남아 있다.
 
 ```bash
-uv run python scripts/security_audit/make_scenarios.py --n 30 --seed 42   # 시나리오 생성
-uv run python scripts/security_audit/validate_docs.py experiments/data/security_audit/docs/*.jsonl
-uv run python scripts/run_security_audit_sft.py
+uv run python scripts/security_audit/make_scenarios.py      # 시나리오 생성 (학습 45, 평가 15)
+uv run python scripts/security_audit/render_ledgers.py      # 관리대장 Markdown + 정답 JSON
+uv run python scripts/security_audit/import_written.py <writer JSONL>   # 서술 문서 가져오기
+uv run python scripts/security_audit/validate_docs.py       # 문서·정답 검증
+uv run python scripts/security_audit/run_sft.py             # 학습과 평가
 ```
 
 순수 로직(KLUE 변환·채점, 선생님 라벨러, 온톨로지 로더, 표시 형식 검증, 데이터 변환·채점)의 테스트는 `uv run --with pytest python -m pytest tests`로 실행한다.

@@ -1,0 +1,207 @@
+{
+ "doc_id": "eval-054-N1",
+ "scenario_id": "eval-054",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 16,
+   "end": 29,
+   "type": "Unit",
+   "text": "제1086의무대대 행정과"
+  },
+  {
+   "start": 30,
+   "end": 38,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 39,
+   "end": 45,
+   "type": "Person",
+   "text": "심정우 상사"
+  },
+  {
+   "start": 65,
+   "end": 70,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 87,
+   "end": 94,
+   "type": "StorageMedium",
+   "text": "HDD-344"
+  },
+  {
+   "start": 129,
+   "end": 142,
+   "type": "Unit",
+   "text": "제1086의무대대 행정과"
+  },
+  {
+   "start": 146,
+   "end": 152,
+   "type": "Person",
+   "text": "옥민규 상병"
+  },
+  {
+   "start": 162,
+   "end": 166,
+   "type": "Person",
+   "text": "옥 상병"
+  },
+  {
+   "start": 177,
+   "end": 184,
+   "type": "StorageMedium",
+   "text": "HDD-344"
+  },
+  {
+   "start": 218,
+   "end": 222,
+   "type": "Person",
+   "text": "심 상사"
+  },
+  {
+   "start": 244,
+   "end": 254,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 288,
+   "end": 295,
+   "type": "StorageMedium",
+   "text": "HDD-344"
+  },
+  {
+   "start": 314,
+   "end": 318,
+   "type": "Person",
+   "text": "심 상사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     45
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     47,
+     119
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     121,
+     153
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     155,
+     232
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     234,
+     279
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     281,
+     336
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "심정우 상사",
+   "type": "BELONGS_TO",
+   "tail": "제1086의무대대 행정과"
+  },
+  {
+   "unit": 0,
+   "head": "심정우 상사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 0,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제1086의무대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "HDD-344",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 2,
+   "head": "옥민규 상병",
+   "type": "BELONGS_TO",
+   "tail": "제1086의무대대 행정과"
+  },
+  {
+   "unit": 3,
+   "head": "옥 상병",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-344"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "옥민규 상병"
+    ],
+    "매체": [
+     "HDD-344"
+    ],
+    "장소": [
+     "문서보관실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026-10-11"
+   }
+  }
+ ]
+}

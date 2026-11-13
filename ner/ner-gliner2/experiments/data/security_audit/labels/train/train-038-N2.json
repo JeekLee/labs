@@ -1,0 +1,188 @@
+{
+ "doc_id": "train-038-N2",
+ "scenario_id": "train-038",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 22,
+   "end": 39,
+   "type": "Inspection",
+   "text": "2026년 4분기 정기 보안점검"
+  },
+  {
+   "start": 52,
+   "end": 68,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 80,
+   "end": 96,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 103,
+   "end": 119,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 120,
+   "end": 127,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 128,
+   "end": 134,
+   "type": "Person",
+   "text": "길연우 소령"
+  },
+  {
+   "start": 149,
+   "end": 155,
+   "type": "Person",
+   "text": "성재현 병장"
+  },
+  {
+   "start": 157,
+   "end": 160,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 163,
+   "end": 169,
+   "type": "ClassifiedDocument",
+   "text": "전시 연락망"
+  },
+  {
+   "start": 190,
+   "end": 200,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 221,
+   "end": 227,
+   "type": "Person",
+   "text": "길연우 소령"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     68
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     70,
+     134
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     136,
+     204
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     206,
+     245
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     247,
+     290
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 4분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 2,
+   "head": "성재현 병장",
+   "type": "ACCESSED",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "성재현 병장",
+   "type": "ACCESSED",
+   "tail": "전시 연락망"
+  },
+  {
+   "unit": 1,
+   "head": "길연우 소령",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 1,
+   "head": "길연우 소령",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 1,
+   "head": "비밀관리책임자",
+   "type": "POSITION_OF",
+   "tail": "제9013보병사단 정보통신대대"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "문서보안",
+    "대상": [
+     "성재현 병장"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "재교육",
+    "담당": [
+     "길연우 소령"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

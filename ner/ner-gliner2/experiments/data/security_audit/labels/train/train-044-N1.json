@@ -1,0 +1,234 @@
+{
+ "doc_id": "train-044-N1",
+ "scenario_id": "train-044",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 33,
+   "end": 49,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 50,
+   "end": 55,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 58,
+   "end": 64,
+   "type": "Person",
+   "text": "금은우 이병"
+  },
+  {
+   "start": 66,
+   "end": 74,
+   "type": "ClassifiedDocument",
+   "text": "훈련계획 세부안"
+  },
+  {
+   "start": 125,
+   "end": 141,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 142,
+   "end": 148,
+   "type": "Person",
+   "text": "금은우 이병"
+  },
+  {
+   "start": 155,
+   "end": 171,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 172,
+   "end": 179,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 180,
+   "end": 186,
+   "type": "Person",
+   "text": "소위 양민서"
+  },
+  {
+   "start": 196,
+   "end": 200,
+   "type": "Person",
+   "text": "금 이병"
+  },
+  {
+   "start": 212,
+   "end": 220,
+   "type": "ClassifiedDocument",
+   "text": "훈련계획 세부안"
+  },
+  {
+   "start": 251,
+   "end": 256,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 288,
+   "end": 292,
+   "type": "Person",
+   "text": "양 소위"
+  },
+  {
+   "start": 346,
+   "end": 356,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 373,
+   "end": 380,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 381,
+   "end": 387,
+   "type": "Person",
+   "text": "소위 양민서"
+  },
+  {
+   "start": 389,
+   "end": 397,
+   "type": "ClassifiedDocument",
+   "text": "훈련계획 세부안"
+  },
+  {
+   "start": 409,
+   "end": 413,
+   "type": "Person",
+   "text": "금 이병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     115
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     117,
+     187
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     189,
+     303
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     305,
+     364
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     366,
+     430
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "금은우 이병",
+   "type": "ACCESSED",
+   "tail": "훈련계획 세부안"
+  },
+  {
+   "unit": 0,
+   "head": "통신기계실",
+   "type": "LOCATED_AT",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 1,
+   "head": "금은우 이병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 2,
+   "head": "금 이병",
+   "type": "ACCESSED",
+   "tail": "훈련계획 세부안"
+  },
+  {
+   "unit": 1,
+   "head": "소위 양민서",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 1,
+   "head": "소위 양민서",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 1,
+   "head": "비밀관리책임자",
+   "type": "POSITION_OF",
+   "tail": "제9013보병사단 정보통신대대"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "금은우 이병"
+    ],
+    "대상 문서": [
+     "훈련계획 세부안"
+    ],
+    "장소": [
+     "통신기계실"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ],
+    "일자": "2026-03-22"
+   }
+  }
+ ]
+}

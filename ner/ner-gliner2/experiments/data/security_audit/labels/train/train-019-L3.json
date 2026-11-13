@@ -1,0 +1,609 @@
+{
+ "doc_id": "train-019-L3",
+ "scenario_id": "train-019",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_b",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 39,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 111,
+   "end": 123,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Person",
+   "text": "병장 정동현"
+  },
+  {
+   "start": 138,
+   "end": 145,
+   "type": "InformationSystem",
+   "text": "업무단말-14"
+  },
+  {
+   "start": 148,
+   "end": 153,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 161,
+   "end": 173,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 174,
+   "end": 180,
+   "type": "Person",
+   "text": "병장 구성현"
+  },
+  {
+   "start": 192,
+   "end": 199,
+   "type": "InformationSystem",
+   "text": "행정서버-40"
+  },
+  {
+   "start": 202,
+   "end": 207,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 215,
+   "end": 227,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 228,
+   "end": 234,
+   "type": "Person",
+   "text": "상병 임지우"
+  },
+  {
+   "start": 242,
+   "end": 249,
+   "type": "InformationSystem",
+   "text": "행정서버-46"
+  },
+  {
+   "start": 252,
+   "end": 257,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 270,
+   "end": 282,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 283,
+   "end": 289,
+   "type": "Person",
+   "text": "심준영 상병"
+  },
+  {
+   "start": 297,
+   "end": 304,
+   "type": "InformationSystem",
+   "text": "업무단말-32"
+  },
+  {
+   "start": 307,
+   "end": 312,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 325,
+   "end": 342,
+   "type": "Unit",
+   "text": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "start": 343,
+   "end": 349,
+   "type": "Person",
+   "text": "고수아 상병"
+  },
+  {
+   "start": 358,
+   "end": 365,
+   "type": "InformationSystem",
+   "text": "행정서버-40"
+  },
+  {
+   "start": 368,
+   "end": 373,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 381,
+   "end": 393,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 394,
+   "end": 400,
+   "type": "Person",
+   "text": "송유준 이병"
+  },
+  {
+   "start": 409,
+   "end": 416,
+   "type": "InformationSystem",
+   "text": "행정서버-40"
+  },
+  {
+   "start": 419,
+   "end": 424,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 432,
+   "end": 444,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 445,
+   "end": 451,
+   "type": "Person",
+   "text": "심준영 상병"
+  },
+  {
+   "start": 463,
+   "end": 470,
+   "type": "InformationSystem",
+   "text": "행정서버-40"
+  },
+  {
+   "start": 473,
+   "end": 478,
+   "type": "Facility",
+   "text": "보안자재실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     109,
+     158
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     159,
+     212
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     213,
+     267
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     268,
+     322
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     323,
+     378
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     379,
+     429
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     430,
+     488
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "병장 정동현",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "병장 정동현",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-14"
+  },
+  {
+   "unit": 0,
+   "head": "업무단말-14",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 1,
+   "head": "병장 구성현",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "병장 구성현",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-40"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-40",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 2,
+   "head": "상병 임지우",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "상병 임지우",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-46"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-46",
+   "type": "LOCATED_AT",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 3,
+   "head": "심준영 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 3,
+   "head": "심준영 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-32"
+  },
+  {
+   "unit": 3,
+   "head": "업무단말-32",
+   "type": "LOCATED_AT",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 4,
+   "head": "고수아 상병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "unit": 4,
+   "head": "고수아 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-40"
+  },
+  {
+   "unit": 4,
+   "head": "행정서버-40",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 5,
+   "head": "송유준 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 5,
+   "head": "송유준 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-40"
+  },
+  {
+   "unit": 5,
+   "head": "행정서버-40",
+   "type": "LOCATED_AT",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 6,
+   "head": "심준영 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 6,
+   "head": "심준영 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-40"
+  },
+  {
+   "unit": 6,
+   "head": "행정서버-40",
+   "type": "LOCATED_AT",
+   "tail": "보안자재실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "병장 정동현"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-14"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "병장 구성현"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-40"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "상병 임지우"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-46"
+    ],
+    "설치장소": [
+     "보안자재실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "심준영 상병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-32"
+    ],
+    "설치장소": [
+     "보안자재실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 군수지원대대"
+    ],
+    "취급자": [
+     "고수아 상병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-40"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "송유준 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-40"
+    ],
+    "설치장소": [
+     "보안자재실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "심준영 상병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-40"
+    ],
+    "설치장소": [
+     "보안자재실"
+    ],
+    "비고": "확인 필요"
+   }
+  }
+ ]
+}

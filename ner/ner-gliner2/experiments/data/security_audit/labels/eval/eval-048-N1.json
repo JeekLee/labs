@@ -1,0 +1,192 @@
+{
+ "doc_id": "eval-048-N1",
+ "scenario_id": "eval-048",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 35,
+   "end": 48,
+   "type": "Unit",
+   "text": "제6191방공대대 작전과"
+  },
+  {
+   "start": 49,
+   "end": 57,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 58,
+   "end": 64,
+   "type": "Person",
+   "text": "송현우 상사"
+  },
+  {
+   "start": 73,
+   "end": 87,
+   "type": "Regulation",
+   "text": "휴대용 저장매체 운용 지침"
+  },
+  {
+   "start": 111,
+   "end": 117,
+   "type": "Person",
+   "text": "병장 서하율"
+  },
+  {
+   "start": 119,
+   "end": 132,
+   "type": "Unit",
+   "text": "제6191방공대대 작전과"
+  },
+  {
+   "start": 142,
+   "end": 146,
+   "type": "Person",
+   "text": "서 병장"
+  },
+  {
+   "start": 148,
+   "end": 153,
+   "type": "Facility",
+   "text": "탄약관리실"
+  },
+  {
+   "start": 162,
+   "end": 169,
+   "type": "StorageMedium",
+   "text": "USB-347"
+  },
+  {
+   "start": 218,
+   "end": 222,
+   "type": "Person",
+   "text": "송 상사"
+  },
+  {
+   "start": 236,
+   "end": 240,
+   "type": "Person",
+   "text": "송 상사"
+  },
+  {
+   "start": 242,
+   "end": 249,
+   "type": "StorageMedium",
+   "text": "USB-347"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     65
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     67,
+     105
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     107,
+     136
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     138,
+     230
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     232,
+     273
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "송현우 상사",
+   "type": "BELONGS_TO",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 0,
+   "head": "송현우 상사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 0,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 2,
+   "head": "병장 서하율",
+   "type": "BELONGS_TO",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 3,
+   "head": "서 병장",
+   "type": "CARRIED_OUT",
+   "tail": "USB-347"
+  },
+  {
+   "unit": 3,
+   "head": "USB-347",
+   "type": "LOCATED_AT",
+   "tail": "탄약관리실"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "병장 서하율"
+    ],
+    "매체": [
+     "USB-347"
+    ],
+    "장소": [
+     "탄약관리실"
+    ],
+    "위반 규정": [
+     "휴대용 저장매체 운용 지침"
+    ],
+    "일자": "2026. 11. 18."
+   }
+  }
+ ]
+}

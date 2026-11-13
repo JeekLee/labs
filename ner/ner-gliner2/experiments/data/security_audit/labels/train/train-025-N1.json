@@ -1,0 +1,159 @@
+{
+ "doc_id": "train-025-N1",
+ "scenario_id": "train-025",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 21,
+   "end": 33,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 40,
+   "end": 45,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 95,
+   "end": 107,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 108,
+   "end": 114,
+   "type": "Person",
+   "text": "상병 반도현"
+  },
+  {
+   "start": 122,
+   "end": 128,
+   "type": "Person",
+   "text": "상병 반도현"
+  },
+  {
+   "start": 154,
+   "end": 159,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 211,
+   "end": 219,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 227,
+   "end": 235,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 236,
+   "end": 242,
+   "type": "Person",
+   "text": "홍진우 하사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     86
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     88,
+     114
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     116,
+     200
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     202,
+     219
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     221,
+     282
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "작전회의실",
+   "type": "LOCATED_AT",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 1,
+   "head": "상병 반도현",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 2,
+   "head": "상병 반도현",
+   "type": "ACCESSED",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 4,
+   "head": "홍진우 하사",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "상병 반도현"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026-11-13"
+   }
+  }
+ ]
+}

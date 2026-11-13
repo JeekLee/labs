@@ -1,0 +1,609 @@
+{
+ "doc_id": "train-040-L3",
+ "scenario_id": "train-040",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_c",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 39,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 109,
+   "end": 121,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Person",
+   "text": "하예린 이병"
+  },
+  {
+   "start": 142,
+   "end": 149,
+   "type": "InformationSystem",
+   "text": "행정서버-20"
+  },
+  {
+   "start": 152,
+   "end": 157,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 165,
+   "end": 177,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 180,
+   "end": 186,
+   "type": "Person",
+   "text": "기채원 이병"
+  },
+  {
+   "start": 195,
+   "end": 202,
+   "type": "InformationSystem",
+   "text": "업무단말-53"
+  },
+  {
+   "start": 205,
+   "end": 210,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 218,
+   "end": 230,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 233,
+   "end": 239,
+   "type": "Person",
+   "text": "하예린 이병"
+  },
+  {
+   "start": 251,
+   "end": 258,
+   "type": "InformationSystem",
+   "text": "행정서버-20"
+  },
+  {
+   "start": 261,
+   "end": 266,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 279,
+   "end": 292,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 295,
+   "end": 301,
+   "type": "Person",
+   "text": "일병 성유준"
+  },
+  {
+   "start": 310,
+   "end": 317,
+   "type": "InformationSystem",
+   "text": "행정서버-17"
+  },
+  {
+   "start": 320,
+   "end": 325,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 333,
+   "end": 345,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 348,
+   "end": 354,
+   "type": "Person",
+   "text": "심주원 병장"
+  },
+  {
+   "start": 366,
+   "end": 373,
+   "type": "InformationSystem",
+   "text": "행정서버-17"
+  },
+  {
+   "start": 376,
+   "end": 382,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 390,
+   "end": 403,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 406,
+   "end": 412,
+   "type": "Person",
+   "text": "병장 곽지환"
+  },
+  {
+   "start": 421,
+   "end": 428,
+   "type": "InformationSystem",
+   "text": "행정서버-17"
+  },
+  {
+   "start": 431,
+   "end": 436,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 449,
+   "end": 461,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 464,
+   "end": 470,
+   "type": "Person",
+   "text": "표지민 병장"
+  },
+  {
+   "start": 479,
+   "end": 486,
+   "type": "InformationSystem",
+   "text": "행정서버-17"
+  },
+  {
+   "start": 489,
+   "end": 495,
+   "type": "Facility",
+   "text": "제1통제구역"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     107,
+     162
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     163,
+     215
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     216,
+     276
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     277,
+     330
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     331,
+     387
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     388,
+     446
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     81,
+     106
+    ],
+    [
+     447,
+     505
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "하예린 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "하예린 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-20"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-20",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 1,
+   "head": "기채원 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "기채원 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-53"
+  },
+  {
+   "unit": 1,
+   "head": "업무단말-53",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 2,
+   "head": "하예린 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "하예린 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-20"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-20",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 3,
+   "head": "일병 성유준",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 3,
+   "head": "일병 성유준",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-17"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-17",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 4,
+   "head": "심주원 병장",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 4,
+   "head": "심주원 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-17"
+  },
+  {
+   "unit": 4,
+   "head": "행정서버-17",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 5,
+   "head": "병장 곽지환",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 5,
+   "head": "병장 곽지환",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-17"
+  },
+  {
+   "unit": 5,
+   "head": "행정서버-17",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 6,
+   "head": "표지민 병장",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 6,
+   "head": "표지민 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-17"
+  },
+  {
+   "unit": 6,
+   "head": "행정서버-17",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "하예린 이병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-20"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "기채원 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-53"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "하예린 이병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-20"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 작전처"
+    ],
+    "취급자": [
+     "일병 성유준"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-17"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "심주원 병장"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-17"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 작전처"
+    ],
+    "취급자": [
+     "병장 곽지환"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-17"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "표지민 병장"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-17"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "반납 지연"
+   }
+  }
+ ]
+}

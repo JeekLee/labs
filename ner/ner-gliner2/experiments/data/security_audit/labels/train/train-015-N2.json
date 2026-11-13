@@ -1,0 +1,174 @@
+{
+ "doc_id": "train-015-N2",
+ "scenario_id": "train-015",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 1분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 60,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 68,
+   "end": 82,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 83,
+   "end": 91,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 92,
+   "end": 98,
+   "type": "Person",
+   "text": "소령 김동현"
+  },
+  {
+   "start": 103,
+   "end": 107,
+   "type": "Person",
+   "text": "안 상병"
+  },
+  {
+   "start": 127,
+   "end": 134,
+   "type": "InformationSystem",
+   "text": "업무단말-40"
+  },
+  {
+   "start": 148,
+   "end": 151,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 169,
+   "end": 182,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 215,
+   "end": 221,
+   "type": "Person",
+   "text": "소령 김동현"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     98
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     100,
+     183
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     185,
+     241
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     243,
+     286
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 1분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 0,
+   "head": "소령 김동현",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 0,
+   "head": "소령 김동현",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 0,
+   "head": "정보체계 관리자",
+   "type": "POSITION_OF",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "안 상병",
+   "type": "ACCESSED",
+   "tail": "업무단말-40"
+  },
+  {
+   "unit": 1,
+   "head": "업무단말-40",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    1
+   ],
+   "fields": {
+    "대상": [
+     "안 상병"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ],
+    "영역": "정보통신보안"
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    2
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "소령 김동현"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

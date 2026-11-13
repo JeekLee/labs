@@ -1,0 +1,106 @@
+record: entry
+title: 통제구역 출입자명부
+source: 산업통상부 시행세칙 별지29, 통일부 시행세칙 별지27
+meta_fields:
+- 구역
+- 관리책임자
+columns:
+- key: 일자
+  field: 일자
+  kind: date
+- key: 출입시간
+  field: 출입시간
+  kind: time
+- key: 퇴청시간
+  field: 퇴청시간
+  kind: time
+- key: 용무
+  field: 용무
+  kind: text_purpose
+- key: 소속
+  field: 소속
+  kind: unit
+- key: 출입자
+  field: 출입자
+  kind: person
+- key: 입회자
+  field: 입회자
+  kind: person
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: entry_a
+  eval_only: false
+  headers:
+    일자: 연월일
+    출입시간: 출입시간
+    퇴청시간: 퇴청시간
+    용무: 용무
+    소속: 출입자 소속
+    출입자: 출입자 성명
+    입회자: 입회자
+    비고: 비고
+  order: &id001
+  - 일자
+  - 출입시간
+  - 퇴청시간
+  - 용무
+  - 소속
+  - 출입자
+  - 입회자
+  - 비고
+  grouped: []
+  date_format: dot
+- id: entry_b
+  eval_only: false
+  headers:
+    일자: 일자
+    출입시간: 입실
+    퇴청시간: 퇴실
+    용무: 목적
+    소속: 소속
+    출입자: 출입자
+    입회자: 입회자
+    비고: 비고
+  order: *id001
+  grouped:
+  - - 소속
+    - 출입자
+  date_format: dash
+- id: entry_c
+  eval_only: false
+  headers:
+    일자: 일자
+    출입시간: 출입시간
+    퇴청시간: 퇴청시간
+    용무: 용무
+    소속: 소속
+    출입자: 방문자
+    입회자: 입회자(서명)
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: short
+- id: entry_eval
+  eval_only: true
+  headers:
+    일자: 날짜
+    출입시간: IN
+    퇴청시간: OUT
+    용무: 사유
+    소속: 소속
+    출입자: 출입 인원
+    입회자: 동행자
+    비고: 비고
+  order:
+  - 출입자
+  - 소속
+  - 일자
+  - 출입시간
+  - 퇴청시간
+  - 용무
+  - 입회자
+  - 비고
+  grouped: []
+  date_format: korean

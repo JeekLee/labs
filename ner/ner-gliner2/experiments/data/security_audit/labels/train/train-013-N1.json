@@ -1,0 +1,165 @@
+{
+ "doc_id": "train-013-N1",
+ "scenario_id": "train-013",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 47,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 48,
+   "end": 54,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 113,
+   "end": 128,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 132,
+   "end": 138,
+   "type": "Person",
+   "text": "이병 문유찬"
+  },
+  {
+   "start": 152,
+   "end": 160,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 161,
+   "end": 167,
+   "type": "Person",
+   "text": "하사 성재윤"
+  },
+  {
+   "start": 184,
+   "end": 190,
+   "type": "Person",
+   "text": "이병 문유찬"
+  },
+  {
+   "start": 217,
+   "end": 223,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 303,
+   "end": 311,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 356,
+   "end": 362,
+   "type": "Person",
+   "text": "하사 성재윤"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     98
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     100,
+     175
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     177,
+     288
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     290,
+     344
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     346,
+     416
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "제1통제구역",
+   "type": "LOCATED_AT",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "이병 문유찬",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "하사 성재윤",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 2,
+   "head": "이병 문유찬",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "이병 문유찬"
+    ],
+    "장소": [
+     "제1통제구역"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026. 5. 27."
+   }
+  }
+ ]
+}

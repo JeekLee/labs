@@ -156,3 +156,24 @@ class LLMExtractor:
             and allowed(r["type"], entities[r["source"]]["type"], entities[r["target"]]["type"])
         ]
         return {"entities": data["entities"], "relations": relations}
+
+
+def kiwi_word_splitter(text, lower=True):
+    """Kiwi morphemes computed per whitespace-delimited word.
+
+    ``kiwi_splitter`` analyses the whole text, so a name can be segmented differently inside a
+    sentence than on its own. GLiNER2 matches relation and record values (given as strings) by
+    re-tokenizing them alone, so those values then fail to align. Analysing each word on its own
+    makes segmentation local and keeps values aligned. Used by the security-audit experiment (04).
+    """
+    import re
+
+    for match in re.finditer(r"\S+", text):
+        word, base, last_end = match.group(), match.start(), 0
+        for token in kiwi().tokenize(word):
+            start, end = token.start, token.start + token.len
+            if start < last_end or end <= start:  # contracted or empty morphemes
+                continue
+            last_end = end
+            surface = word[start:end]
+            yield (surface.lower() if lower else surface), base + start, base + end

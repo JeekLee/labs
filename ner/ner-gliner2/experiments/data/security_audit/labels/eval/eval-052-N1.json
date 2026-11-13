@@ -1,0 +1,177 @@
+{
+ "doc_id": "eval-052-N1",
+ "scenario_id": "eval-052",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 33,
+   "end": 48,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 49,
+   "end": 54,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 55,
+   "end": 61,
+   "type": "Person",
+   "text": "오유준 중위"
+  },
+  {
+   "start": 73,
+   "end": 77,
+   "type": "Person",
+   "text": "오 중위"
+  },
+  {
+   "start": 83,
+   "end": 89,
+   "type": "Person",
+   "text": "길주원 일병"
+  },
+  {
+   "start": 124,
+   "end": 128,
+   "type": "Person",
+   "text": "길 일병"
+  },
+  {
+   "start": 129,
+   "end": 144,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 166,
+   "end": 171,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 205,
+   "end": 209,
+   "type": "Person",
+   "text": "길 일병"
+  },
+  {
+   "start": 211,
+   "end": 216,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 263,
+   "end": 273,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     61
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     63,
+     117
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     119,
+     172
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     174,
+     254
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     256,
+     274
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "오유준 중위",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 0,
+   "head": "오유준 중위",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 0,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 2,
+   "head": "길 일병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 3,
+   "head": "길 일병",
+   "type": "ACCESSED",
+   "tail": "문서보관실"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "길주원 일병"
+    ],
+    "장소": [
+     "문서보관실"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026. 1. 28."
+   }
+  }
+ ]
+}

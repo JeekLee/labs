@@ -1,0 +1,198 @@
+{
+ "doc_id": "train-000-N1",
+ "scenario_id": "train-000",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 22,
+   "end": 35,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 77,
+   "end": 84,
+   "type": "StorageMedium",
+   "text": "USB-374"
+  },
+  {
+   "start": 130,
+   "end": 143,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 147,
+   "end": 153,
+   "type": "Person",
+   "text": "일병 길하율"
+  },
+  {
+   "start": 160,
+   "end": 168,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 169,
+   "end": 175,
+   "type": "Person",
+   "text": "황하율 중사"
+  },
+  {
+   "start": 187,
+   "end": 191,
+   "type": "Person",
+   "text": "길 일병"
+  },
+  {
+   "start": 207,
+   "end": 212,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 226,
+   "end": 233,
+   "type": "StorageMedium",
+   "text": "USB-374"
+  },
+  {
+   "start": 281,
+   "end": 288,
+   "type": "StorageMedium",
+   "text": "USB-374"
+  },
+  {
+   "start": 332,
+   "end": 342,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 378,
+   "end": 386,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 387,
+   "end": 393,
+   "type": "Person",
+   "text": "황하율 중사"
+  },
+  {
+   "start": 410,
+   "end": 414,
+   "type": "Person",
+   "text": "길 일병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     120
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     122,
+     178
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     180,
+     314
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     316,
+     369
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     371,
+     433
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "일병 길하율",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 1,
+   "head": "황하율 중사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 2,
+   "head": "길 일병",
+   "type": "CARRIED_OUT",
+   "tail": "USB-374"
+  },
+  {
+   "unit": 2,
+   "head": "USB-374",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 4,
+   "head": "황하율 중사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "일병 길하율"
+    ],
+    "매체": [
+     "USB-374"
+    ],
+    "장소": [
+     "문서보관실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026. 11. 28."
+   }
+  }
+ ]
+}

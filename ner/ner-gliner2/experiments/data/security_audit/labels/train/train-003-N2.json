@@ -1,0 +1,162 @@
+{
+ "doc_id": "train-003-N2",
+ "scenario_id": "train-003",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 1분기 정기 보안점검"
+  },
+  {
+   "start": 49,
+   "end": 61,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 69,
+   "end": 81,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 82,
+   "end": 90,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 91,
+   "end": 97,
+   "type": "Person",
+   "text": "곽지환 소위"
+  },
+  {
+   "start": 144,
+   "end": 150,
+   "type": "Person",
+   "text": "이병 조수아"
+  },
+  {
+   "start": 163,
+   "end": 168,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 177,
+   "end": 190,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 216,
+   "end": 222,
+   "type": "Person",
+   "text": "곽지환 소위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     97
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     99,
+     136
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     138,
+     195
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     197,
+     242
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 1분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 0,
+   "head": "곽지환 소위",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 0,
+   "head": "곽지환 소위",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 0,
+   "head": "정보체계 관리자",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "이병 조수아",
+   "type": "ACCESSED",
+   "tail": "통신기계실"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "이병 조수아"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "곽지환 소위"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

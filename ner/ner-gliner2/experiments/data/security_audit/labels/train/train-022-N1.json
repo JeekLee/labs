@@ -1,0 +1,195 @@
+{
+ "doc_id": "train-022-N1",
+ "scenario_id": "train-022",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 35,
+   "end": 49,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 50,
+   "end": 56,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 101,
+   "end": 115,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 116,
+   "end": 122,
+   "type": "Person",
+   "text": "병장 탁주원"
+  },
+  {
+   "start": 128,
+   "end": 138,
+   "type": "Credential",
+   "text": "제2026-385호"
+  },
+  {
+   "start": 152,
+   "end": 157,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 158,
+   "end": 164,
+   "type": "Person",
+   "text": "최준혁 상사"
+  },
+  {
+   "start": 176,
+   "end": 182,
+   "type": "Person",
+   "text": "병장 탁주원"
+  },
+  {
+   "start": 184,
+   "end": 190,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 196,
+   "end": 203,
+   "type": "InformationSystem",
+   "text": "업무단말-25"
+  },
+  {
+   "start": 290,
+   "end": 300,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 342,
+   "end": 348,
+   "type": "Person",
+   "text": "최준혁 상사"
+  },
+  {
+   "start": 366,
+   "end": 370,
+   "type": "Person",
+   "text": "탁 병장"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     91
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     93,
+     167
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     169,
+     278
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     280,
+     333
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     335,
+     401
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "제1통제구역",
+   "type": "LOCATED_AT",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "병장 탁주원",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 1,
+   "head": "병장 탁주원",
+   "type": "HOLDS",
+   "tail": "제2026-385호"
+  },
+  {
+   "unit": 1,
+   "head": "최준혁 상사",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 2,
+   "head": "병장 탁주원",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-25"
+  },
+  {
+   "unit": 2,
+   "head": "업무단말-25",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "병장 탁주원"
+    ],
+    "장소": [
+     "제1통제구역"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026년 1월 25일"
+   }
+  }
+ ]
+}

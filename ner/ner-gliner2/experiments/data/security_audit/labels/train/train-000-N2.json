@@ -1,0 +1,162 @@
+{
+ "doc_id": "train-000-N2",
+ "scenario_id": "train-000",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 4분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 59,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 67,
+   "end": 80,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 81,
+   "end": 89,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 90,
+   "end": 96,
+   "type": "Person",
+   "text": "황하율 중사"
+  },
+  {
+   "start": 169,
+   "end": 175,
+   "type": "Person",
+   "text": "일병 길하율"
+  },
+  {
+   "start": 177,
+   "end": 184,
+   "type": "StorageMedium",
+   "text": "USB-374"
+  },
+  {
+   "start": 206,
+   "end": 216,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 243,
+   "end": 249,
+   "type": "Person",
+   "text": "황하율 중사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     96
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     98,
+     153
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     155,
+     222
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     224,
+     269
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 4분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 0,
+   "head": "황하율 중사",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 0,
+   "head": "황하율 중사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 0,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 2,
+   "head": "일병 길하율",
+   "type": "CARRIED_OUT",
+   "tail": "USB-374"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "일병 길하율"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "매체 회수",
+    "담당": [
+     "황하율 중사"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "doc_id": "train-042-N1",
+ "scenario_id": "train-042",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 36,
+   "end": 51,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 52,
+   "end": 58,
+   "type": "Person",
+   "text": "유다인 일병"
+  },
+  {
+   "start": 60,
+   "end": 65,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 73,
+   "end": 80,
+   "type": "StorageMedium",
+   "text": "HDD-299"
+  },
+  {
+   "start": 125,
+   "end": 131,
+   "type": "Person",
+   "text": "유다인 일병"
+  },
+  {
+   "start": 132,
+   "end": 147,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 155,
+   "end": 170,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 171,
+   "end": 179,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 180,
+   "end": 186,
+   "type": "Person",
+   "text": "양민서 중위"
+  },
+  {
+   "start": 196,
+   "end": 200,
+   "type": "Person",
+   "text": "유 일병"
+  },
+  {
+   "start": 210,
+   "end": 215,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 217,
+   "end": 224,
+   "type": "StorageMedium",
+   "text": "HDD-299"
+  },
+  {
+   "start": 284,
+   "end": 290,
+   "type": "Person",
+   "text": "양민서 중위"
+  },
+  {
+   "start": 297,
+   "end": 301,
+   "type": "Person",
+   "text": "유 일병"
+  },
+  {
+   "start": 357,
+   "end": 367,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 384,
+   "end": 392,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 393,
+   "end": 399,
+   "type": "Person",
+   "text": "양민서 중위"
+  },
+  {
+   "start": 401,
+   "end": 405,
+   "type": "Person",
+   "text": "유 일병"
+  },
+  {
+   "start": 412,
+   "end": 419,
+   "type": "StorageMedium",
+   "text": "HDD-299"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     115
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     117,
+     187
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     189,
+     316
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     318,
+     375
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     377,
+     445
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "유다인 일병",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 0,
+   "head": "유다인 일병",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-299"
+  },
+  {
+   "unit": 1,
+   "head": "유다인 일병",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 2,
+   "head": "유 일병",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-299"
+  },
+  {
+   "unit": 2,
+   "head": "HDD-299",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 1,
+   "head": "양민서 중위",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 1,
+   "head": "양민서 중위",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 1,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제3051포병대대 지휘통제반"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "유다인 일병"
+    ],
+    "매체": [
+     "HDD-299"
+    ],
+    "장소": [
+     "지휘통제실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026년 11월 28일"
+   }
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "doc_id": "train-001-N1",
+ "scenario_id": "train-001",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 47,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 70,
+   "end": 75,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 101,
+   "end": 107,
+   "type": "Person",
+   "text": "반영호 이병"
+  },
+  {
+   "start": 108,
+   "end": 123,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 134,
+   "end": 140,
+   "type": "Person",
+   "text": "반영호 이병"
+  },
+  {
+   "start": 168,
+   "end": 173,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 227,
+   "end": 231,
+   "type": "Person",
+   "text": "반 이병"
+  },
+  {
+   "start": 251,
+   "end": 259,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 309,
+   "end": 317,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 318,
+   "end": 324,
+   "type": "Person",
+   "text": "소지민 대위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     91
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     93,
+     125
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     127,
+     239
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     241,
+     300
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     302,
+     354
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "반영호 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 2,
+   "head": "반영호 이병",
+   "type": "ACCESSED",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 4,
+   "head": "소지민 대위",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "반영호 이병"
+    ],
+    "장소": [
+     "통신기계실"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026년 9월 10일"
+   }
+  }
+ ]
+}

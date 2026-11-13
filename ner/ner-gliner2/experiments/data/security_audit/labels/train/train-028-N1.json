@@ -1,0 +1,165 @@
+{
+ "doc_id": "train-028-N1",
+ "scenario_id": "train-028",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 18,
+   "end": 30,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 50,
+   "end": 55,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 96,
+   "end": 108,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 112,
+   "end": 118,
+   "type": "Person",
+   "text": "윤현준 상병"
+  },
+  {
+   "start": 126,
+   "end": 132,
+   "type": "Person",
+   "text": "윤현준 상병"
+  },
+  {
+   "start": 177,
+   "end": 182,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 241,
+   "end": 251,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 278,
+   "end": 283,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 284,
+   "end": 290,
+   "type": "Person",
+   "text": "반유찬 원사"
+  },
+  {
+   "start": 292,
+   "end": 296,
+   "type": "Person",
+   "text": "윤 상병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     87
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     89,
+     118
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     120,
+     230
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     232,
+     270
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     272,
+     332
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "지휘통제실",
+   "type": "LOCATED_AT",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 1,
+   "head": "윤현준 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "윤현준 상병",
+   "type": "ACCESSED",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 4,
+   "head": "반유찬 원사",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "윤현준 상병"
+    ],
+    "장소": [
+     "지휘통제실"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026년 7월 13일"
+   }
+  }
+ ]
+}

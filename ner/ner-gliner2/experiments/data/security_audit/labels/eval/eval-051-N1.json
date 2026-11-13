@@ -1,0 +1,186 @@
+{
+ "doc_id": "eval-051-N1",
+ "scenario_id": "eval-051",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 16,
+   "end": 30,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 31,
+   "end": 39,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 40,
+   "end": 46,
+   "type": "Person",
+   "text": "명진우 대위"
+  },
+  {
+   "start": 55,
+   "end": 69,
+   "type": "Regulation",
+   "text": "정보시스템 보안 운용 규정"
+  },
+  {
+   "start": 89,
+   "end": 94,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 97,
+   "end": 111,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 112,
+   "end": 118,
+   "type": "Person",
+   "text": "진도윤 일병"
+  },
+  {
+   "start": 167,
+   "end": 174,
+   "type": "StorageMedium",
+   "text": "EXT-745"
+  },
+  {
+   "start": 203,
+   "end": 207,
+   "type": "Person",
+   "text": "명 대위"
+  },
+  {
+   "start": 223,
+   "end": 227,
+   "type": "Person",
+   "text": "진 일병"
+  },
+  {
+   "start": 258,
+   "end": 262,
+   "type": "Person",
+   "text": "진 일병"
+  },
+  {
+   "start": 279,
+   "end": 283,
+   "type": "Person",
+   "text": "명 대위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     46
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     48,
+     69
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     71,
+     180
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     182,
+     249
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     251,
+     301
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "명진우 대위",
+   "type": "BELONGS_TO",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 0,
+   "head": "명진우 대위",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 0,
+   "head": "정보체계 관리자",
+   "type": "POSITION_OF",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 2,
+   "head": "진도윤 일병",
+   "type": "BELONGS_TO",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 2,
+   "head": "진도윤 일병",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "계정·권한 관리 위반",
+    "관련자": [
+     "진도윤 일병"
+    ],
+    "매체": [
+     "EXT-745"
+    ],
+    "장소": [
+     "보안자재실"
+    ],
+    "위반 규정": [
+     "정보시스템 보안 운용 규정"
+    ],
+    "일자": "2026.10.21."
+   }
+  }
+ ]
+}

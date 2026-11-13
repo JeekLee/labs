@@ -1,0 +1,176 @@
+{
+ "doc_id": "eval-057-N2",
+ "scenario_id": "eval-057",
+ "split": "eval",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 14,
+   "end": 31,
+   "type": "Inspection",
+   "text": "2026년 2분기 정기 보안점검"
+  },
+  {
+   "start": 40,
+   "end": 54,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 60,
+   "end": 68,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 69,
+   "end": 75,
+   "type": "Person",
+   "text": "성동현 중사"
+  },
+  {
+   "start": 85,
+   "end": 88,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 91,
+   "end": 99,
+   "type": "InformationSystem",
+   "text": "망연계서버-73"
+  },
+  {
+   "start": 126,
+   "end": 132,
+   "type": "Person",
+   "text": "일병 채하율"
+  },
+  {
+   "start": 134,
+   "end": 142,
+   "type": "InformationSystem",
+   "text": "망연계서버-73"
+  },
+  {
+   "start": 162,
+   "end": 168,
+   "type": "StorageMedium",
+   "text": "SM-835"
+  },
+  {
+   "start": 179,
+   "end": 192,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 226,
+   "end": 232,
+   "type": "Person",
+   "text": "성동현 중사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     76
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     78,
+     109
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     111,
+     193
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     195,
+     216
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     218,
+     248
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 2분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 0,
+   "head": "성동현 중사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 1,
+   "head": "망연계서버-73",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "일병 채하율",
+   "type": "ACCESSED",
+   "tail": "망연계서버-73"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "일병 채하율"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    4
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "성동현 중사"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

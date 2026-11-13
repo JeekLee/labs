@@ -1,0 +1,216 @@
+{
+ "doc_id": "train-039-N1",
+ "scenario_id": "train-039",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 45,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 49,
+   "end": 55,
+   "type": "Person",
+   "text": "박윤호 상병"
+  },
+  {
+   "start": 57,
+   "end": 65,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 110,
+   "end": 117,
+   "type": "StorageMedium",
+   "text": "USB-117"
+  },
+  {
+   "start": 144,
+   "end": 150,
+   "type": "Person",
+   "text": "박윤호 상병"
+  },
+  {
+   "start": 151,
+   "end": 164,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 171,
+   "end": 184,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 185,
+   "end": 193,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 194,
+   "end": 200,
+   "type": "Person",
+   "text": "백현수 중위"
+  },
+  {
+   "start": 210,
+   "end": 214,
+   "type": "Person",
+   "text": "박 상병"
+  },
+  {
+   "start": 292,
+   "end": 300,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 314,
+   "end": 321,
+   "type": "StorageMedium",
+   "text": "USB-117"
+  },
+  {
+   "start": 377,
+   "end": 390,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 407,
+   "end": 415,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 416,
+   "end": 422,
+   "type": "Person",
+   "text": "백현수 중위"
+  },
+  {
+   "start": 445,
+   "end": 452,
+   "type": "StorageMedium",
+   "text": "USB-117"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     134
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     136,
+     201
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     203,
+     332
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     334,
+     398
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     400,
+     471
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "박윤호 상병",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "박윤호 상병",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 2,
+   "head": "USB-117",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 1,
+   "head": "백현수 중위",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "백현수 중위",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 1,
+   "head": "정보체계 관리자",
+   "type": "POSITION_OF",
+   "tail": "제5033보급대대 행정과"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "계정·권한 관리 위반",
+    "관련자": [
+     "박윤호 상병"
+    ],
+    "매체": [
+     "USB-117"
+    ],
+    "장소": [
+     "정문 출입통제소"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ],
+    "일자": "2026. 2. 10."
+   }
+  }
+ ]
+}

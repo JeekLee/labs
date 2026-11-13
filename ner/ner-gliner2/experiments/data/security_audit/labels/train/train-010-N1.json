@@ -1,0 +1,159 @@
+{
+ "doc_id": "train-010-N1",
+ "scenario_id": "train-010",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 35,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 51,
+   "end": 54,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 83,
+   "end": 89,
+   "type": "Person",
+   "text": "상병 오유준"
+  },
+  {
+   "start": 93,
+   "end": 109,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 119,
+   "end": 125,
+   "type": "Person",
+   "text": "상병 오유준"
+  },
+  {
+   "start": 158,
+   "end": 161,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 191,
+   "end": 196,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 197,
+   "end": 203,
+   "type": "Person",
+   "text": "윤재현 소위"
+  },
+  {
+   "start": 230,
+   "end": 240,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 249,
+   "end": 253,
+   "type": "Person",
+   "text": "오 상병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     73
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     75,
+     110
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     112,
+     218
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     220,
+     240
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     242,
+     287
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "상병 오유준",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 2,
+   "head": "상병 오유준",
+   "type": "ACCESSED",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "윤재현 소위",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "상병 오유준"
+    ],
+    "장소": [
+     "전산실"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026년 2월 17일"
+   }
+  }
+ ]
+}

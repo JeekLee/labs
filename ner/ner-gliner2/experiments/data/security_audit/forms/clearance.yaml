@@ -1,0 +1,104 @@
+record: clearance
+title: 비밀취급 인가대장
+source: 산업통상부 시행세칙 별지7
+meta_fields: []
+columns:
+- key: 인가번호
+  field: 인가번호
+  kind: clearance_id
+- key: 소속
+  field: 소속
+  kind: unit
+- key: 인가 대상자
+  field: 인가 대상자
+  kind: person
+- key: 인가등급
+  field: 인가등급
+  kind: grade
+- key: 인가일
+  field: 인가일
+  kind: date
+- key: 해제일
+  field: 해제일
+  kind: date
+- key: 해제사유
+  field: 해제사유
+  kind: text_release
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: clearance_a
+  eval_only: false
+  headers:
+    인가번호: 인가번호
+    소속: 소속
+    인가 대상자: 성명
+    인가등급: 인가등급
+    인가일: 인가 연월일
+    해제일: 해제 연월일
+    해제사유: 해제사유
+    비고: 비고
+  order: &id001
+  - 인가번호
+  - 소속
+  - 인가 대상자
+  - 인가등급
+  - 인가일
+  - 해제일
+  - 해제사유
+  - 비고
+  grouped: []
+  date_format: dot
+- id: clearance_b
+  eval_only: false
+  headers:
+    인가번호: 인가번호
+    소속: 소속(과명)
+    인가 대상자: 직급·성명
+    인가등급: 인가등급
+    인가일: 인가일
+    해제일: 해제일
+    해제사유: 해제사유
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: dash
+- id: clearance_c
+  eval_only: false
+  headers:
+    인가번호: 인가번호
+    소속: 소속
+    인가 대상자: 대상자
+    인가등급: 등급
+    인가일: 인가일
+    해제일: 해제일
+    해제사유: 해제사유
+    비고: 비고
+  order: *id001
+  grouped:
+  - - 소속
+    - 인가 대상자
+  date_format: short
+- id: clearance_eval
+  eval_only: true
+  headers:
+    인가번호: 증 번호
+    소속: 소속
+    인가 대상자: 인가자
+    인가등급: 인가등급
+    인가일: 발급일
+    해제일: 회수일
+    해제사유: 회수 사유
+    비고: 비고
+  order:
+  - 인가 대상자
+  - 소속
+  - 인가번호
+  - 인가등급
+  - 인가일
+  - 해제일
+  - 해제사유
+  - 비고
+  grouped: []
+  date_format: korean

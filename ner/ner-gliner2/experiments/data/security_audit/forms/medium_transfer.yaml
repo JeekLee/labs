@@ -1,0 +1,114 @@
+record: medium_transfer
+title: 휴대용 저장매체 반출·입 대장
+source: 국가정보원 USB 보안관리지침 별지4 (서울시교육청 자료 인용)
+meta_fields:
+- 관리책임자
+columns:
+- key: 반출입 일시
+  field: 반출입 일시
+  kind: datetime
+- key: 구분
+  field: 구분
+  kind: choice
+- key: 장비명
+  field: 장비명
+  kind: medium_kind
+- key: 관리번호
+  field: 관리번호
+  kind: medium_id
+- key: 사용자
+  field: 사용자
+  kind: person
+- key: 용도
+  field: 용도
+  kind: text_purpose
+- key: 점검사항
+  field: 점검사항
+  kind: text_inspect
+- key: 확인자
+  field: 확인자
+  kind: person
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: medium_transfer_a
+  eval_only: false
+  headers:
+    반출입 일시: 반출입 일시
+    구분: 입·출
+    장비명: 장비명
+    관리번호: 관리번호
+    사용자: 사용자
+    용도: 용도
+    점검사항: 점검사항
+    확인자: 확인 서명
+    비고: 비고
+  order: &id001
+  - 반출입 일시
+  - 구분
+  - 장비명
+  - 관리번호
+  - 사용자
+  - 용도
+  - 점검사항
+  - 확인자
+  - 비고
+  grouped: []
+  date_format: dot
+- id: medium_transfer_b
+  eval_only: false
+  headers:
+    반출입 일시: 반출입 일시
+    구분: 구분
+    장비명: 장비명
+    관리번호: 관리번호(시리얼)
+    사용자: 반출입자
+    용도: 용도
+    점검사항: 점검사항
+    확인자: 확인자
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: dash
+- id: medium_transfer_c
+  eval_only: false
+  headers:
+    반출입 일시: 반출입 일시
+    구분: 구분
+    장비명: 장비명
+    관리번호: 관리번호
+    사용자: 대여자
+    용도: 용도
+    점검사항: 점검 결과
+    확인자: 확인관
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: short
+- id: medium_transfer_eval
+  eval_only: true
+  headers:
+    반출입 일시: 일시
+    구분: 반출/반입
+    장비명: 매체
+    관리번호: 일련번호
+    사용자: 담당자
+    용도: 사용 목적
+    점검사항: 점검사항
+    확인자: 승인 확인
+    비고: 비고
+  order:
+  - 관리번호
+  - 장비명
+  - 사용자
+  - 반출입 일시
+  - 구분
+  - 용도
+  - 점검사항
+  - 확인자
+  - 비고
+  grouped:
+  - - 장비명
+    - 관리번호
+  date_format: korean

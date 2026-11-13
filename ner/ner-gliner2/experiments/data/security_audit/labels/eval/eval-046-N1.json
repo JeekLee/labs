@@ -1,0 +1,204 @@
+{
+ "doc_id": "eval-046-N1",
+ "scenario_id": "eval-046",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 12,
+   "end": 24,
+   "type": "Unit",
+   "text": "제4429수송대대 본부"
+  },
+  {
+   "start": 53,
+   "end": 59,
+   "type": "Person",
+   "text": "국하율 병장"
+  },
+  {
+   "start": 60,
+   "end": 72,
+   "type": "Unit",
+   "text": "제4429수송대대 본부"
+  },
+  {
+   "start": 95,
+   "end": 101,
+   "type": "Facility",
+   "text": "제2제한구역"
+  },
+  {
+   "start": 108,
+   "end": 112,
+   "type": "Person",
+   "text": "국 병장"
+  },
+  {
+   "start": 144,
+   "end": 150,
+   "type": "Facility",
+   "text": "제2제한구역"
+  },
+  {
+   "start": 191,
+   "end": 202,
+   "type": "Regulation",
+   "text": "보안 서약 관리 지침"
+  },
+  {
+   "start": 209,
+   "end": 214,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 215,
+   "end": 225,
+   "type": "Person",
+   "text": "송현우 7급 군무원"
+  },
+  {
+   "start": 231,
+   "end": 235,
+   "type": "Person",
+   "text": "국 병장"
+  },
+  {
+   "start": 269,
+   "end": 281,
+   "type": "Unit",
+   "text": "제4429수송대대 본부"
+  },
+  {
+   "start": 282,
+   "end": 287,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 288,
+   "end": 298,
+   "type": "Person",
+   "text": "송현우 7급 군무원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     46
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     48,
+     102
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     104,
+     182
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     184,
+     203
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     205,
+     263
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     265,
+     298
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "국하율 병장",
+   "type": "BELONGS_TO",
+   "tail": "제4429수송대대 본부"
+  },
+  {
+   "unit": 2,
+   "head": "국 병장",
+   "type": "ACCESSED",
+   "tail": "제2제한구역"
+  },
+  {
+   "unit": 4,
+   "head": "송현우 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 5,
+   "head": "송현우 7급 군무원",
+   "type": "BELONGS_TO",
+   "tail": "제4429수송대대 본부"
+  },
+  {
+   "unit": 5,
+   "head": "송현우 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 5,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제4429수송대대 본부"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "국하율 병장"
+    ],
+    "장소": [
+     "제2제한구역"
+    ],
+    "위반 규정": [
+     "보안 서약 관리 지침"
+    ],
+    "일자": "2026-03-04"
+   }
+  }
+ ]
+}

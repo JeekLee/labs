@@ -1,0 +1,213 @@
+{
+ "doc_id": "eval-049-N1",
+ "scenario_id": "eval-049",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 22,
+   "end": 35,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 57,
+   "end": 63,
+   "type": "Person",
+   "text": "명재현 병장"
+  },
+  {
+   "start": 82,
+   "end": 87,
+   "type": "Facility",
+   "text": "정보통신실"
+  },
+  {
+   "start": 103,
+   "end": 116,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 117,
+   "end": 121,
+   "type": "Person",
+   "text": "명 병장"
+  },
+  {
+   "start": 174,
+   "end": 178,
+   "type": "Person",
+   "text": "명 병장"
+  },
+  {
+   "start": 211,
+   "end": 219,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 220,
+   "end": 230,
+   "type": "Person",
+   "text": "장동욱 7급 군무원"
+  },
+  {
+   "start": 253,
+   "end": 263,
+   "type": "Regulation",
+   "text": "보호구역 관리 규정"
+  },
+  {
+   "start": 290,
+   "end": 300,
+   "type": "Person",
+   "text": "장동욱 7급 군무원"
+  },
+  {
+   "start": 323,
+   "end": 336,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 337,
+   "end": 345,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 346,
+   "end": 356,
+   "type": "Person",
+   "text": "장동욱 7급 군무원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     36
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     38,
+     93
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     95,
+     122
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     124,
+     241
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     243,
+     264
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     266,
+     318
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     320,
+     356
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "명재현 병장",
+   "type": "ACCESSED",
+   "tail": "정보통신실"
+  },
+  {
+   "unit": 2,
+   "head": "명 병장",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 3,
+   "head": "장동욱 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 6,
+   "head": "장동욱 7급 군무원",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 6,
+   "head": "장동욱 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 6,
+   "head": "출입통제 담당관",
+   "type": "POSITION_OF",
+   "tail": "제9013보병사단 작전처"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "명재현 병장"
+    ],
+    "장소": [
+     "정보통신실"
+    ],
+    "위반 규정": [
+     "보호구역 관리 규정"
+    ],
+    "일자": "2026년 4월 5일"
+   }
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "doc_id": "train-023-N1",
+ "scenario_id": "train-023",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 35,
+   "end": 47,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 48,
+   "end": 53,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 110,
+   "end": 122,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 126,
+   "end": 132,
+   "type": "Person",
+   "text": "천진혁 이병"
+  },
+  {
+   "start": 140,
+   "end": 146,
+   "type": "Person",
+   "text": "천진혁 이병"
+  },
+  {
+   "start": 178,
+   "end": 182,
+   "type": "Person",
+   "text": "천 이병"
+  },
+  {
+   "start": 195,
+   "end": 200,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 214,
+   "end": 221,
+   "type": "ClassifiedDocument",
+   "text": "방공작전 예규"
+  },
+  {
+   "start": 290,
+   "end": 302,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 319,
+   "end": 324,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 325,
+   "end": 335,
+   "type": "Person",
+   "text": "임예은 6급 군무원"
+  },
+  {
+   "start": 337,
+   "end": 343,
+   "type": "Person",
+   "text": "천진혁 이병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     100
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     102,
+     169
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     171,
+     257
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     259,
+     310
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     312,
+     388
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "작전회의실",
+   "type": "LOCATED_AT",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 1,
+   "head": "천진혁 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "천 이병",
+   "type": "ACCESSED",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 2,
+   "head": "천 이병",
+   "type": "ACCESSED",
+   "tail": "방공작전 예규"
+  },
+  {
+   "unit": 4,
+   "head": "임예은 6급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "인가 만료자 접근",
+    "관련자": [
+     "천진혁 이병"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "대상 문서": [
+     "방공작전 예규"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ],
+    "일자": "2026. 1. 11."
+   }
+  }
+ ]
+}

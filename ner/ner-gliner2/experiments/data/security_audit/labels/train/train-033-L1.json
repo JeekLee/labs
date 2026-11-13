@@ -1,0 +1,526 @@
+{
+ "doc_id": "train-033-L1",
+ "scenario_id": "train-033",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_b",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 40,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 112,
+   "end": 125,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 126,
+   "end": 132,
+   "type": "Person",
+   "text": "홍진우 병장"
+  },
+  {
+   "start": 140,
+   "end": 147,
+   "type": "InformationSystem",
+   "text": "행정서버-15"
+  },
+  {
+   "start": 150,
+   "end": 155,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 163,
+   "end": 176,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 177,
+   "end": 183,
+   "type": "Person",
+   "text": "천재윤 병장"
+  },
+  {
+   "start": 192,
+   "end": 199,
+   "type": "InformationSystem",
+   "text": "행정서버-55"
+  },
+  {
+   "start": 202,
+   "end": 207,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 220,
+   "end": 233,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 234,
+   "end": 240,
+   "type": "Person",
+   "text": "이병 길주원"
+  },
+  {
+   "start": 249,
+   "end": 256,
+   "type": "InformationSystem",
+   "text": "행정서버-15"
+  },
+  {
+   "start": 259,
+   "end": 264,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 272,
+   "end": 285,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 286,
+   "end": 292,
+   "type": "Person",
+   "text": "홍진우 병장"
+  },
+  {
+   "start": 301,
+   "end": 308,
+   "type": "InformationSystem",
+   "text": "행정서버-15"
+  },
+  {
+   "start": 311,
+   "end": 316,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 329,
+   "end": 342,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 343,
+   "end": 349,
+   "type": "Person",
+   "text": "병장 홍민성"
+  },
+  {
+   "start": 357,
+   "end": 364,
+   "type": "InformationSystem",
+   "text": "업무단말-35"
+  },
+  {
+   "start": 367,
+   "end": 372,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 385,
+   "end": 398,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 399,
+   "end": 405,
+   "type": "Person",
+   "text": "이병 길주원"
+  },
+  {
+   "start": 413,
+   "end": 420,
+   "type": "InformationSystem",
+   "text": "업무단말-35"
+  },
+  {
+   "start": 423,
+   "end": 428,
+   "type": "Facility",
+   "text": "작전회의실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     110,
+     160
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     161,
+     217
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     218,
+     269
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     270,
+     326
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     327,
+     382
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     383,
+     433
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "홍진우 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 0,
+   "head": "홍진우 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-15"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-15",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 1,
+   "head": "천재윤 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "천재윤 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-55"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-55",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 2,
+   "head": "이병 길주원",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 2,
+   "head": "이병 길주원",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-15"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-15",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 3,
+   "head": "홍진우 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 3,
+   "head": "홍진우 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-15"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-15",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 4,
+   "head": "병장 홍민성",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 4,
+   "head": "병장 홍민성",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-35"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-35",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 5,
+   "head": "이병 길주원",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 5,
+   "head": "이병 길주원",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-35"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-35",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "홍진우 병장"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-15"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "천재윤 병장"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-55"
+    ],
+    "설치장소": [
+     "지휘통제실"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "이병 길주원"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-15"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "홍진우 병장"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-15"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "병장 홍민성"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-35"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "이병 길주원"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-35"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ]
+   }
+  }
+ ]
+}

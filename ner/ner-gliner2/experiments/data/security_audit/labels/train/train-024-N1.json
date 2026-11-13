@@ -1,0 +1,180 @@
+{
+ "doc_id": "train-024-N1",
+ "scenario_id": "train-024",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 31,
+   "end": 46,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 80,
+   "end": 95,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 99,
+   "end": 105,
+   "type": "Person",
+   "text": "나동현 이병"
+  },
+  {
+   "start": 114,
+   "end": 120,
+   "type": "Person",
+   "text": "나동현 이병"
+  },
+  {
+   "start": 122,
+   "end": 125,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 133,
+   "end": 140,
+   "type": "StorageMedium",
+   "text": "USB-340"
+  },
+  {
+   "start": 194,
+   "end": 201,
+   "type": "StorageMedium",
+   "text": "USB-340"
+  },
+  {
+   "start": 224,
+   "end": 234,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 266,
+   "end": 274,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 275,
+   "end": 285,
+   "type": "Person",
+   "text": "천재윤 7급 군무원"
+  },
+  {
+   "start": 287,
+   "end": 291,
+   "type": "Person",
+   "text": "나 이병"
+  },
+  {
+   "start": 296,
+   "end": 303,
+   "type": "StorageMedium",
+   "text": "USB-340"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     70
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     72,
+     105
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     107,
+     212
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     214,
+     257
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     259,
+     326
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "나동현 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 2,
+   "head": "USB-340",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 2,
+   "head": "나동현 이병",
+   "type": "CARRIED_OUT",
+   "tail": "USB-340"
+  },
+  {
+   "unit": 4,
+   "head": "천재윤 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "나동현 이병"
+    ],
+    "매체": [
+     "USB-340"
+    ],
+    "장소": [
+     "상황실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026년 5월 2일"
+   }
+  }
+ ]
+}

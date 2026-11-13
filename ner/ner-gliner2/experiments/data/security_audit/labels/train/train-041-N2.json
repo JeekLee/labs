@@ -1,0 +1,182 @@
+{
+ "doc_id": "train-041-N2",
+ "scenario_id": "train-041",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 2분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 58,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 66,
+   "end": 78,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 79,
+   "end": 84,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 85,
+   "end": 91,
+   "type": "Person",
+   "text": "반도현 중위"
+  },
+  {
+   "start": 146,
+   "end": 152,
+   "type": "Person",
+   "text": "방수아 일병"
+  },
+  {
+   "start": 166,
+   "end": 169,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 172,
+   "end": 181,
+   "type": "ClassifiedDocument",
+   "text": "작전계획 부록 2"
+  },
+  {
+   "start": 188,
+   "end": 200,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 226,
+   "end": 232,
+   "type": "Person",
+   "text": "반도현 중위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     91
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     93,
+     141
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     143,
+     204
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     206,
+     251
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     253,
+     303
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 2,
+   "head": "방수아 일병",
+   "type": "ACCESSED",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "방수아 일병",
+   "type": "ACCESSED",
+   "tail": "작전계획 부록 2"
+  },
+  {
+   "unit": 0,
+   "head": "2026년 2분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "반도현 중위",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "반도현 중위",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 0,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 인사과"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "인원보안",
+    "대상": [
+     "방수아 일병"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "반도현 중위"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

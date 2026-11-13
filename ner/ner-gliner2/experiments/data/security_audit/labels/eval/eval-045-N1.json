@@ -1,0 +1,195 @@
+{
+ "doc_id": "eval-045-N1",
+ "scenario_id": "eval-045",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 26,
+   "end": 39,
+   "type": "Unit",
+   "text": "제6191방공대대 작전과"
+  },
+  {
+   "start": 40,
+   "end": 48,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 49,
+   "end": 55,
+   "type": "Person",
+   "text": "정시후 하사"
+  },
+  {
+   "start": 81,
+   "end": 84,
+   "type": "Facility",
+   "text": "암호실"
+  },
+  {
+   "start": 91,
+   "end": 104,
+   "type": "Unit",
+   "text": "제6191방공대대 작전과"
+  },
+  {
+   "start": 105,
+   "end": 111,
+   "type": "Person",
+   "text": "강태민 상병"
+  },
+  {
+   "start": 118,
+   "end": 122,
+   "type": "Person",
+   "text": "강 상병"
+  },
+  {
+   "start": 124,
+   "end": 127,
+   "type": "Facility",
+   "text": "암호실"
+  },
+  {
+   "start": 175,
+   "end": 181,
+   "type": "StorageMedium",
+   "text": "SM-874"
+  },
+  {
+   "start": 296,
+   "end": 309,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 340,
+   "end": 344,
+   "type": "Person",
+   "text": "정 하사"
+  },
+  {
+   "start": 346,
+   "end": 350,
+   "type": "Person",
+   "text": "강 상병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     55
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     57,
+     112
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     114,
+     210
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     212,
+     287
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     289,
+     331
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     333,
+     386
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "정시후 하사",
+   "type": "BELONGS_TO",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 0,
+   "head": "정시후 하사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 0,
+   "head": "정보체계 관리자",
+   "type": "POSITION_OF",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 1,
+   "head": "강태민 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 2,
+   "head": "강 상병",
+   "type": "ACCESSED",
+   "tail": "암호실"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "계정·권한 관리 위반",
+    "관련자": [
+     "강태민 상병"
+    ],
+    "매체": [
+     "SM-874"
+    ],
+    "장소": [
+     "암호실"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ],
+    "일자": "2026. 9. 18."
+   }
+  }
+ ]
+}

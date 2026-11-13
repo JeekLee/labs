@@ -1,0 +1,153 @@
+{
+ "doc_id": "train-004-N1",
+ "scenario_id": "train-004",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 34,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 79,
+   "end": 85,
+   "type": "Person",
+   "text": "상병 연진혁"
+  },
+  {
+   "start": 86,
+   "end": 101,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 111,
+   "end": 117,
+   "type": "Person",
+   "text": "상병 연진혁"
+  },
+  {
+   "start": 151,
+   "end": 157,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 186,
+   "end": 191,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 192,
+   "end": 198,
+   "type": "Person",
+   "text": "중위 백윤호"
+  },
+  {
+   "start": 226,
+   "end": 236,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 245,
+   "end": 249,
+   "type": "Person",
+   "text": "연 상병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     69
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     71,
+     102
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     104,
+     214
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     216,
+     236
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     238,
+     291
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "상병 연진혁",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 2,
+   "head": "상병 연진혁",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 2,
+   "head": "중위 백윤호",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "상병 연진혁"
+    ],
+    "장소": [
+     "제1통제구역"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026-02-11"
+   }
+  }
+ ]
+}

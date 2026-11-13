@@ -1,0 +1,609 @@
+{
+ "doc_id": "train-009-L1",
+ "scenario_id": "train-009",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_b",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 39,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 111,
+   "end": 123,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Person",
+   "text": "곽우진 일병"
+  },
+  {
+   "start": 138,
+   "end": 145,
+   "type": "InformationSystem",
+   "text": "행정서버-49"
+  },
+  {
+   "start": 148,
+   "end": 154,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 167,
+   "end": 184,
+   "type": "Unit",
+   "text": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "start": 185,
+   "end": 191,
+   "type": "Person",
+   "text": "곽지환 병장"
+  },
+  {
+   "start": 203,
+   "end": 210,
+   "type": "InformationSystem",
+   "text": "업무단말-11"
+  },
+  {
+   "start": 213,
+   "end": 219,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 227,
+   "end": 239,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 240,
+   "end": 246,
+   "type": "Person",
+   "text": "모준서 병장"
+  },
+  {
+   "start": 254,
+   "end": 261,
+   "type": "InformationSystem",
+   "text": "행정서버-52"
+  },
+  {
+   "start": 264,
+   "end": 269,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 282,
+   "end": 294,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 295,
+   "end": 301,
+   "type": "Person",
+   "text": "상병 천재윤"
+  },
+  {
+   "start": 313,
+   "end": 320,
+   "type": "InformationSystem",
+   "text": "업무단말-11"
+  },
+  {
+   "start": 323,
+   "end": 329,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 337,
+   "end": 349,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 350,
+   "end": 356,
+   "type": "Person",
+   "text": "공수호 이병"
+  },
+  {
+   "start": 368,
+   "end": 375,
+   "type": "InformationSystem",
+   "text": "업무단말-33"
+  },
+  {
+   "start": 378,
+   "end": 383,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 391,
+   "end": 403,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 404,
+   "end": 410,
+   "type": "Person",
+   "text": "공수호 이병"
+  },
+  {
+   "start": 422,
+   "end": 429,
+   "type": "InformationSystem",
+   "text": "업무단말-33"
+  },
+  {
+   "start": 432,
+   "end": 437,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 445,
+   "end": 457,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 458,
+   "end": 464,
+   "type": "Person",
+   "text": "곽지환 병장"
+  },
+  {
+   "start": 476,
+   "end": 483,
+   "type": "InformationSystem",
+   "text": "행정서버-49"
+  },
+  {
+   "start": 486,
+   "end": 491,
+   "type": "Facility",
+   "text": "작전회의실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     109,
+     164
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     165,
+     224
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     225,
+     279
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     280,
+     334
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     335,
+     388
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     389,
+     442
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     443,
+     501
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "곽우진 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "곽우진 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-49"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-49",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 1,
+   "head": "곽지환 병장",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "unit": 1,
+   "head": "곽지환 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-11"
+  },
+  {
+   "unit": 1,
+   "head": "업무단말-11",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 2,
+   "head": "모준서 병장",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "모준서 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-52"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-52",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 3,
+   "head": "상병 천재윤",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 3,
+   "head": "상병 천재윤",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-11"
+  },
+  {
+   "unit": 3,
+   "head": "업무단말-11",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 4,
+   "head": "공수호 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 4,
+   "head": "공수호 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-33"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-33",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 5,
+   "head": "공수호 이병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 5,
+   "head": "공수호 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-33"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-33",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 6,
+   "head": "곽지환 병장",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 6,
+   "head": "곽지환 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-49"
+  },
+  {
+   "unit": 6,
+   "head": "행정서버-49",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "곽우진 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-49"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 군수지원대대"
+    ],
+    "취급자": [
+     "곽지환 병장"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-11"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "모준서 병장"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-52"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "상병 천재윤"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-11"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "공수호 이병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-33"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "공수호 이병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-33"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 인사과"
+    ],
+    "취급자": [
+     "곽지환 병장"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-49"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "반납 지연"
+   }
+  }
+ ]
+}

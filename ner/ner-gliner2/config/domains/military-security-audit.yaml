@@ -73,25 +73,119 @@ entity_types:
     description_ko: "발견 사항이나 사고에 대한 조치. 조치표의 행 단위로 생성한다."
 
 relationships:
-  - {type: BELONGS_TO, source: [Person], target: [Unit], extract: true, description_ko: "사람이 부대에 소속된다"}
-  - {type: HOLDS_POSITION, source: [Person], target: [Position], extract: true, description_ko: "사람이 직책을 맡는다"}
-  - {type: POSITION_OF, source: [Position], target: [Unit], extract: true, description_ko: "직책이 부대에 속한다"}
-  - {type: HOLDS, source: [Person], target: [Credential], extract: true, description_ko: "사람이 인가·출입증·계정을 보유한다"}
-  - {type: RESPONSIBLE_FOR, source: [Person], target: [Facility, ClassifiedDocument, StorageMedium, InformationSystem], extract: true, description_ko: "사람이 관리 책임을 진다"}
-  - {type: ACCESSED, source: [Person], target: [Facility, InformationSystem, ClassifiedDocument], extract: true, description_ko: "사람이 출입하거나 접근한다"}
-  - {type: CARRIED_OUT, source: [Person], target: [StorageMedium, ClassifiedDocument], extract: true, description_ko: "사람이 반출한다"}
-  - {type: STORED_ON, source: [ClassifiedDocument], target: [StorageMedium, InformationSystem], extract: true, description_ko: "문서가 매체나 체계에 저장된다"}
-  - {type: LOCATED_AT, source: [Facility, InformationSystem, StorageMedium], target: [Facility, Unit], extract: true, description_ko: "시설·체계·매체가 위치하거나 보관된다"}
-  - {type: INSPECTED, source: [Inspection], target: [Unit, Facility, InformationSystem], extract: true, description_ko: "점검이 대상을 점검한다"}
-  - {type: INVOLVED_IN, source: [Person], target: [SecurityIncident], extract: false, description_ko: "사람이 사고에 관련된다"}
-  - {type: OCCURRED_AT, source: [SecurityIncident], target: [Facility, InformationSystem], extract: false, description_ko: "사고가 발생한 위치"}
-  - {type: VIOLATES, source: [SecurityIncident, Finding], target: [Regulation], extract: false, description_ko: "규정을 위반한다"}
-  - {type: IDENTIFIED, source: [Inspection], target: [Finding], extract: false, description_ko: "점검에서 발견 사항이 나온다"}
-  - {type: CONCERNS, source: [Finding], target: [Person, Position, Facility, ClassifiedDocument, StorageMedium, InformationSystem], extract: false, description_ko: "발견 사항의 대상"}
-  - {type: REMEDIATES, source: [CorrectiveAction], target: [Finding, SecurityIncident], extract: false, description_ko: "조치가 해소한다"}
-  - {type: ASSIGNED_TO, source: [CorrectiveAction], target: [Person, Unit], extract: false, description_ko: "조치의 담당"}
+  - {type: BELONGS_TO, source: [Person], target: [Unit], scopes: [ledger, narrative], extract: true, description_ko: "사람이 부대에 소속된다"}
+  - {type: HOLDS_POSITION, source: [Person], target: [Position], scopes: [ledger, narrative], extract: true, description_ko: "사람이 직책을 맡는다"}
+  - {type: POSITION_OF, source: [Position], target: [Unit], scopes: [ledger, narrative], extract: true, description_ko: "직책이 부대에 속한다"}
+  - {type: HOLDS, source: [Person], target: [Credential], scopes: [ledger, narrative], extract: true, description_ko: "사람이 인가·출입증·계정을 보유한다"}
+  - {type: RESPONSIBLE_FOR, source: [Person], target: [Facility, ClassifiedDocument, StorageMedium, InformationSystem], scopes: [ledger, narrative], extract: true, description_ko: "사람이 관리 책임을 진다"}
+  - {type: ACCESSED, source: [Person], target: [Facility, InformationSystem, ClassifiedDocument], scopes: [narrative], extract: true, description_ko: "사람이 출입하거나 접근한다"}
+  - {type: CARRIED_OUT, source: [Person], target: [StorageMedium, ClassifiedDocument], scopes: [narrative], extract: true, description_ko: "사람이 반출한다"}
+  - {type: STORED_ON, source: [ClassifiedDocument], target: [StorageMedium, InformationSystem], scopes: [narrative], extract: true, description_ko: "문서가 매체나 체계에 저장된다"}
+  - {type: LOCATED_AT, source: [Facility, InformationSystem, StorageMedium], target: [Facility, Unit], scopes: [ledger, narrative], extract: true, description_ko: "시설·체계·매체가 위치하거나 보관된다"}
+  - {type: INSPECTED, source: [Inspection], target: [Unit, Facility, InformationSystem], scopes: [narrative], extract: true, description_ko: "점검이 대상을 점검한다"}
+  - {type: INVOLVED_IN, source: [Person], target: [SecurityIncident], scopes: [], extract: false, description_ko: "사람이 사고에 관련된다"}
+  - {type: OCCURRED_AT, source: [SecurityIncident], target: [Facility, InformationSystem], scopes: [], extract: false, description_ko: "사고가 발생한 위치"}
+  - {type: VIOLATES, source: [SecurityIncident, Finding], target: [Regulation], scopes: [], extract: false, description_ko: "규정을 위반한다"}
+  - {type: IDENTIFIED, source: [Inspection], target: [Finding], scopes: [], extract: false, description_ko: "점검에서 발견 사항이 나온다"}
+  - {type: CONCERNS, source: [Finding], target: [Person, Position, Facility, ClassifiedDocument, StorageMedium, InformationSystem], scopes: [], extract: false, description_ko: "발견 사항의 대상"}
+  - {type: REMEDIATES, source: [CorrectiveAction], target: [Finding, SecurityIncident], scopes: [], extract: false, description_ko: "조치가 해소한다"}
+  - {type: ASSIGNED_TO, source: [CorrectiveAction], target: [Person, Unit], scopes: [], extract: false, description_ko: "조치의 담당"}
 
 records:
+  document_entry:
+    - {name: 관리번호, dtype: str, description_ko: "비밀의 관리번호"}
+    - {name: 접수일, dtype: str, description_ko: "생산 또는 접수 연월일"}
+    - {name: 생산처, dtype: list, description_ko: "비밀을 생산한 부대나 기관"}
+    - {name: 비밀등급, dtype: str, choices: [Ⅰ급, Ⅱ급, Ⅲ급], description_ko: "비밀의 등급"}
+    - {name: 건명, dtype: list, description_ko: "비밀 문서의 건명"}
+    - {name: 보관장소, dtype: list, description_ko: "비밀을 보관하는 장소"}
+    - {name: 처리방법, dtype: str, choices: [보관, 등급변경, 파기, 이관], description_ko: "비밀의 처리 방법"}
+    - {name: 처리일자, dtype: str, description_ko: "처리한 날짜"}
+    - {name: 처리자, dtype: list, description_ko: "기록된 처리를 수행한 사람"}
+    - {name: 확인자, dtype: list, description_ko: "기록 내용을 확인하고 서명한 사람"}
+    - {name: 보관책임자, dtype: list, description_ko: "비밀이나 자재의 보관을 책임지는 사람"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  loan:
+    - {name: 관리번호, dtype: str, description_ko: "비밀의 관리번호"}
+    - {name: 비밀등급, dtype: str, choices: [Ⅰ급, Ⅱ급, Ⅲ급], description_ko: "비밀의 등급"}
+    - {name: 건명, dtype: list, description_ko: "비밀 문서의 건명"}
+    - {name: 대출자, dtype: list, description_ko: "비밀을 대출한 사람"}
+    - {name: 대출일자, dtype: str, description_ko: "대출한 날짜"}
+    - {name: 반납일자, dtype: str, description_ko: "반납한 날짜"}
+    - {name: 보관책임자, dtype: list, description_ko: "비밀이나 자재의 보관을 책임지는 사람"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  reading:
+    - {name: 관리번호, dtype: str, description_ko: "비밀의 관리번호"}
+    - {name: 건명, dtype: list, description_ko: "비밀 문서의 건명"}
+    - {name: 일시, dtype: str, description_ko: "열람한 일시"}
+    - {name: 열람자, dtype: list, description_ko: "비밀을 열람한 사람"}
+    - {name: 인가등급, dtype: str, choices: [Ⅰ급, Ⅱ급, Ⅲ급], description_ko: "열람자의 비밀취급인가 등급"}
+    - {name: 열람목적, dtype: str, description_ko: "열람한 목적"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  clearance:
+    - {name: 인가번호, dtype: str, description_ko: "비밀취급인가 번호"}
+    - {name: 인가 대상자, dtype: list, description_ko: "비밀취급인가를 받은 사람"}
+    - {name: 소속, dtype: list, description_ko: "소속 부대나 부서"}
+    - {name: 인가등급, dtype: str, choices: [Ⅰ급, Ⅱ급, Ⅲ급], description_ko: "비밀취급인가 등급"}
+    - {name: 인가일, dtype: str, description_ko: "인가한 날짜"}
+    - {name: 해제일, dtype: str, description_ko: "인가를 해제한 날짜"}
+    - {name: 해제사유, dtype: str, description_ko: "인가를 해제한 사유"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  custodian:
+    - {name: 보관책임자, dtype: list, description_ko: "비밀이나 자재의 보관을 책임지는 사람"}
+    - {name: 소속, dtype: list, description_ko: "소속 부대나 부서"}
+    - {name: 인가등급, dtype: str, choices: [Ⅰ급, Ⅱ급, Ⅲ급], description_ko: "비밀취급인가 등급"}
+    - {name: 정부 구분, dtype: str, choices: [정, 부], description_ko: "정 보관책임자인지 부 보관책임자인지"}
+    - {name: 임명일, dtype: str, description_ko: "임명한 날짜"}
+    - {name: 해제일, dtype: str, description_ko: "해제한 날짜"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  entry:
+    - {name: 구역, dtype: list, description_ko: "출입한 통제구역이나 제한구역"}
+    - {name: 일자, dtype: str, description_ko: "출입한 날짜"}
+    - {name: 출입시간, dtype: str, description_ko: "들어간 시각"}
+    - {name: 퇴청시간, dtype: str, description_ko: "나온 시각"}
+    - {name: 용무, dtype: str, description_ko: "출입한 목적"}
+    - {name: 출입자, dtype: list, description_ko: "구역에 출입한 사람"}
+    - {name: 소속, dtype: list, description_ko: "출입자의 소속 부대나 부서"}
+    - {name: 입회자, dtype: list, description_ko: "출입이나 작업에 입회한 사람"}
+    - {name: 관리책임자, dtype: list, description_ko: "대장이나 구역의 관리를 책임지는 사람"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  daily_check:
+    - {name: 장소, dtype: list, description_ko: "점검한 부서나 장소"}
+    - {name: 점검일자, dtype: str, description_ko: "점검한 날짜"}
+    - {name: 점검결과, dtype: str, choices: [이상 없음, 미흡], description_ko: "점검 항목의 전체 상태"}
+    - {name: 점검시각, dtype: str, description_ko: "점검한 시각"}
+    - {name: 점검자, dtype: list, description_ko: "점검한 사람"}
+    - {name: 특이사항, dtype: str, description_ko: "점검에서 발견한 특이사항"}
+  medium_entry:
+    - {name: 등록번호, dtype: list, description_ko: "저장매체의 등록번호"}
+    - {name: 매체형태, dtype: str, description_ko: "저장매체의 형태"}
+    - {name: 등급, dtype: str, choices: [비밀용, 일반용], description_ko: "저장매체의 등급"}
+    - {name: 수령일자, dtype: str, description_ko: "매체를 수령한 날짜"}
+    - {name: 수령 확인관, dtype: list, description_ko: "수령을 확인한 사람"}
+    - {name: 반납일자, dtype: str, description_ko: "매체를 반납한 날짜"}
+    - {name: 반납 확인관, dtype: list, description_ko: "반납을 확인한 사람"}
+    - {name: 불용처리 방법, dtype: str, description_ko: "불용 처리한 방법"}
+    - {name: 관리책임자, dtype: list, description_ko: "대장이나 구역의 관리를 책임지는 사람"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  medium_transfer:
+    - {name: 장비명, dtype: str, description_ko: "반출입한 장비나 매체의 이름"}
+    - {name: 관리번호, dtype: list, description_ko: "저장매체의 관리번호"}
+    - {name: 사용자, dtype: list, description_ko: "매체를 반출입한 사람"}
+    - {name: 용도, dtype: str, description_ko: "반출입한 용도"}
+    - {name: 점검사항, dtype: str, description_ko: "자료 삭제나 악성코드 확인 같은 점검 결과"}
+    - {name: 반출입 일시, dtype: str, description_ko: "반출하거나 반입한 일시"}
+    - {name: 구분, dtype: str, choices: [반출, 반입], description_ko: "반출인지 반입인지"}
+    - {name: 확인자, dtype: list, description_ko: "기록 내용을 확인하고 서명한 사람"}
+    - {name: 관리책임자, dtype: list, description_ko: "대장이나 구역의 관리를 책임지는 사람"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
+  system_entry:
+    - {name: 소속, dtype: list, description_ko: "정보시스템을 쓰는 부대나 부서"}
+    - {name: 취급자, dtype: list, description_ko: "정보시스템을 취급하는 사람"}
+    - {name: 종류, dtype: str, description_ko: "장비의 종류"}
+    - {name: 관리번호, dtype: list, description_ko: "정보시스템의 관리번호나 이름"}
+    - {name: 설치장소, dtype: list, description_ko: "정보시스템이 설치된 장소"}
+    - {name: 비고, dtype: str, description_ko: "비고 칸의 자유 서술"}
   incident:
     - {name: 유형, dtype: str, choices: [저장매체 무단 반출, 비인가 출입, 비밀문서 관리 소홀, 계정·권한 관리 위반, 보안교육 미이수, 인가 만료자 접근], description_ko: "사고 유형"}
     - {name: 관련자, dtype: list, description_ko: "사고에 관련된 사람"}

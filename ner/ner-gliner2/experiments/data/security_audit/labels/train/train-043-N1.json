@@ -1,0 +1,213 @@
+{
+ "doc_id": "train-043-N1",
+ "scenario_id": "train-043",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 31,
+   "end": 44,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 45,
+   "end": 51,
+   "type": "Person",
+   "text": "기채원 병장"
+  },
+  {
+   "start": 62,
+   "end": 68,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 85,
+   "end": 98,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 102,
+   "end": 108,
+   "type": "Person",
+   "text": "기채원 병장"
+  },
+  {
+   "start": 121,
+   "end": 134,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 135,
+   "end": 143,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 144,
+   "end": 150,
+   "type": "Person",
+   "text": "중사 석가은"
+  },
+  {
+   "start": 162,
+   "end": 166,
+   "type": "Person",
+   "text": "기 병장"
+  },
+  {
+   "start": 191,
+   "end": 197,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 252,
+   "end": 256,
+   "type": "Person",
+   "text": "석 중사"
+  },
+  {
+   "start": 301,
+   "end": 309,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 325,
+   "end": 333,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 334,
+   "end": 340,
+   "type": "Person",
+   "text": "중사 석가은"
+  },
+  {
+   "start": 342,
+   "end": 348,
+   "type": "Facility",
+   "text": "제1통제구역"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     75
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     77,
+     153
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     155,
+     267
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     269,
+     316
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     318,
+     381
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "기채원 병장",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 0,
+   "head": "기채원 병장",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 1,
+   "head": "기채원 병장",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 2,
+   "head": "기 병장",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 1,
+   "head": "중사 석가은",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 1,
+   "head": "중사 석가은",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 1,
+   "head": "출입통제 담당관",
+   "type": "POSITION_OF",
+   "tail": "제9013보병사단 작전처"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "기채원 병장"
+    ],
+    "장소": [
+     "제1통제구역"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026. 8. 3."
+   }
+  }
+ ]
+}

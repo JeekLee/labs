@@ -1,0 +1,775 @@
+{
+ "doc_id": "train-039-L1",
+ "scenario_id": "train-039",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_b",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 40,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 112,
+   "end": 125,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 126,
+   "end": 132,
+   "type": "Person",
+   "text": "명재현 병장"
+  },
+  {
+   "start": 144,
+   "end": 151,
+   "type": "InformationSystem",
+   "text": "행정서버-54"
+  },
+  {
+   "start": 154,
+   "end": 159,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 167,
+   "end": 180,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 181,
+   "end": 187,
+   "type": "Person",
+   "text": "박윤호 상병"
+  },
+  {
+   "start": 195,
+   "end": 202,
+   "type": "InformationSystem",
+   "text": "행정서버-12"
+  },
+  {
+   "start": 205,
+   "end": 213,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 221,
+   "end": 234,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 235,
+   "end": 241,
+   "type": "Person",
+   "text": "명재현 병장"
+  },
+  {
+   "start": 249,
+   "end": 256,
+   "type": "InformationSystem",
+   "text": "행정서버-52"
+  },
+  {
+   "start": 259,
+   "end": 264,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 277,
+   "end": 290,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 291,
+   "end": 297,
+   "type": "Person",
+   "text": "서지민 병장"
+  },
+  {
+   "start": 305,
+   "end": 312,
+   "type": "InformationSystem",
+   "text": "행정서버-52"
+  },
+  {
+   "start": 315,
+   "end": 323,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 336,
+   "end": 349,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 350,
+   "end": 356,
+   "type": "Person",
+   "text": "서지민 병장"
+  },
+  {
+   "start": 364,
+   "end": 371,
+   "type": "InformationSystem",
+   "text": "행정서버-18"
+  },
+  {
+   "start": 374,
+   "end": 382,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 390,
+   "end": 403,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 404,
+   "end": 410,
+   "type": "Person",
+   "text": "서지민 일병"
+  },
+  {
+   "start": 418,
+   "end": 425,
+   "type": "InformationSystem",
+   "text": "행정서버-54"
+  },
+  {
+   "start": 428,
+   "end": 431,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 439,
+   "end": 452,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 453,
+   "end": 459,
+   "type": "Person",
+   "text": "서지민 일병"
+  },
+  {
+   "start": 467,
+   "end": 474,
+   "type": "InformationSystem",
+   "text": "행정서버-54"
+  },
+  {
+   "start": 477,
+   "end": 485,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 493,
+   "end": 506,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 507,
+   "end": 513,
+   "type": "Person",
+   "text": "박윤호 상병"
+  },
+  {
+   "start": 525,
+   "end": 532,
+   "type": "InformationSystem",
+   "text": "행정서버-12"
+  },
+  {
+   "start": 535,
+   "end": 543,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 551,
+   "end": 563,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 564,
+   "end": 570,
+   "type": "Person",
+   "text": "심서윤 이병"
+  },
+  {
+   "start": 579,
+   "end": 586,
+   "type": "InformationSystem",
+   "text": "행정서버-18"
+  },
+  {
+   "start": 589,
+   "end": 594,
+   "type": "Facility",
+   "text": "통신기계실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     110,
+     164
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     165,
+     218
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     219,
+     274
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     275,
+     333
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     334,
+     387
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     388,
+     436
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     437,
+     490
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     491,
+     548
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     88,
+     109
+    ],
+    [
+     549,
+     604
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "명재현 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 0,
+   "head": "명재현 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-54"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-54",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 1,
+   "head": "박윤호 상병",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "박윤호 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-12"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-12",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 2,
+   "head": "명재현 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 2,
+   "head": "명재현 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-52"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-52",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 3,
+   "head": "서지민 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 3,
+   "head": "서지민 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-52"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-52",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 4,
+   "head": "서지민 병장",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 4,
+   "head": "서지민 병장",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-18"
+  },
+  {
+   "unit": 4,
+   "head": "행정서버-18",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 5,
+   "head": "서지민 일병",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 5,
+   "head": "서지민 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-54"
+  },
+  {
+   "unit": 5,
+   "head": "행정서버-54",
+   "type": "LOCATED_AT",
+   "tail": "전산실"
+  },
+  {
+   "unit": 6,
+   "head": "서지민 일병",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 6,
+   "head": "서지민 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-54"
+  },
+  {
+   "unit": 6,
+   "head": "행정서버-54",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 7,
+   "head": "박윤호 상병",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 7,
+   "head": "박윤호 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-12"
+  },
+  {
+   "unit": 7,
+   "head": "행정서버-12",
+   "type": "LOCATED_AT",
+   "tail": "정문 출입통제소"
+  },
+  {
+   "unit": 8,
+   "head": "심서윤 이병",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 8,
+   "head": "심서윤 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-18"
+  },
+  {
+   "unit": 8,
+   "head": "행정서버-18",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "명재현 병장"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-54"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "박윤호 상병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-12"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "명재현 병장"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-52"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "서지민 병장"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-52"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "서지민 병장"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-18"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "서지민 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-54"
+    ],
+    "설치장소": [
+     "전산실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "서지민 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-54"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    7
+   ],
+   "fields": {
+    "소속": [
+     "제5033보급대대 행정과"
+    ],
+    "취급자": [
+     "박윤호 상병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-12"
+    ],
+    "설치장소": [
+     "정문 출입통제소"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    8
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "심서윤 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-18"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ],
+    "비고": "사후 결재"
+   }
+  }
+ ]
+}

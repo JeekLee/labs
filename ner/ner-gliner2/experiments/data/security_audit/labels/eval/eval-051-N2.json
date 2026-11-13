@@ -1,0 +1,166 @@
+{
+ "doc_id": "eval-051-N2",
+ "scenario_id": "eval-051",
+ "split": "eval",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 44,
+   "type": "Inspection",
+   "text": "2026년 4분기 정기 보안점검"
+  },
+  {
+   "start": 52,
+   "end": 66,
+   "type": "Unit",
+   "text": "제2068기갑여단 통신중대"
+  },
+  {
+   "start": 72,
+   "end": 80,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 81,
+   "end": 87,
+   "type": "Person",
+   "text": "명진우 대위"
+  },
+  {
+   "start": 93,
+   "end": 99,
+   "type": "Person",
+   "text": "진도윤 일병"
+  },
+  {
+   "start": 101,
+   "end": 106,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 136,
+   "end": 143,
+   "type": "StorageMedium",
+   "text": "EXT-745"
+  },
+  {
+   "start": 154,
+   "end": 168,
+   "type": "Regulation",
+   "text": "정보시스템 보안 운용 규정"
+  },
+  {
+   "start": 245,
+   "end": 251,
+   "type": "Person",
+   "text": "명진우 대위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     66
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     68,
+     87
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     89,
+     176
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     178,
+     209
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     211,
+     233
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     235,
+     269
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 4분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제2068기갑여단 통신중대"
+  },
+  {
+   "unit": 1,
+   "head": "명진우 대위",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 2,
+   "head": "진도윤 일병",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "진도윤 일병"
+    ],
+    "위반 규정": [
+     "정보시스템 보안 운용 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    5
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "명진우 대위"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "doc_id": "train-002-N1",
+ "scenario_id": "train-002",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 22,
+   "end": 34,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 68,
+   "end": 80,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 81,
+   "end": 87,
+   "type": "Person",
+   "text": "옥민규 일병"
+  },
+  {
+   "start": 100,
+   "end": 106,
+   "type": "Person",
+   "text": "옥민규 일병"
+  },
+  {
+   "start": 119,
+   "end": 122,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 125,
+   "end": 132,
+   "type": "ClassifiedDocument",
+   "text": "암호운용 지침"
+  },
+  {
+   "start": 179,
+   "end": 186,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 187,
+   "end": 193,
+   "type": "Person",
+   "text": "주민성 상사"
+  },
+  {
+   "start": 238,
+   "end": 248,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 267,
+   "end": 271,
+   "type": "Person",
+   "text": "옥 일병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     58
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     60,
+     88
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     90,
+     209
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     211,
+     258
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     260,
+     301
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "옥민규 일병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "옥민규 일병",
+   "type": "ACCESSED",
+   "tail": "암호운용 지침"
+  },
+  {
+   "unit": 2,
+   "head": "옥민규 일병",
+   "type": "ACCESSED",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "주민성 상사",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "옥민규 일병"
+    ],
+    "대상 문서": [
+     "암호운용 지침"
+    ],
+    "장소": [
+     "전산실"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ],
+    "일자": "2026-09-12"
+   }
+  }
+ ]
+}

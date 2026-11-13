@@ -1,0 +1,182 @@
+{
+ "doc_id": "train-026-N2",
+ "scenario_id": "train-026",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 1분기 정기 보안점검"
+  },
+  {
+   "start": 48,
+   "end": 62,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 65,
+   "end": 82,
+   "type": "Inspection",
+   "text": "2026년 1분기 정기 보안점검"
+  },
+  {
+   "start": 91,
+   "end": 105,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 106,
+   "end": 113,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 114,
+   "end": 120,
+   "type": "Person",
+   "text": "중위 배윤호"
+  },
+  {
+   "start": 137,
+   "end": 143,
+   "type": "Person",
+   "text": "염정우 이병"
+  },
+  {
+   "start": 145,
+   "end": 152,
+   "type": "ClassifiedDocument",
+   "text": "정보수집 계획"
+  },
+  {
+   "start": 154,
+   "end": 160,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 170,
+   "end": 180,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 200,
+   "end": 206,
+   "type": "Person",
+   "text": "중위 배윤호"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     36
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     38,
+     85
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     87,
+     120
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     122,
+     184
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     186,
+     224
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "2026년 1분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "중위 배윤호",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "중위 배윤호",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 2,
+   "head": "비밀관리책임자",
+   "type": "POSITION_OF",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 3,
+   "head": "염정우 이병",
+   "type": "ACCESSED",
+   "tail": "정보수집 계획"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    3
+   ],
+   "fields": {
+    "영역": "문서보안",
+    "대상": [
+     "염정우 이병"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    4
+   ],
+   "fields": {
+    "조치 유형": "재교육",
+    "담당": [
+     "중위 배윤호"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

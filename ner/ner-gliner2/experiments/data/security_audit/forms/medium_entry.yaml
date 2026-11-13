@@ -1,0 +1,114 @@
+record: medium_entry
+title: 저장매체 관리대장
+source: POSTECH 방산연구 보안관리지침 별지6
+meta_fields:
+- 관리책임자
+columns:
+- key: 등록번호
+  field: 등록번호
+  kind: medium_id
+- key: 매체형태
+  field: 매체형태
+  kind: medium_kind
+- key: 등급
+  field: 등급
+  kind: choice
+- key: 수령일자
+  field: 수령일자
+  kind: date
+- key: 수령 확인관
+  field: 수령 확인관
+  kind: person
+- key: 반납일자
+  field: 반납일자
+  kind: date
+- key: 반납 확인관
+  field: 반납 확인관
+  kind: person
+- key: 불용처리 방법
+  field: 불용처리 방법
+  kind: text_dispose
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: medium_entry_a
+  eval_only: false
+  headers:
+    등록번호: 등록번호
+    매체형태: 매체형태
+    등급: 등급
+    수령일자: 수령일자
+    수령 확인관: 수령 확인관
+    반납일자: 반납일자
+    반납 확인관: 반납 확인관
+    불용처리 방법: 불용처리 방법
+    비고: 비고
+  order: &id001
+  - 등록번호
+  - 매체형태
+  - 등급
+  - 수령일자
+  - 수령 확인관
+  - 반납일자
+  - 반납 확인관
+  - 불용처리 방법
+  - 비고
+  grouped: []
+  date_format: dot
+- id: medium_entry_b
+  eval_only: false
+  headers:
+    등록번호: 등록번호
+    매체형태: 매체형태
+    등급: 등급
+    수령일자: 수령 일자
+    수령 확인관: 수령 확인관
+    반납일자: 반납/불용 일자
+    반납 확인관: 반납 확인
+    불용처리 방법: 불용처리 방법
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: dash
+- id: medium_entry_c
+  eval_only: false
+  headers:
+    등록번호: 관리번호
+    매체형태: 종류
+    등급: 등급
+    수령일자: 수령일자
+    수령 확인관: 지급 확인
+    반납일자: 반납일자
+    반납 확인관: 회수 확인
+    불용처리 방법: 불용처리 방법
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: short
+- id: medium_entry_eval
+  eval_only: true
+  headers:
+    등록번호: 매체 번호
+    매체형태: 형태
+    등급: 등급
+    수령일자: 지급일
+    수령 확인관: 지급자
+    반납일자: 회수일
+    반납 확인관: 회수자
+    불용처리 방법: 폐기 방법
+    비고: 비고
+  order:
+  - 매체형태
+  - 등록번호
+  - 등급
+  - 수령일자
+  - 수령 확인관
+  - 반납일자
+  - 반납 확인관
+  - 불용처리 방법
+  - 비고
+  grouped:
+  - - 반납일자
+    - 반납 확인관
+  date_format: korean

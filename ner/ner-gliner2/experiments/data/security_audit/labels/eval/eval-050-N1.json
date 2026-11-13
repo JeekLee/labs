@@ -1,0 +1,219 @@
+{
+ "doc_id": "eval-050-N1",
+ "scenario_id": "eval-050",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 38,
+   "type": "Person",
+   "text": "천유나 병장"
+  },
+  {
+   "start": 43,
+   "end": 58,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 81,
+   "end": 87,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 93,
+   "end": 100,
+   "type": "ClassifiedDocument",
+   "text": "정보수집 계획"
+  },
+  {
+   "start": 106,
+   "end": 110,
+   "type": "Person",
+   "text": "천 병장"
+  },
+  {
+   "start": 112,
+   "end": 118,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 121,
+   "end": 128,
+   "type": "ClassifiedDocument",
+   "text": "정보수집 계획"
+  },
+  {
+   "start": 210,
+   "end": 221,
+   "type": "Regulation",
+   "text": "비밀 대출 관리 지침"
+  },
+  {
+   "start": 250,
+   "end": 257,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 258,
+   "end": 268,
+   "type": "Person",
+   "text": "우지후 7급 군무원"
+  },
+  {
+   "start": 270,
+   "end": 274,
+   "type": "Person",
+   "text": "천 병장"
+  },
+  {
+   "start": 308,
+   "end": 323,
+   "type": "Unit",
+   "text": "제3051포병대대 지휘통제반"
+  },
+  {
+   "start": 324,
+   "end": 331,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 332,
+   "end": 342,
+   "type": "Person",
+   "text": "우지후 7급 군무원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     59
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     61,
+     100
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     102,
+     201
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     203,
+     244
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     246,
+     302
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     304,
+     342
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "천유나 병장",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 2,
+   "head": "천 병장",
+   "type": "ACCESSED",
+   "tail": "정보수집 계획"
+  },
+  {
+   "unit": 2,
+   "head": "천 병장",
+   "type": "ACCESSED",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 4,
+   "head": "우지후 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 5,
+   "head": "우지후 7급 군무원",
+   "type": "BELONGS_TO",
+   "tail": "제3051포병대대 지휘통제반"
+  },
+  {
+   "unit": 5,
+   "head": "우지후 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  },
+  {
+   "unit": 5,
+   "head": "비밀관리책임자",
+   "type": "POSITION_OF",
+   "tail": "제3051포병대대 지휘통제반"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "천유나 병장"
+    ],
+    "대상 문서": [
+     "정보수집 계획"
+    ],
+    "장소": [
+     "제1통제구역"
+    ],
+    "위반 규정": [
+     "비밀 대출 관리 지침"
+    ],
+    "일자": "2026. 9. 8."
+   }
+  }
+ ]
+}

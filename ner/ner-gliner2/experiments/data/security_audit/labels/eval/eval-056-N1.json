@@ -1,0 +1,177 @@
+{
+ "doc_id": "eval-056-N1",
+ "scenario_id": "eval-056",
+ "split": "eval",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 34,
+   "end": 39,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 49,
+   "end": 55,
+   "type": "Person",
+   "text": "정시후 상병"
+  },
+  {
+   "start": 56,
+   "end": 69,
+   "type": "Unit",
+   "text": "제6191방공대대 작전과"
+  },
+  {
+   "start": 79,
+   "end": 83,
+   "type": "Person",
+   "text": "정 상병"
+  },
+  {
+   "start": 89,
+   "end": 96,
+   "type": "ClassifiedDocument",
+   "text": "부대배치 현황"
+  },
+  {
+   "start": 117,
+   "end": 122,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 157,
+   "end": 164,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 165,
+   "end": 171,
+   "type": "Person",
+   "text": "한하율 하사"
+  },
+  {
+   "start": 194,
+   "end": 204,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 213,
+   "end": 217,
+   "type": "Person",
+   "text": "한 하사"
+  },
+  {
+   "start": 223,
+   "end": 227,
+   "type": "Person",
+   "text": "정 상병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     39
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     41,
+     70
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     72,
+     148
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     150,
+     182
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     184,
+     204
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     206,
+     264
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "정시후 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6191방공대대 작전과"
+  },
+  {
+   "unit": 2,
+   "head": "정 상병",
+   "type": "ACCESSED",
+   "tail": "부대배치 현황"
+  },
+  {
+   "unit": 3,
+   "head": "한하율 하사",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "정시후 상병"
+    ],
+    "장소": [
+     "문서보관실"
+    ],
+    "대상 문서": [
+     "부대배치 현황"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ],
+    "일자": "2026-08-24"
+   }
+  }
+ ]
+}

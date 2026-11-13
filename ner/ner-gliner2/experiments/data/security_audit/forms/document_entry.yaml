@@ -1,0 +1,143 @@
+record: document_entry
+title: 비밀관리기록부
+source: 산업통상부 보안업무규정 시행세칙 별지20
+meta_fields:
+- 보관책임자
+columns:
+- key: 관리번호
+  field: 관리번호
+  kind: doc_id
+- key: 접수일
+  field: 접수일
+  kind: date
+- key: 생산처
+  field: 생산처
+  kind: unit
+- key: 비밀등급
+  field: 비밀등급
+  kind: grade
+- key: 건명
+  field: 건명
+  kind: doc_title
+- key: 보관장소
+  field: 보관장소
+  kind: facility
+- key: 처리방법
+  field: 처리방법
+  kind: choice
+- key: 처리일자
+  field: 처리일자
+  kind: date
+- key: 처리자
+  field: 처리자
+  kind: person
+- key: 확인자
+  field: 확인자
+  kind: person
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: document_entry_a
+  eval_only: false
+  headers:
+    관리번호: 관리번호
+    접수일: 접수일
+    생산처: 생산처
+    비밀등급: 비밀등급
+    건명: 건명
+    보관장소: 보관장소
+    처리방법: 처리방법
+    처리일자: 처리일자
+    처리자: 처리자
+    확인자: 확인자
+    비고: 비고
+  order: &id001
+  - 관리번호
+  - 접수일
+  - 생산처
+  - 비밀등급
+  - 건명
+  - 보관장소
+  - 처리방법
+  - 처리일자
+  - 처리자
+  - 확인자
+  - 비고
+  grouped: []
+  date_format: dot
+- id: document_entry_b
+  eval_only: false
+  headers:
+    관리번호: 관리번호
+    접수일: 생산·접수 연월일
+    생산처: 생산처(발신)
+    비밀등급: 비밀등급
+    건명: 제목
+    보관장소: 보관장소
+    처리방법: 처리방법
+    처리일자: 처리일자
+    처리자: 처리자(인)
+    확인자: 확인자(인)
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: dash
+- id: document_entry_c
+  eval_only: false
+  headers:
+    관리번호: 관리 No.
+    접수일: 접수일
+    생산처: 생산처
+    비밀등급: 비밀등급
+    건명: 건명
+    보관장소: 보관 위치
+    처리방법: 처리 구분
+    처리일자: 처리일
+    처리자: 처리자
+    확인자: 확인자
+    비고: 비고
+  order:
+  - 관리번호
+  - 비밀등급
+  - 건명
+  - 접수일
+  - 생산처
+  - 보관장소
+  - 처리방법
+  - 처리일자
+  - 처리자
+  - 확인자
+  - 비고
+  grouped: []
+  date_format: short
+- id: document_entry_eval
+  eval_only: true
+  headers:
+    관리번호: 등록번호
+    접수일: 수령일
+    생산처: 발행처
+    비밀등급: 비밀등급
+    건명: 문서명
+    보관장소: 보관함
+    처리방법: 처리방법
+    처리일자: 처리일자
+    처리자: 담당자
+    확인자: 검토자
+    비고: 비고
+  order:
+  - 건명
+  - 관리번호
+  - 비밀등급
+  - 접수일
+  - 생산처
+  - 보관장소
+  - 처리방법
+  - 처리일자
+  - 처리자
+  - 확인자
+  - 비고
+  grouped:
+  - - 처리자
+    - 확인자
+  date_format: korean

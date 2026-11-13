@@ -1,0 +1,174 @@
+{
+ "doc_id": "train-006-N1",
+ "scenario_id": "train-006",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 36,
+   "end": 48,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 79,
+   "end": 91,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 92,
+   "end": 98,
+   "type": "Person",
+   "text": "백도현 병장"
+  },
+  {
+   "start": 107,
+   "end": 113,
+   "type": "Person",
+   "text": "백도현 병장"
+  },
+  {
+   "start": 115,
+   "end": 120,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 135,
+   "end": 142,
+   "type": "StorageMedium",
+   "text": "HDD-223"
+  },
+  {
+   "start": 194,
+   "end": 201,
+   "type": "StorageMedium",
+   "text": "HDD-223"
+  },
+  {
+   "start": 229,
+   "end": 239,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 248,
+   "end": 256,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 257,
+   "end": 263,
+   "type": "Person",
+   "text": "박지우 소령"
+  },
+  {
+   "start": 265,
+   "end": 269,
+   "type": "Person",
+   "text": "백 병장"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     69
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     71,
+     98
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     100,
+     217
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     219,
+     239
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     241,
+     298
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "백도현 병장",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "백도현 병장",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-223"
+  },
+  {
+   "unit": 2,
+   "head": "HDD-223",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 4,
+   "head": "박지우 소령",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "백도현 병장"
+    ],
+    "매체": [
+     "HDD-223"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026. 11. 21."
+   }
+  }
+ ]
+}

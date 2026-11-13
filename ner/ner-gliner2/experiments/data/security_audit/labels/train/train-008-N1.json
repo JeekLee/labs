@@ -1,0 +1,168 @@
+{
+ "doc_id": "train-008-N1",
+ "scenario_id": "train-008",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 21,
+   "end": 35,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 63,
+   "end": 77,
+   "type": "Unit",
+   "text": "제8015항공대대 정비중대"
+  },
+  {
+   "start": 81,
+   "end": 87,
+   "type": "Person",
+   "text": "백도현 일병"
+  },
+  {
+   "start": 107,
+   "end": 113,
+   "type": "Person",
+   "text": "백도현 일병"
+  },
+  {
+   "start": 115,
+   "end": 120,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 123,
+   "end": 130,
+   "type": "ClassifiedDocument",
+   "text": "보급수송 계획"
+  },
+  {
+   "start": 181,
+   "end": 188,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 189,
+   "end": 195,
+   "type": "Person",
+   "text": "모준서 중위"
+  },
+  {
+   "start": 218,
+   "end": 228,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 236,
+   "end": 240,
+   "type": "Person",
+   "text": "백 일병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     54
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     56,
+     87
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     89,
+     207
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     209,
+     228
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     230,
+     264
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "백도현 일병",
+   "type": "BELONGS_TO",
+   "tail": "제8015항공대대 정비중대"
+  },
+  {
+   "unit": 2,
+   "head": "백도현 일병",
+   "type": "ACCESSED",
+   "tail": "보급수송 계획"
+  },
+  {
+   "unit": 2,
+   "head": "백도현 일병",
+   "type": "ACCESSED",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 2,
+   "head": "모준서 중위",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "백도현 일병"
+    ],
+    "대상 문서": [
+     "보급수송 계획"
+    ],
+    "장소": [
+     "지휘통제실"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ],
+    "일자": "2026. 5. 4."
+   }
+  }
+ ]
+}

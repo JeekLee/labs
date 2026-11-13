@@ -1,0 +1,95 @@
+record: custodian
+title: 비밀보관책임자 명부
+source: 산업통상부 시행세칙 별지22
+meta_fields: []
+columns:
+- key: 소속
+  field: 소속
+  kind: unit
+- key: 보관책임자
+  field: 보관책임자
+  kind: person
+- key: 인가등급
+  field: 인가등급
+  kind: grade
+- key: 정부 구분
+  field: 정부 구분
+  kind: choice
+- key: 임명일
+  field: 임명일
+  kind: date
+- key: 해제일
+  field: 해제일
+  kind: date
+- key: 비고
+  field: 비고
+  kind: text
+variants:
+- id: custodian_a
+  eval_only: false
+  headers:
+    소속: 소속
+    보관책임자: 성명
+    인가등급: 비밀취급인가
+    정부 구분: 정·부
+    임명일: 임명일
+    해제일: 해제일
+    비고: 비고
+  order: &id001
+  - 소속
+  - 보관책임자
+  - 인가등급
+  - 정부 구분
+  - 임명일
+  - 해제일
+  - 비고
+  grouped: []
+  date_format: dot
+- id: custodian_b
+  eval_only: false
+  headers:
+    소속: 소속
+    보관책임자: 직급·성명
+    인가등급: 인가등급
+    정부 구분: 정부 구분
+    임명일: 임명 연월일
+    해제일: 해제 연월일
+    비고: 비고
+  order: *id001
+  grouped: []
+  date_format: dash
+- id: custodian_c
+  eval_only: false
+  headers:
+    소속: 소속
+    보관책임자: 책임자
+    인가등급: 인가등급
+    정부 구분: 구분
+    임명일: 임명일
+    해제일: 해제일
+    비고: 비고
+  order: *id001
+  grouped:
+  - - 소속
+    - 보관책임자
+  date_format: short
+- id: custodian_eval
+  eval_only: true
+  headers:
+    소속: 소속
+    보관책임자: 관리 담당
+    인가등급: 인가
+    정부 구분: 정부 구분
+    임명일: 지정일
+    해제일: 교체일
+    비고: 비고
+  order:
+  - 정부 구분
+  - 보관책임자
+  - 소속
+  - 인가등급
+  - 임명일
+  - 해제일
+  - 비고
+  grouped: []
+  date_format: korean

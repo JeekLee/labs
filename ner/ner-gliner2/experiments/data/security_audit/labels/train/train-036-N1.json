@@ -1,0 +1,240 @@
+{
+ "doc_id": "train-036-N1",
+ "scenario_id": "train-036",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 33,
+   "end": 45,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 46,
+   "end": 52,
+   "type": "Person",
+   "text": "병장 손성현"
+  },
+  {
+   "start": 54,
+   "end": 59,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 65,
+   "end": 72,
+   "type": "StorageMedium",
+   "text": "HDD-297"
+  },
+  {
+   "start": 128,
+   "end": 140,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 144,
+   "end": 150,
+   "type": "Person",
+   "text": "병장 손성현"
+  },
+  {
+   "start": 157,
+   "end": 169,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 170,
+   "end": 178,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 179,
+   "end": 185,
+   "type": "Person",
+   "text": "서지민 소위"
+  },
+  {
+   "start": 195,
+   "end": 199,
+   "type": "Person",
+   "text": "손 병장"
+  },
+  {
+   "start": 220,
+   "end": 227,
+   "type": "StorageMedium",
+   "text": "HDD-297"
+  },
+  {
+   "start": 262,
+   "end": 269,
+   "type": "StorageMedium",
+   "text": "HDD-297"
+  },
+  {
+   "start": 287,
+   "end": 291,
+   "type": "Person",
+   "text": "손 병장"
+  },
+  {
+   "start": 345,
+   "end": 355,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 372,
+   "end": 380,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 381,
+   "end": 387,
+   "type": "Person",
+   "text": "서지민 소위"
+  },
+  {
+   "start": 389,
+   "end": 396,
+   "type": "StorageMedium",
+   "text": "HDD-297"
+  },
+  {
+   "start": 416,
+   "end": 420,
+   "type": "Person",
+   "text": "손 병장"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     118
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     120,
+     186
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     188,
+     306
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     308,
+     363
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     365,
+     440
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "병장 손성현",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "HDD-297",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 0,
+   "head": "병장 손성현",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-297"
+  },
+  {
+   "unit": 1,
+   "head": "병장 손성현",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 2,
+   "head": "손 병장",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-297"
+  },
+  {
+   "unit": 1,
+   "head": "서지민 소위",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "서지민 소위",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 1,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제6008공병단 인사과"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "병장 손성현"
+    ],
+    "매체": [
+     "HDD-297"
+    ],
+    "장소": [
+     "작전회의실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026-11-15"
+   }
+  }
+ ]
+}

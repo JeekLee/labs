@@ -1,0 +1,527 @@
+{
+ "doc_id": "train-025-L3",
+ "scenario_id": "train-025",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_b",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 39,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 111,
+   "end": 123,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 124,
+   "end": 130,
+   "type": "Person",
+   "text": "상병 성재윤"
+  },
+  {
+   "start": 138,
+   "end": 145,
+   "type": "InformationSystem",
+   "text": "행정서버-40"
+  },
+  {
+   "start": 148,
+   "end": 151,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 164,
+   "end": 176,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 177,
+   "end": 183,
+   "type": "Person",
+   "text": "금진우 일병"
+  },
+  {
+   "start": 191,
+   "end": 198,
+   "type": "InformationSystem",
+   "text": "행정서버-40"
+  },
+  {
+   "start": 201,
+   "end": 204,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 212,
+   "end": 227,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 228,
+   "end": 234,
+   "type": "Person",
+   "text": "성재윤 상병"
+  },
+  {
+   "start": 243,
+   "end": 250,
+   "type": "InformationSystem",
+   "text": "행정서버-40"
+  },
+  {
+   "start": 253,
+   "end": 259,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 272,
+   "end": 284,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 285,
+   "end": 291,
+   "type": "Person",
+   "text": "상병 성재윤"
+  },
+  {
+   "start": 303,
+   "end": 310,
+   "type": "InformationSystem",
+   "text": "업무단말-13"
+  },
+  {
+   "start": 313,
+   "end": 318,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 331,
+   "end": 343,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 344,
+   "end": 350,
+   "type": "Person",
+   "text": "윤재현 이병"
+  },
+  {
+   "start": 359,
+   "end": 366,
+   "type": "InformationSystem",
+   "text": "업무단말-13"
+  },
+  {
+   "start": 369,
+   "end": 375,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 383,
+   "end": 395,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 396,
+   "end": 402,
+   "type": "Person",
+   "text": "상병 반도현"
+  },
+  {
+   "start": 411,
+   "end": 418,
+   "type": "InformationSystem",
+   "text": "업무단말-58"
+  },
+  {
+   "start": 421,
+   "end": 426,
+   "type": "Facility",
+   "text": "작전회의실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     109,
+     161
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     162,
+     209
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     210,
+     269
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     270,
+     328
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     329,
+     380
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     39
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     87,
+     108
+    ],
+    [
+     381,
+     436
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "상병 성재윤",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 0,
+   "head": "상병 성재윤",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-40"
+  },
+  {
+   "unit": 0,
+   "head": "행정서버-40",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 1,
+   "head": "금진우 일병",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 1,
+   "head": "금진우 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-40"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-40",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 2,
+   "head": "성재윤 상병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 2,
+   "head": "성재윤 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-40"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-40",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 3,
+   "head": "상병 성재윤",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 3,
+   "head": "상병 성재윤",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-13"
+  },
+  {
+   "unit": 3,
+   "head": "업무단말-13",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 4,
+   "head": "윤재현 이병",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 4,
+   "head": "윤재현 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-13"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-13",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 5,
+   "head": "상병 반도현",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 5,
+   "head": "상병 반도현",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-58"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-58",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "상병 성재윤"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-40"
+    ],
+    "설치장소": [
+     "서버실"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "금진우 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-40"
+    ],
+    "설치장소": [
+     "서버실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "성재윤 상병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-40"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "반납 지연"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "상병 성재윤"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "업무단말-13"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "윤재현 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-13"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제7022통신단 운영과"
+    ],
+    "취급자": [
+     "상병 반도현"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-58"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "서명 누락"
+   }
+  }
+ ]
+}

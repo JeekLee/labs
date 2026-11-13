@@ -1,0 +1,207 @@
+{
+ "doc_id": "train-034-N1",
+ "scenario_id": "train-034",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 22,
+   "end": 39,
+   "type": "Unit",
+   "text": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "start": 43,
+   "end": 49,
+   "type": "Person",
+   "text": "유다인 상병"
+  },
+  {
+   "start": 81,
+   "end": 86,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 135,
+   "end": 152,
+   "type": "Unit",
+   "text": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "start": 153,
+   "end": 159,
+   "type": "Person",
+   "text": "유다인 상병"
+  },
+  {
+   "start": 176,
+   "end": 181,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 182,
+   "end": 188,
+   "type": "Person",
+   "text": "강지후 상사"
+  },
+  {
+   "start": 205,
+   "end": 209,
+   "type": "Person",
+   "text": "유 상병"
+  },
+  {
+   "start": 286,
+   "end": 290,
+   "type": "Person",
+   "text": "유 상병"
+  },
+  {
+   "start": 292,
+   "end": 297,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 367,
+   "end": 377,
+   "type": "Regulation",
+   "text": "보안교육 시행 지침"
+  },
+  {
+   "start": 394,
+   "end": 399,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 400,
+   "end": 406,
+   "type": "Person",
+   "text": "강지후 상사"
+  },
+  {
+   "start": 408,
+   "end": 412,
+   "type": "Person",
+   "text": "유 상병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     117
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     119,
+     196
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     198,
+     313
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     315,
+     385
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     387,
+     446
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "유다인 상병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "unit": 0,
+   "head": "유다인 상병",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 1,
+   "head": "유다인 상병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "unit": 2,
+   "head": "유 상병",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 1,
+   "head": "강지후 상사",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 군수지원대대"
+  },
+  {
+   "unit": 1,
+   "head": "강지후 상사",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 1,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제4027기계화여단 군수지원대대"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "보안교육 미이수",
+    "관련자": [
+     "유다인 상병"
+    ],
+    "장소": [
+     "보안자재실"
+    ],
+    "위반 규정": [
+     "보안교육 시행 지침"
+    ],
+    "일자": "2026. 10. 2."
+   }
+  }
+ ]
+}

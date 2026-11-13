@@ -1,0 +1,180 @@
+{
+ "doc_id": "train-018-N1",
+ "scenario_id": "train-018",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 35,
+   "end": 47,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 54,
+   "end": 61,
+   "type": "StorageMedium",
+   "text": "HDD-347"
+  },
+  {
+   "start": 63,
+   "end": 71,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 120,
+   "end": 132,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 133,
+   "end": 139,
+   "type": "Person",
+   "text": "이병 홍민성"
+  },
+  {
+   "start": 166,
+   "end": 174,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 175,
+   "end": 181,
+   "type": "Person",
+   "text": "대위 허성민"
+  },
+  {
+   "start": 193,
+   "end": 199,
+   "type": "Person",
+   "text": "이병 홍민성"
+  },
+  {
+   "start": 216,
+   "end": 223,
+   "type": "StorageMedium",
+   "text": "HDD-347"
+  },
+  {
+   "start": 230,
+   "end": 238,
+   "type": "Facility",
+   "text": "정문 출입통제소"
+  },
+  {
+   "start": 336,
+   "end": 346,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 361,
+   "end": 367,
+   "type": "Person",
+   "text": "대위 허성민"
+  },
+  {
+   "start": 369,
+   "end": 376,
+   "type": "StorageMedium",
+   "text": "HDD-347"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     110
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     112,
+     184
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     186,
+     301
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     303,
+     352
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     354,
+     429
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "이병 홍민성",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 1,
+   "head": "대위 허성민",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 2,
+   "head": "이병 홍민성",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-347"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "이병 홍민성"
+    ],
+    "매체": [
+     "HDD-347"
+    ],
+    "장소": [
+     "정문 출입통제소"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026. 4. 19."
+   }
+  }
+ ]
+}

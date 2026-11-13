@@ -1,0 +1,164 @@
+{
+ "doc_id": "eval-059-N2",
+ "scenario_id": "eval-059",
+ "split": "eval",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 58,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 68,
+   "end": 73,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 114,
+   "end": 119,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 120,
+   "end": 126,
+   "type": "Person",
+   "text": "소위 문동욱"
+  },
+  {
+   "start": 141,
+   "end": 147,
+   "type": "Person",
+   "text": "반유찬 상병"
+  },
+  {
+   "start": 157,
+   "end": 164,
+   "type": "ClassifiedDocument",
+   "text": "장비전환 계획"
+  },
+  {
+   "start": 169,
+   "end": 181,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 197,
+   "end": 203,
+   "type": "Person",
+   "text": "소위 문동욱"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     73
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     75,
+     107
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     109,
+     126
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     128,
+     185
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     187,
+     221
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 0,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 2,
+   "head": "소위 문동욱",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 3,
+   "head": "반유찬 상병",
+   "type": "ACCESSED",
+   "tail": "장비전환 계획"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    3
+   ],
+   "fields": {
+    "영역": "인원보안",
+    "대상": [
+     "반유찬 상병"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    4
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "소위 문동욱"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

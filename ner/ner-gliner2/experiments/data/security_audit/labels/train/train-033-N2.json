@@ -1,0 +1,162 @@
+{
+ "doc_id": "train-033-N2",
+ "scenario_id": "train-033",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 45,
+   "end": 58,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 59,
+   "end": 76,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 85,
+   "end": 98,
+   "type": "Unit",
+   "text": "제5033보급대대 행정과"
+  },
+  {
+   "start": 99,
+   "end": 107,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 108,
+   "end": 114,
+   "type": "Person",
+   "text": "상사 길태현"
+  },
+  {
+   "start": 122,
+   "end": 128,
+   "type": "Person",
+   "text": "천재윤 병장"
+  },
+  {
+   "start": 154,
+   "end": 161,
+   "type": "StorageMedium",
+   "text": "USB-127"
+  },
+  {
+   "start": 168,
+   "end": 181,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 205,
+   "end": 211,
+   "type": "Person",
+   "text": "상사 길태현"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     36
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     38,
+     114
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     116,
+     185
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     187,
+     231
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "상사 길태현",
+   "type": "BELONGS_TO",
+   "tail": "제5033보급대대 행정과"
+  },
+  {
+   "unit": 1,
+   "head": "상사 길태현",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  },
+  {
+   "unit": 1,
+   "head": "정보체계 관리자",
+   "type": "POSITION_OF",
+   "tail": "제5033보급대대 행정과"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "천재윤 병장"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "권한 회수",
+    "담당": [
+     "상사 길태현"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

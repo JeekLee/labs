@@ -1,0 +1,186 @@
+{
+ "doc_id": "train-030-N1",
+ "scenario_id": "train-030",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 30,
+   "end": 45,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 48,
+   "end": 55,
+   "type": "StorageMedium",
+   "text": "HDD-325"
+  },
+  {
+   "start": 88,
+   "end": 103,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 104,
+   "end": 110,
+   "type": "Person",
+   "text": "배윤호 이병"
+  },
+  {
+   "start": 119,
+   "end": 125,
+   "type": "Person",
+   "text": "배윤호 이병"
+  },
+  {
+   "start": 127,
+   "end": 132,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 141,
+   "end": 148,
+   "type": "StorageMedium",
+   "text": "HDD-325"
+  },
+  {
+   "start": 206,
+   "end": 210,
+   "type": "Person",
+   "text": "배 이병"
+  },
+  {
+   "start": 236,
+   "end": 246,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 274,
+   "end": 282,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 283,
+   "end": 289,
+   "type": "Person",
+   "text": "중사 선보람"
+  },
+  {
+   "start": 291,
+   "end": 298,
+   "type": "StorageMedium",
+   "text": "HDD-325"
+  },
+  {
+   "start": 305,
+   "end": 310,
+   "type": "Facility",
+   "text": "보안자재실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     78
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     80,
+     110
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     112,
+     224
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     226,
+     265
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     267,
+     318
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "배윤호 이병",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 2,
+   "head": "HDD-325",
+   "type": "LOCATED_AT",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 2,
+   "head": "배윤호 이병",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-325"
+  },
+  {
+   "unit": 4,
+   "head": "중사 선보람",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "저장매체 무단 반출",
+    "관련자": [
+     "배윤호 이병"
+    ],
+    "매체": [
+     "HDD-325"
+    ],
+    "장소": [
+     "보안자재실"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ],
+    "일자": "2026-09-04"
+   }
+  }
+ ]
+}

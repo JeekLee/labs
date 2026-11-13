@@ -1,0 +1,180 @@
+{
+ "doc_id": "train-032-N1",
+ "scenario_id": "train-032",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 35,
+   "end": 51,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 52,
+   "end": 57,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 88,
+   "end": 104,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 105,
+   "end": 111,
+   "type": "Person",
+   "text": "병장 하예린"
+  },
+  {
+   "start": 120,
+   "end": 126,
+   "type": "Person",
+   "text": "병장 하예린"
+  },
+  {
+   "start": 128,
+   "end": 133,
+   "type": "Facility",
+   "text": "보안자재실"
+  },
+  {
+   "start": 136,
+   "end": 143,
+   "type": "ClassifiedDocument",
+   "text": "정보수집 계획"
+  },
+  {
+   "start": 215,
+   "end": 225,
+   "type": "Regulation",
+   "text": "비밀문서 관리 규정"
+  },
+  {
+   "start": 234,
+   "end": 241,
+   "type": "Position",
+   "text": "비밀관리책임자"
+  },
+  {
+   "start": 242,
+   "end": 248,
+   "type": "Person",
+   "text": "서지민 원사"
+  },
+  {
+   "start": 250,
+   "end": 254,
+   "type": "Person",
+   "text": "하 병장"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     78
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     80,
+     111
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     113,
+     203
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     205,
+     225
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     227,
+     276
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "보안자재실",
+   "type": "LOCATED_AT",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 1,
+   "head": "병장 하예린",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 2,
+   "head": "병장 하예린",
+   "type": "ACCESSED",
+   "tail": "보안자재실"
+  },
+  {
+   "unit": 2,
+   "head": "병장 하예린",
+   "type": "ACCESSED",
+   "tail": "정보수집 계획"
+  },
+  {
+   "unit": 4,
+   "head": "서지민 원사",
+   "type": "HOLDS_POSITION",
+   "tail": "비밀관리책임자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비밀문서 관리 소홀",
+    "관련자": [
+     "병장 하예린"
+    ],
+    "장소": [
+     "보안자재실"
+    ],
+    "대상 문서": [
+     "정보수집 계획"
+    ],
+    "위반 규정": [
+     "비밀문서 관리 규정"
+    ],
+    "일자": "2026. 4. 14."
+   }
+  }
+ ]
+}

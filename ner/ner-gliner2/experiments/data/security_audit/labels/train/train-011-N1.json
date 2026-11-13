@@ -1,0 +1,168 @@
+{
+ "doc_id": "train-011-N1",
+ "scenario_id": "train-011",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 31,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 83,
+   "end": 95,
+   "type": "Unit",
+   "text": "제7022통신단 운영과"
+  },
+  {
+   "start": 96,
+   "end": 102,
+   "type": "Person",
+   "text": "심수호 병장"
+  },
+  {
+   "start": 111,
+   "end": 117,
+   "type": "Person",
+   "text": "심수호 병장"
+  },
+  {
+   "start": 133,
+   "end": 136,
+   "type": "Facility",
+   "text": "전산실"
+  },
+  {
+   "start": 142,
+   "end": 149,
+   "type": "ClassifiedDocument",
+   "text": "통신망 구성도"
+  },
+  {
+   "start": 234,
+   "end": 246,
+   "type": "Regulation",
+   "text": "비밀취급인가 관리 규정"
+  },
+  {
+   "start": 255,
+   "end": 260,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 261,
+   "end": 267,
+   "type": "Person",
+   "text": "하사 이현우"
+  },
+  {
+   "start": 269,
+   "end": 273,
+   "type": "Person",
+   "text": "심 병장"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     73
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     75,
+     102
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     104,
+     222
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     224,
+     246
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     248,
+     291
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "심수호 병장",
+   "type": "BELONGS_TO",
+   "tail": "제7022통신단 운영과"
+  },
+  {
+   "unit": 2,
+   "head": "심수호 병장",
+   "type": "ACCESSED",
+   "tail": "전산실"
+  },
+  {
+   "unit": 2,
+   "head": "심수호 병장",
+   "type": "ACCESSED",
+   "tail": "통신망 구성도"
+  },
+  {
+   "unit": 4,
+   "head": "하사 이현우",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "인가 만료자 접근",
+    "관련자": [
+     "심수호 병장"
+    ],
+    "대상 문서": [
+     "통신망 구성도"
+    ],
+    "장소": [
+     "전산실"
+    ],
+    "위반 규정": [
+     "비밀취급인가 관리 규정"
+    ],
+    "일자": "2026. 11. 16."
+   }
+  }
+ ]
+}

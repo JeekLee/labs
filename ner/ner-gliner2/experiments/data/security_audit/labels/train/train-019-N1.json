@@ -1,0 +1,189 @@
+{
+ "doc_id": "train-019-N1",
+ "scenario_id": "train-019",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 31,
+   "end": 43,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 44,
+   "end": 49,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 89,
+   "end": 101,
+   "type": "Unit",
+   "text": "제6008공병단 인사과"
+  },
+  {
+   "start": 102,
+   "end": 108,
+   "type": "Person",
+   "text": "병장 정동현"
+  },
+  {
+   "start": 127,
+   "end": 135,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 136,
+   "end": 142,
+   "type": "Person",
+   "text": "심준영 하사"
+  },
+  {
+   "start": 154,
+   "end": 160,
+   "type": "Person",
+   "text": "병장 정동현"
+  },
+  {
+   "start": 180,
+   "end": 185,
+   "type": "Facility",
+   "text": "지휘통제실"
+  },
+  {
+   "start": 239,
+   "end": 243,
+   "type": "Person",
+   "text": "정 병장"
+  },
+  {
+   "start": 254,
+   "end": 261,
+   "type": "InformationSystem",
+   "text": "업무단말-14"
+  },
+  {
+   "start": 281,
+   "end": 289,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 335,
+   "end": 341,
+   "type": "Person",
+   "text": "심준영 하사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     79
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     81,
+     145
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     147,
+     269
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     271,
+     326
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     328,
+     385
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "지휘통제실",
+   "type": "LOCATED_AT",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "병장 정동현",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 인사과"
+  },
+  {
+   "unit": 1,
+   "head": "심준영 하사",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 2,
+   "head": "병장 정동현",
+   "type": "ACCESSED",
+   "tail": "지휘통제실"
+  },
+  {
+   "unit": 2,
+   "head": "정 병장",
+   "type": "ACCESSED",
+   "tail": "업무단말-14"
+  },
+  {
+   "unit": 2,
+   "head": "업무단말-14",
+   "type": "LOCATED_AT",
+   "tail": "지휘통제실"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "비인가 출입",
+    "관련자": [
+     "병장 정동현"
+    ],
+    "장소": [
+     "지휘통제실"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ],
+    "일자": "2026년 6월 3일"
+   }
+  }
+ ]
+}

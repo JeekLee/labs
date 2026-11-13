@@ -1,0 +1,170 @@
+{
+ "doc_id": "train-012-N2",
+ "scenario_id": "train-012",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 4분기 정기 보안점검"
+  },
+  {
+   "start": 46,
+   "end": 61,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 69,
+   "end": 84,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 85,
+   "end": 93,
+   "type": "Position",
+   "text": "정보보호 담당관"
+  },
+  {
+   "start": 94,
+   "end": 100,
+   "type": "Person",
+   "text": "강태민 하사"
+  },
+  {
+   "start": 178,
+   "end": 184,
+   "type": "Person",
+   "text": "위시현 이병"
+  },
+  {
+   "start": 186,
+   "end": 193,
+   "type": "StorageMedium",
+   "text": "HDD-259"
+  },
+  {
+   "start": 234,
+   "end": 244,
+   "type": "Regulation",
+   "text": "저장매체 통제 지침"
+  },
+  {
+   "start": 273,
+   "end": 279,
+   "type": "Person",
+   "text": "강태민 하사"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     100
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     102,
+     158
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     160,
+     245
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     247,
+     299
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     301,
+     353
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 4분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 0,
+   "head": "강태민 하사",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 0,
+   "head": "강태민 하사",
+   "type": "HOLDS_POSITION",
+   "tail": "정보보호 담당관"
+  },
+  {
+   "unit": 0,
+   "head": "정보보호 담당관",
+   "type": "POSITION_OF",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 2,
+   "head": "위시현 이병",
+   "type": "CARRIED_OUT",
+   "tail": "HDD-259"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "정보통신보안",
+    "대상": [
+     "위시현 이병"
+    ],
+    "위반 규정": [
+     "저장매체 통제 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "매체 회수",
+    "담당": [
+     "강태민 하사"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

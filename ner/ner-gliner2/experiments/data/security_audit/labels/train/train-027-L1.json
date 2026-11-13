@@ -1,0 +1,694 @@
+{
+ "doc_id": "train-027-L1",
+ "scenario_id": "train-027",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_c",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 40,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 110,
+   "end": 123,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 126,
+   "end": 132,
+   "type": "Person",
+   "text": "양지원 일병"
+  },
+  {
+   "start": 144,
+   "end": 151,
+   "type": "InformationSystem",
+   "text": "업무단말-49"
+  },
+  {
+   "start": 154,
+   "end": 157,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 165,
+   "end": 178,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 181,
+   "end": 187,
+   "type": "Person",
+   "text": "병장 심정우"
+  },
+  {
+   "start": 196,
+   "end": 203,
+   "type": "InformationSystem",
+   "text": "업무단말-49"
+  },
+  {
+   "start": 206,
+   "end": 209,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 217,
+   "end": 230,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 233,
+   "end": 239,
+   "type": "Person",
+   "text": "유다인 일병"
+  },
+  {
+   "start": 251,
+   "end": 258,
+   "type": "InformationSystem",
+   "text": "업무단말-39"
+  },
+  {
+   "start": 261,
+   "end": 266,
+   "type": "Facility",
+   "text": "작전회의실"
+  },
+  {
+   "start": 279,
+   "end": 292,
+   "type": "Unit",
+   "text": "제9013보병사단 작전처"
+  },
+  {
+   "start": 295,
+   "end": 301,
+   "type": "Person",
+   "text": "병장 심정우"
+  },
+  {
+   "start": 310,
+   "end": 317,
+   "type": "InformationSystem",
+   "text": "행정서버-55"
+  },
+  {
+   "start": 320,
+   "end": 323,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 336,
+   "end": 348,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 351,
+   "end": 357,
+   "type": "Person",
+   "text": "병장 심정우"
+  },
+  {
+   "start": 369,
+   "end": 376,
+   "type": "InformationSystem",
+   "text": "업무단말-49"
+  },
+  {
+   "start": 379,
+   "end": 382,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 395,
+   "end": 410,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 413,
+   "end": 419,
+   "type": "Person",
+   "text": "병장 심정우"
+  },
+  {
+   "start": 428,
+   "end": 435,
+   "type": "InformationSystem",
+   "text": "업무단말-49"
+  },
+  {
+   "start": 438,
+   "end": 441,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 454,
+   "end": 469,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 472,
+   "end": 478,
+   "type": "Person",
+   "text": "병장 심정우"
+  },
+  {
+   "start": 490,
+   "end": 497,
+   "type": "InformationSystem",
+   "text": "행정서버-55"
+  },
+  {
+   "start": 500,
+   "end": 503,
+   "type": "Facility",
+   "text": "상황실"
+  },
+  {
+   "start": 511,
+   "end": 523,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 526,
+   "end": 532,
+   "type": "Person",
+   "text": "명재현 상병"
+  },
+  {
+   "start": 540,
+   "end": 547,
+   "type": "InformationSystem",
+   "text": "업무단말-21"
+  },
+  {
+   "start": 550,
+   "end": 555,
+   "type": "Facility",
+   "text": "작전회의실"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     108,
+     162
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     163,
+     214
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     215,
+     276
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     277,
+     333
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     334,
+     392
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     393,
+     451
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     452,
+     508
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     40
+    ],
+    [
+     42,
+     81
+    ],
+    [
+     82,
+     107
+    ],
+    [
+     509,
+     565
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "양지원 일병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 0,
+   "head": "양지원 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-49"
+  },
+  {
+   "unit": 0,
+   "head": "업무단말-49",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 1,
+   "head": "병장 심정우",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 1,
+   "head": "병장 심정우",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-49"
+  },
+  {
+   "unit": 1,
+   "head": "업무단말-49",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 2,
+   "head": "유다인 일병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 2,
+   "head": "유다인 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-39"
+  },
+  {
+   "unit": 2,
+   "head": "업무단말-39",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  },
+  {
+   "unit": 3,
+   "head": "병장 심정우",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 작전처"
+  },
+  {
+   "unit": 3,
+   "head": "병장 심정우",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-55"
+  },
+  {
+   "unit": 3,
+   "head": "행정서버-55",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 4,
+   "head": "병장 심정우",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 4,
+   "head": "병장 심정우",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-49"
+  },
+  {
+   "unit": 4,
+   "head": "업무단말-49",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 5,
+   "head": "병장 심정우",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 5,
+   "head": "병장 심정우",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-49"
+  },
+  {
+   "unit": 5,
+   "head": "업무단말-49",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 6,
+   "head": "병장 심정우",
+   "type": "BELONGS_TO",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 6,
+   "head": "병장 심정우",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-55"
+  },
+  {
+   "unit": 6,
+   "head": "행정서버-55",
+   "type": "LOCATED_AT",
+   "tail": "상황실"
+  },
+  {
+   "unit": 7,
+   "head": "명재현 상병",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 7,
+   "head": "명재현 상병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-21"
+  },
+  {
+   "unit": 7,
+   "head": "업무단말-21",
+   "type": "LOCATED_AT",
+   "tail": "작전회의실"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 작전처"
+    ],
+    "취급자": [
+     "양지원 일병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-49"
+    ],
+    "설치장소": [
+     "상황실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 작전처"
+    ],
+    "취급자": [
+     "병장 심정우"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-49"
+    ],
+    "설치장소": [
+     "상황실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 작전처"
+    ],
+    "취급자": [
+     "유다인 일병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-39"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "대리 수령"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 작전처"
+    ],
+    "취급자": [
+     "병장 심정우"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-55"
+    ],
+    "설치장소": [
+     "상황실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "병장 심정우"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-49"
+    ],
+    "설치장소": [
+     "상황실"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "병장 심정우"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "업무단말-49"
+    ],
+    "설치장소": [
+     "상황실"
+    ],
+    "비고": "확인 필요"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제4027기계화여단 본부중대"
+    ],
+    "취급자": [
+     "병장 심정우"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-55"
+    ],
+    "설치장소": [
+     "상황실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    7
+   ],
+   "fields": {
+    "소속": [
+     "제6008공병단 정보과"
+    ],
+    "취급자": [
+     "명재현 상병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-21"
+    ],
+    "설치장소": [
+     "작전회의실"
+    ],
+    "비고": "서명 누락"
+   }
+  }
+ ]
+}

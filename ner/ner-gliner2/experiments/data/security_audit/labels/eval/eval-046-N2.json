@@ -1,0 +1,164 @@
+{
+ "doc_id": "eval-046-N2",
+ "scenario_id": "eval-046",
+ "split": "eval",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "인원보안"
+ ],
+ "entities": [
+  {
+   "start": 32,
+   "end": 49,
+   "type": "Inspection",
+   "text": "2026년 1분기 정기 보안점검"
+  },
+  {
+   "start": 59,
+   "end": 71,
+   "type": "Unit",
+   "text": "제4429수송대대 본부"
+  },
+  {
+   "start": 79,
+   "end": 84,
+   "type": "Position",
+   "text": "보안담당관"
+  },
+  {
+   "start": 85,
+   "end": 95,
+   "type": "Person",
+   "text": "송현우 7급 군무원"
+  },
+  {
+   "start": 148,
+   "end": 154,
+   "type": "Person",
+   "text": "국하율 병장"
+  },
+  {
+   "start": 178,
+   "end": 184,
+   "type": "Facility",
+   "text": "제2제한구역"
+  },
+  {
+   "start": 192,
+   "end": 203,
+   "type": "Regulation",
+   "text": "보안 서약 관리 지침"
+  },
+  {
+   "start": 239,
+   "end": 249,
+   "type": "Person",
+   "text": "송현우 7급 군무원"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     95
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     97,
+     133
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     135,
+     204
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     206,
+     231
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     233,
+     265
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 1분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제4429수송대대 본부"
+  },
+  {
+   "unit": 0,
+   "head": "송현우 7급 군무원",
+   "type": "HOLDS_POSITION",
+   "tail": "보안담당관"
+  },
+  {
+   "unit": 0,
+   "head": "송현우 7급 군무원",
+   "type": "BELONGS_TO",
+   "tail": "제4429수송대대 본부"
+  },
+  {
+   "unit": 0,
+   "head": "보안담당관",
+   "type": "POSITION_OF",
+   "tail": "제4429수송대대 본부"
+  },
+  {
+   "unit": 2,
+   "head": "국하율 병장",
+   "type": "ACCESSED",
+   "tail": "제2제한구역"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "인원보안",
+    "대상": [
+     "국하율 병장"
+    ],
+    "위반 규정": [
+     "보안 서약 관리 지침"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    4
+   ],
+   "fields": {
+    "조치 유형": "재교육",
+    "담당": [
+     "송현우 7급 군무원"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

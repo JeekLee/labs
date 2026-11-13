@@ -1,0 +1,694 @@
+{
+ "doc_id": "train-044-L4",
+ "scenario_id": "train-044",
+ "split": "train",
+ "doc_type": "정보시스템 관리대장",
+ "doc_kind": "ledger",
+ "variant_id": "system_entry_a",
+ "area_tags": [
+  "문서보안"
+ ],
+ "entities": [
+  {
+   "start": 27,
+   "end": 43,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 113,
+   "end": 129,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 132,
+   "end": 138,
+   "type": "Person",
+   "text": "이준영 일병"
+  },
+  {
+   "start": 150,
+   "end": 157,
+   "type": "InformationSystem",
+   "text": "업무단말-17"
+  },
+  {
+   "start": 160,
+   "end": 165,
+   "type": "Facility",
+   "text": "문서보관실"
+  },
+  {
+   "start": 173,
+   "end": 189,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 192,
+   "end": 198,
+   "type": "Person",
+   "text": "이준영 일병"
+  },
+  {
+   "start": 210,
+   "end": 217,
+   "type": "InformationSystem",
+   "text": "행정서버-11"
+  },
+  {
+   "start": 220,
+   "end": 226,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 239,
+   "end": 255,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 258,
+   "end": 264,
+   "type": "Person",
+   "text": "이준영 일병"
+  },
+  {
+   "start": 272,
+   "end": 279,
+   "type": "InformationSystem",
+   "text": "행정서버-11"
+  },
+  {
+   "start": 282,
+   "end": 285,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 298,
+   "end": 314,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 317,
+   "end": 323,
+   "type": "Person",
+   "text": "병장 심정우"
+  },
+  {
+   "start": 335,
+   "end": 342,
+   "type": "InformationSystem",
+   "text": "업무단말-17"
+  },
+  {
+   "start": 345,
+   "end": 351,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 364,
+   "end": 380,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 383,
+   "end": 389,
+   "type": "Person",
+   "text": "금은우 이병"
+  },
+  {
+   "start": 401,
+   "end": 408,
+   "type": "InformationSystem",
+   "text": "행정서버-23"
+  },
+  {
+   "start": 411,
+   "end": 416,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 429,
+   "end": 445,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 448,
+   "end": 454,
+   "type": "Person",
+   "text": "염현우 이병"
+  },
+  {
+   "start": 463,
+   "end": 470,
+   "type": "InformationSystem",
+   "text": "행정서버-11"
+  },
+  {
+   "start": 473,
+   "end": 479,
+   "type": "Facility",
+   "text": "제1통제구역"
+  },
+  {
+   "start": 487,
+   "end": 503,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 506,
+   "end": 512,
+   "type": "Person",
+   "text": "이준영 일병"
+  },
+  {
+   "start": 520,
+   "end": 527,
+   "type": "InformationSystem",
+   "text": "업무단말-18"
+  },
+  {
+   "start": 530,
+   "end": 533,
+   "type": "Facility",
+   "text": "서버실"
+  },
+  {
+   "start": 541,
+   "end": 557,
+   "type": "Unit",
+   "text": "제9013보병사단 정보통신대대"
+  },
+  {
+   "start": 560,
+   "end": 566,
+   "type": "Person",
+   "text": "오유준 이병"
+  },
+  {
+   "start": 578,
+   "end": 585,
+   "type": "InformationSystem",
+   "text": "업무단말-17"
+  },
+  {
+   "start": 588,
+   "end": 594,
+   "type": "Facility",
+   "text": "제1통제구역"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     111,
+     170
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     171,
+     236
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     237,
+     295
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     296,
+     361
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     362,
+     426
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     427,
+     484
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     485,
+     538
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     14,
+     43
+    ],
+    [
+     45,
+     84
+    ],
+    [
+     85,
+     110
+    ],
+    [
+     539,
+     604
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "이준영 일병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 0,
+   "head": "이준영 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-17"
+  },
+  {
+   "unit": 0,
+   "head": "업무단말-17",
+   "type": "LOCATED_AT",
+   "tail": "문서보관실"
+  },
+  {
+   "unit": 1,
+   "head": "이준영 일병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 1,
+   "head": "이준영 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-11"
+  },
+  {
+   "unit": 1,
+   "head": "행정서버-11",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 2,
+   "head": "이준영 일병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 2,
+   "head": "이준영 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-11"
+  },
+  {
+   "unit": 2,
+   "head": "행정서버-11",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 3,
+   "head": "병장 심정우",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 3,
+   "head": "병장 심정우",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-17"
+  },
+  {
+   "unit": 3,
+   "head": "업무단말-17",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 4,
+   "head": "금은우 이병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 4,
+   "head": "금은우 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-23"
+  },
+  {
+   "unit": 4,
+   "head": "행정서버-23",
+   "type": "LOCATED_AT",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 5,
+   "head": "염현우 이병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 5,
+   "head": "염현우 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "행정서버-11"
+  },
+  {
+   "unit": 5,
+   "head": "행정서버-11",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  },
+  {
+   "unit": 6,
+   "head": "이준영 일병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 6,
+   "head": "이준영 일병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-18"
+  },
+  {
+   "unit": 6,
+   "head": "업무단말-18",
+   "type": "LOCATED_AT",
+   "tail": "서버실"
+  },
+  {
+   "unit": 7,
+   "head": "오유준 이병",
+   "type": "BELONGS_TO",
+   "tail": "제9013보병사단 정보통신대대"
+  },
+  {
+   "unit": 7,
+   "head": "오유준 이병",
+   "type": "RESPONSIBLE_FOR",
+   "tail": "업무단말-17"
+  },
+  {
+   "unit": 7,
+   "head": "업무단말-17",
+   "type": "LOCATED_AT",
+   "tail": "제1통제구역"
+  }
+ ],
+ "records": [
+  {
+   "record": "system_entry",
+   "units": [
+    0
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "이준영 일병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-17"
+    ],
+    "설치장소": [
+     "문서보관실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    1
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "이준영 일병"
+    ],
+    "종류": "망연계 장비",
+    "관리번호": [
+     "행정서버-11"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    2
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "이준영 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "행정서버-11"
+    ],
+    "설치장소": [
+     "서버실"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    3
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "병장 심정우"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-17"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "사후 결재"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    4
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "금은우 이병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "행정서버-23"
+    ],
+    "설치장소": [
+     "통신기계실"
+    ],
+    "비고": "서명 누락"
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    5
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "염현우 이병"
+    ],
+    "종류": "노트북",
+    "관리번호": [
+     "행정서버-11"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    6
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "이준영 일병"
+    ],
+    "종류": "서버",
+    "관리번호": [
+     "업무단말-18"
+    ],
+    "설치장소": [
+     "서버실"
+    ]
+   }
+  },
+  {
+   "record": "system_entry",
+   "units": [
+    7
+   ],
+   "fields": {
+    "소속": [
+     "제9013보병사단 정보통신대대"
+    ],
+    "취급자": [
+     "오유준 이병"
+    ],
+    "종류": "업무용 PC",
+    "관리번호": [
+     "업무단말-17"
+    ],
+    "설치장소": [
+     "제1통제구역"
+    ],
+    "비고": "서명 누락"
+   }
+  }
+ ]
+}

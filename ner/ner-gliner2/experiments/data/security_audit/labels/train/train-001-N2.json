@@ -1,0 +1,152 @@
+{
+ "doc_id": "train-001-N2",
+ "scenario_id": "train-001",
+ "split": "train",
+ "doc_type": "보안점검 결과보고서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "시설보안"
+ ],
+ "entities": [
+  {
+   "start": 19,
+   "end": 36,
+   "type": "Inspection",
+   "text": "2026년 3분기 정기 보안점검"
+  },
+  {
+   "start": 49,
+   "end": 64,
+   "type": "Unit",
+   "text": "제4027기계화여단 본부중대"
+  },
+  {
+   "start": 71,
+   "end": 79,
+   "type": "Position",
+   "text": "출입통제 담당관"
+  },
+  {
+   "start": 80,
+   "end": 86,
+   "type": "Person",
+   "text": "소지민 대위"
+  },
+  {
+   "start": 97,
+   "end": 103,
+   "type": "Person",
+   "text": "반영호 이병"
+  },
+  {
+   "start": 111,
+   "end": 116,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 129,
+   "end": 137,
+   "type": "Regulation",
+   "text": "출입 통제 규정"
+  },
+  {
+   "start": 170,
+   "end": 176,
+   "type": "Person",
+   "text": "소지민 대위"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     14,
+     64
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     66,
+     86
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     88,
+     147
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     149,
+     195
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     197,
+     225
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 0,
+   "head": "2026년 3분기 정기 보안점검",
+   "type": "INSPECTED",
+   "tail": "제4027기계화여단 본부중대"
+  },
+  {
+   "unit": 1,
+   "head": "소지민 대위",
+   "type": "HOLDS_POSITION",
+   "tail": "출입통제 담당관"
+  },
+  {
+   "unit": 2,
+   "head": "반영호 이병",
+   "type": "ACCESSED",
+   "tail": "통신기계실"
+  }
+ ],
+ "records": [
+  {
+   "record": "finding",
+   "units": [
+    2
+   ],
+   "fields": {
+    "영역": "시설보안",
+    "대상": [
+     "반영호 이병"
+    ],
+    "위반 규정": [
+     "출입 통제 규정"
+    ]
+   }
+  },
+  {
+   "record": "action",
+   "units": [
+    3
+   ],
+   "fields": {
+    "조치 유형": "시설 보완",
+    "담당": [
+     "소지민 대위"
+    ],
+    "기한": "2026. 12. 31."
+   }
+  }
+ ]
+}

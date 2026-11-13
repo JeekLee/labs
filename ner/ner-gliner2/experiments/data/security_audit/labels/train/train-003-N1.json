@@ -1,0 +1,162 @@
+{
+ "doc_id": "train-003-N1",
+ "scenario_id": "train-003",
+ "split": "train",
+ "doc_type": "보안사고 경위서",
+ "doc_kind": "narrative",
+ "area_tags": [
+  "정보통신보안"
+ ],
+ "entities": [
+  {
+   "start": 18,
+   "end": 30,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 79,
+   "end": 91,
+   "type": "Unit",
+   "text": "제6008공병단 정보과"
+  },
+  {
+   "start": 95,
+   "end": 101,
+   "type": "Person",
+   "text": "이병 조수아"
+  },
+  {
+   "start": 109,
+   "end": 115,
+   "type": "Person",
+   "text": "이병 조수아"
+  },
+  {
+   "start": 130,
+   "end": 135,
+   "type": "Facility",
+   "text": "통신기계실"
+  },
+  {
+   "start": 162,
+   "end": 169,
+   "type": "StorageMedium",
+   "text": "HDD-215"
+  },
+  {
+   "start": 258,
+   "end": 271,
+   "type": "Regulation",
+   "text": "정보체계 계정 관리 지침"
+  },
+  {
+   "start": 284,
+   "end": 292,
+   "type": "Position",
+   "text": "정보체계 관리자"
+  },
+  {
+   "start": 293,
+   "end": 299,
+   "type": "Person",
+   "text": "곽지환 소위"
+  },
+  {
+   "start": 301,
+   "end": 305,
+   "type": "Person",
+   "text": "조 이병"
+  }
+ ],
+ "units": [
+  {
+   "segments": [
+    [
+     12,
+     70
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     72,
+     101
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     103,
+     226
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     228,
+     276
+    ]
+   ]
+  },
+  {
+   "segments": [
+    [
+     278,
+     322
+    ]
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "unit": 1,
+   "head": "이병 조수아",
+   "type": "BELONGS_TO",
+   "tail": "제6008공병단 정보과"
+  },
+  {
+   "unit": 2,
+   "head": "이병 조수아",
+   "type": "ACCESSED",
+   "tail": "통신기계실"
+  },
+  {
+   "unit": 4,
+   "head": "곽지환 소위",
+   "type": "HOLDS_POSITION",
+   "tail": "정보체계 관리자"
+  }
+ ],
+ "records": [
+  {
+   "record": "incident",
+   "units": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "fields": {
+    "유형": "계정·권한 관리 위반",
+    "관련자": [
+     "이병 조수아"
+    ],
+    "매체": [
+     "HDD-215"
+    ],
+    "장소": [
+     "통신기계실"
+    ],
+    "위반 규정": [
+     "정보체계 계정 관리 지침"
+    ],
+    "일자": "2026. 3. 24."
+   }
+  }
+ ]
+}
