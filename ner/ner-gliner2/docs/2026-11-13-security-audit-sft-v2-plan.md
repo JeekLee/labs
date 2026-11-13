@@ -261,7 +261,7 @@ def test_score_by_group():
 
 - [ ] **Step 2–4**: 실패 확인 → 구현 → 통과
 
-### Task 8: 실행
+### Task 8: 로컬 GB10 실행 준비와 실험 (2026-11-13 수정)
 
 **Files:**
 - Move/Modify: `scripts/run_security_audit_sft.py` → `scripts/security_audit/run_sft.py`
@@ -270,8 +270,51 @@ def test_score_by_group():
   - 관계 예측은 대장 문단에 `scope="ledger"`, 서술 문단에 `scope="narrative"` 스키마를 쓴다.
 - Output: `experiments/results/security_audit_sft.json`, `outputs/security_audit_lora/`
 
-- [ ] **Step 1**: 시나리오 3개(학습 2, 평가 1) 스모크: `--limit-scenarios 3 --max-steps 4` → 모든 키가 채워져야 한다.
-- [ ] **Step 2**: 전체 실행을 백그라운드로 돌린다 → 종료 코드 0.
+이 절은 기존 CPU 1~2시간 실행 계획을 대체한다. 데이터와 채점 정의는 유지하며, 기존 생성 문서를 다시 만들지 않고 검증 후 사용한다. 아래 CLI를 구현하고 2026-11-13 실행했다. 모니터링과 항목별 예측 체크포인트는 `scripts/security_audit/local_runtime.py`에서 담당한다. 공통 CPU 평가 함수는 유지하고 이 실행기의 GPU 평가 경로에서 장치를 통일했다.
+
+#### 장치와 자원 정책
+
+- 대상: 로컬 Linux aarch64 / NVIDIA GB10, 시스템 메모리 약 121GiB. 2026-11-13 확인 시 가용 약 36GiB, 기존 vLLM 프로세스 약 57GiB 사용. GB10은 CPU/GPU 공유 메모리이므로 시스템 가용량과 CUDA allocator 통계를 함께 기록한다.
+- 기존 vLLM 등 다른 작업은 유지한다. CUDA 컨텍스트를 모델 로딩 전에 초기화한다(이전 KLUE 병합 실행에서 로딩 후 초기화 시 실패한 이력이 있다).
+- 학습: CUDA, BF16(`fp16=False, bf16=True`), LoRA 2 epoch, 배치 8, seed 42. CPU intra-op 스레드 4, inter-op 2, DataLoader workers 0으로 시작한다.
+- 평가: zero-shot과 adapter 모두 같은 GPU, FP32, `eval()` + `torch.inference_mode()`, 같은 threshold와 순서로 문장/행별 순차 추론한다. 모델·입력·JointIEEngine의 장치를 일치시킨다. 관계 평가의 `device="cpu"` 고정을 제거한다.
+- 15초마다 시각, PID, 단계, 완료/전체 항목 수, 시스템 가용 메모리·swap·load, CUDA allocated/reserved, GPU 사용률·온도를 기록한다. 60초 이내 간격으로 진행 로그를 남긴다.
+- 가용 메모리 12GiB 미만이면 경고하고 8GiB 미만 또는 CUDA OOM이면 현재 단계를 중단해 상태를 저장한다. 이는 보수적인 운영 기준이며 기존 프로세스를 종료하지 않는다. 배치 4 + accumulation 2 재시도는 별도 run으로 남기고 실제 설정을 기록한다. CPU로 조용히 전환하지 않는다.
+
+#### 실행기 변경
+
+**추가/수정 파일:** `scripts/security_audit/run_sft.py`, `config/security_audit/evaluate.py`, 관련 장치·재시작 테스트.
+
+- [x] **Step 1: 장치 옵션**: `--device cuda`, `--bf16`, `--cpu-threads 4`, `--run-dir`, `--stage {validate,train,evaluate,all}`, `--resume`를 추가한다. 명시적 CUDA 요청이 실패하면 즉시 오류로 종료한다. 결과의 CPU 고정 문자열 대신 실제 GPU 이름, 학습/평가 dtype, Python·torch·CUDA·gliner2 버전을 기록한다.
+- [x] **Step 2: 메모리 정리**: 학습 모델·trainer·processor 참조를 단계 종료 시 해제하고 GC/CUDA cache를 정리한다. 평가 모델은 한 번에 하나만 유지한다. 추론 단계에는 gradient를 만들지 않는다.
+- [x] **Step 3: 중간 저장과 재시작**: run별 `manifest.json`, `train_summary.json`, `predictions/<condition>/<split>/<task>.jsonl`, `metrics.json`, `progress.json`, `resources.jsonl`, `run.log`를 저장한다. 예측에는 안정적인 문서·행·레코드 ID를 넣고 항목 단위로 flush한다. 데이터·온톨로지·설정·체크포인트 revision의 해시가 같을 때만 완료 항목을 건너뛴다. 평가는 저장된 어댑터로 재개하며 재학습하지 않는다. 중단된 학습의 optimizer 복원이 지원되지 않으면 재학습이 필요하다고 명시한다.
+- [x] **Step 4: 실행 전 검증**: 의존성 동기화, `validate_docs.py`, 관련 테스트를 통과시킨다. train/dev/eval 시나리오 교집합 0, 10종 대장별 평가 건수, seen/unseen 이름·변형 건수, 선택형 literal/absent 표본 수를 저장한다. 지원 표본이 0인 그룹은 0점 대신 N/A로 표시한다. 알려진 기록 유형을 입력으로 주는 조건을 유지한다.
+- [x] **Step 5: GPU 스모크**: 아래 명령으로 train/dev/eval **각 최대 3개 시나리오**와 학습 최대 4 step을 확인한다(현재 `--limit-scenarios 3`의 의미이며 총 3개가 아니다). 엔티티·관계·레코드가 모두 CUDA에서 동작하고 CPU 강제 이동이 없는지, dtype·저장·재개가 맞는지 검사한다. 스모크 결과는 본 실험과 별도 저장한다.
+
+```bash
+uv run python scripts/security_audit/run_sft.py \
+  --device cuda --bf16 --cpu-threads 4 \
+  --limit-scenarios 3 --max-steps 4 \
+  --run-dir outputs/security_audit_gb10_smoke --stage all
+```
+
+- [x] **Step 6: 예상 시간 산출**: 스모크에서 초기화 시간과 학습 step/s, 작업별(엔티티·관계·레코드) 처리 시간을 따로 측정한다. 본 실행의 실제 train 예시 수와 dev/eval 항목 수로 전체 예상 시간을 계산하고 공유한다. KLUE의 학습 5분 20초·평가 약 1분을 이 실험에 그대로 적용하지 않는다. 다중 작업·JointIE 비용이 다르므로 CPU 1~2시간도 GPU 예상치로 재사용하지 않는다.
+- [x] **Step 7: 본 실행**: 하나의 추적 가능한 백그라운드 프로세스로 실행하고 PID·종료 코드·로그 경로를 보관한다. 순서는 검증 → 학습 → zero-shot dev/eval → adapter dev/eval → 집계이다. 학습 45개 시나리오 중 dev 7개를 분리하므로 실제 train은 38개, 최종 eval은 15개이다. 데이터에서 실제 수를 다시 확인해 기록한다.
+
+```bash
+uv run python scripts/security_audit/run_sft.py \
+  --device cuda --bf16 --cpu-threads 4 \
+  --run-dir outputs/security_audit_gb10_v2 --stage all
+# 중단된 평가 재개 (학습 완료 manifest와 어댑터 확인 후)
+uv run python scripts/security_audit/run_sft.py \
+  --device cuda --bf16 --cpu-threads 4 \
+  --run-dir outputs/security_audit_gb10_v2 --stage evaluate --resume
+```
+
+- [x] **Step 8: 결과 확인·확정**: 종료 코드 0, 모든 기대 항목의 예측 존재, 누락/중복 0, 모든 분할별 표본 수와 지표를 확인한다. 엔티티 F1은 대장/서술·seen/unseen 표면형·seen/unseen 열 변형, 관계 F1은 대장 지속 관계/서술, 레코드 필드 F1은 10종 대장별·열 변형별, 선택형 정확도는 literal/absent별로 보고한다. 서술 사건 레코드도 별도 집계한다. 이름/변형 분리는 각각의 주변 집계이며 교차 조합까지 측정한 것으로 쓰지 않는다.
+- [x] **Step 9: 산출물 반영**: 완료 검증 후 확정 결과만 `experiments/results/security_audit_sft.json`에 복사하고 노트북을 갱신한다. 불완전한 run은 기존 확정 결과를 덮어쓰지 않는다. 실행 시간은 학습·모델 로딩·작업별 평가·전체 경과 시간을 구분한다. CPU v1과 GPU v2의 시간은 직접 속도 비교하지 않는다. 커밋·푸시는 사용자 요청 시에만 한다.
+
+**병합 범위:** 이번 기본 비교는 zero-shot 대 미병합 통합 어댑터이다. LoRA 병합은 필수 실행에서 제외한다. 필요 시 확정 어댑터의 별도 복사본을 병합해 예측 동등성과 속도를 추가 측정하며 기본 결과와 섞지 않는다.
 
 ### Task 9: 노트북·README
 
@@ -286,3 +329,13 @@ def test_score_by_group():
   - 그래프 예시 → v1 시험 대비 → 결론과 한계
   - 마크다운 수치는 결과 JSON과 일치시키고, 표의 열 개수를 검사한다.
 - [ ] **Step 2**: README의 실행 방법과 폴더 구조를 갱신한다.
+
+## 2026-11-13 로컬 실행 완료
+
+- run: `outputs/security_audit_gb10_v2/`, CUDA BF16 학습 / FP32 평가. train/dev/eval 38/7/15개 시나리오, 문서 189/34/72개.
+- 스모크 약84초, 본 실행 447.2초(7분27초), 학습 546 step·233.9초.
+- eval F1: 엔티티 0.444 → 0.979, 관계 0.050 → 0.772, 일반 레코드 필드 0.594 → 0.965. 선택형 정확도는 0.614 → 0.493으로 하락.
+- 비밀등급/인가등급 5종 선택형에서 173건 모두 저장 예측에 필드 키가 없었다. 원인은 미확정이며 별도 분석 대상으로 남긴다. 이 점수를 숨기거나 eval로 재튜닝하지 않았다.
+- 68개 테스트 통과, 295개 문서 검증 오류 0, 전체 예측 수·ID·순서 검증 및 저장 예측에서 네 조건/분할의 점수 재계산 일치.
+- 최소 가용 메모리 약14.9GiB(15초 간격 관측), 기존 vLLM 유지.
+- 확정 결과 `experiments/results/security_audit_sft.json`, 노트북 `experiments/04_security_audit_sft.ipynb` 반영. 커밋·푸시는 하지 않았다.

@@ -12,7 +12,7 @@
 | [언어와 체크포인트](experiments/01_language_and_checkpoint.ipynb) | 한국어·영어 문장 쌍으로 GLiNER base/multi 체크포인트와 LLM 추출을 비교하고, 조사·표기 프로브로 오류 원인을 분리한다. |
 | [단어 분할기](experiments/02_korean_word_splitter.ipynb) | GLiNER 단어 분할기(공백·문자·형태소)별 한국어 엔티티·관계 추출을 참고 정답과 LLM 기준으로 비교한다. |
 | [LLM 증류](experiments/03_llm_distillation.ipynb) | 같은 KLUE 문장에 `gpt-5.4-mini`가 단 정답으로 LoRA 어댑터를 학습하고, 사람 정답으로 학습한 어댑터와 성능·비용을 비교한다. |
-| [도메인 온톨로지 SFT](experiments/04_security_audit_sft.ipynb) | 가상의 군부대 보안 감사 온톨로지(엔티티·관계·관리대장 기록·사건 레코드)로 GLiNER2를 SFT하고 정답지 대비 추출 성능을 측정한다. 노트북은 v2 실행 후 갱신 예정(현재 내용은 v1 시험 결과). |
+| [도메인 온톨로지 SFT](experiments/04_security_audit_sft.ipynb) | 가상의 군부대 보안 감사 온톨로지(엔티티·관계·관리대장 기록·사건 레코드)로 GLiNER2를 SFT하고 정답지 대비 추출 성능을 측정한다. v2의 로컬 GB10 학습·평가 결과와 이름·열 변형별 점수, 선택형 실패를 정리한다. |
 | [스키마](config/ontology.py) | 두 추출기가 공유하는 POLE+O 엔티티·관계 타입을 정의한다. |
 | [추출기](config/extractors.py) | GLiNER2 JointIE 추출기, OpenAI 구조화 출력 추출기, Kiwi 형태소 분할기를 제공한다. |
 | [KLUE 데이터](config/klue.py), [선생님 라벨러](config/teacher.py) | KLUE-NER 변환·정확 일치 채점·오류 분류와, 증류 실험의 `gpt-5.4-mini` 라벨러를 제공한다. |
@@ -38,7 +38,7 @@ cp .env.example .env
 
 `notebooks/`는 `00` → `01` → `02` 순서로 읽는다. `01`과 `02`는 첫 실행 시 GLiNER 체크포인트를, `02`는 KLUE-NER 데이터를 Hugging Face에서 내려받는다. `02`는 학습과 평가를 포함해 CPU 기준 약 10분이 걸리며, 학습한 어댑터는 `outputs/`에 저장되고 저장소에는 포함하지 않는다.
 
-`experiments/`의 노트북은 기본적으로 저장된 결과 파일을 불러와 분석만 수행한다(`RUN_EXPERIMENT = False`). `True`로 바꾸면 GLiNER 체크포인트를 내려받고 LLM API를 호출하여 결과 파일을 덮어쓴다. 모든 GLiNER 연산은 CPU에서 실행한다.
+`experiments/`의 노트북은 기본적으로 저장된 결과 파일을 불러와 분석만 수행한다(`RUN_EXPERIMENT = False`). `True`로 바꾸면 GLiNER 체크포인트를 내려받고 LLM API를 호출하여 결과 파일을 덮어쓴다. 기본 추출 실험은 CPU에서 실행하며, `04`의 로컬 실행은 아래 GPU 설정을 따른다.
 
 `03`의 실험은 노트북이 아니라 스크립트로 실행한다. `notebooks/02`에서 학습한 KLUE 어댑터(`outputs/klue_ner_lora/final`)가 먼저 있어야 하며, 라벨링 API 비용은 약 1.3달러, 전체 실행은 CPU 기준 약 20분이다. 단계별 결과는 `outputs/distill/`에 저장되어 중단 후 이어서 실행할 수 있다.
 
@@ -47,15 +47,21 @@ uv run python scripts/run_llm_distillation.py --price-input 0.75 --price-output 
     --price-source https://developers.openai.com/api/docs/pricing
 ```
 
-`04`도 스크립트로 실행한다(외부 API 없음, CPU 기준 1~2시간). 온톨로지는 `config/domains/military-security-audit.yaml`, 관리대장 서식 정의는 `experiments/data/security_audit/forms/`에 있다. 가상 데이터는 `experiments/data/security_audit/`에 있으며, 문서는 Markdown(`documents/<split>/<doc_id>.md`), 정답은 JSON(`labels/<split>/<doc_id>.json`)으로 분리되어 있다. 1차 시험 실행(v1)의 데이터와 결과는 커밋 `9f18cde`에 남아 있다.
+`04`도 스크립트로 실행한다(외부 API 없음). 로컬 NVIDIA GB10에서는 CUDA BF16 학습·FP32 평가를 사용한다. CPU 1~2시간은 이전 예상이며, 실제 소요 시간은 스모크 처리량으로 추정한다. 온톨로지는 `config/domains/military-security-audit.yaml`, 관리대장 서식 정의는 `experiments/data/security_audit/forms/`에 있다. 가상 데이터는 `experiments/data/security_audit/`에 있으며, 문서는 Markdown(`documents/<split>/<doc_id>.md`), 정답은 JSON(`labels/<split>/<doc_id>.json`)으로 분리되어 있다. 1차 시험 실행(v1)의 데이터와 결과는 커밋 `9f18cde`에 남아 있다.
 
 ```bash
 uv run python scripts/security_audit/make_scenarios.py      # 시나리오 생성 (학습 45, 평가 15)
 uv run python scripts/security_audit/render_ledgers.py      # 관리대장 Markdown + 정답 JSON
 uv run python scripts/security_audit/import_written.py <writer JSONL>   # 서술 문서 가져오기
 uv run python scripts/security_audit/validate_docs.py       # 문서·정답 검증
-uv run python scripts/security_audit/run_sft.py             # 학습과 평가
+uv run python scripts/security_audit/run_sft.py --device cuda --bf16 --cpu-threads 4 \
+    --run-dir outputs/security_audit_gb10_v2 --stage all     # GPU 학습과 평가
+# 중단된 평가 재개 (같은 데이터·설정·코드의 완료 학습 필요)
+uv run python scripts/security_audit/run_sft.py --device cuda --bf16 --cpu-threads 4 \
+    --run-dir outputs/security_audit_gb10_v2 --stage evaluate --resume
 ```
+
+`04`의 예측은 run 폴더의 `predictions/`에 항목별로 저장되고, `progress.json`·`resources.jsonl`에 단계와 자원 사용량을 기록한다. 결과는 run 폴더의 `result.json`에 먼저 저장하며 전체 평가 완료 후 확정 결과를 `experiments/results/`에 반영한다. `--limit-scenarios 3 --max-steps 4`로 각 분할 최대 3개 시나리오의 스모크를 별도 run 폴더에서 실행할 수 있다.
 
 순수 로직(KLUE 변환·채점, 선생님 라벨러, 온톨로지 로더, 표시 형식 검증, 데이터 변환·채점)의 테스트는 `uv run --with pytest python -m pytest tests`로 실행한다.
 
