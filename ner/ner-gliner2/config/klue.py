@@ -81,7 +81,8 @@ def has_particle(name: str) -> bool:
     return bool(tokens) and tokens[-1].tag.startswith("J")
 
 
-def score(predictions: list[set[Span]], data: list[Example]) -> dict:
+def score(predictions: list[set[Span]], data: list[Example], labels: list[str] | None = None) -> dict:
+    labels = labels or LABELS
     tp, fp, fn = Counter(), Counter(), Counter()
     particles = 0
     for predicted, (text, spans) in zip(predictions, data, strict=True):
@@ -94,7 +95,7 @@ def score(predictions: list[set[Span]], data: list[Example]) -> dict:
         for _, _, label in gold - predicted:
             fn[label] += 1
     scores = {}
-    for label in [*LABELS, "overall"]:
+    for label in [*labels, "overall"]:
         t = sum(tp.values()) if label == "overall" else tp[label]
         p = sum(fp.values()) if label == "overall" else fp[label]
         n = sum(fn.values()) if label == "overall" else fn[label]

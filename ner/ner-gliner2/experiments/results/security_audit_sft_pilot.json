@@ -1,0 +1,2306 @@
+{
+ "run": {
+  "date": "2026-11-13",
+  "base_model": "fastino/gliner2.5-multi-v1",
+  "device": "Darwin arm64 CPU",
+  "epochs": 2,
+  "batch_size": 8,
+  "seed": 42,
+  "docs": {
+   "train": 90,
+   "dev": 18,
+   "eval": 32
+  },
+  "scenarios": {
+   "train": 20,
+   "dev": 4,
+   "eval": 6
+  }
+ },
+ "data_stats": {
+  "relations_trained_by_type": {
+   "BELONGS_TO": 36,
+   "ACCESSED": 36,
+   "RESPONSIBLE_FOR": 21,
+   "HOLDS_POSITION": 50,
+   "INSPECTED": 28,
+   "POSITION_OF": 30,
+   "HOLDS": 11,
+   "CARRIED_OUT": 9,
+   "STORED_ON": 9,
+   "LOCATED_AT": 7
+  },
+  "paragraph_examples": 470,
+  "record_examples": 97,
+  "misaligned": 5,
+  "relations_dropped": 54,
+  "fields_dropped": 22,
+  "duplicate_surfaces": 5,
+  "long_records": 0
+ },
+ "training": {
+  "total_time_seconds": 1565.9077582359314,
+  "samples_per_second": 0.7152400862115483,
+  "total_steps": 140
+ },
+ "conditions": {
+  "zero_shot": {
+   "dev": {
+    "entities": {
+     "Person": {
+      "precision": 0.9333333333333333,
+      "recall": 0.84,
+      "f1": 0.8842105263157894
+     },
+     "Position": {
+      "precision": 0.7368421052631579,
+      "recall": 0.9333333333333333,
+      "f1": 0.8235294117647058
+     },
+     "Unit": {
+      "precision": 0.85,
+      "recall": 0.4857142857142857,
+      "f1": 0.6181818181818183
+     },
+     "Organization": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "Facility": {
+      "precision": 0.6666666666666666,
+      "recall": 0.625,
+      "f1": 0.6451612903225806
+     },
+     "Credential": {
+      "precision": 0.125,
+      "recall": 0.25,
+      "f1": 0.16666666666666666
+     },
+     "ClassifiedDocument": {
+      "precision": 0.35,
+      "recall": 0.5833333333333334,
+      "f1": 0.4375
+     },
+     "StorageMedium": {
+      "precision": 0.2,
+      "recall": 0.4,
+      "f1": 0.26666666666666666
+     },
+     "InformationSystem": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "Regulation": {
+      "precision": 0.5,
+      "recall": 0.3125,
+      "f1": 0.38461538461538464
+     },
+     "Inspection": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1": 0.9523809523809523
+     },
+     "overall": {
+      "precision": 0.5714285714285714,
+      "recall": 0.631578947368421,
+      "f1": 0.6
+     },
+     "particles": 3
+    },
+    "entities_by_seen": {
+     "seen": {
+      "Person": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Position": {
+       "precision": 1.0,
+       "recall": 0.9333333333333333,
+       "f1": 0.9655172413793104
+      },
+      "Unit": {
+       "precision": 1.0,
+       "recall": 0.4857142857142857,
+       "f1": 0.6538461538461539
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 1.0,
+       "recall": 0.625,
+       "f1": 0.7692307692307693
+      },
+      "Credential": {
+       "precision": 1.0,
+       "recall": 0.5,
+       "f1": 0.6666666666666666
+      },
+      "ClassifiedDocument": {
+       "precision": 1.0,
+       "recall": 0.5833333333333334,
+       "f1": 0.7368421052631579
+      },
+      "StorageMedium": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "InformationSystem": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Regulation": {
+       "precision": 1.0,
+       "recall": 0.3125,
+       "f1": 0.47619047619047616
+      },
+      "Inspection": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "overall": {
+       "precision": 1.0,
+       "recall": 0.6037735849056604,
+       "f1": 0.7529411764705882
+      },
+      "particles": 0
+     },
+     "unseen": {
+      "Person": {
+       "precision": 0.9333333333333333,
+       "recall": 0.84,
+       "f1": 0.8842105263157894
+      },
+      "Position": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Unit": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Credential": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "ClassifiedDocument": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "StorageMedium": {
+       "precision": 0.2,
+       "recall": 0.4,
+       "f1": 0.26666666666666666
+      },
+      "InformationSystem": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Regulation": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Inspection": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "overall": {
+       "precision": 0.352,
+       "recall": 0.676923076923077,
+       "f1": 0.46315789473684205
+      },
+      "particles": 3
+     },
+     "seen_gold": 106,
+     "unseen_gold": 65
+    },
+    "relations": {
+     "ACCESSED": {
+      "precision": 0.5,
+      "recall": 0.1,
+      "f1": 0.16666666666666669,
+      "support": 10
+     },
+     "BELONGS_TO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+     },
+     "CARRIED_OUT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+     },
+     "HOLDS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+     },
+     "HOLDS_POSITION": {
+      "precision": 0.75,
+      "recall": 0.46153846153846156,
+      "f1": 0.5714285714285714,
+      "support": 13
+     },
+     "INSPECTED": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 7
+     },
+     "LOCATED_AT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+     },
+     "POSITION_OF": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 8
+     },
+     "RESPONSIBLE_FOR": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 8
+     },
+     "STORED_ON": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+     },
+     "overall": {
+      "precision": 0.6363636363636364,
+      "recall": 0.1044776119402985,
+      "f1": 0.17948717948717952,
+      "support": 67
+     }
+    },
+    "records": {
+     "fields": {
+      "action.기한": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 7
+      },
+      "action.담당": {
+       "precision": 0.8571428571428571,
+       "recall": 0.8571428571428571,
+       "f1": 0.8571428571428571,
+       "support": 7
+      },
+      "finding.대상": {
+       "precision": 0.5555555555555556,
+       "recall": 0.25,
+       "f1": 0.3448275862068966,
+       "support": 20
+      },
+      "finding.위반 규정": {
+       "precision": 0.6666666666666666,
+       "recall": 0.6666666666666666,
+       "f1": 0.6666666666666666,
+       "support": 9
+      },
+      "incident.관련자": {
+       "precision": 0.6666666666666666,
+       "recall": 1.0,
+       "f1": 0.8,
+       "support": 4
+      },
+      "incident.대상 문서": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0,
+       "support": 3
+      },
+      "incident.매체": {
+       "precision": 0.3333333333333333,
+       "recall": 1.0,
+       "f1": 0.5,
+       "support": 1
+      },
+      "incident.위반 규정": {
+       "precision": 0.75,
+       "recall": 0.75,
+       "f1": 0.75,
+       "support": 4
+      },
+      "incident.일자": {
+       "precision": 0.6666666666666666,
+       "recall": 0.5,
+       "f1": 0.5714285714285715,
+       "support": 4
+      },
+      "incident.장소": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 4
+      }
+     },
+     "overall": {
+      "precision": 0.7169811320754716,
+      "recall": 0.6031746031746031,
+      "f1": 0.6551724137931034,
+      "support": 63
+     },
+     "choice_accuracy": {
+      "incident.유형": 0.75,
+      "finding.영역": 0.7777777777777778,
+      "action.조치 유형": 1.0
+     },
+     "choice_overall": 0.85
+    },
+    "seconds": {
+     "entities": 31.040596375009045,
+     "relations": 56.1193711249507,
+     "records": 6.4681452920194715
+    },
+    "paragraphs": 101,
+    "records_n": 20
+   },
+   "eval": {
+    "entities": {
+     "Person": {
+      "precision": 0.8947368421052632,
+      "recall": 0.7640449438202247,
+      "f1": 0.8242424242424243
+     },
+     "Position": {
+      "precision": 0.6666666666666666,
+      "recall": 0.967741935483871,
+      "f1": 0.7894736842105263
+     },
+     "Unit": {
+      "precision": 0.7916666666666666,
+      "recall": 0.4523809523809524,
+      "f1": 0.5757575757575758
+     },
+     "Organization": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "Facility": {
+      "precision": 0.6578947368421053,
+      "recall": 0.7142857142857143,
+      "f1": 0.684931506849315
+     },
+     "Credential": {
+      "precision": 0.3,
+      "recall": 0.5,
+      "f1": 0.37499999999999994
+     },
+     "ClassifiedDocument": {
+      "precision": 0.20833333333333334,
+      "recall": 0.35714285714285715,
+      "f1": 0.2631578947368421
+     },
+     "StorageMedium": {
+      "precision": 0.1,
+      "recall": 0.14285714285714285,
+      "f1": 0.11764705882352941
+     },
+     "InformationSystem": {
+      "precision": 0.4,
+      "recall": 0.5714285714285714,
+      "f1": 0.47058823529411764
+     },
+     "Regulation": {
+      "precision": 0.8,
+      "recall": 0.4444444444444444,
+      "f1": 0.5714285714285714
+     },
+     "Inspection": {
+      "precision": 0.9333333333333333,
+      "recall": 1.0,
+      "f1": 0.9655172413793104
+     },
+     "overall": {
+      "precision": 0.6779026217228464,
+      "recall": 0.6654411764705882,
+      "f1": 0.6716141001855287
+     },
+     "particles": 4
+    },
+    "entities_by_seen": {
+     "seen": {
+      "Person": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Position": {
+       "precision": 1.0,
+       "recall": 0.967741935483871,
+       "f1": 0.9836065573770492
+      },
+      "Unit": {
+       "precision": 1.0,
+       "recall": 0.34285714285714286,
+       "f1": 0.5106382978723404
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 1.0,
+       "recall": 0.7142857142857143,
+       "f1": 0.8333333333333333
+      },
+      "Credential": {
+       "precision": 1.0,
+       "recall": 0.6666666666666666,
+       "f1": 0.8
+      },
+      "ClassifiedDocument": {
+       "precision": 1.0,
+       "recall": 0.35714285714285715,
+       "f1": 0.5263157894736842
+      },
+      "StorageMedium": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "InformationSystem": {
+       "precision": 1.0,
+       "recall": 0.5714285714285714,
+       "f1": 0.7272727272727273
+      },
+      "Regulation": {
+       "precision": 1.0,
+       "recall": 0.4444444444444444,
+       "f1": 0.6153846153846153
+      },
+      "Inspection": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "overall": {
+       "precision": 1.0,
+       "recall": 0.6309523809523809,
+       "f1": 0.7737226277372262
+      },
+      "particles": 0
+     },
+     "unseen": {
+      "Person": {
+       "precision": 0.8918918918918919,
+       "recall": 0.7586206896551724,
+       "f1": 0.8198757763975155
+      },
+      "Position": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Unit": {
+       "precision": 0.5833333333333334,
+       "recall": 1.0,
+       "f1": 0.7368421052631579
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Credential": {
+       "precision": 0.125,
+       "recall": 0.3333333333333333,
+       "f1": 0.18181818181818182
+      },
+      "ClassifiedDocument": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "StorageMedium": {
+       "precision": 0.1,
+       "recall": 0.14285714285714285,
+       "f1": 0.11764705882352941
+      },
+      "InformationSystem": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Regulation": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Inspection": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "overall": {
+       "precision": 0.4658385093167702,
+       "recall": 0.7211538461538461,
+       "f1": 0.5660377358490566
+      },
+      "particles": 4
+     },
+     "seen_gold": 168,
+     "unseen_gold": 104
+    },
+    "relations": {
+     "ACCESSED": {
+      "precision": 1.0,
+      "recall": 0.09523809523809523,
+      "f1": 0.17391304347826084,
+      "support": 21
+     },
+     "BELONGS_TO": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5,
+      "support": 6
+     },
+     "CARRIED_OUT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 5
+     },
+     "HOLDS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+     },
+     "HOLDS_POSITION": {
+      "precision": 0.6,
+      "recall": 0.6428571428571429,
+      "f1": 0.6206896551724138,
+      "support": 28
+     },
+     "INSPECTED": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 9
+     },
+     "LOCATED_AT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+     },
+     "POSITION_OF": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+     },
+     "RESPONSIBLE_FOR": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 14
+     },
+     "STORED_ON": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+     },
+     "overall": {
+      "precision": 0.6285714285714286,
+      "recall": 0.2268041237113402,
+      "f1": 0.3333333333333333,
+      "support": 97
+     }
+    },
+    "records": {
+     "fields": {
+      "action.기한": {
+       "precision": 0.9166666666666666,
+       "recall": 0.9166666666666666,
+       "f1": 0.9166666666666666,
+       "support": 12
+      },
+      "action.담당": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 12
+      },
+      "finding.대상": {
+       "precision": 0.5333333333333333,
+       "recall": 0.22857142857142856,
+       "f1": 0.32,
+       "support": 35
+      },
+      "finding.위반 규정": {
+       "precision": 0.5,
+       "recall": 0.47058823529411764,
+       "f1": 0.48484848484848486,
+       "support": 17
+      },
+      "incident.관련자": {
+       "precision": 0.2222222222222222,
+       "recall": 0.3333333333333333,
+       "f1": 0.26666666666666666,
+       "support": 6
+      },
+      "incident.대상 문서": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0,
+       "support": 3
+      },
+      "incident.매체": {
+       "precision": 0.3333333333333333,
+       "recall": 1.0,
+       "f1": 0.5,
+       "support": 1
+      },
+      "incident.위반 규정": {
+       "precision": 1.0,
+       "recall": 0.8333333333333334,
+       "f1": 0.9090909090909091,
+       "support": 6
+      },
+      "incident.일자": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 6
+      },
+      "incident.장소": {
+       "precision": 0.625,
+       "recall": 0.8333333333333334,
+       "f1": 0.7142857142857143,
+       "support": 6
+      }
+     },
+     "overall": {
+      "precision": 0.651685393258427,
+      "recall": 0.5576923076923077,
+      "f1": 0.6010362694300518,
+      "support": 104
+     },
+     "choice_accuracy": {
+      "incident.유형": 0.8333333333333334,
+      "finding.영역": 0.5294117647058824,
+      "action.조치 유형": 1.0
+     },
+     "choice_overall": 0.7428571428571429
+    },
+    "seconds": {
+     "entities": 77.30528537498321,
+     "relations": 121.37895716697676,
+     "records": 10.21496695902897
+    },
+    "paragraphs": 156,
+    "records_n": 35
+   },
+   "incident_description": {
+    "exact_f1": 0.0,
+    "exact_precision": 0.0,
+    "exact_recall": 0.0,
+    "overlap_recall": 0.3333333333333333,
+    "support": 6,
+    "predicted_spans": 34
+   }
+  },
+  "adapter": {
+   "dev": {
+    "entities": {
+     "Person": {
+      "precision": 0.9574468085106383,
+      "recall": 0.9,
+      "f1": 0.9278350515463918
+     },
+     "Position": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "Unit": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "Organization": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "Facility": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "Credential": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.888888888888889
+     },
+     "ClassifiedDocument": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+     },
+     "StorageMedium": {
+      "precision": 0.36363636363636365,
+      "recall": 0.8,
+      "f1": 0.5000000000000001
+     },
+     "InformationSystem": {
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1": 0.7692307692307693
+     },
+     "Regulation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "Inspection": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1": 0.9523809523809523
+     },
+     "overall": {
+      "precision": 0.935672514619883,
+      "recall": 0.935672514619883,
+      "f1": 0.935672514619883
+     },
+     "particles": 1
+    },
+    "entities_by_seen": {
+     "seen": {
+      "Person": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Position": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Unit": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Credential": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "ClassifiedDocument": {
+       "precision": 1.0,
+       "recall": 0.8333333333333334,
+       "f1": 0.9090909090909091
+      },
+      "StorageMedium": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "InformationSystem": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Regulation": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Inspection": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "overall": {
+       "precision": 1.0,
+       "recall": 0.9811320754716981,
+       "f1": 0.9904761904761905
+      },
+      "particles": 0
+     },
+     "unseen": {
+      "Person": {
+       "precision": 0.9574468085106383,
+       "recall": 0.9,
+       "f1": 0.9278350515463918
+      },
+      "Position": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Unit": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Credential": {
+       "precision": 0.6666666666666666,
+       "recall": 1.0,
+       "f1": 0.8
+      },
+      "ClassifiedDocument": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "StorageMedium": {
+       "precision": 0.36363636363636365,
+       "recall": 0.8,
+       "f1": 0.5000000000000001
+      },
+      "InformationSystem": {
+       "precision": 1.0,
+       "recall": 0.625,
+       "f1": 0.7692307692307693
+      },
+      "Regulation": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Inspection": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "overall": {
+       "precision": 0.835820895522388,
+       "recall": 0.8615384615384616,
+       "f1": 0.8484848484848485
+      },
+      "particles": 1
+     },
+     "seen_gold": 106,
+     "unseen_gold": 65
+    },
+    "relations": {
+     "ACCESSED": {
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1": 0.6153846153846154,
+      "support": 10
+     },
+     "BELONGS_TO": {
+      "precision": 0.6923076923076923,
+      "recall": 0.9,
+      "f1": 0.7826086956521738,
+      "support": 10
+     },
+     "CARRIED_OUT": {
+      "precision": 0.15384615384615385,
+      "recall": 0.6666666666666666,
+      "f1": 0.25,
+      "support": 3
+     },
+     "HOLDS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+     },
+     "HOLDS_POSITION": {
+      "precision": 0.8,
+      "recall": 0.9230769230769231,
+      "f1": 0.8571428571428571,
+      "support": 13
+     },
+     "INSPECTED": {
+      "precision": 0.7,
+      "recall": 1.0,
+      "f1": 0.8235294117647058,
+      "support": 7
+     },
+     "LOCATED_AT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
+     },
+     "POSITION_OF": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 8
+     },
+     "RESPONSIBLE_FOR": {
+      "precision": 0.18181818181818182,
+      "recall": 0.25,
+      "f1": 0.2105263157894737,
+      "support": 8
+     },
+     "STORED_ON": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+     },
+     "overall": {
+      "precision": 0.5824175824175825,
+      "recall": 0.7910447761194029,
+      "f1": 0.6708860759493671,
+      "support": 67
+     }
+    },
+    "records": {
+     "fields": {
+      "action.기한": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 7
+      },
+      "action.담당": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 7
+      },
+      "finding.대상": {
+       "precision": 0.8571428571428571,
+       "recall": 0.6,
+       "f1": 0.7058823529411764,
+       "support": 20
+      },
+      "finding.위반 규정": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 9
+      },
+      "incident.관련자": {
+       "precision": 0.8,
+       "recall": 1.0,
+       "f1": 0.888888888888889,
+       "support": 4
+      },
+      "incident.대상 문서": {
+       "precision": 0.75,
+       "recall": 1.0,
+       "f1": 0.8571428571428571,
+       "support": 3
+      },
+      "incident.매체": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 1
+      },
+      "incident.위반 규정": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 4
+      },
+      "incident.일자": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 4
+      },
+      "incident.장소": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 4
+      }
+     },
+     "overall": {
+      "precision": 0.9322033898305084,
+      "recall": 0.873015873015873,
+      "f1": 0.9016393442622951,
+      "support": 63
+     },
+     "choice_accuracy": {
+      "incident.유형": 0.5,
+      "finding.영역": 0.8888888888888888,
+      "action.조치 유형": 1.0
+     },
+     "choice_overall": 0.85
+    },
+    "seconds": {
+     "entities": 81.64935391600011,
+     "relations": 100.2619929590146,
+     "records": 7.8918509999639355
+    },
+    "paragraphs": 101,
+    "records_n": 20
+   },
+   "eval": {
+    "entities": {
+     "Person": {
+      "precision": 0.9659090909090909,
+      "recall": 0.9550561797752809,
+      "f1": 0.96045197740113
+     },
+     "Position": {
+      "precision": 0.9090909090909091,
+      "recall": 0.967741935483871,
+      "f1": 0.9374999999999999
+     },
+     "Unit": {
+      "precision": 0.9767441860465116,
+      "recall": 1.0,
+      "f1": 0.988235294117647
+     },
+     "Organization": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "Facility": {
+      "precision": 0.8918918918918919,
+      "recall": 0.9428571428571428,
+      "f1": 0.9166666666666667
+     },
+     "Credential": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "ClassifiedDocument": {
+      "precision": 1.0,
+      "recall": 0.6428571428571429,
+      "f1": 0.782608695652174
+     },
+     "StorageMedium": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "InformationSystem": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "Regulation": {
+      "precision": 0.8125,
+      "recall": 0.9629629629629629,
+      "f1": 0.8813559322033898
+     },
+     "Inspection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+     },
+     "overall": {
+      "precision": 0.9384057971014492,
+      "recall": 0.9522058823529411,
+      "f1": 0.9452554744525548
+     },
+     "particles": 0
+    },
+    "entities_by_seen": {
+     "seen": {
+      "Person": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Position": {
+       "precision": 1.0,
+       "recall": 0.967741935483871,
+       "f1": 0.9836065573770492
+      },
+      "Unit": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 1.0,
+       "recall": 0.9428571428571428,
+       "f1": 0.9705882352941176
+      },
+      "Credential": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "ClassifiedDocument": {
+       "precision": 1.0,
+       "recall": 0.6428571428571429,
+       "f1": 0.782608695652174
+      },
+      "StorageMedium": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "InformationSystem": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "Regulation": {
+       "precision": 1.0,
+       "recall": 0.9629629629629629,
+       "f1": 0.9811320754716981
+      },
+      "Inspection": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "overall": {
+       "precision": 1.0,
+       "recall": 0.9464285714285714,
+       "f1": 0.9724770642201834
+      },
+      "particles": 0
+     },
+     "unseen": {
+      "Person": {
+       "precision": 0.9651162790697675,
+       "recall": 0.9540229885057471,
+       "f1": 0.9595375722543352
+      },
+      "Position": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Unit": {
+       "precision": 0.875,
+       "recall": 1.0,
+       "f1": 0.9333333333333333
+      },
+      "Organization": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Facility": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Credential": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "ClassifiedDocument": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "StorageMedium": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0
+      },
+      "InformationSystem": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Regulation": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "Inspection": {
+       "precision": 0.0,
+       "recall": 0.0,
+       "f1": 0.0
+      },
+      "overall": {
+       "precision": 0.8547008547008547,
+       "recall": 0.9615384615384616,
+       "f1": 0.9049773755656108
+      },
+      "particles": 0
+     },
+     "seen_gold": 168,
+     "unseen_gold": 104
+    },
+    "relations": {
+     "ACCESSED": {
+      "precision": 0.5294117647058824,
+      "recall": 0.8571428571428571,
+      "f1": 0.6545454545454545,
+      "support": 21
+     },
+     "BELONGS_TO": {
+      "precision": 0.35714285714285715,
+      "recall": 0.8333333333333334,
+      "f1": 0.5,
+      "support": 6
+     },
+     "CARRIED_OUT": {
+      "precision": 0.23076923076923078,
+      "recall": 0.6,
+      "f1": 0.33333333333333337,
+      "support": 5
+     },
+     "HOLDS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4
+     },
+     "HOLDS_POSITION": {
+      "precision": 0.7222222222222222,
+      "recall": 0.9285714285714286,
+      "f1": 0.8125000000000001,
+      "support": 28
+     },
+     "INSPECTED": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 9
+     },
+     "LOCATED_AT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+     },
+     "POSITION_OF": {
+      "precision": 0.5714285714285714,
+      "recall": 1.0,
+      "f1": 0.7272727272727273,
+      "support": 4
+     },
+     "RESPONSIBLE_FOR": {
+      "precision": 0.3235294117647059,
+      "recall": 0.7857142857142857,
+      "f1": 0.45833333333333326,
+      "support": 14
+     },
+     "STORED_ON": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "support": 4
+     },
+     "overall": {
+      "precision": 0.5359477124183006,
+      "recall": 0.845360824742268,
+      "f1": 0.656,
+      "support": 97
+     }
+    },
+    "records": {
+     "fields": {
+      "action.기한": {
+       "precision": 0.9166666666666666,
+       "recall": 0.9166666666666666,
+       "f1": 0.9166666666666666,
+       "support": 12
+      },
+      "action.담당": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 12
+      },
+      "finding.대상": {
+       "precision": 0.88,
+       "recall": 0.6285714285714286,
+       "f1": 0.7333333333333334,
+       "support": 35
+      },
+      "finding.위반 규정": {
+       "precision": 0.9411764705882353,
+       "recall": 0.9411764705882353,
+       "f1": 0.9411764705882353,
+       "support": 17
+      },
+      "incident.관련자": {
+       "precision": 0.4166666666666667,
+       "recall": 0.8333333333333334,
+       "f1": 0.5555555555555556,
+       "support": 6
+      },
+      "incident.대상 문서": {
+       "precision": 0.75,
+       "recall": 1.0,
+       "f1": 0.8571428571428571,
+       "support": 3
+      },
+      "incident.매체": {
+       "precision": 0.5,
+       "recall": 1.0,
+       "f1": 0.6666666666666666,
+       "support": 1
+      },
+      "incident.위반 규정": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 6
+      },
+      "incident.일자": {
+       "precision": 1.0,
+       "recall": 1.0,
+       "f1": 1.0,
+       "support": 6
+      },
+      "incident.장소": {
+       "precision": 0.6666666666666666,
+       "recall": 1.0,
+       "f1": 0.8,
+       "support": 6
+      }
+     },
+     "overall": {
+      "precision": 0.8380952380952381,
+      "recall": 0.8461538461538461,
+      "f1": 0.8421052631578948,
+      "support": 104
+     },
+     "choice_accuracy": {
+      "incident.유형": 0.6666666666666666,
+      "finding.영역": 0.5294117647058824,
+      "action.조치 유형": 1.0
+     },
+     "choice_overall": 0.7142857142857143
+    },
+    "seconds": {
+     "entities": 91.58562349999556,
+     "relations": 86.63112620799802,
+     "records": 4.791388957994059
+    },
+    "paragraphs": 156,
+    "records_n": 35
+   },
+   "incident_description": {
+    "exact_f1": 0.0,
+    "exact_precision": 0.0,
+    "exact_recall": 0.0,
+    "overlap_recall": 0.6666666666666666,
+    "support": 6,
+    "predicted_spans": 28
+   }
+  }
+ },
+ "choice_literal_rate": {
+  "train": {
+   "incident.유형": 0.4,
+   "finding.영역": 0.8974358974358975,
+   "action.조치 유형": 1.0
+  },
+  "dev": {
+   "incident.유형": 0.0,
+   "finding.영역": 0.7777777777777778,
+   "action.조치 유형": 1.0
+  },
+  "eval": {
+   "incident.유형": 0.16666666666666666,
+   "finding.영역": 0.35294117647058826,
+   "action.조치 유형": 1.0
+  }
+ },
+ "eval_seen_gold": {
+  "seen": 168,
+  "unseen": 104
+ },
+ "by_doc_type": {
+  "zero_shot": {
+   "보안교육 결과": {
+    "entities_f1": 0.64,
+    "relations_f1": 0.6666666666666666,
+    "paragraphs": 10,
+    "records": 0
+   },
+   "보안대책 회의록": {
+    "entities_f1": 0.6285714285714284,
+    "relations_f1": 0.4210526315789474,
+    "record_fields_f1": 0.6666666666666666,
+    "choice_accuracy": 0.6363636363636364,
+    "paragraphs": 32,
+    "records": 11
+   },
+   "보안사고 경위서": {
+    "entities_f1": 0.6617647058823529,
+    "relations_f1": 0.3888888888888889,
+    "record_fields_f1": 0.6129032258064516,
+    "choice_accuracy": 0.8333333333333334,
+    "paragraphs": 32,
+    "records": 6
+   },
+   "보안점검 결과보고서": {
+    "entities_f1": 0.707070707070707,
+    "relations_f1": 0.27586206896551724,
+    "record_fields_f1": 0.5818181818181818,
+    "choice_accuracy": 1.0,
+    "paragraphs": 30,
+    "records": 12
+   },
+   "비밀문서 관리대장 점검표": {
+    "entities_f1": 0.7142857142857142,
+    "relations_f1": 0.08000000000000002,
+    "record_fields_f1": 0.5,
+    "choice_accuracy": 0.3333333333333333,
+    "paragraphs": 28,
+    "records": 6
+   },
+   "저장매체 반출입 대장": {
+    "entities_f1": 0.6250000000000001,
+    "relations_f1": 0.6666666666666666,
+    "paragraphs": 12,
+    "records": 0
+   },
+   "출입기록 점검 결과": {
+    "entities_f1": 0.6818181818181818,
+    "relations_f1": 0.36363636363636365,
+    "paragraphs": 12,
+    "records": 0
+   }
+  },
+  "adapter": {
+   "보안교육 결과": {
+    "entities_f1": 1.0,
+    "relations_f1": 0.8,
+    "paragraphs": 10,
+    "records": 0
+   },
+   "보안대책 회의록": {
+    "entities_f1": 0.9719626168224299,
+    "relations_f1": 0.6896551724137931,
+    "record_fields_f1": 0.9056603773584904,
+    "choice_accuracy": 0.6363636363636364,
+    "paragraphs": 32,
+    "records": 11
+   },
+   "보안사고 경위서": {
+    "entities_f1": 0.927536231884058,
+    "relations_f1": 0.5428571428571429,
+    "record_fields_f1": 0.8059701492537313,
+    "choice_accuracy": 0.6666666666666666,
+    "paragraphs": 32,
+    "records": 6
+   },
+   "보안점검 결과보고서": {
+    "entities_f1": 0.9629629629629629,
+    "relations_f1": 0.7118644067796611,
+    "record_fields_f1": 0.8771929824561403,
+    "choice_accuracy": 1.0,
+    "paragraphs": 30,
+    "records": 12
+   },
+   "비밀문서 관리대장 점검표": {
+    "entities_f1": 0.9072164948453607,
+    "relations_f1": 0.6666666666666665,
+    "record_fields_f1": 0.75,
+    "choice_accuracy": 0.3333333333333333,
+    "paragraphs": 28,
+    "records": 6
+   },
+   "저장매체 반출입 대장": {
+    "entities_f1": 0.9655172413793104,
+    "relations_f1": 0.7272727272727273,
+    "paragraphs": 12,
+    "records": 0
+   },
+   "출입기록 점검 결과": {
+    "entities_f1": 0.9333333333333332,
+    "relations_f1": 0.7000000000000001,
+    "paragraphs": 12,
+    "records": 0
+   }
+  }
+ },
+ "by_area": {
+  "zero_shot": {
+   "문서보안": {
+    "entities_f1": 0.6808510638297872,
+    "relations_f1": 0.17391304347826086,
+    "record_fields_f1": 0.5454545454545454,
+    "choice_accuracy": 1.0,
+    "paragraphs": 25,
+    "records": 6
+   },
+   "시설보안": {
+    "entities_f1": 0.5647058823529412,
+    "relations_f1": 0.11764705882352941,
+    "record_fields_f1": 0.5599999999999999,
+    "choice_accuracy": 0.8,
+    "paragraphs": 25,
+    "records": 5
+   },
+   "인원보안": {
+    "entities_f1": 0.7159090909090908,
+    "relations_f1": 0.3902439024390244,
+    "record_fields_f1": 0.6666666666666666,
+    "choice_accuracy": 0.6666666666666666,
+    "paragraphs": 50,
+    "records": 12
+   },
+   "정보통신보안": {
+    "entities_f1": 0.6739130434782609,
+    "relations_f1": 0.4313725490196078,
+    "record_fields_f1": 0.5797101449275363,
+    "choice_accuracy": 0.6666666666666666,
+    "paragraphs": 56,
+    "records": 12
+   }
+  },
+  "adapter": {
+   "문서보안": {
+    "entities_f1": 1.0,
+    "relations_f1": 0.653061224489796,
+    "record_fields_f1": 0.9444444444444444,
+    "choice_accuracy": 1.0,
+    "paragraphs": 25,
+    "records": 6
+   },
+   "시설보안": {
+    "entities_f1": 0.951219512195122,
+    "relations_f1": 0.6153846153846154,
+    "record_fields_f1": 0.6923076923076924,
+    "choice_accuracy": 0.8,
+    "paragraphs": 25,
+    "records": 5
+   },
+   "인원보안": {
+    "entities_f1": 0.9777777777777777,
+    "relations_f1": 0.7164179104477612,
+    "record_fields_f1": 0.8823529411764706,
+    "choice_accuracy": 0.6666666666666666,
+    "paragraphs": 50,
+    "records": 12
+   },
+   "정보통신보안": {
+    "entities_f1": 0.8877551020408163,
+    "relations_f1": 0.6315789473684211,
+    "record_fields_f1": 0.810126582278481,
+    "choice_accuracy": 0.5833333333333334,
+    "paragraphs": 56,
+    "records": 12
+   }
+  }
+ },
+ "held_out_doc_type": {
+  "doc_type": "보안대책 회의록",
+  "zero_shot": {
+   "entities_f1": 0.6285714285714284,
+   "relations_f1": 0.4210526315789474,
+   "records": {
+    "fields": {
+     "action.기한": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6
+     },
+     "action.담당": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6
+     },
+     "finding.대상": {
+      "precision": 0.3333333333333333,
+      "recall": 0.09090909090909091,
+      "f1": 0.14285714285714288,
+      "support": 11
+     },
+     "finding.위반 규정": {
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6,
+      "support": 5
+     }
+    },
+    "overall": {
+     "precision": 0.8,
+     "recall": 0.5714285714285714,
+     "f1": 0.6666666666666666,
+     "support": 28
+    },
+    "choice_accuracy": {
+     "finding.영역": 0.2,
+     "action.조치 유형": 1.0
+    },
+    "choice_overall": 0.6363636363636364
+   },
+   "records_n": 11,
+   "paragraphs": 32
+  },
+  "adapter": {
+   "entities_f1": 0.9719626168224299,
+   "relations_f1": 0.6896551724137931,
+   "records": {
+    "fields": {
+     "action.기한": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6
+     },
+     "action.담당": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6
+     },
+     "finding.대상": {
+      "precision": 0.875,
+      "recall": 0.6363636363636364,
+      "f1": 0.7368421052631579,
+      "support": 11
+     },
+     "finding.위반 규정": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 5
+     }
+    },
+    "overall": {
+     "precision": 0.96,
+     "recall": 0.8571428571428571,
+     "f1": 0.9056603773584904,
+     "support": 28
+    },
+    "choice_accuracy": {
+     "finding.영역": 0.2,
+     "action.조치 유형": 1.0
+    },
+    "choice_overall": 0.6363636363636364
+   },
+   "records_n": 11,
+   "paragraphs": 32
+  }
+ },
+ "examples": [
+  {
+   "doc_id": "eval-024-1",
+   "doc_type": "보안사고 경위서",
+   "text": "보안사고 경위서 / 소속: 제6008공병단 정보과 / 작성: 정보보호 담당관 소령 안지후\n1. 사고 개요: 2026. 4. 22. 제6008공병단 정보과 소속 일병 윤하율이 업무용 USB-124에 Ⅲ급 비밀 암호운용 지침을 저장한 채 보안자재실에서 부대 밖으로 반출함.\n2. 관련 매체: 업무용 USB-124 — 관리책임 안 소령. 반출 승인 기록 없음.\n3. 경위: 퇴근 시 매체 반납 절차 미이행. 익일 윤 일병 자진 신고로 인지함.\n4. 위반 규정: 저장매체 통제 지침 위반임. 매체 회수 및 유출 여부 확인 진행 중.",
+   "gold": {
+    "entities": [
+     [
+      "Ⅲ급 비밀 암호운용 지침",
+      "ClassifiedDocument"
+     ],
+     [
+      "보안자재실",
+      "Facility"
+     ],
+     [
+      "소령 안지후",
+      "Person"
+     ],
+     [
+      "안 소령",
+      "Person"
+     ],
+     [
+      "업무용 USB-124",
+      "StorageMedium"
+     ],
+     [
+      "윤 일병",
+      "Person"
+     ],
+     [
+      "일병 윤하율",
+      "Person"
+     ],
+     [
+      "저장매체 통제 지침",
+      "Regulation"
+     ],
+     [
+      "정보보호 담당관",
+      "Position"
+     ],
+     [
+      "제6008공병단 정보과",
+      "Unit"
+     ]
+    ],
+    "relations": [
+     [
+      "Ⅲ급 비밀 암호운용 지침",
+      "STORED_ON",
+      "업무용 USB-124"
+     ],
+     [
+      "소령 안지후",
+      "HOLDS_POSITION",
+      "정보보호 담당관"
+     ],
+     [
+      "안 소령",
+      "RESPONSIBLE_FOR",
+      "업무용 USB-124"
+     ],
+     [
+      "일병 윤하율",
+      "BELONGS_TO",
+      "제6008공병단 정보과"
+     ],
+     [
+      "일병 윤하율",
+      "CARRIED_OUT",
+      "업무용 USB-124"
+     ]
+    ],
+    "records": [
+     {
+      "유형": "저장매체 무단 반출",
+      "관련자": [
+       "일병 윤하율"
+      ],
+      "매체": [
+       "업무용 USB-124"
+      ],
+      "대상 문서": [
+       "Ⅲ급 비밀 암호운용 지침"
+      ],
+      "장소": [
+       "보안자재실"
+      ],
+      "위반 규정": [
+       "저장매체 통제 지침"
+      ],
+      "일자": "2026. 4. 22."
+     }
+    ]
+   },
+   "predicted": {
+    "entities": [
+     [
+      "Ⅲ급 비밀 암호운용 지침",
+      "Regulation"
+     ],
+     [
+      "보안자재실",
+      "Facility"
+     ],
+     [
+      "소령 안지후",
+      "Person"
+     ],
+     [
+      "안 소령",
+      "Person"
+     ],
+     [
+      "업무용 USB-124",
+      "StorageMedium"
+     ],
+     [
+      "윤 일병",
+      "Person"
+     ],
+     [
+      "일병 윤하율",
+      "Person"
+     ],
+     [
+      "저장매체 통제 지침",
+      "Regulation"
+     ],
+     [
+      "정보보호 담당관",
+      "Position"
+     ],
+     [
+      "제6008공병단 정보과",
+      "Unit"
+     ]
+    ],
+    "relations": [
+     [
+      "소령 안지후",
+      "BELONGS_TO",
+      "제6008공병단 정보과"
+     ],
+     [
+      "소령 안지후",
+      "HOLDS_POSITION",
+      "정보보호 담당관"
+     ],
+     [
+      "안 소령",
+      "CARRIED_OUT",
+      "업무용 USB-124"
+     ],
+     [
+      "안 소령",
+      "HOLDS_POSITION",
+      "관리책임"
+     ],
+     [
+      "안 소령",
+      "RESPONSIBLE_FOR",
+      "업무용 USB-124"
+     ],
+     [
+      "일병 윤하율",
+      "BELONGS_TO",
+      "제6008공병단 정보과"
+     ],
+     [
+      "일병 윤하율",
+      "CARRIED_OUT",
+      "업무용 USB-124"
+     ],
+     [
+      "정보보호 담당관",
+      "POSITION_OF",
+      "제6008공병단 정보과"
+     ]
+    ],
+    "records": [
+     {
+      "유형": "저장매체 무단 반출",
+      "관련자": [
+       "일병 윤하율"
+      ],
+      "매체": [
+       "업무용 USB-124"
+      ],
+      "대상 문서": [
+       "Ⅲ급 비밀 암호운용 지침"
+      ],
+      "장소": [
+       "보안자재실"
+      ],
+      "위반 규정": [
+       "저장매체 통제 지침"
+      ],
+      "일자": "2026. 4. 22."
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "eval-025-1",
+   "doc_type": "보안사고 경위서",
+   "text": "보안사고 경위서 | 제4027기계화여단 군수지원대대\n가. 일시: 2026. 4. 12. / 장소: 지휘통제실\n나. 내용: 제4027기계화여단 군수지원대대 소속 병장 김유준, 출입 인가 없이 지휘통제실에 무단 출입함.\n다. 확인 경위: 출입통제 담당관 권우진 대위가 출입기록 대조 중 발견. 지휘통제실 관리책임자 역시 권 대위임.\n라. 위반 규정: 출입 통제 규정. 김 병장 진술서 별첨.",
+   "gold": {
+    "entities": [
+     [
+      "권 대위",
+      "Person"
+     ],
+     [
+      "권우진 대위",
+      "Person"
+     ],
+     [
+      "김 병장",
+      "Person"
+     ],
+     [
+      "병장 김유준",
+      "Person"
+     ],
+     [
+      "제4027기계화여단 군수지원대대",
+      "Unit"
+     ],
+     [
+      "지휘통제실",
+      "Facility"
+     ],
+     [
+      "출입 통제 규정",
+      "Regulation"
+     ],
+     [
+      "출입통제 담당관",
+      "Position"
+     ]
+    ],
+    "relations": [
+     [
+      "권 대위",
+      "RESPONSIBLE_FOR",
+      "지휘통제실"
+     ],
+     [
+      "권우진 대위",
+      "HOLDS_POSITION",
+      "출입통제 담당관"
+     ],
+     [
+      "병장 김유준",
+      "ACCESSED",
+      "지휘통제실"
+     ],
+     [
+      "병장 김유준",
+      "BELONGS_TO",
+      "제4027기계화여단 군수지원대대"
+     ]
+    ],
+    "records": [
+     {
+      "유형": "비인가 출입",
+      "관련자": [
+       "병장 김유준"
+      ],
+      "장소": [
+       "지휘통제실"
+      ],
+      "위반 규정": [
+       "출입 통제 규정"
+      ],
+      "일자": "2026. 4. 12."
+     }
+    ]
+   },
+   "predicted": {
+    "entities": [
+     [
+      "권 대위",
+      "Person"
+     ],
+     [
+      "권우진 대위",
+      "Person"
+     ],
+     [
+      "김 병장",
+      "Person"
+     ],
+     [
+      "김유준",
+      "Person"
+     ],
+     [
+      "병장",
+      "Position"
+     ],
+     [
+      "제4027기계화여단 군수지원대대",
+      "Unit"
+     ],
+     [
+      "지휘통제실",
+      "Facility"
+     ],
+     [
+      "출입 통제 규정",
+      "Regulation"
+     ],
+     [
+      "출입통제 담당관",
+      "Position"
+     ]
+    ],
+    "relations": [
+     [
+      "권우진 대위",
+      "ACCESSED",
+      "지휘통제실"
+     ],
+     [
+      "권우진 대위",
+      "HOLDS_POSITION",
+      "출입통제 담당관"
+     ],
+     [
+      "김유준",
+      "ACCESSED",
+      "지휘통제실"
+     ],
+     [
+      "김유준",
+      "BELONGS_TO",
+      "제4027기계화여단 군수지원대대"
+     ],
+     [
+      "김유준",
+      "HOLDS_POSITION",
+      "병장"
+     ],
+     [
+      "병장",
+      "POSITION_OF",
+      "제4027기계화여단 군수지원대대"
+     ]
+    ],
+    "records": [
+     {
+      "유형": "비인가 출입",
+      "관련자": [
+       "권우진 대위",
+       "권 대위"
+      ],
+      "장소": [
+       "지휘통제실\n나",
+       "지휘통제실"
+      ],
+      "위반 규정": [
+       "출입 통제 규정"
+      ],
+      "일자": "2026. 4. 12."
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "eval-026-1",
+   "doc_type": "보안사고 경위서",
+   "text": "보안사고 경위서 — 제6008공병단 정보과 / 작성: 비밀관리책임자 중사 한준우\n1. 발생: 2026. 7. 22., 제1통제구역\n2. 개요: 상병 홍연우, Ⅱ급 비밀 작전계획 문서 열람 후 보관함에 반납하지 않고 책상 위에 방치함.\n3. 발견: 일과 후 순찰 중 한 중사가 확인. 제1통제구역 관리책임 역시 한 중사.\n4. 위반 규정: 비밀문서 관리 규정. 문서 외부 유출 정황 없음.\n5. 관련자 소속: 홍 상병 — 제6008공병단 정보과.",
+   "gold": {
+    "entities": [
+     [
+      "Ⅱ급 비밀 작전계획 문서",
+      "ClassifiedDocument"
+     ],
+     [
+      "비밀관리책임자",
+      "Position"
+     ],
+     [
+      "비밀문서 관리 규정",
+      "Regulation"
+     ],
+     [
+      "상병 홍연우",
+      "Person"
+     ],
+     [
+      "제1통제구역",
+      "Facility"
+     ],
+     [
+      "제6008공병단 정보과",
+      "Unit"
+     ],
+     [
+      "중사 한준우",
+      "Person"
+     ],
+     [
+      "한 중사",
+      "Person"
+     ],
+     [
+      "홍 상병",
+      "Person"
+     ]
+    ],
+    "relations": [
+     [
+      "상병 홍연우",
+      "ACCESSED",
+      "Ⅱ급 비밀 작전계획 문서"
+     ],
+     [
+      "중사 한준우",
+      "HOLDS_POSITION",
+      "비밀관리책임자"
+     ],
+     [
+      "한 중사",
+      "RESPONSIBLE_FOR",
+      "제1통제구역"
+     ],
+     [
+      "홍 상병",
+      "BELONGS_TO",
+      "제6008공병단 정보과"
+     ]
+    ],
+    "records": [
+     {
+      "유형": "비밀문서 관리 소홀",
+      "관련자": [
+       "상병 홍연우"
+      ],
+      "대상 문서": [
+       "Ⅱ급 비밀 작전계획 문서"
+      ],
+      "장소": [
+       "제1통제구역"
+      ],
+      "위반 규정": [
+       "비밀문서 관리 규정"
+      ],
+      "일자": "2026. 7. 22."
+     }
+    ]
+   },
+   "predicted": {
+    "entities": [
+     [
+      "Ⅱ급 비밀 작전계획 문서",
+      "ClassifiedDocument"
+     ],
+     [
+      "비밀관리책임자",
+      "Position"
+     ],
+     [
+      "비밀문서 관리 규정",
+      "Regulation"
+     ],
+     [
+      "상병 홍연우",
+      "Person"
+     ],
+     [
+      "제1통제구역",
+      "Facility"
+     ],
+     [
+      "제6008공병단 정보과",
+      "Unit"
+     ],
+     [
+      "중사 한준우",
+      "Person"
+     ],
+     [
+      "한 중사",
+      "Person"
+     ],
+     [
+      "홍 상병",
+      "Person"
+     ]
+    ],
+    "relations": [
+     [
+      "비밀관리책임자",
+      "POSITION_OF",
+      "제6008공병단 정보과"
+     ],
+     [
+      "상병 홍연우",
+      "ACCESSED",
+      "Ⅱ급 비밀 작전계획 문서"
+     ],
+     [
+      "상병 홍연우",
+      "CARRIED_OUT",
+      "Ⅱ급 비밀 작전계획 문서"
+     ],
+     [
+      "상병 홍연우",
+      "RESPONSIBLE_FOR",
+      "Ⅱ급 비밀 작전계획 문서"
+     ],
+     [
+      "중사 한준우",
+      "BELONGS_TO",
+      "제6008공병단 정보과"
+     ],
+     [
+      "중사 한준우",
+      "HOLDS_POSITION",
+      "비밀관리책임자"
+     ],
+     [
+      "한 중사",
+      "ACCESSED",
+      "제1통제구역"
+     ],
+     [
+      "한 중사",
+      "RESPONSIBLE_FOR",
+      "제1통제구역"
+     ],
+     [
+      "홍 상병",
+      "BELONGS_TO",
+      "제6008공병단 정보과"
+     ]
+    ],
+    "records": [
+     {
+      "유형": "비밀문서 관리 소홀",
+      "관련자": [
+       "상병 홍연우",
+       "홍 상병"
+      ],
+      "대상 문서": [
+       "Ⅱ급 비밀 작전계획 문서"
+      ],
+      "장소": [
+       "제1통제구역"
+      ],
+      "위반 규정": [
+       "비밀문서 관리 규정"
+      ],
+      "일자": "2026. 7. 22."
+     }
+    ]
+   }
+  }
+ ]
+}

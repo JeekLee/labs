@@ -867,6 +867,7 @@ dependencies = [
     { name = "openai" },
     { name = "pyarrow" },
     { name = "python-dotenv" },
+    { name = "pyyaml" },
 ]
 
 [package.metadata]
@@ -878,6 +879,7 @@ requires-dist = [
     { name = "openai", specifier = ">=2.0.0" },
     { name = "pyarrow", specifier = ">=26.0.1" },
     { name = "python-dotenv", specifier = ">=1.0.0" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
 ]
 
 [[package]]

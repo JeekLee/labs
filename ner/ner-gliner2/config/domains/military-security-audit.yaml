@@ -1,0 +1,110 @@
+# 가상의 군부대 보안 감사 도메인 온톨로지 (실험용, 실존 기관과 무관).
+# create-context-graph의 온톨로지 YAML 키(inherits, domain, entity_types, relationships)를 따르고,
+# 이 실험용 확장 키(description_ko, extract, records)를 더했다.
+inherits: _base
+domain:
+  id: military-security-audit
+  name: Military Security Audit
+  description: 가상의 군부대 보안 감사(인원·문서·시설·정보통신 보안) 문서와 기록
+
+entity_types:
+  - label: Person
+    pole_type: PERSON
+    extract: true
+    description_ko: "특정 개인을 가리키는 언급. 문서에 적힌 계급을 포함한다(예: 김민수 상병, 상병 김민수, 김 상병)."
+  - label: Position
+    pole_type: OBJECT
+    subtype: ROLE
+    extract: true
+    description_ko: "사람이 아닌 직책 자체(예: 보안담당관, 정보체계 관리자, 당직사관)."
+  - label: Unit
+    pole_type: ORGANIZATION
+    extract: true
+    description_ko: "군 부대나 부서의 공식 명칭 전체(예: 제9013보병사단 정보통신대대, 작전과)."
+  - label: Organization
+    pole_type: ORGANIZATION
+    extract: true
+    description_ko: "부대가 아닌 외부 기관이나 업체(예: 협력업체, 상급 감사기관)."
+  - label: Facility
+    pole_type: LOCATION
+    extract: true
+    description_ko: "시설, 구역, 실의 이름(예: 통제구역, 문서보관실, 출입통제소)."
+  - label: Credential
+    pole_type: OBJECT
+    subtype: CREDENTIAL
+    extract: true
+    description_ko: "비밀취급인가, 출입증, 정보체계 계정 같은 인가와 증명."
+  - label: ClassifiedDocument
+    pole_type: OBJECT
+    subtype: DOCUMENT
+    extract: true
+    description_ko: "비밀이나 대외비로 관리되는 문서(예: Ⅱ급 비밀 작전계획 문서)."
+  - label: StorageMedium
+    pole_type: OBJECT
+    subtype: MEDIUM
+    extract: true
+    description_ko: "보조기억매체(예: 보안 USB, 외장하드)와 그 관리번호."
+  - label: InformationSystem
+    pole_type: OBJECT
+    subtype: SYSTEM
+    extract: true
+    description_ko: "정보체계, 단말, 서버, 망의 이름."
+  - label: Regulation
+    pole_type: OBJECT
+    subtype: REGULATION
+    extract: true
+    description_ko: "보안 규정, 지침, 통제 항목의 이름."
+  - label: Inspection
+    pole_type: EVENT
+    extract: true
+    description_ko: "특정되는 보안점검이나 감사 행사의 이름(예: 2026년 1분기 정기 보안점검)."
+  - label: SecurityIncident
+    pole_type: EVENT
+    extract: false
+    description_ko: "보안 사고나 위반 사례. 문서 단위로 생성한다."
+  - label: Finding
+    pole_type: OBJECT
+    subtype: FINDING
+    extract: false
+    description_ko: "감사 발견 사항. 점검 문서의 항목 단위로 생성한다."
+  - label: CorrectiveAction
+    pole_type: EVENT
+    extract: false
+    description_ko: "발견 사항이나 사고에 대한 조치. 조치표의 행 단위로 생성한다."
+
+relationships:
+  - {type: BELONGS_TO, source: [Person], target: [Unit], extract: true, description_ko: "사람이 부대에 소속된다"}
+  - {type: HOLDS_POSITION, source: [Person], target: [Position], extract: true, description_ko: "사람이 직책을 맡는다"}
+  - {type: POSITION_OF, source: [Position], target: [Unit], extract: true, description_ko: "직책이 부대에 속한다"}
+  - {type: HOLDS, source: [Person], target: [Credential], extract: true, description_ko: "사람이 인가·출입증·계정을 보유한다"}
+  - {type: RESPONSIBLE_FOR, source: [Person], target: [Facility, ClassifiedDocument, StorageMedium, InformationSystem], extract: true, description_ko: "사람이 관리 책임을 진다"}
+  - {type: ACCESSED, source: [Person], target: [Facility, InformationSystem, ClassifiedDocument], extract: true, description_ko: "사람이 출입하거나 접근한다"}
+  - {type: CARRIED_OUT, source: [Person], target: [StorageMedium, ClassifiedDocument], extract: true, description_ko: "사람이 반출한다"}
+  - {type: STORED_ON, source: [ClassifiedDocument], target: [StorageMedium, InformationSystem], extract: true, description_ko: "문서가 매체나 체계에 저장된다"}
+  - {type: LOCATED_AT, source: [Facility, InformationSystem, StorageMedium], target: [Facility, Unit], extract: true, description_ko: "시설·체계·매체가 위치하거나 보관된다"}
+  - {type: INSPECTED, source: [Inspection], target: [Unit, Facility, InformationSystem], extract: true, description_ko: "점검이 대상을 점검한다"}
+  - {type: INVOLVED_IN, source: [Person], target: [SecurityIncident], extract: false, description_ko: "사람이 사고에 관련된다"}
+  - {type: OCCURRED_AT, source: [SecurityIncident], target: [Facility, InformationSystem], extract: false, description_ko: "사고가 발생한 위치"}
+  - {type: VIOLATES, source: [SecurityIncident, Finding], target: [Regulation], extract: false, description_ko: "규정을 위반한다"}
+  - {type: IDENTIFIED, source: [Inspection], target: [Finding], extract: false, description_ko: "점검에서 발견 사항이 나온다"}
+  - {type: CONCERNS, source: [Finding], target: [Person, Position, Facility, ClassifiedDocument, StorageMedium, InformationSystem], extract: false, description_ko: "발견 사항의 대상"}
+  - {type: REMEDIATES, source: [CorrectiveAction], target: [Finding, SecurityIncident], extract: false, description_ko: "조치가 해소한다"}
+  - {type: ASSIGNED_TO, source: [CorrectiveAction], target: [Person, Unit], extract: false, description_ko: "조치의 담당"}
+
+records:
+  incident:
+    - {name: 유형, dtype: str, choices: [저장매체 무단 반출, 비인가 출입, 비밀문서 관리 소홀, 계정·권한 관리 위반, 보안교육 미이수, 인가 만료자 접근], description_ko: "사고 유형"}
+    - {name: 관련자, dtype: list, description_ko: "사고에 관련된 사람"}
+    - {name: 매체, dtype: list, description_ko: "관련된 저장매체"}
+    - {name: 대상 문서, dtype: list, description_ko: "관련된 비밀 문서"}
+    - {name: 장소, dtype: list, description_ko: "사고가 발생한 시설이나 정보체계"}
+    - {name: 위반 규정, dtype: list, description_ko: "위반한 규정"}
+    - {name: 일자, dtype: str, description_ko: "사고가 발생한 날짜"}
+  finding:
+    - {name: 영역, dtype: str, choices: [인원보안, 문서보안, 시설보안, 정보통신보안], description_ko: "발견 사항의 보안 영역"}
+    - {name: 대상, dtype: list, description_ko: "발견 사항의 대상(사람, 직책, 시설, 문서, 매체, 정보체계)"}
+    - {name: 위반 규정, dtype: list, description_ko: "위반한 규정"}
+  action:
+    - {name: 조치 유형, dtype: str, choices: [재교육, 매체 회수, 권한 회수, 시설 보완, 징계 의뢰, 규정 개정], description_ko: "조치의 유형"}
+    - {name: 담당, dtype: list, description_ko: "조치를 맡은 사람이나 부대"}
+    - {name: 기한, dtype: str, description_ko: "조치 기한"}
